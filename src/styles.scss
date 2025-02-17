@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@use './app/core/css/reset.scss' as *;
+
+html{
+  font-size: 62.5%; /*font size 10px */
+  body {
+    font-size : 1.6rem;
+  }
+}
