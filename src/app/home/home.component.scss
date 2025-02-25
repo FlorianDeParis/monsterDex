@@ -1,0 +1,12 @@
+#home{
+  padding: 5rem;
+  .title{
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  .pokeList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

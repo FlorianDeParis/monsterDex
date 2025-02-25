@@ -15,7 +15,7 @@ export type name = {
   name: string
 }
 
-export type pokemonEntry = {
+export type PokemonEntry = {
   entry_number: number,
   pokemon_species:{
     name: string,
@@ -39,7 +39,7 @@ export type pokedex = {
     name
   ],
   pokemon_entries: [
-    pokemonEntry
+    PokemonEntry
   ],
   region: {
     name: string,

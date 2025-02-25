@@ -3,11 +3,13 @@ import { PokeApiService } from '../core/services/poke-api.service';
 import { Observable, tap } from 'rxjs';
 import { pokedex } from '../core/models/monsterDex.type';
 import { CommonModule } from '@angular/common';
+import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 
 @Component({
   selector: 'app-home',
   imports: [
-    CommonModule
+    CommonModule,
+    MonsterTileComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
