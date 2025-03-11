@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PokemonEntry } from '../core/models/monsterDex.type';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-monster-tile',
-  imports: [],
+  imports: [ CommonModule ],
   templateUrl: './monster-tile.component.html',
   styleUrl: './monster-tile.component.scss'
 })
