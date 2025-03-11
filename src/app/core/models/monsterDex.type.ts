@@ -1,5 +1,5 @@
 
-export type description = {
+export type Description = {
   description: string,
   langague: {
     name: string,
@@ -7,7 +7,7 @@ export type description = {
   }
 }
 
-export type name = {
+export type Name = {
   language: {
     name: string,
     url: string
@@ -23,20 +23,20 @@ export type PokemonEntry = {
   }
 }
 
-export type version_group = {
+export type VersionGroup = {
   name: string,
   url: string
 }
 
-export type pokedex = {
+export type Pokedex = {
   descriptions: [
-    description
+    Description
   ],
   id: number,
   is_main_series: boolean,
   name: string,
   names: [
-    name
+    Name
   ],
   pokemon_entries: [
     PokemonEntry
@@ -46,6 +46,6 @@ export type pokedex = {
     url: string
   },
   version_groups: [
-    version_group
+    VersionGroup
   ]
 }
