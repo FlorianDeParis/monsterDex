@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PokemonEntry } from '../core/models/monsterDex.type';
 
 @Component({
@@ -7,11 +7,15 @@ import { PokemonEntry } from '../core/models/monsterDex.type';
   templateUrl: './monster-tile.component.html',
   styleUrl: './monster-tile.component.scss'
 })
-export class MonsterTileComponent {
-
+export class MonsterTileComponent implements OnInit {
+  
   @Input() pokemon!: PokemonEntry
-
-  constructor(){
-
+  imageUrl = '';
+  
+  constructor() {
+  }
+  
+  ngOnInit(): void {
+    this.imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.pokemon.entry_number}.png`
   }
 }

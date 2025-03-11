@@ -1,4 +1,4 @@
 <li class="pokemon-tile">
-  <img src='{{ "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+ pokemon.entry_number +".png"}}' alt="">
-  <p class="name">{{ pokemon.pokemon_species.name}}</p>
+  <img [src]="imageUrl" alt="">
+  <p class="name">{{ pokemon.pokemon_species.name }}</p>
 </li>
