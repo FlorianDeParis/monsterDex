@@ -1,1 +1,10 @@
-<p>monster-page works!</p>
+<div id="monsterPage" *ngIf="monsterDetails$ | async as monsterDetails">
+  <audio class="pokemonCry" autoplay>
+    <source *ngIf="monsterDetails.cries.latest" [src]="monsterDetails.cries.latest">
+    <source [src]="monsterDetails.cries.legacy">
+  </audio>
+  <script>
+    console.log(monsterDetails);
+  </script>
+  <h1>{{ monsterDetails.name }}</h1>
+</div>
