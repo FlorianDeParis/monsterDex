@@ -1,4 +1,4 @@
-<li class="pokemon-tile">
+<li class="pokemon-tile" (click)="goToMonsterPage(pokemon.pokemon_species.name)">
   <img [src]="imageUrl" alt="">
   <p class="name">{{ pokemon.pokemon_species.name | titlecase }}</p>
 </li>
