@@ -12,14 +12,9 @@ export class PokeApiService {
 
   constructor(private http: HttpClient) {}
 
-  getKantoDex(): Observable<Pokedex> {
-    return this.http.get<Pokedex>('https://pokeapi.co/api/v2/pokedex/2/');
-  }
-
   getDex(idDex: number): Observable<Pokedex> {
     return this.http.get<Pokedex>(`https://pokeapi.co/api/v2/pokedex/${idDex}/`);
   }
-
 
   getPokemonDetails(monsterName: string): Observable<Monster> {
     return this.http.get<Monster>(`${environment.API_URL}/pokemon/${monsterName}`);

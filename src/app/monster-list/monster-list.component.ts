@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable, tap } from 'rxjs';
@@ -16,16 +17,14 @@ import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 })
 export class MonsterListComponent implements OnInit {
   pokedex$!: Observable<Pokedex>;
+  pokedexId!: number;
 
-  constructor(private pokeApi: PokeApiService){}
+  constructor(private route: ActivatedRoute, private pokeApi: PokeApiService){
+    this.pokedexId = this.route.snapshot.params['region'];
+  }
 
   ngOnInit(): void {
-
-    this.pokeApi.getKantoDex().pipe(
-      tap(data => console.log(data))
-    ).subscribe();
-
-    this.pokedex$ = this.pokeApi.getKantoDex().pipe(
+    this.pokedex$ = this.pokeApi.getDex(this.pokedexId).pipe(
       tap(data => console.log(data))
     );
   }
