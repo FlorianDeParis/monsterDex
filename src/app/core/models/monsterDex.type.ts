@@ -1,3 +1,15 @@
+export interface PokedexListEntry {
+  label: string;
+  pokedexVariants: PokedexListEntryVariant[];
+}
+
+export interface PokedexListEntryVariant {
+  pokedexId: number;
+  pokedexVariantName: string;
+}
+
+
+// Poke API Types
 
 export type Description = {
   description: string,

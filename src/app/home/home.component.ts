@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { PokeApiService } from '../core/services/poke-api.service';
-import { Observable, tap } from 'rxjs';
-import { Pokedex } from '../core/models/monsterDex.type';
 import { CommonModule } from '@angular/common';
+import { Observable, tap } from 'rxjs';
+import { Pokedex, PokedexListEntry } from '../core/models/monsterDex.type';
+import { pokedexList } from '../core/env/config';
+import { PokeApiService } from '../core/services/poke-api.service';
 import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 
 @Component({
@@ -16,10 +17,13 @@ import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 })
 export class HomeComponent implements OnInit {
 
-  pokedex$!: Observable<Pokedex>
+  pokedex$!: Observable<Pokedex>;
+  pokedexList!: PokedexListEntry[];
 
-  constructor(private pokeApi: PokeApiService){}
-  
+  constructor(private pokeApi: PokeApiService){
+    this.pokedexList = pokedexList;
+  }
+
   ngOnInit(): void {
 
     this.pokeApi.getKantoDex().pipe(
