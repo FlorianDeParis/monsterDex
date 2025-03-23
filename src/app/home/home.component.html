@@ -1,11 +1,3 @@
 <section id="home">
-  <div *ngIf="pokedex$ | async as pokedex">
-
-    <h1 class="title">{{ pokedex.descriptions[0].description }}</h1>
-    <ul class="pokeList">
-      @for(pokemon_entry of pokedex.pokemon_entries; track pokemon_entry.entry_number) {
-        <app-monster-tile [pokemon]="pokemon_entry" />
-      }
-    </ul>
-  </div>
+  <button (click)="start()">Accéder aux pokédexs</button>
 </section>
