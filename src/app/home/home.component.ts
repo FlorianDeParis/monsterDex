@@ -1,33 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { PokeApiService } from '../core/services/poke-api.service';
-import { Observable, tap } from 'rxjs';
-import { Pokedex } from '../core/models/monsterDex.type';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [
-    CommonModule,
-    MonsterTileComponent
-  ],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
 
-  pokedex$!: Observable<Pokedex>
+  constructor( private router: Router){}
 
-  constructor(private pokeApi: PokeApiService){}
-  
-  ngOnInit(): void {
-
-    this.pokeApi.getKantoDex().pipe(
-      tap(data => console.log(data))
-    ).subscribe();
-
-    this.pokedex$ = this.pokeApi.getKantoDex().pipe(
-      tap(data => console.log(data))
-    );
+  start(){
+    this.router.navigateByUrl('/pokedexes');
   }
 }

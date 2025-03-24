@@ -1,4 +1,16 @@
 import { Description, Name, NamedAPIResource } from "./monsterUtilities.type"
+export interface PokedexListEntry {
+  label: string;
+  pokedexVariants: PokedexListEntryVariant[];
+}
+
+export interface PokedexListEntryVariant {
+  pokedexId: number;
+  pokedexVariantName: string;
+}
+
+
+// Poke API Types
 
 export interface PokemonEntry {
   entry_number: number;

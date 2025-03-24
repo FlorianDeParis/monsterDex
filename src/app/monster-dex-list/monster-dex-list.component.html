@@ -1,0 +1,24 @@
+<section>
+  <h1>Liste des poxédexs issus de la franchise originale</h1>
+  <ul *ngIf="pokedexList">
+    @for(pokedexEntry of pokedexList; track pokedexEntry.label){
+      {{ pokedexEntry.pokedexVariants[0].pokedexId }}
+      <li style="padding-left:15px;padding-bottom:15px;"
+        (click)="
+          (pokedexEntry.pokedexVariants.length == 1) ?
+          goToDex(pokedexEntry.pokedexVariants[0].pokedexId):null;
+        "
+      >
+        {{ pokedexEntry.label }}
+        @if (pokedexEntry.pokedexVariants.length > 1){
+          <p>Variantes:</p>
+          @for (dexVariant of pokedexEntry.pokedexVariants; track dexVariant.pokedexId) {
+            <ul style="padding-left:5px;">
+              <li (click)="goToDex(dexVariant.pokedexId)">{{ dexVariant.pokedexVariantName }}</li>
+            </ul>
+          }
+        }
+      </li>
+    }
+  </ul>
+</section>
