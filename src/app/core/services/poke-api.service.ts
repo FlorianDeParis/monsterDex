@@ -3,7 +3,7 @@ import { Pokedex } from '../models/monsterDex.type';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Monster } from '../models/monsterDetails.type';
+import { Pokemon } from '../models/monsterDetails.type';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class PokeApiService {
     return this.http.get<Pokedex>(`https://pokeapi.co/api/v2/pokedex/${idDex}/`);
   }
 
-  getPokemonDetails(monsterName: string): Observable<Monster> {
-    return this.http.get<Monster>(`${environment.API_URL}/pokemon/${monsterName}`);
+  getPokemonDetails(monsterName: string): Observable<Pokemon> {
+    return this.http.get<Pokemon>(`${environment.API_URL}/pokemon/${monsterName}`);
   }
 }

@@ -1,6 +1,6 @@
 import { NamedAPIResource, VersionGameIndex } from "./monsterUtilities.type"
 
-export interface Monster {
+export interface Pokemon {
   abilities: PokemonAbility[],
   base_experience: number;
   cries: PokemonCries;

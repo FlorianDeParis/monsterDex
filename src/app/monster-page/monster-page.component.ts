@@ -3,7 +3,7 @@ import { ActivatedRoute} from '@angular/router';
 import { tap, Observable } from 'rxjs';
 import { PokeApiService } from '../core/services/poke-api.service';
 import { CommonModule } from '@angular/common';
-import { Monster } from '../core/models/monsterDetails.type';
+import { Pokemon } from '../core/models/monsterDetails.type';
 
 @Component({
   selector: 'app-monster-page',
@@ -15,7 +15,7 @@ import { Monster } from '../core/models/monsterDetails.type';
 })
 export class MonsterPageComponent implements OnInit {
   enMonsterName!: string;
-  monsterDetails$!: Observable<Monster>;
+  monsterDetails$!: Observable<Pokemon>;
   constructor(private route: ActivatedRoute, private pokeApi: PokeApiService) {
     this.enMonsterName = this.route.snapshot.params['enMonsterName'];
   }
