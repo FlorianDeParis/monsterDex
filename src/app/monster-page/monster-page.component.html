@@ -1,7 +1,8 @@
-<div id="monsterPage" *ngIf="monsterDetails$ | async as monsterDetails">
-  <audio class="pokemonCry" autoplay>
-    <source *ngIf="monsterDetails.cries.latest" [src]="monsterDetails.cries.latest">
-    <source [src]="monsterDetails.cries.legacy">
-  </audio>
+<audio class="pokemonCry" autoplay #audioPlayer>
+  @if (monsterDetails$ | async; as monsterDetails) {
+    <source [src]="monsterDetails.cries.latest || monsterDetails.cries.legacy">
+  }
+</audio>
+@if (monsterDetails$ | async; as monsterDetails) {
   <h1>{{ monsterDetails.name }}</h1>
-</div>
+}
