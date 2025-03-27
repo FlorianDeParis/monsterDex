@@ -49,7 +49,8 @@
         width: 10px;
         height: 15px;
       }
-      &:not(.pokedexEntryCategory):hover{
+      &:not(.pokedexEntryCategory):hover,
+      &:not(.pokedexEntryCategory):focus{
         border-top: 1px solid var(--dex-entry-hovered-border-illuminated);
         border-right: 1px solid var(--dex-entry-hovered-border-illuminated);
         border-bottom: 1px solid var(--dex-entry-hovered-border-shadded);
@@ -62,14 +63,34 @@
       }
     }
 
-    &.pokedexEntryCategory{
-      --dex-entry-bg: #eebe2e;
-      --dex-entry-border-illuminated: #f0e277;
-      --dex-entry-border-shadded: #ca942d;
-      --dex-entry-bg-badge: #6a50d5;
-      --dex-entry-bg-badge-shadded: #624381;
-      div{
-        padding-left: 5rem;
+    // &.pokedexEntryCategory{
+    //   --dex-entry-bg: #eebe2e;
+    //   --dex-entry-border-illuminated: #f0e277;
+    //   --dex-entry-border-shadded: #ca942d;
+    //   --dex-entry-bg-badge: #6a50d5;
+    //   --dex-entry-bg-badge-shadded: #624381;
+
+    // }
+  }
+
+  .dropDownWrapper{
+    &,
+    &.collapsed{
+      display: none;
+    }
+  }
+
+  .dropDownCB {
+    display: none;
+    &:checked + .dropDownWrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      .pokedexEntry{
+        div{
+          padding-left: 5rem;
+        }
       }
     }
   }
