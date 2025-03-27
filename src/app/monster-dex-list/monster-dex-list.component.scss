@@ -11,6 +11,7 @@
   --dex-entry-hovered-bg-badge: #f2f6ee;
   --dex-entry-hovered-bg-badge-shadded: #99937d;
 
+  min-height: calc(100vh - 6rem);
   background: url('../../../public/assets/img/bg.png') #f4f8f6 repeat;
 
   .container{
@@ -21,11 +22,11 @@
     margin-top: 1.5rem;
   }
   .pokedexEntry{
-    font-family: "Pokemon-rs";
-    font-size: 2rem;
     margin-top: -1px;
     display: flex;
-    div{
+    &__inner{
+      font-family: "Pokemon-rs";
+      font-size: 2rem;
       display: flex;
       align-items: center;
       column-gap: 5px;
@@ -35,6 +36,7 @@
       border-top: 1px solid var(--dex-entry-border-illuminated);
       border-right: 1px solid var(--dex-entry-border-illuminated);
       border-bottom: 1px solid var(--dex-entry-border-shadded);
+      border-left: none;
       background-color: var(--dex-entry-bg);
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;

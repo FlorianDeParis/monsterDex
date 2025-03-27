@@ -4,7 +4,7 @@
     @for(pokedexEntry of pokedexList; track pokedexEntry.pokedexVariants[0].pokedexId;){
       @if (pokedexEntry.pokedexVariants.length == 1){
       <div class="pokedexEntry">
-        <div tabIndex="{{ pokedexEntry.pokedexVariants[0].pokedexId }}"
+        <div class="pokedexEntry__inner" tabIndex="{{ pokedexEntry.pokedexVariants[0].pokedexId }}"
           (click)="goToDex(pokedexEntry.pokedexVariants[0].pokedexId);">
           <span class="badge"></span>
           {{ pokedexEntry.label | uppercase }}
@@ -12,20 +12,20 @@
       </div>
       }
       @else {
-        <label for="cb-{{ $index }}"
-          tabIndex="{{ pokedexEntry.pokedexVariants[0].pokedexId }}"
-          class="pokedexEntry pokedexEntryCategory"
-        >
-          <div>
+        <div class="pokedexEntry pokedexEntryCategory">
+            <label for="cb-{{ $index }}"
+              tabIndex="{{ pokedexEntry.pokedexVariants[0].pokedexId }}"
+              class="pokedexEntry__inner"
+            >
             <span class="badge"></span>
             {{ pokedexEntry.label | uppercase }}
-          </div>
-        </label>
+          </label>
+        </div>
         <input type="checkbox" id="cb-{{ $index }}" class="dropDownCB">
         <div class="dropDownWrapper">
           @for (dexVariant of pokedexEntry.pokedexVariants; track dexVariant.pokedexId;) {
             <div class="pokedexEntry">
-              <div tabIndex="{{ dexVariant.pokedexId }}"
+              <div class="pokedexEntry__inner" tabIndex="{{ dexVariant.pokedexId }}"
                 (click)="goToDex(dexVariant.pokedexId)">
                 <span class="badge"></span>
                 {{ dexVariant.pokedexVariantName | uppercase }}
