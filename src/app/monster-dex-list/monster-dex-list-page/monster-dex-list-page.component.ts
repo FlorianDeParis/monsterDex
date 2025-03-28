@@ -1,9 +1,10 @@
-import { Pokedex } from './../core/models/monsterDex.type';
+import { Pokedex } from '../../core/models/monsterDex.type';
 import { Component } from '@angular/core';
-import { PokedexListEntry } from '../core/models/monsterDex.type';
-import { pokedexList as pokedexListConfig } from '../core/env/config';
+import { PokedexListEntry } from '../../core/models/monsterDex.type';
+import { pokedexList as pokedexListConfig } from '../../core/env/config';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { MonsterDexEntryComponent } from '../monster-dex-entry/monster-dex-entry.component';
 
 interface FlattenPokedexEntry {
   label: string;
@@ -15,12 +16,15 @@ interface FlattenPokedexList extends Array<FlattenPokedexEntry> {};
 
 
 @Component({
-  selector: 'app-monster-dex-list',
-  imports: [CommonModule],
-  templateUrl: './monster-dex-list.component.html',
-  styleUrl: './monster-dex-list.component.scss'
+  selector: 'app-monster-dex-list-page',
+  imports: [
+    CommonModule,
+    MonsterDexEntryComponent
+  ],
+  templateUrl: './monster-dex-list-page.component.html',
+  styleUrl: './monster-dex-list-page.component.scss'
 })
-export class MonsterDexListComponent {
+export class MonsterDexListPageComponent {
   pokedexList!: PokedexListEntry[];
   pokedexListFlatten!: FlattenPokedexList;
 

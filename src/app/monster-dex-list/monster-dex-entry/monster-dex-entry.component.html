@@ -1,0 +1,13 @@
+
+<div class="pokedexEntry"
+  (click)="handleClick(dexEntry)">
+  <span class="badge" [ngClass]="{'active': toggle === false}"></span>
+  {{ label | uppercase }}
+</div>
+@if(isMainEntry(dexEntry) && !isJustMainWithOneElement(dexEntry)){
+  <div [ngStyle]="{display: (!toggle) ? 'none;' : 'flex'}">
+    @for(pokedexSubEntry of dexEntry.pokedexVariants; track pokedexSubEntry.pokedexId){
+      <app-monster-dex-entry [dexEntry]="pokedexSubEntry" />
+    }
+  </div>
+}
