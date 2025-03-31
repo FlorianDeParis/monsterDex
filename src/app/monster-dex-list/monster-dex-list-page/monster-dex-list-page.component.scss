@@ -1,6 +1,20 @@
+
+
 #pokedexList{
+  $bg-width: 1.6rem;
+  $bg-height: 1.6rem;
+  $bg-url: '../../../../public/assets/img/bg.png';
+
+
+  @keyframes bg-scrolling-reverse {
+    100% { background-position: -#{$bg-width} 0; }
+  }
+
   min-height: calc(100vh - 6rem);
-  background: url('../../../../public/assets/img/bg.png') #f4f8f6 repeat;
+
+  background: url($bg-url) #f4f8f6 repeat 0 0;
+  animation: bg-scrolling-reverse .1s infinite;
+  animation-timing-function: linear;
 
   .container{
     display: flex;
