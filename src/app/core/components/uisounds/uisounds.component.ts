@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { environment } from '../../env/environment';
+
 
 @Component({
   selector: 'app-uisounds',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './uisounds.component.scss'
 })
 export class UISoundsComponent {
+  audioFile!: string
 
+  playSound(){
+    const audio = new Audio(`${environment.AUDIO_PATH}emerald_0005.wav`);
+    audio.play().catch(error => console.error('Erreur de lecture du son:', error));
+  }
 }
