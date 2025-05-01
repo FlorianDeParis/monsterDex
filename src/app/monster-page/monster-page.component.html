@@ -4,5 +4,8 @@
   }
 </audio>
 @if (monsterDetails$ | async; as monsterDetails) {
-  <h1>{{ monsterDetails.name }}</h1>
+  <div>
+    <h1>{{ monsterDetails.name }}</h1>
+    <div>{{ monsterDetails.height }}</div>
+  </div>
 }
