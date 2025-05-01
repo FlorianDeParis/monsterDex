@@ -17,6 +17,16 @@ export class PokeApiService {
   }
 
   getPokemonDetails(monsterName: string): Observable<Pokemon> {
-    return this.http.get<Pokemon>(`${environment.API_URL}/pokemon/${monsterName}`);
+    return this.http.get<Pokemon>(`${environment.API_URL}/pokemon/${monsterName}`).pipe(
+      map((pokemon: Pokemon) => this.formatedPokemonDatas(pokemon))
+    );
+  }
+
+  formatedPokemonDatas(pokemon: Pokemon): Pokemon {
+    let formattedPokemon = {
+      ...pokemon,
+      'height': (pokemon.height / 10) // must divide by 10 because height (in metters) is in two digits
+    };
+    return formattedPokemon;
   }
 }
