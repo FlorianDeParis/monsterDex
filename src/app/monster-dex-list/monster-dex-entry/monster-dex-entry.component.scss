@@ -1,0 +1,84 @@
+.pokedexEntry{
+  --dex-entry-bg: #eebe2e;
+  --dex-entry-border-illuminated: #f0e277;
+  --dex-entry-border-shadded: #ca942d;
+  --dex-entry-bg-badge: #6a50d5;
+  --dex-entry-bg-badge-shadded: #624381;
+
+  --dex-entry-hovered-bg: #eece6b;
+  --dex-entry-hovered-border-illuminated: #f7ea8f;
+  --dex-entry-hovered-border-shadded: #d5b150;
+  --dex-entry-hovered-bg-badge: #5ece93;
+  --dex-entry-hovered-bg-badge-shadded: #7fa960;
+
+  font-family: "Pokemon-rs";
+  display: flex;
+  margin-top: -1px;
+  font-size: 2rem;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+  line-height: 1.3;
+  padding: 0 1.5rem;
+  border-top: 1px solid var(--dex-entry-border-illuminated);
+  border-right: 1px solid var(--dex-entry-border-illuminated);
+  border-bottom: 1px solid var(--dex-entry-border-shadded);
+  border-left: none;
+  background-color: var(--dex-entry-bg);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #FFF;
+  text-shadow: 1px 1px 2px #000000;
+  transition: padding-left 0.1s linear;
+  &.child{
+    padding-left: 3rem;
+  }
+  .badge{
+    flex-shrink: 0;
+    display: inline-block;
+    background-color: var(--dex-entry-bg-badge);
+    border-top: 1px solid var(--dex-entry-bg-badge-shadded);
+    border-left: 1px solid var(--dex-entry-bg-badge-shadded);
+    width: 10px;
+    height: 15px;
+  }
+  &:hover,
+  &:focus{
+    border-top: 1px solid var(--dex-entry-hovered-border-illuminated);
+    border-right: 1px solid var(--dex-entry-hovered-border-illuminated);
+    border-bottom: 1px solid var(--dex-entry-hovered-border-shadded);
+    background-color: var(--dex-entry-hovered-bg);
+    .badge{
+      background-color: var(--dex-entry-hovered-bg-badge);
+      border-top: 1px solid var(--dex-entry-hovered-bg-badge-shadded);
+      border-left: 1px solid var(--dex-entry-hovered-bg-badge-shadded);
+    }
+  }
+
+  &.active:not(.back){
+    --dex-entry-bg: #eece6b;
+    --dex-entry-border-illuminated: #f7ea8f;
+    --dex-entry-border-shadded: #d5b150;
+    --dex-entry-bg-badge: #5ece93;
+    --dex-entry-bg-badge-shadded: #7fa960;
+    padding-left: 3rem;
+  }
+
+  &-subList{
+    display: none;
+    &.active{
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      gap: 5px;
+    }
+  }
+
+  &.back{
+    --dex-entry-bg: #afa578;
+    --dex-entry-border-illuminated: #cfd1af;
+    --dex-entry-border-shadded: #7b7a55;
+    --dex-entry-bg-badge: #f2f6ee;
+    --dex-entry-bg-badge-shadded: #99937d;
+  }
+}
