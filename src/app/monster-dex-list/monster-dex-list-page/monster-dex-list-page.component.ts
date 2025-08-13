@@ -1,5 +1,5 @@
-import { Pokedex } from '../../core/models/monsterDex.type';
 import { Component } from '@angular/core';
+import { Pokedex } from '../../core/models/PokeAPI/games.type';
 import { PokedexListEntry } from '../../core/models/monsterDex.type';
 import { pokedexList as pokedexListConfig } from '../../core/env/config';
 import { CommonModule } from '@angular/common';

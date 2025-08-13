@@ -3,7 +3,7 @@ import { ActivatedRoute} from '@angular/router';
 import { map, Observable, of, switchMap, tap } from 'rxjs';
 import { PokeApiService } from '../core/services/poke-api.service';
 import { CommonModule } from '@angular/common';
-import { Pokemon } from '../core/models/monsterDetails.type';
+import { Pokemon } from '../core/models/PokeAPI/pokemon.type';
 
 @Component({
   selector: 'app-monster-page',

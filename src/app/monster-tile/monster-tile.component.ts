@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PokemonEntry } from '../core/models/monsterDex.type';
+import { PokemonEntry } from '../core/models/PokeAPI/games.type';
 import { CommonModule } from '@angular/common';
 import { environment } from '../core/env/environment';
 import { Router } from '@angular/router';

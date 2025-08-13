@@ -2,7 +2,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable, tap } from 'rxjs';
-import { Pokedex } from '../core/models/monsterDex.type';
+import { Pokedex } from '../core/models/PokeAPI/games.type';
 import { PokeApiService } from '../core/services/poke-api.service';
 import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 

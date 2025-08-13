@@ -1,4 +1,4 @@
-import { NamedAPIResource, VersionGameIndex } from "./monsterUtilities.type"
+import { NamedAPIResource, VersionGameIndex } from "./utilities.type"
 
 export interface Pokemon {
   abilities: PokemonAbility[],
