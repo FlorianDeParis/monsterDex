@@ -7,6 +7,16 @@
   <div>
     <h1>{{ monsterDetails.name }}</h1>
     <div>{{ monsterDetails.height }}</div>
-    <pre>{{ monsterDetails | json}}</pre>
+    <img class="artwork" [src]="monsterDetails.sprites.versions?.['generation-v']?.['black-white']?.animated?.front_default"
+      alt="">
+
+      @if (monsterDetails.abilities){
+        <ul>
+          @for(ability of monsterDetails.abilities; track ability.ability.name){
+            <li>{{ ability.ability.name }}</li>
+          }
+        </ul>
+      }
+      <pre>{{ monsterDetails | json}}</pre>
   </div>
 }
