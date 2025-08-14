@@ -19,7 +19,7 @@ import { MonsterService } from '../core/services/monster.service';
 export class MonsterListComponent implements OnInit {
   pokedex$!: Observable<Pokedex>;
   pokedexId!: number;
-  pokemonGeneration!: number;
+  pokemonGeneration!: number | null;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,7 +31,6 @@ export class MonsterListComponent implements OnInit {
 
   ngOnInit(): void {
     this.pokedex$ = this.pokeApi.getDex(this.pokedexId);
-    // this.pokemonGeneration = this.monsterService.getPokedexPokemonGeneration(this.pokedexId);
-    this.monsterService.getPokedexPokemonGeneration(this.pokedexId);
+    this.pokemonGeneration = this.monsterService.getPokedexPokemonGeneration(this.pokedexId);
   }
 }
