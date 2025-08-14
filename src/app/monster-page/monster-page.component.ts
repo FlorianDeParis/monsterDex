@@ -15,17 +15,23 @@ import { Pokemon } from '../core/models/PokeAPI/pokemon.type';
 })
 export class MonsterPageComponent implements OnInit, AfterViewInit {
   volume = 0.5;
-  enMonsterName!: string;
-  monsterDetails$!: Observable<Pokemon>;
-  
-  @ViewChild('audioPlayer', { static: false }) audio!: ElementRef<HTMLAudioElement>;
-  
-  constructor(private route: ActivatedRoute, private pokeApi: PokeApiService) {
-    this.enMonsterName = this.route.snapshot.params['enMonsterName'];
+  urlParams = {
+    idMonster : '',
+    idPokeGen : '',
+    idDex: ''
   }
-  
+  monsterDetails$!: Observable<Pokemon>;
+
+  @ViewChild('audioPlayer', { static: false }) audio!: ElementRef<HTMLAudioElement>;
+
+  constructor(private route: ActivatedRoute, private pokeApi: PokeApiService) {
+    this.urlParams.idMonster = this.route.snapshot.params['idMonster'];
+    this.urlParams.idPokeGen = this.route.snapshot.params['idPokeGen'];
+    this.urlParams.idDex = this.route.snapshot.params['idDex'];
+  }
+
   ngOnInit(): void {
-    this.monsterDetails$ = this.pokeApi.getPokemonDetails(this.enMonsterName);
+    this.monsterDetails$ = this.pokeApi.getPokemonDetails(this.urlParams.idMonster);
   }
 
   ngAfterViewInit(): void {

@@ -7,6 +7,6 @@ import { MonsterListComponent } from './monster-list/monster-list.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'pokedexes', component: MonsterDexListPageComponent},
-  { path: 'pokedex/:region', component: MonsterListComponent},
-  { path: 'pokemon/:idDex/:enMonsterName', component: MonsterPageComponent}
+  { path: 'pokedex/:region', component: MonsterListComponent}, // region => pokedex id
+  { path: 'pokemon/:idMonster/:idPokeGen/:idDex', component: MonsterPageComponent} // idMonster => national pokemon id, idPokeGen => pokemon generation, idDex => pokedex id
 ];

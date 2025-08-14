@@ -20,12 +20,13 @@ export class MonsterService {
     return this.pokedexList;
   }
 
-  getPokedexPokemonGeneration(pokedexId: number) {
+  getPokedexPokemonGeneration(pokedexId: number): number | null {
     console.log('POKEDEX ID' + pokedexId);
     const poke = this.getPokedexList().find(
       (entry) => entry?.pokedexVariants.find(variant => variant.pokedexId == pokedexId)
     );
     console.log("GEN "+poke?.generation );
+    return (poke?.generation || null);
   }
 
   // TO DO
