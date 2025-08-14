@@ -1,3 +1,4 @@
+import { MonsterService } from './../core/services/monster.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { PokemonEntry } from '../core/models/PokeAPI/games.type';
 import { CommonModule } from '@angular/common';
@@ -13,21 +14,25 @@ import { preventTrailingSlashes } from '../core/utils/url';
 })
 export class MonsterTileComponent implements OnInit {
 
-  @Input() pokemon!: PokemonEntry
+  @Input() pokemon!: PokemonEntry;
+  @Input() idDex!: number;
   imageUrl!: string;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private MonsterService: MonsterService) {}
 
   ngOnInit(): void {
-    this.imageUrl = `${environment.SPRITE_URL}/pokemon/${this.getIdMonster(this.pokemon.pokemon_species.url)}.png`;
+    // this.imageUrl = `${environment.SPRITE_URL}/pokemon/${this.getIdMonster(this.pokemon.pokemon_species.url)}.png`;
+    // this.imageUrl = this.MonsterService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex)
+    // console.log(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex);
+    this.MonsterService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex);
   }
 
-  getIdMonster(url: string): string{
+  getIdMonster(url: string): number{
     let monsterUrl = preventTrailingSlashes(url).split('/');
-    return monsterUrl[monsterUrl.length - 1];
+    return parseInt(monsterUrl[monsterUrl.length - 1]);
   }
 
   goToMonsterPage(monsterName: string): void {
-    this.router.navigateByUrl(`/pokemon/${monsterName}`)
+    this.router.navigateByUrl(`/pokemon/${this.idDex}/${monsterName}`)
   }
 }

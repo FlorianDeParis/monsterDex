@@ -16,7 +16,7 @@ export class PokeApiService {
     return this.http.get<Pokedex>(`https://pokeapi.co/api/v2/pokedex/${idDex}/`);
   }
 
-  getPokemonDetails(monsterName: string): Observable<Pokemon> {
+  getPokemonDetails(monsterName: string|number): Observable<Pokemon> {
     return this.http.get<Pokemon>(`${environment.API_URL}/pokemon/${monsterName}`);
   }
 }

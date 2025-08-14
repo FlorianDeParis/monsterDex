@@ -1,6 +1,6 @@
 import { PokedexListEntry } from "../models/monsterDex.type";
 
-export const pokedexList: PokedexListEntry[] = [
+export const PokedexList: PokedexListEntry[] = [
   {
     label: 'Pokédex National',
     pokedexVariants: [
@@ -12,6 +12,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Kanto',
+    generation: 1,
     pokedexVariants: [
       {
         pokedexId: 2,
@@ -21,6 +22,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Johto',
+    generation: 2,
     pokedexVariants: [
       {
         pokedexId: 3,
@@ -30,6 +32,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex d\'Hoenn',
+    generation: 3,
     pokedexVariants: [
       {
         pokedexId: 4,
@@ -39,6 +42,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Sinoh',
+    generation: 4,
     pokedexVariants: [
       {
         pokedexId: 5,
@@ -52,6 +56,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Johto (Gen IV)',
+    generation: 4,
     pokedexVariants: [
       {
         pokedexId: 7,
@@ -61,6 +66,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex d\'Unys',
+    generation: 5,
     pokedexVariants:
     [
       {
@@ -75,6 +81,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Kalos',
+    generation: 6,
     pokedexVariants: [
       {
         pokedexId: 12,
@@ -92,6 +99,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex d\'Hoenn (Gen VI)',
+    generation: 6,
     pokedexVariants: [
       {
         pokedexId: 15,
@@ -101,6 +109,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex d\'Alola',
+    generation: 7,
     pokedexVariants: [
       {
         pokedexId: 16,
@@ -146,6 +155,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Galar',
+    generation: 8,
     pokedexVariants: [
       {
         pokedexId: 27,
@@ -163,6 +173,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex d\'Hisui',
+    generation: 8,
     pokedexVariants:
     [
       {
@@ -173,6 +184,7 @@ export const pokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Pokédex de Paldea',
+    generation: 9,
     pokedexVariants: [
       {
         pokedexId: 31,

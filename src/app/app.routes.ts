@@ -8,5 +8,5 @@ export const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'pokedexes', component: MonsterDexListPageComponent},
   { path: 'pokedex/:region', component: MonsterListComponent},
-  { path: 'pokemon/:enMonsterName', component: MonsterPageComponent}
+  { path: 'pokemon/:idDex/:enMonsterName', component: MonsterPageComponent}
 ];

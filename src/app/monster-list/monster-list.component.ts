@@ -5,6 +5,7 @@ import { Observable, tap } from 'rxjs';
 import { Pokedex } from '../core/models/PokeAPI/games.type';
 import { PokeApiService } from '../core/services/poke-api.service';
 import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
+import { MonsterService } from '../core/services/monster.service';
 
 @Component({
   selector: 'app-monster-list',
@@ -18,14 +19,19 @@ import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 export class MonsterListComponent implements OnInit {
   pokedex$!: Observable<Pokedex>;
   pokedexId!: number;
+  pokemonGeneration!: number;
 
-  constructor(private route: ActivatedRoute, private pokeApi: PokeApiService){
+  constructor(
+    private route: ActivatedRoute,
+    private pokeApi: PokeApiService,
+    private monsterService: MonsterService
+  ){
     this.pokedexId = this.route.snapshot.params['region'];
   }
 
   ngOnInit(): void {
-    this.pokedex$ = this.pokeApi.getDex(this.pokedexId).pipe(
-      tap(data => console.log(data))
-    );
+    this.pokedex$ = this.pokeApi.getDex(this.pokedexId);
+    // this.pokemonGeneration = this.monsterService.getPokedexPokemonGeneration(this.pokedexId);
+    this.monsterService.getPokedexPokemonGeneration(this.pokedexId);
   }
 }

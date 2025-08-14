@@ -4,7 +4,7 @@
     <h1 class="title">{{ pokedex.descriptions[0].description }}</h1>
     <ul class="pokeList">
       @for(pokemon_entry of pokedex.pokemon_entries; track pokemon_entry.entry_number) {
-        <app-monster-tile [pokemon]="pokemon_entry" />
+        <app-monster-tile [pokemon]="pokemon_entry" [idDex]="pokedexId" />
       }
     </ul>
   </div>

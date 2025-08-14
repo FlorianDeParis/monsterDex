@@ -1,5 +1,6 @@
 export interface PokedexListEntry {
   label: string;
+  generation?: number | null;
   pokedexVariants: PokedexListEntryVariant[];
 }
 
