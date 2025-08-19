@@ -3,6 +3,9 @@
     <source [src]="monsterDetails.cries.latest || monsterDetails.cries.legacy">
   }
 </audio>
-@if (monsterDetails$ | async; as monsterDetails) {
-  <h1>{{ monsterDetails.name }}</h1>
-}
+<section>
+
+  @if (monsterDetails$ | async; as monsterDetails) {
+    <h1>{{ monsterDetails.name }}</h1>
+  }
+</section>

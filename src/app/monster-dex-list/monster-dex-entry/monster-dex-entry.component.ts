@@ -2,6 +2,7 @@ import { PokedexListEntry, PokedexListEntryVariant } from '../../core/models/mon
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ToasterService } from '../../core/services/toaster.service';
 
 type dexEntry = (PokedexListEntry | PokedexListEntryVariant);
 
@@ -21,7 +22,7 @@ export class MonsterDexEntryComponent implements OnInit {
   label!: string;
   dexId!: number | null;
 
-  constructor(private route: Router) {}
+  constructor(private route: Router, private toaster: ToasterService) {}
 
   ngOnInit(): void {
     this.label = this.isMainEntry(this.dexEntry) ?
@@ -57,8 +58,10 @@ export class MonsterDexEntryComponent implements OnInit {
 
   handleClick(entry: dexEntry): void {
     if(this.isJustMainWithOneElement(entry)){
+      this.toaster.success(`Navigation vers le pokédex ${(entry as PokedexListEntry).pokedexVariants[0].pokedexVariantName}`);
       this.goToDex((entry as PokedexListEntry).pokedexVariants[0].pokedexId);
     } else if(this.isSubEntry(entry)){
+      this.toaster.success(`Navigation vers le pokédex ${(entry as PokedexListEntryVariant).pokedexVariantName}`);
       this.goToDex((entry as PokedexListEntryVariant).pokedexId);
     } else {
       this.toggleChildList();

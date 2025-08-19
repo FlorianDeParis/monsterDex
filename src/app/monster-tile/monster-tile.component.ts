@@ -22,7 +22,6 @@ export class MonsterTileComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('pokemon' + this.pokemon)
     this.pokemonGeneration = this.monsterService.getPokedexPokemonGeneration(this.idDex);
     this.imageUrl = `${environment.SPRITE_URL}/pokemon/${this.getIdMonster(this.pokemon.pokemon_species.url)}.png`;
     // this.imageUrl = this.MonsterService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex)

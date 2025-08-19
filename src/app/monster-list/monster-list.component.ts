@@ -23,14 +23,12 @@ export class MonsterListComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private pokeApi: PokeApiService,
-    private monsterService: MonsterService
+    private pokeApi: PokeApiService
   ){
     this.pokedexId = this.route.snapshot.params['region'];
   }
 
   ngOnInit(): void {
     this.pokedex$ = this.pokeApi.getDex(this.pokedexId);
-    this.pokemonGeneration = this.monsterService.getPokedexPokemonGeneration(this.pokedexId);
   }
 }
