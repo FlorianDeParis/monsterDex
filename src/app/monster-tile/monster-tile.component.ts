@@ -1,4 +1,4 @@
-import { MonsterService } from './../core/services/monster.service';
+import { PokedexService } from '../core/services/monster/pokedex.service';
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
 import { PokemonEntry } from '../core/models/PokeAPI/games.type';
 import { CommonModule } from '@angular/common';
@@ -18,15 +18,15 @@ export class MonsterTileComponent implements OnInit {
   pokemonGeneration!: number | null;
   imageUrl!: string;
 
-  constructor(private router: Router, private monsterService: MonsterService) {
+  constructor(private router: Router, private pokedexService: PokedexService) {
   }
 
   ngOnInit(): void {
-    this.pokemonGeneration = this.monsterService.getPokedexPokemonGeneration(this.idDex);
+    this.pokemonGeneration = this.pokedexService.getPokedexPokemonGeneration(this.idDex);
     this.imageUrl = `${environment.SPRITE_URL}/pokemon/${this.getIdMonster(this.pokemon.pokemon_species.url)}.png`;
-    // this.imageUrl = this.MonsterService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex)
+    // this.imageUrl = this.PokedexService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex)
     // console.log(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex);
-    //this.MonsterService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex);
+    //this.PokedexService.getPokemonArtworkByIdGeneration(this.getIdMonster(this.pokemon.pokemon_species.url), this.idDex);
   }
 
   getIdMonster(url: string): number{

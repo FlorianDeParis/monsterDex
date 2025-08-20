@@ -4,7 +4,7 @@ import { PokedexListEntry } from '../../core/models/monsterDex.type';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { MonsterDexEntryComponent } from '../monster-dex-entry/monster-dex-entry.component';
-import { MonsterService } from '../../core/services/monster.service';
+import { PokedexService } from '../../core/services/monster/pokedex.service';
 
 interface FlattenPokedexEntry {
   label: string;
@@ -28,8 +28,8 @@ export class MonsterDexListPageComponent {
   pokedexList!: PokedexListEntry[];
   pokedexListFlatten!: FlattenPokedexList;
 
-  constructor(private route: Router, private monsterService: MonsterService) {
-    this.pokedexList = this.monsterService.getPokedexList();
+  constructor(private route: Router, private pokedexService: PokedexService) {
+    this.pokedexList = this.pokedexService.getPokedexList();
   }
 
   goToDex(dexId: number):void {
