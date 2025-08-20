@@ -100,16 +100,19 @@ export interface PokemonSprites {
       front_shiny_female: string | null;
     };
   };
-  versions?: {
-    'generation-i': PokemonSprites_Gen_I;
-    'generation-ii': PokemonSprites_Gen_II;
-    'generation-iii': PokemonSprites_Gen_III;
-    'generation-iv': PokemonSprites_Gen_IV;
-    'generation-v': PokemonSprites_Gen_V;
-    'generation-vi': PokemonSprites_Gen_VI;
-    'generation-vii': PokemonSprites_Gen_VII;
-    'generation-viii': PokemonSprites_Gen_VIII;
-  }
+  versions?: PokemonSpritesVersions
+}
+
+
+export interface PokemonSpritesVersions {
+  'generation-i': PokemonSprites_Gen_I;
+  'generation-ii': PokemonSprites_Gen_II;
+  'generation-iii': PokemonSprites_Gen_III;
+  'generation-iv': PokemonSprites_Gen_IV;
+  'generation-v': PokemonSprites_Gen_V;
+  'generation-vi': PokemonSprites_Gen_VI;
+  'generation-vii': PokemonSprites_Gen_VII;
+  'generation-viii': PokemonSprites_Gen_VIII;
 }
 
 export interface PokemonSprites_Gen_I {

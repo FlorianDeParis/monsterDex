@@ -4,11 +4,8 @@
     <h1 class="title">{{ pokedex.descriptions[0].description }}</h1>
     <ul class="pokeList">
       @for(pokemon_entry of pokedex.pokemon_entries; track pokemon_entry.entry_number) {
-        <!--{{ pokedexId | json }}-->
-        <!--{{ pokemon_entry | json }}-->
         <app-monster-tile [pokemon]="pokemon_entry" [idDex]="pokedexId"/>
       }
     </ul>
-    {{ pokedex.descriptions | json }}
   </div>
 </section>
