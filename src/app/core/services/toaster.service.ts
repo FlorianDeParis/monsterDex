@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Notyf } from 'Notyf';
+import { Notyf } from 'notyf';
 
 @Injectable({
   providedIn: 'root'
