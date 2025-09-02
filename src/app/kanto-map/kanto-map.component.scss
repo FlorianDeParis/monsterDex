@@ -1,0 +1,18 @@
+#kantoMap{
+  background-image: url('../../../public/assets/img/maps/kanto.png');
+  background-repeat: no-repeat;
+  // width: 160px;
+  // height: 144px;
+  tr{
+    td{
+      width: 8px;
+      height: 8px;
+      box-shadow: inset 0px 0px 0px 1px #00000013;
+      aspect-ratio: 1;
+      line-height: 1;
+      font-size: 0;
+    }
+  }
+
+
+}

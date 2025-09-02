@@ -1,0 +1,17 @@
+<p>kanto-map works!</p>
+
+<table id="kantoMap">
+  @for(currentRow of maxHeight; track ('row_'+currentRow)){
+    <tr>
+      @for (currentCol of maxWidth; track ('col_'+currentCol)) {
+        <td>
+          {{currentCol}}
+          {{currentRow}}
+          @if(checkTile(currentCol, currentRow)){
+            <app-tile-map />
+          }
+        </td>
+      }
+    </tr>
+  }
+</table>
