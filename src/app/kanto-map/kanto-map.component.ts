@@ -16,7 +16,8 @@ export class KantoMapComponent implements OnInit{
   places = {
     'bourg-palette': [4,11],
     'jadielle': [4,8],
-    'safrania': [12,5]
+    'safrania': [12,5],
+    'route-victoire': [2,4],
   }
 
   constructor(){}
