@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KantoMapComponent } from './kanto-map.component';
+import { WorldMapComponent } from './world-map.component';
 
-describe('KantoMapComponent', () => {
-  let component: KantoMapComponent;
-  let fixture: ComponentFixture<KantoMapComponent>;
+describe('WorldMapComponent', () => {
+  let component: WorldMapComponent;
+  let fixture: ComponentFixture<WorldMapComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [KantoMapComponent]
+      imports: [WorldMapComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(KantoMapComponent);
+    fixture = TestBed.createComponent(WorldMapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

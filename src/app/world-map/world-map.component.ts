@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { TileMapComponent } from "./tile-map/tile-map.component";
 
 @Component({
-  selector: 'app-kanto-map',
+  selector: 'app-world-map',
   imports: [TileMapComponent],
-  templateUrl: './kanto-map.component.html',
-  styleUrl: './kanto-map.component.scss'
+  templateUrl: './world-map.component.html',
+  styleUrl: './world-map.component.scss'
 })
-export class KantoMapComponent implements OnInit{
+export class WorldMapComponent implements OnInit{
   qtyWidthDiv: number = 20
   qtyHeightDiv: number = 17
   maxHeight!: any[]
