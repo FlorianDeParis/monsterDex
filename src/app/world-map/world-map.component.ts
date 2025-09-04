@@ -1,6 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
 
+interface Position {
+  x: number;
+  y: number;
+}
+
+interface Places {
+  [key: string]: Position;
+}
+
 @Component({
   selector: 'app-world-map',
   imports: [TileMapComponent],
@@ -8,16 +17,16 @@ import { TileMapComponent } from './tile-map/tile-map.component';
   styleUrl: './world-map.component.scss',
 })
 export class WorldMapComponent implements OnInit {
-  qtyWidthDiv: number = 20;
-  qtyHeightDiv: number = 17;
+  qtyWidthDiv = 20;
+  qtyHeightDiv = 17;
   maxHeight!: any[];
   maxWidth!: any[];
 
-  places = {
-    'bourg-palette': [4, 11],
-    jadielle: [4, 8],
-    safrania: [12, 5],
-    'route-victoire': [2, 4],
+  places: Places = {
+    'bourg-palette': { x: 4, y: 11 },
+    jadielle: { x: 4, y: 8 },
+    safrania: { x: 12, y: 5 },
+    'route-victoire': { x: 2, y: 4 },
   };
 
   constructor() {}
@@ -28,9 +37,10 @@ export class WorldMapComponent implements OnInit {
   }
 
   checkTile(x: number, y: number): boolean {
-    const hasAPlace = Object.entries(this.places).filter(
-      (place) => place[1][0] == x && place[1][1] == y,
+    return Boolean(
+      Object.values(this.places).find(
+        (position) => position.x === x && position.y === y,
+      ),
     );
-    return hasAPlace.length > 0;
   }
 }
