@@ -9,12 +9,9 @@ import { PokedexService } from '../core/services/monster/pokedex.service';
 
 @Component({
   selector: 'app-monster-list',
-  imports: [
-    CommonModule,
-    MonsterTileComponent
-  ],
+  imports: [CommonModule, MonsterTileComponent],
   templateUrl: './monster-list.component.html',
-  styleUrl: './monster-list.component.scss'
+  styleUrl: './monster-list.component.scss',
 })
 export class MonsterListComponent implements OnInit {
   pokedex$!: Observable<Pokedex>;
@@ -23,8 +20,8 @@ export class MonsterListComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private pokeApi: PokeApiService
-  ){
+    private pokeApi: PokeApiService,
+  ) {
     this.pokedexId = this.route.snapshot.params['region'];
   }
 

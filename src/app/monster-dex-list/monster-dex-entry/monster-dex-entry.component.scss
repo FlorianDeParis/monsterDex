@@ -1,4 +1,4 @@
-.pokedexEntry{
+.pokedexEntry {
   --dex-entry-bg: #eebe2e;
   --dex-entry-border-illuminated: #f0e277;
   --dex-entry-border-shadded: #ca942d;
@@ -27,13 +27,13 @@
   background-color: var(--dex-entry-bg);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  color: #FFF;
+  color: #fff;
   text-shadow: 1px 1px 2px #000000;
   transition: padding-left 0.1s linear;
-  &.child{
+  &.child {
     padding-left: 3rem;
   }
-  .badge{
+  .badge {
     flex-shrink: 0;
     display: inline-block;
     background-color: var(--dex-entry-bg-badge);
@@ -43,19 +43,19 @@
     height: 15px;
   }
   &:hover,
-  &:focus{
+  &:focus {
     border-top: 1px solid var(--dex-entry-hovered-border-illuminated);
     border-right: 1px solid var(--dex-entry-hovered-border-illuminated);
     border-bottom: 1px solid var(--dex-entry-hovered-border-shadded);
     background-color: var(--dex-entry-hovered-bg);
-    .badge{
+    .badge {
       background-color: var(--dex-entry-hovered-bg-badge);
       border-top: 1px solid var(--dex-entry-hovered-bg-badge-shadded);
       border-left: 1px solid var(--dex-entry-hovered-bg-badge-shadded);
     }
   }
 
-  &.active:not(.back){
+  &.active:not(.back) {
     --dex-entry-bg: #eece6b;
     --dex-entry-border-illuminated: #f7ea8f;
     --dex-entry-border-shadded: #d5b150;
@@ -64,9 +64,9 @@
     padding-left: 3rem;
   }
 
-  &-subList{
+  &-subList {
     display: none;
-    &.active{
+    &.active {
       display: flex;
       flex-direction: column;
       margin-top: 5px;
@@ -74,7 +74,7 @@
     }
   }
 
-  &.back{
+  &.back {
     --dex-entry-bg: #afa578;
     --dex-entry-border-illuminated: #cfd1af;
     --dex-entry-border-shadded: #7b7a55;

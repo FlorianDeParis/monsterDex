@@ -1,12 +1,11 @@
-
-
-#pokedexList{
+#pokedexList {
   $bg-width: 1.6rem;
-  $bg-url: '../../../../public/assets/img/bg.png';
-
+  $bg-url: "../../../../public/assets/img/bg.png";
 
   @keyframes bg-scrolling-reverse {
-    100% { background-position: -#{$bg-width} 0; }
+    100% {
+      background-position: -#{$bg-width} 0;
+    }
   }
 
   overflow-x: hidden;
@@ -14,22 +13,23 @@
   min-height: calc(100vh - 6rem);
 
   background: url($bg-url) #f4f8f6 repeat 0 0;
-  animation: bg-scrolling-reverse .1s infinite;
+  animation: bg-scrolling-reverse 0.1s infinite;
   animation-timing-function: linear;
 
-  &:before{
+  &:before {
     position: absolute;
-    content: ' ';
+    content: " ";
     width: 222px;
     height: 300px;
     right: 0;
     top: 50px;
     transform: translateX(50%);
-    background: url('../../../../public/assets/img/pokenav-outline.svg') no-repeat;
+    background: url("../../../../public/assets/img/pokenav-outline.svg")
+      no-repeat;
     opacity: 0.2;
   }
 
-  .container{
+  .container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -38,5 +38,3 @@
     margin-top: 1.5rem;
   }
 }
-
-

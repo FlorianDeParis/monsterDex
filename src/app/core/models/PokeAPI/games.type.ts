@@ -1,4 +1,4 @@
-import { Description, Name, NamedAPIResource } from "./utilities.type"
+import { Description, Name, NamedAPIResource } from './utilities.type';
 
 export interface PokemonEntry {
   entry_number: number;

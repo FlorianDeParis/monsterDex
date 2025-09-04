@@ -1,36 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { TileMapComponent } from "./tile-map/tile-map.component";
+import { TileMapComponent } from './tile-map/tile-map.component';
 
 @Component({
   selector: 'app-world-map',
   imports: [TileMapComponent],
   templateUrl: './world-map.component.html',
-  styleUrl: './world-map.component.scss'
+  styleUrl: './world-map.component.scss',
 })
-export class WorldMapComponent implements OnInit{
-  qtyWidthDiv: number = 20
-  qtyHeightDiv: number = 17
-  maxHeight!: any[]
-  maxWidth!: any[]
+export class WorldMapComponent implements OnInit {
+  qtyWidthDiv: number = 20;
+  qtyHeightDiv: number = 17;
+  maxHeight!: any[];
+  maxWidth!: any[];
 
   places = {
-    'bourg-palette': [4,11],
-    'jadielle': [4,8],
-    'safrania': [12,5],
-    'route-victoire': [2,4],
-  }
+    'bourg-palette': [4, 11],
+    jadielle: [4, 8],
+    safrania: [12, 5],
+    'route-victoire': [2, 4],
+  };
 
-  constructor(){}
+  constructor() {}
+
   ngOnInit() {
-    this.maxHeight = Array.from(Array(this.qtyHeightDiv).keys());
-    this.maxWidth = Array.from(Array(this.qtyWidthDiv).keys());
+    this.maxHeight = [...Array(this.qtyHeightDiv).keys()];
+    this.maxWidth = [...Array(this.qtyWidthDiv).keys()];
   }
 
-  checkTile(x: number, y: number): boolean{
+  checkTile(x: number, y: number): boolean {
     const hasAPlace = Object.entries(this.places).filter(
-      (place) => (place[1][0] == x && place[1][1] == y)
-    )
-    console.log(hasAPlace.length > 0);
-    return (hasAPlace.length > 0) ;
+      (place) => place[1][0] == x && place[1][1] == y,
+    );
+    return hasAPlace.length > 0;
   }
 }

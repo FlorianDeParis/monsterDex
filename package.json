@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "prettier . --check"
+    "lint": "prettier . --check",
+    "format": "prettier --write ."
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,6 @@
     "@angular/router": "^19.0.0",
     "@angular/service-worker": "^19.0.0",
     "notyf": "^3.10.0",
-    "prettier": "^3.5.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "typescript-roman-numbers-converter": "^1.2.3",
@@ -38,6 +38,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "^3.6.2",
     "typescript": "~5.6.2"
   }
 }

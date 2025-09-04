@@ -3,7 +3,7 @@ export interface Description {
   langague: {
     name: string;
     url: string;
-  }
+  };
 }
 
 export interface Name {

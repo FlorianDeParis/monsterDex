@@ -8,9 +8,8 @@ describe('MonsterDexListPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MonsterDexListPageComponent]
-    })
-    .compileComponents();
+      imports: [MonsterDexListPageComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MonsterDexListPageComponent);
     component = fixture.componentInstance;

@@ -6,17 +6,20 @@ import { Observable } from 'rxjs';
 import { Pokemon } from '../models/PokeAPI/pokemon.type';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PokeApiService {
-
   constructor(private http: HttpClient) {}
 
   getDex(idDex: number): Observable<Pokedex> {
-    return this.http.get<Pokedex>(`https://pokeapi.co/api/v2/pokedex/${idDex}/`);
+    return this.http.get<Pokedex>(
+      `https://pokeapi.co/api/v2/pokedex/${idDex}/`,
+    );
   }
 
-  getPokemonDetails(monsterName: string|number): Observable<Pokemon> {
-    return this.http.get<Pokemon>(`${environment.API_URL}/pokemon/${monsterName}`);
+  getPokemonDetails(monsterName: string | number): Observable<Pokemon> {
+    return this.http.get<Pokemon>(
+      `${environment.API_URL}/pokemon/${monsterName}`,
+    );
   }
 }

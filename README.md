@@ -1,5 +1,4 @@
-<img src="https://raw.githubusercontent.com/FlorianDeParis/monsterDex/refs/heads/master/public/assets/img/logo.png" height="50"> 
-
+<img src="https://raw.githubusercontent.com/FlorianDeParis/monsterDex/refs/heads/master/public/assets/img/logo.png" height="50">
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 

@@ -1,7 +1,7 @@
-import { NamedAPIResource, VersionGameIndex } from "./utilities.type"
+import { NamedAPIResource, VersionGameIndex } from './utilities.type';
 
 export interface Pokemon {
-  abilities: PokemonAbility[],
+  abilities: PokemonAbility[];
   base_experience: number;
   cries: PokemonCries;
   forms: NamedAPIResource[];
@@ -22,7 +22,7 @@ export interface Pokemon {
   weight: number;
 }
 
-export interface PokemonAbility  {
+export interface PokemonAbility {
   ability: NamedAPIResource;
   is_hidden: boolean;
   slot: number;
@@ -85,7 +85,7 @@ export interface PokemonSprites {
       front_shiny: string | null;
       front_shiny_female: string | null;
     };
-    'official-artwork'?:{
+    'official-artwork'?: {
       front_default: string | null;
       front_shiny: string | null;
     };
@@ -100,9 +100,8 @@ export interface PokemonSprites {
       front_shiny_female: string | null;
     };
   };
-  versions?: PokemonSpritesVersions
+  versions?: PokemonSpritesVersions;
 }
-
 
 export interface PokemonSpritesVersions {
   'generation-i': PokemonSprites_Gen_I;
@@ -116,7 +115,7 @@ export interface PokemonSpritesVersions {
 }
 
 export interface PokemonSprites_Gen_I {
-  'red-blue':{
+  'red-blue': {
     back_default: string | null;
     back_gray: string | null;
     back_transparent: string | null;
@@ -124,7 +123,7 @@ export interface PokemonSprites_Gen_I {
     front_gray: string | null;
     front_transparent: string | null;
   };
-  'yellow':{
+  yellow: {
     back_default: string | null;
     back_gray: string | null;
     back_transparent: string | null;
@@ -135,7 +134,7 @@ export interface PokemonSprites_Gen_I {
 }
 
 export interface PokemonSprites_Gen_II {
-  crystal:{
+  crystal: {
     back_default: string | null;
     back_shiny: string | null;
     back_shiny_transparent: string | null;
@@ -145,14 +144,14 @@ export interface PokemonSprites_Gen_II {
     front_shiny_transparent: string | null;
     front_transparent: string | null;
   };
-  gold:{
+  gold: {
     back_default: string | null;
     back_shiny: string | null;
     front_default: string | null;
     front_shiny: string | null;
     front_transparent: string | null;
   };
-  silver:{
+  silver: {
     back_default: string | null;
     back_shiny: string | null;
     front_default: string | null;
@@ -162,17 +161,17 @@ export interface PokemonSprites_Gen_II {
 }
 
 export interface PokemonSprites_Gen_III {
-  emerald:{
+  emerald: {
     front_default: string | null;
     front_shiny: string | null;
   };
-  'firered-leafgreen':{
+  'firered-leafgreen': {
     back_default: string | null;
     back_shiny: string | null;
     front_default: string | null;
     front_shiny: string | null;
   };
-  'ruby-sapphire':{
+  'ruby-sapphire': {
     back_default: string | null;
     back_shiny: string | null;
     front_default: string | null;
@@ -181,7 +180,7 @@ export interface PokemonSprites_Gen_III {
 }
 
 export interface PokemonSprites_Gen_IV {
-  'diamond-pearl':{
+  'diamond-pearl': {
     back_default: string | null;
     back_female: string | null;
     back_shiny: string | null;
@@ -191,7 +190,7 @@ export interface PokemonSprites_Gen_IV {
     front_shiny: string | null;
     front_shiny_female: string | null;
   };
-  'heartgold-soulsilver':{
+  'heartgold-soulsilver': {
     back_default: string | null;
     back_female: string | null;
     back_shiny: string | null;
@@ -201,7 +200,7 @@ export interface PokemonSprites_Gen_IV {
     front_shiny: string | null;
     front_shiny_female: string | null;
   };
-  'platinum':{
+  platinum: {
     back_default: string | null;
     back_female: string | null;
     back_shiny: string | null;
@@ -214,7 +213,7 @@ export interface PokemonSprites_Gen_IV {
 }
 
 export interface PokemonSprites_Gen_V {
-  'black-white':{
+  'black-white': {
     animated: {
       back_default: string | null;
       back_female: string | null;
@@ -237,13 +236,13 @@ export interface PokemonSprites_Gen_V {
 }
 
 export interface PokemonSprites_Gen_VI {
-  'omegaruby-alphasapphire':{
+  'omegaruby-alphasapphire': {
     front_default: string | null;
     front_female: string | null;
     front_shiny: string | null;
     front_shiny_female: string | null;
   };
-  'x-y':{
+  'x-y': {
     front_default: string | null;
     front_female: string | null;
     front_shiny: string | null;
@@ -252,11 +251,11 @@ export interface PokemonSprites_Gen_VI {
 }
 
 export interface PokemonSprites_Gen_VII {
-  icons:{
+  icons: {
     front_default: string | null;
     front_female: string | null;
   };
-  'ultra-sun-ultra-moon':{
+  'ultra-sun-ultra-moon': {
     front_default: string | null;
     front_female: string | null;
     front_shiny: string | null;
@@ -265,7 +264,7 @@ export interface PokemonSprites_Gen_VII {
 }
 
 export interface PokemonSprites_Gen_VIII {
-  icons:{
+  icons: {
     front_default: string | null;
     front_female: string | null;
   };

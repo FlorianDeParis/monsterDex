@@ -8,9 +8,8 @@ describe('MonsterTileComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MonsterTileComponent]
-    })
-    .compileComponents();
+      imports: [MonsterTileComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(MonsterTileComponent);
     component = fixture.componentInstance;

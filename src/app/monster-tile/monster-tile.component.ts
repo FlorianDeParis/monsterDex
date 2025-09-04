@@ -8,9 +8,9 @@ import { preventTrailingSlashes } from '../core/utils/url';
 
 @Component({
   selector: 'app-monster-tile',
-  imports: [ CommonModule ],
+  imports: [CommonModule],
   templateUrl: './monster-tile.component.html',
-  styleUrl: './monster-tile.component.scss'
+  styleUrl: './monster-tile.component.scss',
 })
 export class MonsterTileComponent implements OnInit {
   @Input() pokemon!: PokemonEntry;
@@ -19,20 +19,29 @@ export class MonsterTileComponent implements OnInit {
   pokemonGeneration!: number | null;
   imageUrl!: string;
 
-  constructor(private router: Router, private pokedexService: PokedexService) {}
+  constructor(
+    private router: Router,
+    private pokedexService: PokedexService,
+  ) {}
 
   ngOnInit(): void {
-    this.pokemonNationalId = this.getIdMonster(this.pokemon.pokemon_species.url);
-    this.pokemonGeneration = this.pokedexService.getPokedexPokemonGeneration(this.idDex);
+    this.pokemonNationalId = this.getIdMonster(
+      this.pokemon.pokemon_species.url,
+    );
+    this.pokemonGeneration = this.pokedexService.getPokedexPokemonGeneration(
+      this.idDex,
+    );
     this.imageUrl = `${environment.SPRITE_URL}/pokemon/${this.pokemonNationalId}.png`;
   }
 
-  getIdMonster(url: string): number{
+  getIdMonster(url: string): number {
     let monsterUrl = preventTrailingSlashes(url).split('/');
     return parseInt(monsterUrl[monsterUrl.length - 1]);
   }
 
   goToMonsterPage(): void {
-    this.router.navigateByUrl(`/pokemon/${this.pokemonNationalId}/${this.pokemonGeneration}/${this.idDex}`)
+    this.router.navigateByUrl(
+      `/pokemon/${this.pokemonNationalId}/${this.pokemonGeneration}/${this.idDex}`,
+    );
   }
 }

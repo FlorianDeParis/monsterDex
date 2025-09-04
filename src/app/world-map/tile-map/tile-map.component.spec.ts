@@ -8,9 +8,8 @@ describe('TileMapComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TileMapComponent]
-    })
-    .compileComponents();
+      imports: [TileMapComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TileMapComponent);
     component = fixture.componentInstance;

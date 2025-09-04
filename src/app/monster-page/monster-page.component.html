@@ -1,20 +1,25 @@
 <audio class="pokemonCry" autoplay #audioPlayer>
   @if (monsterDetails$ | async; as monsterDetails) {
-    <source [src]="monsterDetails.cries.latest || monsterDetails.cries.legacy">
+    <source
+      [src]="monsterDetails.cries.latest || monsterDetails.cries.legacy"
+    />
   }
 </audio>
 <section>
   @if (monsterDetails$ | async; as monsterDetails) {
     <h1>{{ monsterDetails.name }}</h1>
-    <img [src]="pokemonSelectedSprite">
+    <img [src]="pokemonSelectedSprite" />
 
-
-    @if(monsterDetails.stats){
+    @if (monsterDetails.stats) {
       Stats:
-      @for(statGroup of monsterDetails.stats; track statGroup.stat.name){
+      @for (statGroup of monsterDetails.stats; track statGroup.stat.name) {
         <div>
           <p>{{ statGroup.stat.name }} : {{ statGroup.base_stat }}</p>
-          <progress [id]='("stat_" + statGroup.stat.name)' max="255" [value]="statGroup.base_stat"></progress>
+          <progress
+            [id]="'stat_' + statGroup.stat.name"
+            max="255"
+            [value]="statGroup.base_stat"
+          ></progress>
         </div>
       }
     }
