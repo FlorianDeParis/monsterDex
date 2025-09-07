@@ -1,0 +1,1063 @@
+{
+  "region": [
+    {
+      "name": "kanto",
+      "id": 1,
+      "locations": [
+        {
+          "name": "celadon-city",
+          "locationareas": [
+            {
+              "id": 283,
+              "name": "celadon-city-area"
+            },
+            {
+              "id": 763,
+              "name": "celadon-city-celadon-mansion"
+            }
+          ]
+        },
+        {
+          "name": "cerulean-city",
+          "locationareas": [
+            {
+              "id": 281,
+              "name": "cerulean-city-area"
+            }
+          ]
+        },
+        {
+          "name": "cinnabar-island",
+          "locationareas": [
+            {
+              "id": 279,
+              "name": "cinnabar-island-area"
+            },
+            {
+              "id": 833,
+              "name": "cinnabar-island-cinnabar-lab"
+            }
+          ]
+        },
+        {
+          "name": "digletts-cave",
+          "locationareas": [
+            {
+              "id": 317,
+              "name": "digletts-cave-area"
+            }
+          ]
+        },
+        {
+          "name": "fuchsia-city",
+          "locationareas": [
+            {
+              "id": 284,
+              "name": "fuchsia-city-area"
+            }
+          ]
+        },
+        {
+          "name": "mt-moon",
+          "locationareas": [
+            {
+              "id": 256,
+              "name": "mt-moon-mt-moon-square"
+            },
+            {
+              "id": 290,
+              "name": "mt-moon-1f"
+            },
+            {
+              "id": 291,
+              "name": "mt-moon-2f"
+            },
+            {
+              "id": 326,
+              "name": "mt-moon-b1f"
+            },
+            {
+              "id": 327,
+              "name": "mt-moon-b2f"
+            }
+          ]
+        },
+        {
+          "name": "pallet-town",
+          "locationareas": [
+            {
+              "id": 285,
+              "name": "pallet-town-area"
+            }
+          ]
+        },
+        {
+          "name": "rock-tunnel",
+          "locationareas": [
+            {
+              "id": 292,
+              "name": "rock-tunnel-1f"
+            },
+            {
+              "id": 293,
+              "name": "rock-tunnel-b1f"
+            },
+            {
+              "id": 328,
+              "name": "rock-tunnel-b2f"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-1",
+          "locationareas": [
+            {
+              "id": 295,
+              "name": "kanto-route-1-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-10",
+          "locationareas": [
+            {
+              "id": 304,
+              "name": "kanto-route-10-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-11",
+          "locationareas": [
+            {
+              "id": 305,
+              "name": "kanto-route-11-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-12",
+          "locationareas": [
+            {
+              "id": 276,
+              "name": "kanto-route-12-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-13",
+          "locationareas": [
+            {
+              "id": 306,
+              "name": "kanto-route-13-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-14",
+          "locationareas": [
+            {
+              "id": 307,
+              "name": "kanto-route-14-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-15",
+          "locationareas": [
+            {
+              "id": 308,
+              "name": "kanto-route-15-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-16",
+          "locationareas": [
+            {
+              "id": 309,
+              "name": "kanto-route-16-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-17",
+          "locationareas": [
+            {
+              "id": 310,
+              "name": "kanto-route-17-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-18",
+          "locationareas": [
+            {
+              "id": 311,
+              "name": "kanto-route-18-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-sea-route-19",
+          "locationareas": [
+            {
+              "id": 277,
+              "name": "kanto-sea-route-19-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-2",
+          "locationareas": [
+            {
+              "id": 296,
+              "name": "kanto-route-2-south-towards-viridian-city"
+            },
+            {
+              "id": 320,
+              "name": "kanto-route-2-north-towards-pewter-city"
+            }
+          ]
+        },
+        {
+          "name": "kanto-sea-route-20",
+          "locationareas": [
+            {
+              "id": 278,
+              "name": "kanto-sea-route-20-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-sea-route-21",
+          "locationareas": [
+            {
+              "id": 312,
+              "name": "kanto-sea-route-21-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-22",
+          "locationareas": [
+            {
+              "id": 313,
+              "name": "kanto-route-22-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-24",
+          "locationareas": [
+            {
+              "id": 314,
+              "name": "kanto-route-24-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-25",
+          "locationareas": [
+            {
+              "id": 315,
+              "name": "kanto-route-25-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-26",
+          "locationareas": [
+            {
+              "id": 287,
+              "name": "kanto-route-26-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-27",
+          "locationareas": [
+            {
+              "id": 288,
+              "name": "kanto-route-27-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-28",
+          "locationareas": [
+            {
+              "id": 289,
+              "name": "kanto-route-28-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-3",
+          "locationareas": [
+            {
+              "id": 297,
+              "name": "kanto-route-3-area"
+            },
+            {
+              "id": 832,
+              "name": "kanto-route-3-pokemon-center"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-4",
+          "locationareas": [
+            {
+              "id": 298,
+              "name": "kanto-route-4-area"
+            },
+            {
+              "id": 761,
+              "name": "kanto-route-4-pokemon-center"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-5",
+          "locationareas": [
+            {
+              "id": 299,
+              "name": "kanto-route-5-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-6",
+          "locationareas": [
+            {
+              "id": 300,
+              "name": "kanto-route-6-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-7",
+          "locationareas": [
+            {
+              "id": 301,
+              "name": "kanto-route-7-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-8",
+          "locationareas": [
+            {
+              "id": 302,
+              "name": "kanto-route-8-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-9",
+          "locationareas": [
+            {
+              "id": 303,
+              "name": "kanto-route-9-area"
+            }
+          ]
+        },
+        {
+          "name": "seafoam-islands",
+          "locationareas": [
+            {
+              "id": 258,
+              "name": "seafoam-islands-1f"
+            },
+            {
+              "id": 259,
+              "name": "seafoam-islands-b1f"
+            },
+            {
+              "id": 260,
+              "name": "seafoam-islands-b2f"
+            },
+            {
+              "id": 261,
+              "name": "seafoam-islands-b3f"
+            },
+            {
+              "id": 262,
+              "name": "seafoam-islands-b4f"
+            }
+          ]
+        },
+        {
+          "name": "cerulean-cave",
+          "locationareas": [
+            {
+              "id": 323,
+              "name": "cerulean-cave-1f"
+            },
+            {
+              "id": 324,
+              "name": "cerulean-cave-2f"
+            },
+            {
+              "id": 325,
+              "name": "cerulean-cave-b1f"
+            }
+          ]
+        },
+        {
+          "name": "vermilion-city",
+          "locationareas": [
+            {
+              "id": 282,
+              "name": "vermilion-city-area"
+            },
+            {
+              "id": 349,
+              "name": "vermilion-city-ss-anne-dock"
+            }
+          ]
+        },
+        {
+          "name": "kanto-victory-road-1",
+          "locationareas": [
+            {
+              "id": 294,
+              "name": "kanto-victory-road-1-1f"
+            },
+            {
+              "id": 318,
+              "name": "kanto-victory-road-1-2f"
+            },
+            {
+              "id": 319,
+              "name": "kanto-victory-road-1-3f"
+            }
+          ]
+        },
+        {
+          "name": "viridian-city",
+          "locationareas": [
+            {
+              "id": 280,
+              "name": "viridian-city-area"
+            }
+          ]
+        },
+        {
+          "name": "viridian-forest",
+          "locationareas": [
+            {
+              "id": 321,
+              "name": "viridian-forest-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-route-23",
+          "locationareas": [
+            {
+              "id": 329,
+              "name": "kanto-route-23-area"
+            }
+          ]
+        },
+        {
+          "name": "power-plant",
+          "locationareas": [
+            {
+              "id": 330,
+              "name": "power-plant-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-victory-road-2",
+          "locationareas": [
+            {
+              "id": 331,
+              "name": "kanto-victory-road-2-1f"
+            },
+            {
+              "id": 332,
+              "name": "kanto-victory-road-2-2f"
+            },
+            {
+              "id": 333,
+              "name": "kanto-victory-road-2-3f"
+            }
+          ]
+        },
+        {
+          "name": "pokemon-tower",
+          "locationareas": [
+            {
+              "id": 334,
+              "name": "pokemon-tower-1f"
+            },
+            {
+              "id": 335,
+              "name": "pokemon-tower-2f"
+            },
+            {
+              "id": 336,
+              "name": "pokemon-tower-3f"
+            },
+            {
+              "id": 337,
+              "name": "pokemon-tower-4f"
+            },
+            {
+              "id": 338,
+              "name": "pokemon-tower-5f"
+            },
+            {
+              "id": 339,
+              "name": "pokemon-tower-6f"
+            },
+            {
+              "id": 340,
+              "name": "pokemon-tower-7f"
+            }
+          ]
+        },
+        {
+          "name": "pokemon-mansion",
+          "locationareas": [
+            {
+              "id": 341,
+              "name": "pokemon-mansion-1f"
+            },
+            {
+              "id": 342,
+              "name": "pokemon-mansion-2f"
+            },
+            {
+              "id": 343,
+              "name": "pokemon-mansion-3f"
+            },
+            {
+              "id": 344,
+              "name": "pokemon-mansion-b1f"
+            }
+          ]
+        },
+        {
+          "name": "kanto-safari-zone",
+          "locationareas": [
+            {
+              "id": 345,
+              "name": "kanto-safari-zone-middle"
+            },
+            {
+              "id": 346,
+              "name": "kanto-safari-zone-area-1-east"
+            },
+            {
+              "id": 347,
+              "name": "kanto-safari-zone-area-2-north"
+            },
+            {
+              "id": 348,
+              "name": "kanto-safari-zone-area-3-west"
+            }
+          ]
+        },
+        {
+          "name": "pewter-city",
+          "locationareas": []
+        },
+        {
+          "name": "lavender-town",
+          "locationareas": []
+        },
+        {
+          "name": "indigo-plateau",
+          "locationareas": []
+        },
+        {
+          "name": "saffron-city",
+          "locationareas": [
+            {
+              "id": 762,
+              "name": "saffron-city-fighting-dojo"
+            },
+            {
+              "id": 764,
+              "name": "saffron-city-silph-co-7f"
+            },
+            {
+              "id": 835,
+              "name": "saffron-city-silph-co"
+            }
+          ]
+        },
+        {
+          "name": "monean-chamber",
+          "locationareas": [
+            {
+              "id": 450,
+              "name": "monean-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "liptoo-chamber",
+          "locationareas": [
+            {
+              "id": 451,
+              "name": "liptoo-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "weepth-chamber",
+          "locationareas": [
+            {
+              "id": 452,
+              "name": "weepth-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "dilford-chamber",
+          "locationareas": [
+            {
+              "id": 453,
+              "name": "dilford-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "scufib-chamber",
+          "locationareas": [
+            {
+              "id": 454,
+              "name": "scufib-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "rixy-chamber",
+          "locationareas": [
+            {
+              "id": 455,
+              "name": "rixy-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "viapos-chamber",
+          "locationareas": [
+            {
+              "id": 456,
+              "name": "viapos-chamber-area"
+            }
+          ]
+        },
+        {
+          "name": "ss-anne",
+          "locationareas": [
+            {
+              "id": 461,
+              "name": "ss-anne-area"
+            }
+          ]
+        },
+        {
+          "name": "mt-ember",
+          "locationareas": [
+            {
+              "id": 488,
+              "name": "mt-ember-area"
+            },
+            {
+              "id": 489,
+              "name": "mt-ember-cave"
+            },
+            {
+              "id": 490,
+              "name": "mt-ember-inside"
+            },
+            {
+              "id": 491,
+              "name": "mt-ember-1f-cave-behind-team-rocket"
+            },
+            {
+              "id": 492,
+              "name": "mt-ember-b1f"
+            },
+            {
+              "id": 493,
+              "name": "mt-ember-b2f"
+            },
+            {
+              "id": 494,
+              "name": "mt-ember-b3f"
+            },
+            {
+              "id": 825,
+              "name": "mt-ember-summit"
+            }
+          ]
+        },
+        {
+          "name": "berry-forest",
+          "locationareas": [
+            {
+              "id": 495,
+              "name": "berry-forest-area"
+            }
+          ]
+        },
+        {
+          "name": "icefall-cave",
+          "locationareas": [
+            {
+              "id": 496,
+              "name": "icefall-cave-entrance"
+            },
+            {
+              "id": 497,
+              "name": "icefall-cave-1f"
+            },
+            {
+              "id": 498,
+              "name": "icefall-cave-b1f"
+            },
+            {
+              "id": 499,
+              "name": "icefall-cave-waterfall"
+            }
+          ]
+        },
+        {
+          "name": "pattern-bush",
+          "locationareas": [
+            {
+              "id": 500,
+              "name": "pattern-bush-area"
+            }
+          ]
+        },
+        {
+          "name": "lost-cave",
+          "locationareas": [
+            {
+              "id": 501,
+              "name": "lost-cave-room-1"
+            },
+            {
+              "id": 502,
+              "name": "lost-cave-room-2"
+            },
+            {
+              "id": 503,
+              "name": "lost-cave-room-3"
+            },
+            {
+              "id": 504,
+              "name": "lost-cave-room-4"
+            },
+            {
+              "id": 505,
+              "name": "lost-cave-room-5"
+            },
+            {
+              "id": 506,
+              "name": "lost-cave-room-6"
+            },
+            {
+              "id": 507,
+              "name": "lost-cave-room-7"
+            },
+            {
+              "id": 508,
+              "name": "lost-cave-room-8"
+            },
+            {
+              "id": 509,
+              "name": "lost-cave-room-9"
+            },
+            {
+              "id": 510,
+              "name": "lost-cave-room-10"
+            },
+            {
+              "id": 511,
+              "name": "lost-cave-item-rooms"
+            }
+          ]
+        },
+        {
+          "name": "kindle-road",
+          "locationareas": [
+            {
+              "id": 512,
+              "name": "kindle-road-area"
+            }
+          ]
+        },
+        {
+          "name": "treasure-beach",
+          "locationareas": [
+            {
+              "id": 513,
+              "name": "treasure-beach-area"
+            }
+          ]
+        },
+        {
+          "name": "cape-brink",
+          "locationareas": [
+            {
+              "id": 514,
+              "name": "cape-brink-area"
+            }
+          ]
+        },
+        {
+          "name": "bond-bridge",
+          "locationareas": [
+            {
+              "id": 515,
+              "name": "bond-bridge-area"
+            }
+          ]
+        },
+        {
+          "name": "three-isle-port",
+          "locationareas": [
+            {
+              "id": 516,
+              "name": "three-isle-port-area"
+            }
+          ]
+        },
+        {
+          "name": "resort-gorgeous",
+          "locationareas": [
+            {
+              "id": 517,
+              "name": "resort-gorgeous-area"
+            }
+          ]
+        },
+        {
+          "name": "water-labyrinth",
+          "locationareas": [
+            {
+              "id": 518,
+              "name": "water-labyrinth-area"
+            }
+          ]
+        },
+        {
+          "name": "five-isle-meadow",
+          "locationareas": [
+            {
+              "id": 519,
+              "name": "five-isle-meadow-area"
+            }
+          ]
+        },
+        {
+          "name": "memorial-pillar",
+          "locationareas": [
+            {
+              "id": 520,
+              "name": "memorial-pillar-area"
+            }
+          ]
+        },
+        {
+          "name": "outcast-island",
+          "locationareas": [
+            {
+              "id": 521,
+              "name": "outcast-island-area"
+            }
+          ]
+        },
+        {
+          "name": "green-path",
+          "locationareas": [
+            {
+              "id": 522,
+              "name": "green-path-area"
+            }
+          ]
+        },
+        {
+          "name": "water-path",
+          "locationareas": [
+            {
+              "id": 523,
+              "name": "water-path-area"
+            }
+          ]
+        },
+        {
+          "name": "ruin-valley",
+          "locationareas": [
+            {
+              "id": 524,
+              "name": "ruin-valley-area"
+            }
+          ]
+        },
+        {
+          "name": "trainer-tower",
+          "locationareas": [
+            {
+              "id": 525,
+              "name": "trainer-tower-area"
+            }
+          ]
+        },
+        {
+          "name": "canyon-entrance",
+          "locationareas": [
+            {
+              "id": 526,
+              "name": "canyon-entrance-area"
+            }
+          ]
+        },
+        {
+          "name": "sevault-canyon",
+          "locationareas": [
+            {
+              "id": 527,
+              "name": "sevault-canyon-area"
+            }
+          ]
+        },
+        {
+          "name": "tanoby-ruins",
+          "locationareas": [
+            {
+              "id": 528,
+              "name": "tanoby-ruins-area"
+            }
+          ]
+        },
+        {
+          "name": "one-island",
+          "locationareas": [
+            {
+              "id": 561,
+              "name": "one-island-area"
+            }
+          ]
+        },
+        {
+          "name": "four-island",
+          "locationareas": [
+            {
+              "id": 562,
+              "name": "four-island-area"
+            }
+          ]
+        },
+        {
+          "name": "five-island",
+          "locationareas": [
+            {
+              "id": 563,
+              "name": "five-island-area"
+            }
+          ]
+        },
+        {
+          "name": "kanto-altering-cave",
+          "locationareas": [
+            {
+              "id": 564,
+              "name": "kanto-altering-cave-a"
+            },
+            {
+              "id": 565,
+              "name": "kanto-altering-cave-b"
+            },
+            {
+              "id": 566,
+              "name": "kanto-altering-cave-c"
+            },
+            {
+              "id": 567,
+              "name": "kanto-altering-cave-d"
+            },
+            {
+              "id": 568,
+              "name": "kanto-altering-cave-e"
+            },
+            {
+              "id": 569,
+              "name": "kanto-altering-cave-f"
+            },
+            {
+              "id": 570,
+              "name": "kanto-altering-cave-g"
+            },
+            {
+              "id": 571,
+              "name": "kanto-altering-cave-h"
+            },
+            {
+              "id": 572,
+              "name": "kanto-altering-cave-i"
+            }
+          ]
+        },
+        {
+          "name": "roaming-kanto",
+          "locationareas": [
+            {
+              "id": 794,
+              "name": "roaming-kanto-area"
+            }
+          ]
+        },
+        {
+          "name": "two-island",
+          "locationareas": []
+        },
+        {
+          "name": "three-island",
+          "locationareas": []
+        },
+        {
+          "name": "three-isle-path",
+          "locationareas": []
+        },
+        {
+          "name": "six-island",
+          "locationareas": []
+        },
+        {
+          "name": "seven-island",
+          "locationareas": []
+        },
+        {
+          "name": "birth-island",
+          "locationareas": [
+            {
+              "id": 806,
+              "name": "birth-island-area"
+            }
+          ]
+        },
+        {
+          "name": "navel-rock",
+          "locationareas": [
+            {
+              "id": 807,
+              "name": "navel-rock-area"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
