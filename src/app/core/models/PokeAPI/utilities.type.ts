@@ -6,6 +6,14 @@ export interface Description {
   };
 }
 
+export interface Encounter {
+  min_level: number;
+  max_level: number;
+  condition_values: NamedAPIResource;
+  chance: number;
+  method: NamedAPIResource;
+}
+
 export interface Name {
   language: {
     name: string;
@@ -17,6 +25,12 @@ export interface Name {
 export interface NamedAPIResource {
   name: string;
   url: string;
+}
+
+export interface VersionEncounterDetail {
+  version: NamedAPIResource;
+  max_chance: number;
+  encounter_details: Encounter;
 }
 
 export interface VersionGameIndex {

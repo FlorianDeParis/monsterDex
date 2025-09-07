@@ -1,4 +1,4 @@
-import { NamedAPIResource, VersionGameIndex } from './utilities.type';
+import { NamedAPIResource, VersionEncounterDetail, VersionGameIndex } from './utilities.type';
 
 export interface Pokemon {
   abilities: PokemonAbility[];
@@ -274,4 +274,9 @@ export interface PokemonStat {
   base_stat: number;
   effort: number;
   stat: NamedAPIResource;
+}
+
+export interface LocationAreaEncounter {
+  location_area: NamedAPIResource;
+  version_details: VersionEncounterDetail;
 }

@@ -3,7 +3,7 @@ import { Pokedex } from '../models/PokeAPI/games.type';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Pokemon } from '../models/PokeAPI/pokemon.type';
+import { LocationAreaEncounter, Pokemon } from '../models/PokeAPI/pokemon.type';
 
 @Injectable({
   providedIn: 'root',
@@ -20,6 +20,12 @@ export class PokeApiService {
   getPokemonDetails(monsterName: string | number): Observable<Pokemon> {
     return this.http.get<Pokemon>(
       `${environment.API_URL}/pokemon/${monsterName}`,
+    );
+  }
+
+  getPokemonEncounters(monsterName: number): Observable<LocationAreaEncounter[]>{
+    return this.http.get<LocationAreaEncounter[]>(
+      `${environment.API_URL}/pokemon/${monsterName}/encounters`
     );
   }
 }

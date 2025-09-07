@@ -60,8 +60,4 @@ export class PokemonPageService {
   getMyObjectValueCastedKey(myObject: any, key: string): any {
     return myObject[key as keyof typeof myObject];
   }
-
-  // filterSpriteObjectByDexGen$(spriteObj:PokemonSprites, IdGen:number){
-  //   //
-  // }
 }
