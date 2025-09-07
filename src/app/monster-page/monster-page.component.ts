@@ -12,10 +12,11 @@ import { PokeApiService } from '../core/services/poke-api.service';
 import { CommonModule } from '@angular/common';
 import { Pokemon, PokemonSprites } from '../core/models/PokeAPI/pokemon.type';
 import { PokedexService } from '../core/services/monster/pokedex.service';
+import { WorldMapComponent } from '../world-map/world-map.component';
 
 @Component({
   selector: 'app-monster-page',
-  imports: [CommonModule],
+  imports: [CommonModule, WorldMapComponent],
   templateUrl: './monster-page.component.html',
   styleUrl: './monster-page.component.scss',
 })

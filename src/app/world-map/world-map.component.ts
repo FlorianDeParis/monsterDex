@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
 
 interface Position {
@@ -17,6 +17,7 @@ interface Places {
   styleUrl: './world-map.component.scss',
 })
 export class WorldMapComponent implements OnInit {
+  @Input() pokemonGeneration!: string;
   qtyWidthDiv = 20;
   qtyHeightDiv = 17;
   maxHeight!: any[];
@@ -42,5 +43,10 @@ export class WorldMapComponent implements OnInit {
         (position) => position.x === x && position.y === y,
       ),
     );
+  }
+
+  isDisplayableMap(generation: string): boolean {
+    // Map currently avaialble for 1st pokemon generation
+    return (parseInt(generation) === 1)
   }
 }
