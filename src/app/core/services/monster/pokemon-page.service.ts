@@ -2,10 +2,13 @@ import { PokeApiService } from './../poke-api.service';
 import { Injectable } from '@angular/core';
 import { toRoman } from 'typescript-roman-numbers-converter';
 import {
+  LocationAreaEncounter,
   PokemonSprites,
   PokemonSpritesVersions,
 } from '../../models/PokeAPI/pokemon.type';
 import { ToasterService } from '../toaster.service';
+import  * as dataRegionPlaces from '../../../../../public/assets/data/maps/gen-i/kanto.json'; // this will be dynamized later
+import { tap, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -15,11 +18,6 @@ export class PokemonPageService {
     private pokeApiService: PokeApiService,
     private toaster: ToasterService,
   ) {}
-
-  // TO DO
-  // getPokemonDetailsByIdDex(monsterName: string, idDex: number){
-
-  // }
 
   getPokemonArtworkByIdGeneration(
     spriteObject: PokemonSprites,
@@ -53,11 +51,64 @@ export class PokemonPageService {
         );
       }
     }
-    console.log('returnedSprite', returnedSprite);
     return returnedSprite as string;
   }
 
   getMyObjectValueCastedKey(myObject: any, key: string): any {
     return myObject[key as keyof typeof myObject];
+  }
+
+  getPokemonEncounters(pokemonId: string, pokemonGeneration: string){
+    const encounters = this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
+      map((encounters) => this.filterEncounters$(encounters)),
+      tap(e => console.log(e))
+    ).subscribe();
+  }
+
+  filterEncounters$(encountersAPI:LocationAreaEncounter[]){
+    console.log('DATA JSON', dataRegionPlaces);
+    console.log(encountersAPI);
+    const encountersList = encountersAPI.map(
+      (encounter) => encounter.location_area.name
+    );
+    const places = dataRegionPlaces.region[0].locations;
+    const found: any[] = [];
+
+    places.filter(
+      (place) => {
+        if (encountersList.indexOf(place.name) > -1) {
+          found.push(
+            {
+              'name' : [place.name],
+              'encounters' : place.coordinates
+            }
+          );
+          return true;
+        } else if (place.locationareas.length > 0) {
+          const locationAreasFiltered = place.locationareas.filter(
+            (locationarea) => {
+              if (encountersList.indexOf(locationarea.name) > -1){
+                return {[locationarea.name]: place.coordinates};
+              }
+              return false;
+            }
+          );
+
+          if(locationAreasFiltered.length > 0){
+            found.push(
+              {
+                'name': locationAreasFiltered[0].name,
+                'encounters': place.coordinates
+              }
+            );
+            return true;
+          }
+        }
+        return false;
+      }
+    );
+
+    // console.log(found);
+    return found;
   }
 }

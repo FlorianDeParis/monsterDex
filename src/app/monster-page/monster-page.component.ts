@@ -45,9 +45,6 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
       generation: this.idPokeGen,
       'id Endoint pokedex': this.idDex,
     });
-    console.log(
-      this.pokedexService.getCurrentPokedexData(parseInt(this.idDex)),
-    );
   }
 
   ngOnInit(): void {
@@ -57,6 +54,12 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
         this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen),
       ),
     );
+
+    // this.pokeApi.getPokemonEncounters(this.idMonster).pipe(
+    //   tap((data) => console.log('encounters: ', data))
+    // ).subscribe();
+
+    this.pokemonPageService.getPokemonEncounters(this.idMonster, this.idPokeGen);
   }
 
   setPokemonSprite$(spriteObject: PokemonSprites, generation: string): void {

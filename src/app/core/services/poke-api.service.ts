@@ -23,7 +23,7 @@ export class PokeApiService {
     );
   }
 
-  getPokemonEncounters(monsterName: number): Observable<LocationAreaEncounter[]>{
+  getPokemonEncounters(monsterName: string | number): Observable<LocationAreaEncounter[]>{
     return this.http.get<LocationAreaEncounter[]>(
       `${environment.API_URL}/pokemon/${monsterName}/encounters`
     );
