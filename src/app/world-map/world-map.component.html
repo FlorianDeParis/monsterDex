@@ -1,17 +1,21 @@
 @if(isDisplayableMap(pokemonGeneration)){
-  <table id="kantoMap">
-    @for (currentRow of maxHeight; track "row_" + currentRow) {
-      <tr>
-        @for (currentCol of maxWidth; track "col_" + currentCol) {
-          <td>
-            @if (checkTile(currentCol, currentRow)) {
-              <app-tile-map />
-            }
-          </td>
-        }
-      </tr>
-    }
-  </table>
+  @if(places$ | async; as places){
+    <table id="kantoMap">
+      @for (currentRow of maxHeight; track "row_" + currentRow) {
+        <tr>
+          @for (currentCol of maxWidth; track "col_" + currentCol) {
+            <td>
+             @if (checkTile$(currentCol, currentRow, places)) {
+                <app-tile-map />
+              }
+            </td>
+          }
+        </tr>
+      }
+    </table>
+  } @else {
+    chargement de la carte ...
+  }
 } @else {
   <p>Carte non disponible pour le moment pour cette génération</p>
 }

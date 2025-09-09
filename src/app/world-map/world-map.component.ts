@@ -1,5 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
+import { mapMarker, SimplifiedEncounter } from '../core/models/monsterDex.type';
+import { EncountersService } from '../core/services/monster/encounters.service';
+import { Observable } from 'rxjs';
+import { AsyncPipe } from '@angular/common';
+import { MapService } from '../core/services/monster/map.service';
 
 interface Position {
   x: number;
@@ -12,37 +17,37 @@ interface Places {
 
 @Component({
   selector: 'app-world-map',
-  imports: [TileMapComponent],
+  imports: [TileMapComponent, AsyncPipe],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.scss',
 })
 export class WorldMapComponent implements OnInit {
   @Input() pokemonGeneration!: string;
+  @Input() pokemonId!: string;
   qtyWidthDiv = 20;
   qtyHeightDiv = 17;
   maxHeight!: any[];
   maxWidth!: any[];
+  places$!: Observable<mapMarker[]>;
 
-  places: Places = {
-    'bourg-palette': { x: 4, y: 11 },
-    jadielle: { x: 4, y: 8 },
-    safrania: { x: 12, y: 5 },
-    'route-victoire': { x: 2, y: 4 },
-  };
-
-  constructor() {}
+  constructor(
+    private encountersService: EncountersService,
+    private mapService: MapService
+  ) {}
 
   ngOnInit() {
+    //this.places$ = this.encountersService.getPokemonEncounters(this.pokemonId, this.pokemonGeneration);
+    // this.places$ = this.mapService.getMapMarkers(this.pokemonId, this.pokemonGeneration);
+    this.places$ = this.mapService.getMapMarkers(this.pokemonId, this.pokemonGeneration);
     this.maxHeight = [...Array(this.qtyHeightDiv).keys()];
     this.maxWidth = [...Array(this.qtyWidthDiv).keys()];
   }
 
-  checkTile(x: number, y: number): boolean {
-    return Boolean(
-      Object.values(this.places).find(
-        (position) => position.x === x && position.y === y,
-      ),
-    );
+  checkTile$(x: number, y: number, places:mapMarker[]): boolean {
+    console.log(places);
+    let flag = false;
+    places.map(e => { if(e.coordinates[0] === x && e.coordinates[1] === y){flag = true;}})
+    return flag;
   }
 
   isDisplayableMap(generation: string): boolean {
