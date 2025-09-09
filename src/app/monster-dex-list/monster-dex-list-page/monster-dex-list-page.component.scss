@@ -1,13 +1,13 @@
-#pokedexList {
-  $bg-width: 1.6rem;
-  $bg-url: "../../../../public/assets/img/bg.png";
+$bg-width: 1.6rem;
+$bg-url: "../../../../public/assets/img/bg.png";
 
-  @keyframes bg-scrolling-reverse {
-    100% {
-      background-position: -#{$bg-width} 0;
-    }
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: -#{$bg-width} 0;
   }
+}
 
+#pokedexList {
   overflow-x: hidden;
   position: relative;
   min-height: calc(100vh - 6rem);
