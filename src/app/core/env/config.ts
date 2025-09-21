@@ -1,3 +1,4 @@
+import { GenerationGames } from './../models/monsterDex.type';
 import { PokedexListEntry } from '../models/monsterDex.type';
 
 export const PokedexList: PokedexListEntry[] = [
@@ -195,5 +196,44 @@ export const PokedexList: PokedexListEntry[] = [
         pokedexVariantName: 'Paldea',
       },
     ],
+  },
+];
+
+export const GenerationGamesList: GenerationGames[] = [
+  {
+    generation: 1,
+    games: ['red', 'blue', 'yellow', 'red-japan', 'green-japan', 'blue-japan']
+  },
+  {
+    generation: 2,
+    games: ['gold', 'silver', 'crystal']
+  },
+  {
+    generation: 3,
+    games: ['ruby', 'sapphire', 'emerald', 'firered', 'leafgreen']
+  },
+  {
+    generation: 4,
+    games: ['diamond', 'pearl', 'platinum', 'heartgold', 'soulsilver']
+  },
+  {
+    generation: 5,
+    games: ['black', 'white', 'black-2', 'white-2']
+  },
+  {
+    generation: 6,
+    games: ['x', 'y', 'omega-ruby', 'alpha-sapphire']
+  },
+  {
+    generation: 7,
+    games: ['sun', 'moon', 'ultra-sun', 'ultra-moon', 'lets-go-pikachu', 'lets-go-eevee']
+  },
+  {
+    generation: 8,
+    games: ['sword', 'shield', 'the-isle-of-armor', 'the-crown-tundra', 'brilliant-diamond', 'shining-pearl', 'legends-arceus']
+  },
+  {
+    generation: 9,
+    games: ['scarlet', 'violet', 'the-teal-mask', 'the-indigo-disk']
   },
 ];

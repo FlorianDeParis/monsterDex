@@ -36,15 +36,12 @@ export class WorldMapComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    //this.places$ = this.encountersService.getPokemonEncounters(this.pokemonId, this.pokemonGeneration);
-    // this.places$ = this.mapService.getMapMarkers(this.pokemonId, this.pokemonGeneration);
     this.places$ = this.mapService.getMapMarkers(this.pokemonId, this.pokemonGeneration);
     this.maxHeight = [...Array(this.qtyHeightDiv).keys()];
     this.maxWidth = [...Array(this.qtyWidthDiv).keys()];
   }
 
   checkTile$(x: number, y: number, places:mapMarker[]): boolean {
-    console.log(places);
     let flag = false;
     places.map(e => { if(e.coordinates[0] === x && e.coordinates[1] === y){flag = true;}})
     return flag;

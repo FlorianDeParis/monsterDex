@@ -23,3 +23,8 @@ export interface mapMarker {
   name: string;
   coordinates: number[];
 }
+
+export interface GenerationGames {
+  generation: number;
+  games: string[];
+}
