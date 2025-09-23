@@ -278,5 +278,5 @@ export interface PokemonStat {
 
 export interface LocationAreaEncounter {
   location_area: NamedAPIResource;
-  version_details: VersionEncounterDetail;
+  version_details: VersionEncounterDetail[];
 }

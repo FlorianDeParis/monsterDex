@@ -7,6 +7,8 @@ import { map, Observable, tap } from 'rxjs';
 import { EncountersService } from './encounters.service';
 import { mapMarker } from '../../models/monsterDex.type';
 
+import * as dataRegionPlaces from '../../../../../public/assets/data/maps/gen-i/kanto.json'; // this will be dynamized later
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,25 +19,41 @@ export class MapService {
     private encountersService: EncountersService
   ) {}
 
-  getMapMarkers(pokemonId: string, pokemonGeneration: string): Observable<mapMarker[]>{ //Observable<mapMarker[]>
+  getMapMarkers(pokemonId: string, pokemonGeneration: string): Observable<mapMarker[]>{
     return this.encountersService.getPokemonEncounters(pokemonId, pokemonGeneration).pipe(
-      map(PKMNencounters => this.flattenMarkerArray$(PKMNencounters))
+      map(PKMNencounters => this.generateMapMarkers$(PKMNencounters))
     );
     // return mapMarkerList;
   }
 
-  flattenMarkerArray$(PKMNencounters: SimplifiedEncounter[]): mapMarker[]{
-    let mapMarkerList:mapMarker[] = [];
-    PKMNencounters.map(
-      PKMNencounter => {
-        if(typeof PKMNencounter.encounters[0] === 'object'){
-          PKMNencounter.encounters.map(e => { mapMarkerList.push({'name':PKMNencounter.name,'coordinates':e as number[]}) })
-        } else {
-          mapMarkerList.push({'name':PKMNencounter.name,'coordinates':PKMNencounter.encounters as number[]})
-        }
-
-      }
+  generateMapMarkers$(PKMNencounters: LocationAreaEncounter[]): mapMarker[]{
+    let PKMNencountersList = [];
+    PKMNencountersList = PKMNencounters.map(
+      PKMNencounter => PKMNencounter.location_area.name
     );
+
+    const worldMapPlaces = dataRegionPlaces;
+    let mapMarkerList:mapMarker[] = [];
+
+    worldMapPlaces.region[0].locations.map(
+      (locationsGroup) => {
+        locationsGroup.locationareas.map(
+          (locationArea) => {
+            if(PKMNencountersList.includes(locationArea.name)){
+              if(typeof locationsGroup.coordinates[0] === 'object'){
+                locationsGroup.coordinates.map(
+                  c => {
+                    mapMarkerList.push({'name': locationArea.name, 'coordinates': c as number[]})
+                  }
+                )
+              } else {
+                mapMarkerList.push({'name': locationArea.name, 'coordinates': locationsGroup.coordinates as number[]})
+              }
+            }
+          }
+        )
+      }
+    )
     return mapMarkerList;
   }
 }
