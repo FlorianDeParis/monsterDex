@@ -40,15 +40,11 @@ export class MapService {
         locationsGroup.locationareas.map(
           (locationArea) => {
             if(PKMNencountersList.includes(locationArea.name)){
-              if(typeof locationsGroup.coordinates[0] === 'object'){
-                locationsGroup.coordinates.map(
-                  c => {
-                    mapMarkerList.push({'name': locationArea.name, 'coordinates': c as number[]})
-                  }
-                )
-              } else {
-                mapMarkerList.push({'name': locationArea.name, 'coordinates': locationsGroup.coordinates as number[]})
-              }
+              locationsGroup.coordinates.map(
+                c => {
+                  mapMarkerList.push({'name': locationArea.name, 'coordinates': c as number[]})
+                }
+              )
             }
           }
         )
