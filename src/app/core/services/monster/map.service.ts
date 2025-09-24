@@ -9,14 +9,37 @@ import { ActivatedRoute } from '@angular/router';
 import * as generation1 from '../../../../../public/assets/data/maps/gen-i/data.json';
 import * as generation2 from '../../../../../public/assets/data/maps/gen-ii/data.json';
 
-const DATASET: { [key: number]: any } = {
+interface GenerationDataSet {
+  region: Region[];
+}
+
+interface Region {
+  name: string;
+  id: number;
+  locations: Location[];
+}
+
+interface Location {
+  name: string;
+  coordinates: number[][];
+  locationareas: LocationArea[];
+}
+
+interface LocationArea {
+  name: string;
+  id: number;
+}
+
+const DATASET: {
+  [key: number]: GenerationDataSet;
+} = {
   1: generation1,
-  2: generation2,
+  // 2: generation2, // TODO: Add JSON data.
 };
 
 @Injectable()
 export class MapService {
-  readonly dataset = signal(null);
+  readonly dataset = signal<GenerationDataSet>(generation1);
 
   constructor(
     private pokeApiService: PokeApiService,
@@ -46,20 +69,18 @@ export class MapService {
 
     let mapMarkerList: MapMarker[] = [];
 
-    (this.dataset() as any).region[0].locations.foreach(
-      (locationsGroup: any) => {
-        locationsGroup.locationareas.foreach((locationArea: any) => {
-          if (PKMNencountersList.includes(locationArea.name)) {
-            locationsGroup.coordinates.foreach((c: number[]) => {
-              mapMarkerList.push({
-                name: locationArea.name,
-                coordinates: c as number[],
-              });
+    this.dataset().region[0].locations.forEach((locationsGroup) => {
+      locationsGroup.locationareas.forEach((locationArea: any) => {
+        if (PKMNencountersList.includes(locationArea.name)) {
+          locationsGroup.coordinates.forEach((c) => {
+            mapMarkerList.push({
+              name: locationArea.name,
+              coordinates: c,
             });
-          }
-        });
-      },
-    );
+          });
+        }
+      });
+    });
 
     return mapMarkerList;
   }
