@@ -203,38 +203,95 @@ export const GenerationGamesList: GenerationGames[] = [
   // Game names are based on version.name and version_group.name values
   {
     generation: 1,
-    games: ['red-blue', 'red', 'blue', 'yellow', 'red-japan', 'green-japan', 'blue-japan']
+    games: [
+      'red-blue',
+      'red',
+      'blue',
+      'yellow',
+      'red-japan',
+      'green-japan',
+      'blue-japan',
+    ],
   },
   {
     generation: 2,
-    games: ['gold-silver', 'gold', 'silver', 'crystal']
+    games: ['gold-silver', 'gold', 'silver', 'crystal'],
   },
   {
     generation: 3,
-    games: ['ruby-sapphire', 'firered-leafgreen', 'ruby', 'sapphire', 'emerald', 'firered', 'leafgreen']
+    games: [
+      'ruby-sapphire',
+      'firered-leafgreen',
+      'ruby',
+      'sapphire',
+      'emerald',
+      'firered',
+      'leafgreen',
+    ],
   },
   {
     generation: 4,
-    games: ['diamond-pearl', 'heartgold-soulsilver', 'diamond', 'pearl', 'platinum', 'heartgold', 'soulsilver']
+    games: [
+      'diamond-pearl',
+      'heartgold-soulsilver',
+      'diamond',
+      'pearl',
+      'platinum',
+      'heartgold',
+      'soulsilver',
+    ],
   },
   {
     generation: 5,
-    games: ['black-white', 'black-2-white-2', 'black', 'white', 'black-2', 'white-2']
+    games: [
+      'black-white',
+      'black-2-white-2',
+      'black',
+      'white',
+      'black-2',
+      'white-2',
+    ],
   },
   {
     generation: 6,
-    games: ['x-y', 'omega-ruby-alpha-sapphire', 'x', 'y', 'omega-ruby', 'alpha-sapphire']
+    games: [
+      'x-y',
+      'omega-ruby-alpha-sapphire',
+      'x',
+      'y',
+      'omega-ruby',
+      'alpha-sapphire',
+    ],
   },
   {
     generation: 7,
-    games: ['sun-moon', 'ultra-sun-ultra-moon', 'lets-go-pikachu-lets-go-eevee', 'sun', 'moon', 'ultra-sun', 'ultra-moon', 'lets-go-pikachu', 'lets-go-eevee']
+    games: [
+      'sun-moon',
+      'ultra-sun-ultra-moon',
+      'lets-go-pikachu-lets-go-eevee',
+      'sun',
+      'moon',
+      'ultra-sun',
+      'ultra-moon',
+      'lets-go-pikachu',
+      'lets-go-eevee',
+    ],
   },
   {
     generation: 8,
-    games: ['sword-shield', 'sword', 'shield', 'the-isle-of-armor', 'the-crown-tundra', 'brilliant-diamond', 'shining-pearl', 'legends-arceus']
+    games: [
+      'sword-shield',
+      'sword',
+      'shield',
+      'the-isle-of-armor',
+      'the-crown-tundra',
+      'brilliant-diamond',
+      'shining-pearl',
+      'legends-arceus',
+    ],
   },
   {
     generation: 9,
-    games: ['scarlet', 'violet', 'the-teal-mask', 'the-indigo-disk']
+    games: ['scarlet', 'violet', 'the-teal-mask', 'the-indigo-disk'],
   },
 ];

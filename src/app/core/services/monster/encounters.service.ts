@@ -4,13 +4,15 @@ import { GenerationGamesList } from '../../env/config';
 import { LocationAreaEncounter } from '../../models/PokeAPI/pokemon.type';
 import { PokeApiService } from '../poke-api.service';
 import { map, Observable, tap } from 'rxjs';
-import { SimplifiedEncounter, GenerationGames } from '../../models/monsterDex.type';
+import {
+  SimplifiedEncounter,
+  GenerationGames,
+} from '../../models/monsterDex.type';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EncountersService {
-
   generationGamesList!: GenerationGames[];
 
   constructor(private pokeApiService: PokeApiService) {
@@ -19,25 +21,26 @@ export class EncountersService {
 
   getPokemonEncounters(
     pokemonId: string,
-    pokemonGeneration: string
-  ): Observable<LocationAreaEncounter[]>{
+    pokemonGeneration: string,
+  ): Observable<LocationAreaEncounter[]> {
     return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
-      map((encounters) => this.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration)),
-      tap(e => console.log(e))
+      map((encounters) =>
+        this.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
+      ),
+      tap((e) => console.log(e)),
     );
   }
 
   getEncountersByRegionAndGeneration$(
-    encountersAPI:LocationAreaEncounter[],
-    pokemonGeneration:string
-  ): LocationAreaEncounter[]{
-
-    let encountersList:LocationAreaEncounter[] = [];
-    encountersAPI.map(
-      (encounter) => {
-        (encountersList as any[]).push(this.isOnTheSameGameGeneration(encounter, pokemonGeneration))
-      }
-    );
+    encountersAPI: LocationAreaEncounter[],
+    pokemonGeneration: string,
+  ): LocationAreaEncounter[] {
+    let encountersList: LocationAreaEncounter[] = [];
+    encountersAPI.map((encounter) => {
+      (encountersList as any[]).push(
+        this.isOnTheSameGameGeneration(encounter, pokemonGeneration),
+      );
+    });
     encountersList = encountersList.filter(Boolean);
     return encountersList;
   }
@@ -46,22 +49,26 @@ export class EncountersService {
   // but not in the same game generation
   isOnTheSameGameGeneration(
     locationAreaEncounter: LocationAreaEncounter,
-    pokemonGeneration: string
+    pokemonGeneration: string,
   ): false | LocationAreaEncounter {
-    const idxGen = this.generationGamesList.findIndex((element) => element.generation == parseInt(pokemonGeneration));
+    const idxGen = this.generationGamesList.findIndex(
+      (element) => element.generation == parseInt(pokemonGeneration),
+    );
     const currentGenGameList = this.generationGamesList[idxGen].games;
     // console.log('before', locationAreaEncounter.version_details);
 
-    const locationAreaEncounterFiltered = locationAreaEncounter.version_details.filter(
-      (version_detail) => {
-        if(currentGenGameList.indexOf(version_detail.version.name) !== -1){
-          return {...version_detail}
+    const locationAreaEncounterFiltered =
+      locationAreaEncounter.version_details.filter((version_detail) => {
+        if (currentGenGameList.indexOf(version_detail.version.name) !== -1) {
+          return { ...version_detail };
         }
         return false;
-      }
-    );
+      });
     // console.log("locationAreaEncounterFiltered", locationAreaEncounterFiltered)
-    const filteredLocations:LocationAreaEncounter = {...locationAreaEncounter, 'version_details': locationAreaEncounterFiltered};
+    const filteredLocations: LocationAreaEncounter = {
+      ...locationAreaEncounter,
+      version_details: locationAreaEncounterFiltered,
+    };
 
     // console.log('%c after ', 'background:blue;color:white;');
     // console.log(filteredLocations);
@@ -71,6 +78,8 @@ export class EncountersService {
     //   'color:white;background:black;',
     //   `background: ${filteredLocations.version_details.length > 0 ? 'green' : 'red' }`
     // );
-    return filteredLocations.version_details.length > 0 ? {...filteredLocations} : false;
+    return filteredLocations.version_details.length > 0
+      ? { ...filteredLocations }
+      : false;
   }
 }

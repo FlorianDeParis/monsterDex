@@ -32,23 +32,30 @@ export class WorldMapComponent implements OnInit {
 
   constructor(
     private encountersService: EncountersService,
-    private mapService: MapService
+    private mapService: MapService,
   ) {}
 
   ngOnInit() {
-    this.places$ = this.mapService.getMapMarkers(this.pokemonId, this.pokemonGeneration);
+    this.places$ = this.mapService.getMapMarkers(
+      this.pokemonId,
+      this.pokemonGeneration,
+    );
     this.maxHeight = [...Array(this.qtyHeightDiv).keys()];
     this.maxWidth = [...Array(this.qtyWidthDiv).keys()];
   }
 
-  checkTile$(x: number, y: number, places:mapMarker[]): boolean {
+  checkTile$(x: number, y: number, places: mapMarker[]): boolean {
     let flag = false;
-    places.map(e => { if(e.coordinates[0] === x && e.coordinates[1] === y){flag = true;}})
+    places.map((e) => {
+      if (e.coordinates[0] === x && e.coordinates[1] === y) {
+        flag = true;
+      }
+    });
     return flag;
   }
 
   isDisplayableMap(generation: string): boolean {
     // Map currently avaialble for 1st pokemon generation
-    return (parseInt(generation) === 1)
+    return parseInt(generation) === 1;
   }
 }

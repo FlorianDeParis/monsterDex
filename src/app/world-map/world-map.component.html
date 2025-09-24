@@ -1,11 +1,11 @@
-@if(isDisplayableMap(pokemonGeneration)){
-  @if(places$ | async; as places){
+@if (isDisplayableMap(pokemonGeneration)) {
+  @if (places$ | async; as places) {
     <table id="kantoMap">
       @for (currentRow of maxHeight; track "row_" + currentRow) {
         <tr>
           @for (currentCol of maxWidth; track "col_" + currentCol) {
             <td>
-             @if (checkTile$(currentCol, currentRow, places)) {
+              @if (checkTile$(currentCol, currentRow, places)) {
                 <app-tile-map />
               }
             </td>

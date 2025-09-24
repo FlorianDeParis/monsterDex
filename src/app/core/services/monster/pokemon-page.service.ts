@@ -17,7 +17,7 @@ import { EncountersService } from './encounters.service';
 export class PokemonPageService {
   constructor(
     private toaster: ToasterService,
-    private encountersService: EncountersService
+    private encountersService: EncountersService,
   ) {}
 
   getPokemonArtworkByIdGeneration(

@@ -37,7 +37,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     private pokeApi: PokeApiService,
     private pokedexService: PokedexService,
     private pokemonPageService: PokemonPageService,
-    private encountersService: EncountersService
+    private encountersService: EncountersService,
   ) {
     this.idMonster = this.route.snapshot.params['idMonster'];
     this.idPokeGen = this.route.snapshot.params['idPokeGen'];
@@ -56,7 +56,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
         this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen),
       ),
     );
- }
+  }
 
   setPokemonSprite$(spriteObject: PokemonSprites, generation: string): void {
     this.pokemonSelectedSprite =
