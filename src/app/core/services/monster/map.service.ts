@@ -7,7 +7,7 @@ import { map, Observable, tap } from 'rxjs';
 import { EncountersService } from './encounters.service';
 import { mapMarker } from '../../models/monsterDex.type';
 
-import * as dataRegionPlaces from '../../../../../public/assets/data/maps/gen-i/kanto.json'; // this will be dynamized later
+import * as dataRegionPlaces from '../../../../../public/assets/data/maps/gen-i/data.json'; // this will be dynamized later
 
 @Injectable({
   providedIn: 'root'
