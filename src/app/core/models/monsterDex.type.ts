@@ -19,7 +19,7 @@ export interface SimplifiedEncounter {
   encounters: number[] | number[][];
 }
 
-export interface mapMarker {
+export interface MapMarker {
   name: string;
   coordinates: number[];
 }

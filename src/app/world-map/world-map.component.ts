@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
-import { mapMarker, SimplifiedEncounter } from '../core/models/monsterDex.type';
+import { MapMarker } from '../core/models/monsterDex.type';
 import { EncountersService } from '../core/services/monster/encounters.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
@@ -18,6 +18,7 @@ interface Places {
 @Component({
   selector: 'app-world-map',
   imports: [TileMapComponent, AsyncPipe],
+  providers: [MapService],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.scss',
 })
@@ -28,7 +29,7 @@ export class WorldMapComponent implements OnInit {
   qtyHeightDiv = 17;
   maxHeight!: any[];
   maxWidth!: any[];
-  places$!: Observable<mapMarker[]>;
+  places$!: Observable<MapMarker[]>;
 
   constructor(
     private encountersService: EncountersService,
@@ -44,7 +45,7 @@ export class WorldMapComponent implements OnInit {
     this.maxWidth = [...Array(this.qtyWidthDiv).keys()];
   }
 
-  checkTile$(x: number, y: number, places: mapMarker[]): boolean {
+  checkTile$(x: number, y: number, places: MapMarker[]): boolean {
     let flag = false;
     places.map((e) => {
       if (e.coordinates[0] === x && e.coordinates[1] === y) {
