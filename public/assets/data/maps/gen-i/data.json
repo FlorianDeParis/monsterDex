@@ -3,6 +3,7 @@
     {
       "name": "kanto",
       "id": 1,
+      "size": [20, 17],
       "locations": [
         {
           "name": "celadon-city",

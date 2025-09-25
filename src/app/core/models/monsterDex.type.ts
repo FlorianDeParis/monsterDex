@@ -19,6 +19,12 @@ export interface SimplifiedEncounter {
   encounters: number[] | number[][];
 }
 
+export interface RegionMarkerList {
+  name: string;
+  size: number[];
+  markers: MapMarker[];
+}
+
 export interface MapMarker {
   name: string;
   coordinates: number[];

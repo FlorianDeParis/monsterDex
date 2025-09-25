@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
-import { MapMarker } from '../core/models/monsterDex.type';
+import { MapMarker, RegionMarkerList } from '../core/models/monsterDex.type';
 import { EncountersService } from '../core/services/monster/encounters.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
@@ -25,11 +25,8 @@ interface Places {
 export class WorldMapComponent implements OnInit {
   @Input() pokemonGeneration!: string;
   @Input() pokemonId!: string;
-  qtyWidthDiv = 20;
-  qtyHeightDiv = 17;
-  maxHeight!: any[];
-  maxWidth!: any[];
-  places$!: Observable<MapMarker[]>;
+  @Input() region!: string;
+  places$!: Observable<RegionMarkerList[]>;
 
   constructor(
     private encountersService: EncountersService,
@@ -41,13 +38,11 @@ export class WorldMapComponent implements OnInit {
       this.pokemonId,
       this.pokemonGeneration,
     );
-    this.maxHeight = [...Array(this.qtyHeightDiv).keys()];
-    this.maxWidth = [...Array(this.qtyWidthDiv).keys()];
   }
 
-  checkTile$(x: number, y: number, places: MapMarker[]): boolean {
+  checkTile$(x: number, y: number, regionMarkerList: RegionMarkerList): boolean {
     let flag = false;
-    places.map((e) => {
+    regionMarkerList.markers.map((e) => {
       if (e.coordinates[0] === x && e.coordinates[1] === y) {
         flag = true;
       }
@@ -56,7 +51,15 @@ export class WorldMapComponent implements OnInit {
   }
 
   isDisplayableMap(generation: string): boolean {
-    // Map currently avaialble for 1st pokemon generation
-    return parseInt(generation) === 1;
+    // Authorize some regions to be displayable
+    return [1,2].includes(+generation);
+  }
+
+  getWorldMapClass(region:string, gen:string): string{
+    return `${region}-${gen}`;
+  }
+
+  getSize(value: number): number[] {
+    return [...Array(value).keys()]
   }
 }

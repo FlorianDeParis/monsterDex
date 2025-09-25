@@ -1,18 +1,20 @@
 @if (isDisplayableMap(pokemonGeneration)) {
   @if (places$ | async; as places) {
-    <table id="kantoMap">
-      @for (currentRow of maxHeight; track "row_" + currentRow) {
-        <tr>
-          @for (currentCol of maxWidth; track "col_" + currentCol) {
-            <td>
-              @if (checkTile$(currentCol, currentRow, places)) {
-                <app-tile-map />
-              }
-            </td>
-          }
-        </tr>
-      }
-    </table>
+    @for (regionMarkerList of places; track regionMarkerList.name){
+      <table class="worldMap" [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)">
+        @for (currentRow of getSize(regionMarkerList.size[1]); track "row_" + currentRow) {
+          <tr>
+            @for (currentCol of getSize(regionMarkerList.size[0]); track "col_" + currentCol) {
+              <td>
+                @if (checkTile$(currentCol, currentRow, regionMarkerList)) {
+                  <app-tile-map />
+                }
+              </td>
+            }
+          </tr>
+        }
+      </table>
+    }
   } @else {
     chargement de la carte ...
   }

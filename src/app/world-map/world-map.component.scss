@@ -1,8 +1,17 @@
-#kantoMap {
-  --cell-width: 8px;
-  --cell-height: 8px;
-  background-image: url("../../../public/assets/img/maps/gen-i/kanto.png");
+.worldMap {
+  --cell-width: 5px;
+  --cell-height: 5px;
+  --path-world-map: '';
+
+  background-image: var(--path-world-map);
   background-repeat: no-repeat;
+
+  &[world="kanto-1"]{
+    --cell-width: 8px;
+    --cell-height: 8px;
+    --path-world-map: url("/assets/img/maps/gen-i/kanto.png");
+  }
+
   tr {
     td {
       position: relative;

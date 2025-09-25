@@ -3,7 +3,7 @@ import { PokeApiService } from '../poke-api.service';
 import { LocationAreaEncounter } from '../../models/PokeAPI/pokemon.type';
 import { map, Observable, tap } from 'rxjs';
 import { EncountersService } from './encounters.service';
-import { MapMarker } from '../../models/monsterDex.type';
+import { MapMarker, RegionMarkerList } from '../../models/monsterDex.type';
 import { ActivatedRoute } from '@angular/router';
 
 import * as generation1 from '../../../../../public/assets/data/maps/gen-i/data.json';
@@ -16,6 +16,7 @@ interface GenerationDataSet {
 interface Region {
   name: string;
   id: number;
+  size: number[];
   locations: Location[];
 }
 
@@ -56,32 +57,39 @@ export class MapService {
   getMapMarkers(
     pokemonId: string,
     pokemonGeneration: string,
-  ): Observable<MapMarker[]> {
+  ): Observable<RegionMarkerList[]> {
     return this.encountersService
       .getPokemonEncounters(pokemonId, pokemonGeneration)
       .pipe(map((PKMNencounters) => this.generateMapMarkers(PKMNencounters)));
   }
 
-  generateMapMarkers(PKMNencounters: LocationAreaEncounter[]): MapMarker[] {
+  generateMapMarkers(PKMNencounters: LocationAreaEncounter[]): RegionMarkerList[] {
     const PKMNencountersList = PKMNencounters.map(
       (PKMNencounter) => PKMNencounter.location_area.name,
     );
 
-    let mapMarkerList: MapMarker[] = [];
+    let mapMarkerList: RegionMarkerList[] = [];
 
-    this.dataset().region[0].locations.forEach((locationsGroup) => {
-      locationsGroup.locationareas.forEach((locationArea: any) => {
-        if (PKMNencountersList.includes(locationArea.name)) {
-          locationsGroup.coordinates.forEach((c) => {
-            mapMarkerList.push({
-              name: locationArea.name,
-              coordinates: c,
-            });
+    this.dataset().region.map(
+      (regionObj) => {
+        let RegionMarkerList:RegionMarkerList = {'name': regionObj.name, 'size': regionObj.size, 'markers': []}
+        regionObj.locations.forEach((locationsGroup) => {
+          locationsGroup.locationareas.forEach((locationArea: any) => {
+            if (PKMNencountersList.includes(locationArea.name)) {
+
+              locationsGroup.coordinates.forEach((c) => {
+                RegionMarkerList.markers.push({
+                  name: locationArea.name,
+                  coordinates: c,
+                });
+              });
+            }
           });
-        }
-      });
-    });
-
+        });
+        mapMarkerList.push(RegionMarkerList);
+      }
+    )
+    console.log("MAP MARKER LIST", mapMarkerList);
     return mapMarkerList;
   }
 }
