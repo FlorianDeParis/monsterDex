@@ -4,6 +4,7 @@ import { MonsterPageComponent } from './monster-page/monster-page.component';
 import { MonsterDexListPageComponent } from './monster-dex-list/monster-dex-list-page/monster-dex-list-page.component';
 import { MonsterListComponent } from './monster-list/monster-list.component';
 import { WorldMapComponent } from './world-map/world-map.component';
+import { TestComponent as MapTestComponent } from './world-map/test/test.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,5 +14,5 @@ export const routes: Routes = [
     path: 'pokemon/:idMonster/:idPokeGen/:idDex',
     component: MonsterPageComponent,
   }, // idMonster => national pokemon id, idPokeGen => pokemon generation, idDex => pokedex id
-  { path: 'map/:map', component: WorldMapComponent }, // static Kanto map
+  { path: 'map/:idMonster/:idPokeGen/:idDex', component: MapTestComponent }, // world map testing
 ];
