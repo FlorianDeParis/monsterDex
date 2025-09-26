@@ -35,7 +35,7 @@ const DATASET: {
   [key: number]: GenerationDataSet;
 } = {
   1: generation1,
-  // 2: generation2, // TODO: Add JSON data.
+  2: generation2, // TODO: Add JSON data.
 };
 
 @Injectable()

@@ -1,0 +1,780 @@
+{
+  "region": [
+    {
+      "name": "johto",
+      "id": 2,
+      "locations": [
+        {
+          "name": "blackthorn-city",
+          "locationareas": [
+            {
+              "id": 249,
+              "name": "blackthorn-city-area"
+            }
+          ]
+        },
+        {
+          "name": "burned-tower",
+          "locationareas": [
+            {
+              "id": 212,
+              "name": "burned-tower-1f"
+            },
+            {
+              "id": 213,
+              "name": "burned-tower-b1f"
+            }
+          ]
+        },
+        {
+          "name": "cherrygrove-city",
+          "locationareas": [
+            {
+              "id": 186,
+              "name": "cherrygrove-city-area"
+            }
+          ]
+        },
+        {
+          "name": "cianwood-city",
+          "locationareas": [
+            {
+              "id": 235,
+              "name": "cianwood-city-area"
+            },
+            {
+              "id": 767,
+              "name": "cianwood-city-manias-house"
+            },
+            {
+              "id": 773,
+              "name": "cianwood-city-kirks-house"
+            },
+            {
+              "id": 836,
+              "name": "cianwood-city-pokemon-center"
+            }
+          ]
+        },
+        {
+          "name": "dark-cave",
+          "locationareas": [
+            {
+              "id": 253,
+              "name": "dark-cave-violet-city-entrance"
+            },
+            {
+              "id": 254,
+              "name": "dark-cave-blackthorn-city-entrance"
+            }
+          ]
+        },
+        {
+          "name": "dragons-den",
+          "locationareas": [
+            {
+              "id": 250,
+              "name": "dragons-den-area"
+            }
+          ]
+        },
+        {
+          "name": "ecruteak-city",
+          "locationareas": [
+            {
+              "id": 211,
+              "name": "ecruteak-city-area"
+            }
+          ]
+        },
+        {
+          "name": "ice-path",
+          "locationareas": [
+            {
+              "id": 244,
+              "name": "ice-path-1f"
+            },
+            {
+              "id": 245,
+              "name": "ice-path-b1f"
+            },
+            {
+              "id": 246,
+              "name": "ice-path-b2f"
+            },
+            {
+              "id": 247,
+              "name": "ice-path-b3f"
+            }
+          ]
+        },
+        {
+          "name": "ilex-forest",
+          "locationareas": [
+            {
+              "id": 204,
+              "name": "ilex-forest-area"
+            }
+          ]
+        },
+        {
+          "name": "lake-of-rage",
+          "locationareas": [
+            {
+              "id": 242,
+              "name": "lake-of-rage-area"
+            }
+          ]
+        },
+        {
+          "name": "mt-mortar",
+          "locationareas": [
+            {
+              "id": 237,
+              "name": "mt-mortar-1f"
+            },
+            {
+              "id": 238,
+              "name": "mt-mortar-lower-cave"
+            },
+            {
+              "id": 239,
+              "name": "mt-mortar-upper-cave"
+            },
+            {
+              "id": 240,
+              "name": "mt-mortar-b1f"
+            }
+          ]
+        },
+        {
+          "name": "mt-silver",
+          "locationareas": [
+            {
+              "id": 263,
+              "name": "mt-silver-2f"
+            },
+            {
+              "id": 264,
+              "name": "mt-silver-1f-top"
+            },
+            {
+              "id": 265,
+              "name": "mt-silver-4f"
+            },
+            {
+              "id": 269,
+              "name": "mt-silver-outside"
+            },
+            {
+              "id": 270,
+              "name": "mt-silver-1f"
+            },
+            {
+              "id": 271,
+              "name": "mt-silver-mountainside"
+            },
+            {
+              "id": 272,
+              "name": "mt-silver-3f"
+            },
+            {
+              "id": 273,
+              "name": "mt-silver-top"
+            }
+          ]
+        },
+        {
+          "name": "national-park",
+          "locationareas": [
+            {
+              "id": 207,
+              "name": "national-park-area"
+            }
+          ]
+        },
+        {
+          "name": "new-bark-town",
+          "locationareas": [
+            {
+              "id": 184,
+              "name": "new-bark-town-area"
+            }
+          ]
+        },
+        {
+          "name": "olivine-city",
+          "locationareas": [
+            {
+              "id": 224,
+              "name": "olivine-city-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-29",
+          "locationareas": [
+            {
+              "id": 185,
+              "name": "johto-route-29-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-30",
+          "locationareas": [
+            {
+              "id": 187,
+              "name": "johto-route-30-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-31",
+          "locationareas": [
+            {
+              "id": 188,
+              "name": "johto-route-31-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-32",
+          "locationareas": [
+            {
+              "id": 192,
+              "name": "johto-route-32-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-33",
+          "locationareas": [
+            {
+              "id": 201,
+              "name": "johto-route-33-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-34",
+          "locationareas": [
+            {
+              "id": 205,
+              "name": "johto-route-34-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-35",
+          "locationareas": [
+            {
+              "id": 206,
+              "name": "johto-route-35-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-36",
+          "locationareas": [
+            {
+              "id": 209,
+              "name": "johto-route-36-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-37",
+          "locationareas": [
+            {
+              "id": 210,
+              "name": "johto-route-37-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-38",
+          "locationareas": [
+            {
+              "id": 222,
+              "name": "johto-route-38-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-39",
+          "locationareas": [
+            {
+              "id": 223,
+              "name": "johto-route-39-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-sea-route-40",
+          "locationareas": [
+            {
+              "id": 225,
+              "name": "johto-sea-route-40-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-sea-route-41",
+          "locationareas": [
+            {
+              "id": 226,
+              "name": "johto-sea-route-41-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-42",
+          "locationareas": [
+            {
+              "id": 236,
+              "name": "johto-route-42-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-43",
+          "locationareas": [
+            {
+              "id": 241,
+              "name": "johto-route-43-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-44",
+          "locationareas": [
+            {
+              "id": 243,
+              "name": "johto-route-44-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-45",
+          "locationareas": [
+            {
+              "id": 251,
+              "name": "johto-route-45-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-46",
+          "locationareas": [
+            {
+              "id": 252,
+              "name": "johto-route-46-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-47",
+          "locationareas": [
+            {
+              "id": 255,
+              "name": "johto-route-47-area"
+            },
+            {
+              "id": 266,
+              "name": "johto-route-47-cave-gate"
+            },
+            {
+              "id": 267,
+              "name": "johto-route-47-inside-cave"
+            }
+          ]
+        },
+        {
+          "name": "johto-route-48",
+          "locationareas": [
+            {
+              "id": 286,
+              "name": "johto-route-48-area"
+            }
+          ]
+        },
+        {
+          "name": "ruins-of-alph",
+          "locationareas": [
+            {
+              "id": 193,
+              "name": "ruins-of-alph-outside"
+            },
+            {
+              "id": 194,
+              "name": "ruins-of-alph-interior-a"
+            },
+            {
+              "id": 195,
+              "name": "ruins-of-alph-interior-b"
+            },
+            {
+              "id": 196,
+              "name": "ruins-of-alph-interior-c"
+            },
+            {
+              "id": 197,
+              "name": "ruins-of-alph-interior-d"
+            }
+          ]
+        },
+        {
+          "name": "slowpoke-well",
+          "locationareas": [
+            {
+              "id": 202,
+              "name": "slowpoke-well-1f"
+            },
+            {
+              "id": 203,
+              "name": "slowpoke-well-b1f"
+            }
+          ]
+        },
+        {
+          "name": "sprout-tower",
+          "locationareas": [
+            {
+              "id": 190,
+              "name": "sprout-tower-2f"
+            },
+            {
+              "id": 191,
+              "name": "sprout-tower-3f"
+            }
+          ]
+        },
+        {
+          "name": "bell-tower",
+          "locationareas": [
+            {
+              "id": 214,
+              "name": "bell-tower-2f"
+            },
+            {
+              "id": 215,
+              "name": "bell-tower-3f"
+            },
+            {
+              "id": 216,
+              "name": "bell-tower-4f"
+            },
+            {
+              "id": 217,
+              "name": "bell-tower-5f"
+            },
+            {
+              "id": 218,
+              "name": "bell-tower-6f"
+            },
+            {
+              "id": 219,
+              "name": "bell-tower-7f"
+            },
+            {
+              "id": 220,
+              "name": "bell-tower-8f"
+            },
+            {
+              "id": 221,
+              "name": "bell-tower-9f"
+            },
+            {
+              "id": 268,
+              "name": "bell-tower-10f"
+            },
+            {
+              "id": 793,
+              "name": "bell-tower-roof"
+            },
+            {
+              "id": 805,
+              "name": "bell-tower-1f"
+            }
+          ]
+        },
+        {
+          "name": "tohjo-falls",
+          "locationareas": [
+            {
+              "id": 316,
+              "name": "tohjo-falls-area"
+            }
+          ]
+        },
+        {
+          "name": "union-cave",
+          "locationareas": [
+            {
+              "id": 198,
+              "name": "union-cave-1f"
+            },
+            {
+              "id": 199,
+              "name": "union-cave-b1f"
+            },
+            {
+              "id": 200,
+              "name": "union-cave-b2f"
+            }
+          ]
+        },
+        {
+          "name": "unknown-all-poliwag",
+          "locationareas": [
+            {
+              "id": 257,
+              "name": "unknown-all-poliwag-area"
+            }
+          ]
+        },
+        {
+          "name": "unknown-all-rattata",
+          "locationareas": [
+            {
+              "id": 275,
+              "name": "unknown-all-rattata-area"
+            }
+          ]
+        },
+        {
+          "name": "unknown-all-bugs",
+          "locationareas": [
+            {
+              "id": 208,
+              "name": "unknown-all-bugs-area"
+            }
+          ]
+        },
+        {
+          "name": "violet-city",
+          "locationareas": [
+            {
+              "id": 189,
+              "name": "violet-city-area"
+            },
+            {
+              "id": 790,
+              "name": "violet-city-poke-mart"
+            },
+            {
+              "id": 791,
+              "name": "violet-city-pokemon-center"
+            }
+          ]
+        },
+        {
+          "name": "whirl-islands",
+          "locationareas": [
+            {
+              "id": 227,
+              "name": "whirl-islands-1f"
+            },
+            {
+              "id": 228,
+              "name": "whirl-islands-b1f"
+            },
+            {
+              "id": 229,
+              "name": "whirl-islands-empty-floor-x"
+            },
+            {
+              "id": 230,
+              "name": "whirl-islands-b2f"
+            },
+            {
+              "id": 231,
+              "name": "whirl-islands-empty-floor-y"
+            },
+            {
+              "id": 232,
+              "name": "whirl-islands-b3f"
+            }
+          ]
+        },
+        {
+          "name": "azalea-town",
+          "locationareas": [
+            {
+              "id": 798,
+              "name": "azalea-town-area"
+            }
+          ]
+        },
+        {
+          "name": "goldenrod-city",
+          "locationareas": [
+            {
+              "id": 765,
+              "name": "goldenrod-city-north-gate"
+            },
+            {
+              "id": 766,
+              "name": "goldenrod-city-bills-house"
+            }
+          ]
+        },
+        {
+          "name": "mahogany-town",
+          "locationareas": [
+            {
+              "id": 800,
+              "name": "mahogany-town-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-lighthouse",
+          "locationareas": []
+        },
+        {
+          "name": "team-rocket-hq",
+          "locationareas": [
+            {
+              "id": 841,
+              "name": "team-rocket-hq-area"
+            }
+          ]
+        },
+        {
+          "name": "goldenrod-tunnel",
+          "locationareas": []
+        },
+        {
+          "name": "mt-silver-cave",
+          "locationareas": []
+        },
+        {
+          "name": "pokeathlon-dome",
+          "locationareas": []
+        },
+        {
+          "name": "ss-aqua",
+          "locationareas": []
+        },
+        {
+          "name": "safari-zone-gate",
+          "locationareas": []
+        },
+        {
+          "name": "cliff-cave",
+          "locationareas": []
+        },
+        {
+          "name": "frontier-access",
+          "locationareas": []
+        },
+        {
+          "name": "bellchime-trail",
+          "locationareas": []
+        },
+        {
+          "name": "sinjoh-ruins",
+          "locationareas": [
+            {
+              "id": 842,
+              "name": "sinjoh-ruins-area"
+            }
+          ]
+        },
+        {
+          "name": "embedded-tower",
+          "locationareas": [
+            {
+              "id": 826,
+              "name": "embedded-tower-kyogre-room"
+            },
+            {
+              "id": 827,
+              "name": "embedded-tower-groundon-room"
+            },
+            {
+              "id": 828,
+              "name": "embedded-tower-rayquaza-room"
+            }
+          ]
+        },
+        {
+          "name": "pokewalker",
+          "locationareas": []
+        },
+        {
+          "name": "cliff-edge-gate",
+          "locationareas": []
+        },
+        {
+          "name": "radio-tower",
+          "locationareas": []
+        },
+        {
+          "name": "roaming-johto",
+          "locationareas": [
+            {
+              "id": 795,
+              "name": "roaming-johto-area"
+            }
+          ]
+        },
+        {
+          "name": "johto-safari-zone",
+          "locationareas": [
+            {
+              "id": 813,
+              "name": "johto-safari-zone-zone-peak"
+            },
+            {
+              "id": 814,
+              "name": "johto-safari-zone-zone-desert"
+            },
+            {
+              "id": 815,
+              "name": "johto-safari-zone-zone-plains"
+            },
+            {
+              "id": 816,
+              "name": "johto-safari-zone-zone-meadow"
+            },
+            {
+              "id": 817,
+              "name": "johto-safari-zone-zone-forest"
+            },
+            {
+              "id": 818,
+              "name": "johto-safari-zone-zone-swamp"
+            },
+            {
+              "id": 819,
+              "name": "johto-safari-zone-zone-marshland"
+            },
+            {
+              "id": 820,
+              "name": "johto-safari-zone-zone-mountain"
+            },
+            {
+              "id": 821,
+              "name": "johto-safari-zone-zone-rocky-beach"
+            },
+            {
+              "id": 822,
+              "name": "johto-safari-zone-zone-wasteland"
+            },
+            {
+              "id": 823,
+              "name": "johto-safari-zone-zone-savannah"
+            },
+            {
+              "id": 824,
+              "name": "johto-safari-zone-zone-wetland"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
