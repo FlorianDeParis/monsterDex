@@ -59,7 +59,7 @@ export class MapService {
     pokemonGeneration: string,
   ): Observable<RegionMarkerList[]> {
     return this.encountersService
-      .getPokemonEncounters(pokemonId, pokemonGeneration)
+      .getEncountersList(pokemonId, pokemonGeneration)
       .pipe(map((PKMNencounters) => this.generateMapMarkers(PKMNencounters)));
   }
 

@@ -42,11 +42,6 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     this.idMonster = this.route.snapshot.params['idMonster'];
     this.idPokeGen = this.route.snapshot.params['idPokeGen'];
     this.idDex = this.route.snapshot.params['idDex'];
-    console.log({
-      'id pokemon': this.idMonster,
-      generation: this.idPokeGen,
-      'id Endoint pokedex': this.idDex,
-    });
   }
 
   ngOnInit(): void {

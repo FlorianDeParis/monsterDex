@@ -19,7 +19,7 @@ export class EncountersService {
     this.generationGamesList = GenerationGamesList;
   }
 
-  getPokemonEncounters(
+  getEncountersList(
     pokemonId: string,
     pokemonGeneration: string,
   ): Observable<LocationAreaEncounter[]> {
@@ -37,8 +37,9 @@ export class EncountersService {
   ): LocationAreaEncounter[] {
     let encountersList: LocationAreaEncounter[] = [];
     encountersAPI.map((encounter) => {
+      console.log(encounter);
       (encountersList as any[]).push(
-        this.isOnTheSameGameGeneration(encounter, pokemonGeneration),
+        this.filterCurrentGameGeneration(encounter, pokemonGeneration),
       );
     });
     encountersList = encountersList.filter(Boolean);
@@ -47,7 +48,7 @@ export class EncountersService {
 
   // Some encounters are on the same region
   // but not in the same game generation
-  isOnTheSameGameGeneration(
+  filterCurrentGameGeneration(
     locationAreaEncounter: LocationAreaEncounter,
     pokemonGeneration: string,
   ): false | LocationAreaEncounter {
@@ -70,14 +71,6 @@ export class EncountersService {
       version_details: locationAreaEncounterFiltered,
     };
 
-    // console.log('%c after ', 'background:blue;color:white;');
-    // console.log(filteredLocations);
-    // console.log(
-    //   `%c ${locationAreaEncounter.location_area.name} ` + '%cis on same generation ? ' + `%c ${filteredLocations.version_details.length > 0 ? 'YES' : 'NO' } `,
-    //   'color:orange;background:black;',
-    //   'color:white;background:black;',
-    //   `background: ${filteredLocations.version_details.length > 0 ? 'green' : 'red' }`
-    // );
     return filteredLocations.version_details.length > 0
       ? { ...filteredLocations }
       : false;
