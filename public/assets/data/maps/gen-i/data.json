@@ -3,10 +3,11 @@
     {
       "name": "kanto",
       "id": 1,
+      "size": [20, 17],
       "locations": [
         {
           "name": "celadon-city",
-          "coordinates": [9, 5],
+          "coordinates": [[9, 5]],
           "locationareas": [
             {
               "id": 283,
@@ -20,7 +21,7 @@
         },
         {
           "name": "cerulean-city",
-          "coordinates": [12, 2],
+          "coordinates": [[12, 2]],
           "locationareas": [
             {
               "id": 281,
@@ -30,7 +31,7 @@
         },
         {
           "name": "cinnabar-island",
-          "coordinates": [4, 15],
+          "coordinates": [[4, 15]],
           "locationareas": [
             {
               "id": 279,
@@ -44,7 +45,7 @@
         },
         {
           "name": "digletts-cave",
-          "coordinates": [5, 4],
+          "coordinates": [[5, 4]],
           "locationareas": [
             {
               "id": 317,
@@ -54,7 +55,7 @@
         },
         {
           "name": "fuchsia-city",
-          "coordinates": [10, 13],
+          "coordinates": [[10, 13]],
           "locationareas": [
             {
               "id": 284,
@@ -64,7 +65,7 @@
         },
         {
           "name": "mt-moon",
-          "coordinates": [8, 2],
+          "coordinates": [[8, 2]],
           "locationareas": [
             {
               "id": 256,
@@ -90,7 +91,7 @@
         },
         {
           "name": "pallet-town",
-          "coordinates": [4, 11],
+          "coordinates": [[4, 11]],
           "locationareas": [
             {
               "id": 285,
@@ -100,7 +101,7 @@
         },
         {
           "name": "rock-tunnel",
-          "coordinates": [16, 2],
+          "coordinates": [[16, 2]],
           "locationareas": [
             {
               "id": 292,
@@ -466,7 +467,7 @@
         },
         {
           "name": "seafoam-islands",
-          "coordinates": [7, 15],
+          "coordinates": [[7, 15]],
           "locationareas": [
             {
               "id": 258,
@@ -492,7 +493,7 @@
         },
         {
           "name": "cerulean-cave",
-          "coordinates": [12, 2],
+          "coordinates": [[12, 2]],
           "locationareas": [
             {
               "id": 323,
@@ -510,7 +511,7 @@
         },
         {
           "name": "vermilion-city",
-          "coordinates": [12, 9],
+          "coordinates": [[12, 9]],
           "locationareas": [
             {
               "id": 282,
@@ -524,7 +525,7 @@
         },
         {
           "name": "kanto-victory-road-1",
-          "coordinates": [2, 4],
+          "coordinates": [[2, 4]],
           "locationareas": [
             {
               "id": 294,
@@ -542,7 +543,7 @@
         },
         {
           "name": "viridian-city",
-          "coordinates": [4, 8],
+          "coordinates": [[4, 8]],
           "locationareas": [
             {
               "id": 280,
@@ -552,7 +553,7 @@
         },
         {
           "name": "viridian-forest",
-          "coordinates": [4, 4],
+          "coordinates": [[4, 4]],
           "locationareas": [
             {
               "id": 321,
@@ -577,7 +578,7 @@
         },
         {
           "name": "power-plant",
-          "coordinates": [16, 3],
+          "coordinates": [[16, 3]],
           "locationareas": [
             {
               "id": 330,
@@ -587,7 +588,7 @@
         },
         {
           "name": "kanto-victory-road-2",
-          "coordinates": [2, 4],
+          "coordinates": [[2, 4]],
           "locationareas": [
             {
               "id": 331,
@@ -605,7 +606,7 @@
         },
         {
           "name": "pokemon-tower",
-          "coordinates": [16, 5],
+          "coordinates": [[16, 5]],
           "locationareas": [
             {
               "id": 334,
@@ -639,7 +640,7 @@
         },
         {
           "name": "pokemon-mansion",
-          "coordinates": [4, 15],
+          "coordinates": [[4, 15]],
           "locationareas": [
             {
               "id": 341,
@@ -661,7 +662,7 @@
         },
         {
           "name": "kanto-safari-zone",
-          "coordinates": [10, 13],
+          "coordinates": [[10, 13]],
           "locationareas": [
             {
               "id": 345,
@@ -683,22 +684,22 @@
         },
         {
           "name": "pewter-city",
-          "coordinates": [4, 3],
+          "coordinates": [[4, 3]],
           "locationareas": []
         },
         {
           "name": "lavender-town",
-          "coordinates": [16, 5],
+          "coordinates": [[16, 5]],
           "locationareas": []
         },
         {
           "name": "indigo-plateau",
-          "coordinates": [2, 2],
+          "coordinates": [[2, 2]],
           "locationareas": []
         },
         {
           "name": "saffron-city",
-          "coordinates": [12, 5],
+          "coordinates": [[12, 5]],
           "locationareas": [
             {
               "id": 762,
@@ -716,7 +717,7 @@
         },
         {
           "name": "ss-anne",
-          "coordinates": [12, 9],
+          "coordinates": [[12, 9]],
           "locationareas": [
             {
               "id": 461,

@@ -1,26 +1,38 @@
-#kantoMap {
-  background-image: url("../../../public/assets/img/maps/kanto.png");
+.mapWrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.worldMap {
+  --cell-width: 8px;
+  --cell-height: 8px;
+  --path-world-map: '';
+
+  background-image: var(--path-world-map);
   background-repeat: no-repeat;
+
+  &[world="kanto-1"]{--path-world-map: url("/assets/img/maps/gen-i/kanto.png");}
+  &[world="kanto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/kanto.png");}
+  &[world="johto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/johto.png");}
   tr {
     td {
       position: relative;
-      width: 8px;
-      height: 8px;
-      // box-shadow: inset 0px 0px 0px 1px #00000013;
+      width: var(--cell-width);
+      height: var(--cell-height);
+      box-shadow: inset 0px 0px 0px 1px #00000013;
       aspect-ratio: 1;
       line-height: 1;
       font-size: 0;
-      // span{
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   transform: translateX(-50%) translateY(-50%);
-      //   font-size: 4px;
-      //   color: blue;
-      //   display: inline-block;
-      //   min-width: 100%;
-      //   min-height: 100%;
-      // }
+      span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 4px;
+        color: red;
+        display: inline-block;
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
   }
 }
