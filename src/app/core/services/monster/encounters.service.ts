@@ -24,6 +24,7 @@ export class EncountersService {
     pokemonGeneration: string,
   ): Observable<LocationAreaEncounter[]> {
     return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
+      tap(e => console.log(e)),
       map((encounters) =>
         this.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
       ),

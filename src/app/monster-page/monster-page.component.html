@@ -25,5 +25,64 @@
     }
 
     <app-world-map [pokemonGeneration]="idPokeGen" [pokemonId]="idMonster" />
+
+    @if(pokemonEncountersList$ | async; as pokemonEncountersList){
+      <table class="encounters">
+        <thead>
+          <tr>
+            <td style="width:200px;">
+              Lieu
+            </td>
+            <td style="width:100px;">
+              Versions
+            </td>
+            <td>
+              Types de recontres
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          @for (encounter of pokemonEncountersList; track encounter.location_area.name){
+            @for (encounterInGame of encounter.version_details; track encounterInGame.version.name){
+              <tr>
+                @if($first){
+                  <td [attr.rowspan]="encounter.version_details.length > 0 ? encounter.version_details.length:null">
+                    {{ encounter.location_area.name }}
+                  </td>
+                }
+                <td>
+                  {{ encounterInGame.version.name }}
+                </td>
+                <td>
+                  <table>
+                    <thead>
+                      <tr>
+                        <td>Méthode:</td>
+                        <td>Nv:</td>
+                        <td>Chance:</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @for(encounter_detail of encounterInGame.encounter_details; track encounter_detail){
+                        <tr>
+                          <td>{{ encounter_detail.method.name }}</td>
+                          <td>{{ encounter_detail.min_level }}
+                            @if( encounter_detail.min_level != encounter_detail.max_level){
+                              -{{ encounter_detail.max_level }}
+                            }
+                          </td>
+                          <td>{{encounter_detail.chance }}%</td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            }
+          }
+        </tbody>
+      </table>
+    }
+
   }
 </section>
