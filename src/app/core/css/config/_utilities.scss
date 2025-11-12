@@ -1,0 +1,21 @@
+@use "sass:map";
+@use "../lib/colors" as *;
+@use "../config/colors" as *;
+
+
+// Utilities
+
+$utilities: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map.merge(
+  (
+
+    // scss-docs-start utils-bg-color
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values: $color-tokens
+    )
+  ),
+  $utilities
+);

@@ -1,0 +1,13 @@
+@use "../config/colors" as *;
+
+@function color($color-key:null, $color-subkey:null, $colors:$color-tokens){
+  @if(map-has-key($colors,$color-key) and map-has-key($colors,$color-key,$color-subkey)){
+    @return map-get($colors,$color-key,$color-subkey);
+  }
+  @else if (map-has-key($colors,$color-key)){
+    @return map-get($colors,$color-key);
+  }
+  @else {
+    @warn #{$color-key} + 'not found !';
+  }
+}

@@ -1,0 +1,9 @@
+@use "../config/utilities" as *;
+@use "../lib/mixins" as *;
+
+
+//  Generate non-responsive utilities
+@each $key, $utility in $utilities {
+  $infix: "";
+  @include generate-utility($utility, $infix);
+}
