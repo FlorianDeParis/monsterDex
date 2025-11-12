@@ -30,15 +30,9 @@
       <table class="encounters">
         <thead>
           <tr>
-            <td style="width:200px;">
-              Lieu
-            </td>
-            <td style="width:100px;">
-              Versions
-            </td>
-            <td>
-              Types de recontres
-            </td>
+            <td style="width:200px;">Lieu</td>
+            <td style="width:100px;">Versions</td>
+            <td>Types de recontres</td>
           </tr>
         </thead>
         <tbody>
@@ -50,8 +44,8 @@
                     {{ encounter.location_area.name }}
                   </td>
                 }
-                <td>
-                  {{ encounterInGame.version.name }}
+                <td class="game">
+                  <span class="badge bg-{{encounterInGame.version.name}}">{{ encounterInGame.version.name | uppercase }}</span>
                 </td>
                 <td>
                   <table>

@@ -1,0 +1,17 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+
+@function generateBgcolor($map, $submap, $key:null) {
+  @return map-deep-get($map, $submap, $key);
+}
+
+@function map-deep-get($map, $keys...) {
+  //https://stackoverflow.com/questions/43188418/check-if-value-in-a-sass-map-exists
+  $scope: $map; $i: 1;
+  @while (meta.type-of($scope) == map) and ($i <= list.length($keys)) {
+    $scope: map.get($scope, list.nth($keys, $i));
+    $i: $i + 1;
+  }
+  @return $scope;
+}

@@ -1,0 +1,14 @@
+@use 'functions' as f;
+@use '../config/colors' as c;
+
+// BGGamesThemes utils
+$ct: c.$color-tokens;
+$BGGamesThemes: f.map-deep-get($ct, 'version-group-color');
+@debug $BGGamesThemes;
+
+@each $theme, $gameColor in $BGGamesThemes{
+  .bg-#{$theme}{
+    background: #{$gameColor};
+  }
+}
+
