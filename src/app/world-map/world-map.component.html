@@ -1,5 +1,20 @@
 @if (isDisplayableMap(pokemonGeneration)) {
   @if (places$ | async; as places) {
+    <div class="mapWrapper">
+      @for (regionMarkerList of places; track regionMarkerList.name){
+        <div class="worldMap"
+          [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)"
+          [style]="getMapStyle(regionMarkerList)" >
+            @for(marker of regionMarkerList.markers; track marker){
+              <span class="marker" ><!--{{ marker.name }}--></span>
+            }
+        </div>
+
+        <code>{{ transformMatrixToRelativeCoordinates(regionMarkerList) | json }}</code>
+      }
+    </div>
+
+    <!--<br><br><br><br>
     <section class="mapWrapper">
       @for (regionMarkerList of places; track regionMarkerList.name){
         <table class="worldMap" [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)">
@@ -7,7 +22,6 @@
             <tr>
               @for (currentCol of getSize(regionMarkerList.size[0]); track "col_" + currentCol) {
                 <td>
-                  <!--<span>{{currentCol+"-"+currentRow}}</span>-->
                   @if (checkTile$(currentCol, currentRow, regionMarkerList)) {
                     <app-tile-map />
                   }
@@ -17,7 +31,11 @@
           }
         </table>
       }
-    </section>
+    </section>-->
+
+
+
+
   } @else {
     chargement de la carte ...
   }
