@@ -3,32 +3,14 @@ import { PokeApiService } from '../poke-api.service';
 import { LocationAreaEncounter } from '../../models/PokeAPI/pokemon.type';
 import { map, Observable, tap } from 'rxjs';
 import { EncountersService } from './encounters.service';
-import { MapMarker, RegionMarkerList } from '../../models/monsterDex.type';
+import { MapMarker, RegionMarkerList, Region } from '../../models/monsterDex.type';
 import { ActivatedRoute } from '@angular/router';
 
-import * as generation1 from '../../../../../public/assets/data/maps/gen-i/data.json';
-import * as generation2 from '../../../../../public/assets/data/maps/gen-ii/data.json';
+import * as generation1 from '../../../../../public/assets/data/maps/gen-i/data-new.json';
+import * as generation2 from '../../../../../public/assets/data/maps/gen-ii/data-new.json';
 
 interface GenerationDataSet {
   region: Region[];
-}
-
-interface Region {
-  name: string;
-  id: number;
-  size: number[];
-  locations: Location[];
-}
-
-interface Location {
-  name: string;
-  coordinates: number[][];
-  locationareas: LocationArea[];
-}
-
-interface LocationArea {
-  name: string;
-  id: number;
 }
 
 const DATASET: {
@@ -51,7 +33,8 @@ export class MapService {
       .pipe(map((params) => +params['idPokeGen']))
       .subscribe((generation) => {
         this.dataset.set(DATASET[generation]);
-      });
+      }
+    );
   }
 
   getMapMarkers(
@@ -89,7 +72,19 @@ export class MapService {
         mapMarkerList.push(RegionMarkerList);
       }
     )
-    console.log("MAP MARKER LIST", mapMarkerList);
+    // console.log("MAP MARKER LIST", mapMarkerList);
+    return mapMarkerList;
+  }
+
+  // To be rebased later
+  getAllMapMarkers(pokemonGeneration: string): Region[]{
+    let mapMarkerList: Region[] = [];
+    this.dataset().region.map(
+      (regionObj) => {
+        console.log(regionObj);
+        mapMarkerList.push(regionObj);
+      }
+    );
     return mapMarkerList;
   }
 }

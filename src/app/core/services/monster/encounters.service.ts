@@ -24,11 +24,9 @@ export class EncountersService {
     pokemonGeneration: string,
   ): Observable<LocationAreaEncounter[]> {
     return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
-      tap(e => console.log(e)),
       map((encounters) =>
         this.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
-      ),
-      tap((e) => console.log(e)),
+      )
     );
   }
 
@@ -38,7 +36,7 @@ export class EncountersService {
   ): LocationAreaEncounter[] {
     let encountersList: LocationAreaEncounter[] = [];
     encountersAPI.map((encounter) => {
-      console.log(encounter);
+      // console.log(encounter);
       (encountersList as any[]).push(
         this.filterCurrentGameGeneration(encounter, pokemonGeneration),
       );

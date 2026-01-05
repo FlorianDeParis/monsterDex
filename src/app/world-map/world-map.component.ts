@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, signal } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
-import { MapMarker, RegionMarkerList } from '../core/models/monsterDex.type';
+import { MapMarker, RegionMarkerList, Region } from '../core/models/monsterDex.type';
 import { EncountersService } from '../core/services/monster/encounters.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe, JsonPipe } from '@angular/common';
@@ -17,7 +17,7 @@ interface Places {
 
 @Component({
   selector: 'app-world-map',
-  imports: [AsyncPipe, JsonPipe],
+  imports: [AsyncPipe],
   providers: [MapService],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.scss',
@@ -27,6 +27,7 @@ export class WorldMapComponent implements OnInit {
   @Input() pokemonId!: string;
   @Input() region!: string;
   places$!: Observable<RegionMarkerList[]>;
+  allPlaces!: Region[];
 
   constructor(
     private encountersService: EncountersService,
@@ -38,6 +39,11 @@ export class WorldMapComponent implements OnInit {
       this.pokemonId,
       this.pokemonGeneration,
     );
+
+    // this.allPlaces$ = this.mapService.getAllMapMarkers(
+    //   this.pokemonGeneration
+    // );
+    this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
   }
 
   checkTile$(x: number, y: number, regionMarkerList: RegionMarkerList): boolean {
@@ -70,20 +76,29 @@ export class WorldMapComponent implements OnInit {
     };
   }
 
-  transformMatrixToRelativeCoordinates(markerList: RegionMarkerList) {
-    const regionSizes: number[] = markerList.size;
+  transformMatrixToRelativeCoordinates(region: Region): Region {
+
+    const regionSizes: number[] = region.size;
     const percentScale: number[] = [(100/regionSizes[0]), (100/regionSizes[1])]
-    let newMarkerList = markerList.markers.map(
-      (marker) => {
-        // console.log(marker.coordinates);
-        let percentX = (marker.coordinates[0] * percentScale[0]) + (percentScale[0] / 2);
-        let percentY = (marker.coordinates[1] * percentScale[1]) + (percentScale[1] / 2);
-        return {...marker, 'coordinates':[percentX, percentY]}
-      }
+
+    const newLocationsList = region.locations.map(
+      (location) => ({
+        ...location,
+        coordinates: location.coordinates.map(
+          ([x,y]) => this.scale(x,y, percentScale[0], percentScale[1])
+        )
+      })
     );
 
-    console.log('old -> new', markerList, {...markerList,'markers':newMarkerList});
-    return {...markerList,'markers':newMarkerList}
+    console.log('newLocationsList', newLocationsList)
+
+    // console.log('old -> new', markerList, {...markerList,'markers':newMarkerList});
+    return {...region, "locations":newLocationsList}
   }
 
+  scale(x: number,y: number , w:number, h:number): number[]{
+    let percentX = ((x * w) + (w / 2));
+    let percentY = ((y * h) + (h / 2));
+    return [percentX, percentY]
+  }
 }
