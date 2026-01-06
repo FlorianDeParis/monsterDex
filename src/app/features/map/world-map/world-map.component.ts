@@ -17,15 +17,17 @@ interface Places {
 
 @Component({
   selector: 'app-world-map',
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, JsonPipe, TileMapComponent],
   providers: [MapService],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.scss',
 })
 export class WorldMapComponent implements OnInit {
+  @Input() debug: boolean = false;
   @Input() pokemonGeneration!: string;
   @Input() pokemonId!: string;
   @Input() region!: string;
+  oldPlaces$!: Observable<RegionMarkerList[]>;
   places$!: Observable<RegionMarkerList[]>;
   allPlaces!: Region[];
 
@@ -35,6 +37,12 @@ export class WorldMapComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+
+    this.oldPlaces$ = this.mapService.getMatrixMapMarkers(
+      this.pokemonId,
+      this.pokemonGeneration,
+    );
+
     this.places$ = this.mapService.getMapMarkers(
       this.pokemonId,
       this.pokemonGeneration,
