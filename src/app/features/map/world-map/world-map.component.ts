@@ -29,7 +29,7 @@ export class WorldMapComponent implements OnInit {
   @Input() region!: string;
   oldPlaces$!: Observable<RegionMarkerList[]>;
   places$!: Observable<RegionMarkerList[]>;
-  allPlaces!: Region[];
+  allPlaces: Region[] = [];
 
   constructor(
     private encountersService: EncountersService,
@@ -37,21 +37,18 @@ export class WorldMapComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-
-    this.oldPlaces$ = this.mapService.getMatrixMapMarkers(
-      this.pokemonId,
-      this.pokemonGeneration,
-    );
-
     this.places$ = this.mapService.getMapMarkers(
       this.pokemonId,
       this.pokemonGeneration,
     );
 
-    // this.allPlaces$ = this.mapService.getAllMapMarkers(
-    //   this.pokemonGeneration
-    // );
-    this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
+    if(this.debug){
+      this.oldPlaces$ = this.mapService.getMatrixMapMarkers(
+        this.pokemonId,
+        this.pokemonGeneration,
+      );
+      this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
+    }
   }
 
   checkTile$(x: number, y: number, regionMarkerList: RegionMarkerList): boolean {
