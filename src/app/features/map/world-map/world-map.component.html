@@ -1,5 +1,5 @@
-@if(!debug){
-  @if (isDisplayableMap(pokemonGeneration)) {
+@if (isDisplayable) {
+  @if(!debug){
     @if (places$ | async; as places) {
       <div class="mapWrapper">
         @for (regionMarkerList of places; track regionMarkerList.name){
@@ -16,59 +16,58 @@
       chargement de la carte ...
     }
   } @else {
-    <p>Carte non disponible pour le moment pour cette génération</p>
-  }
-} @else {
-  <!-- DEBUG MODE -->
-  <h2 style="font-size:40px;margin-bottom:45px;">DEBUG MODE</h2>
-  @if (isDisplayableMap(pokemonGeneration)) {
+    <!-- DEBUG MODE -->
+    <h2 style="font-size:40px;margin-bottom:45px;">DEBUG MODE</h2>
+      @if (oldPlaces$ | async; as oldPlaces) {
+        {{ oldPlaces | json }}
+        <h3 style="font-size:20px;font-weight:700;margin:15px 0;">Matrix map</h3>
+        <section class="mapWrapper mapWrapper">
+          @for (regionMarkerList of oldPlaces; track regionMarkerList.name){
 
-
-    @if (oldPlaces$ | async; as oldPlaces) {
-      {{ oldPlaces | json }}
-      <h3 style="font-size:20px;font-weight:700;margin:15px 0;">Matrix map</h3>
-      <section class="mapWrapper mapWrapper">
-        @for (regionMarkerList of oldPlaces; track regionMarkerList.name){
-
-          <table class="worldMap worldMap--matrix" [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)">
-            @for (currentRow of getSize(regionMarkerList.size[1]); track "row_" + currentRow) {
-              <tr>
-                @for (currentCol of getSize(regionMarkerList.size[0]); track "col_" + currentCol) {
-                  <td>
-                    @if (checkTile$(currentCol, currentRow, regionMarkerList)) {
-                      <app-tile-map />
-                    }
-                  </td>
-                }
-              </tr>
-            }
-          </table>
-        }
-      </section>
-    }
-
-    @if (places$ | async; as places) {
-      <h3 style="font-size:20px;font-weight:700;margin:15px 0;">Map with marker positions</h3>
-      <div class="mapWrapper">
-        @for (regionMarkerList of places; track regionMarkerList.name){
-          <div class="worldMap"
-            [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)"
-            [style]="getMapStyle(regionMarkerList)" >
-              @for(marker of regionMarkerList.markers; track marker){
-                <span class="marker" [style]="getMarkerStyle(marker, regionMarkerList)"></span>
+            <table class="worldMap worldMap--matrix" [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)">
+              @for (currentRow of getSize(regionMarkerList.size[1]); track "row_" + currentRow) {
+                <tr>
+                  @for (currentCol of getSize(regionMarkerList.size[0]); track "col_" + currentCol) {
+                    <td>
+                      @if (checkTile$(currentCol, currentRow, regionMarkerList)) {
+                        <app-tile-map />
+                      }
+                    </td>
+                  }
+                </tr>
               }
-          </div>
-        }
-      </div>
-    } @else { loading... }
-  } @else { not available... }
-  <h3 style="font-size:20px;font-weight:700;margin:15px 0;">Coordinates in percentages</h3>
-  @if (allPlaces) {
-    @for (region of allPlaces; track region.name){
-      <h4 style="font-size:25px;margin-bottom:5px;">{{ region.name }}</h4>
-      <p style="margin-bottom:15px;">Aspect ratio: {{ region.size[0] }}x{{ region.size[1] }}</p>
-      <code>{{ transformMatrixToRelativeCoordinates(region) | json }}</code><br><br>
-    }
-  }
+            </table>
+          }
+        </section>
+      }
 
+      @if (places$ | async; as places) {
+        <h3 style="font-size:20px;font-weight:700;margin:15px 0;">Map with marker positions</h3>
+        <div class="mapWrapper">
+          @for (regionMarkerList of places; track regionMarkerList.name){
+            <div class="worldMap"
+              [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)"
+              [style]="getMapStyle(regionMarkerList)" >
+                @for(marker of regionMarkerList.markers; track marker){
+                  <span class="marker" [style]="getMarkerStyle(marker, regionMarkerList)"></span>
+                }
+            </div>
+          }
+        </div>
+      } @else { loading... }
+
+    <h3 style="font-size:20px;font-weight:700;margin:15px 0;">Coordinates in percentages</h3>
+    @if (allPlaces) {
+      @for (region of allPlaces; track region.name){
+        <h4 style="font-size:25px;margin-bottom:5px;">{{ region.name }}</h4>
+        <p style="margin-bottom:15px;">Aspect ratio: {{ region.size[0] }}x{{ region.size[1] }}</p>
+        <code>{{ transformMatrixToRelativeCoordinates(region) | json }}</code><br><br>
+      }
+    }
+
+  }
 }
+@else {
+  <p>Carte non disponible pour le moment pour cette génération</p>
+}
+

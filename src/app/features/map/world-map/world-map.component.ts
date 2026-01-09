@@ -27,6 +27,7 @@ export class WorldMapComponent implements OnInit {
   @Input() pokemonGeneration!: string;
   @Input() pokemonId!: string;
   @Input() region!: string;
+  isDisplayable: boolean = false;
   oldPlaces$!: Observable<RegionMarkerList[]>;
   places$!: Observable<RegionMarkerList[]>;
   allPlaces: Region[] = [];
@@ -35,19 +36,21 @@ export class WorldMapComponent implements OnInit {
     private encountersService: EncountersService,
     private mapService: MapService,
   ) {}
-
   ngOnInit() {
-    this.places$ = this.mapService.getMapMarkers(
-      this.pokemonId,
-      this.pokemonGeneration,
-    );
-
-    if(this.debug){
-      this.oldPlaces$ = this.mapService.getMatrixMapMarkers(
+    if(this.isMapAllowed(this.pokemonGeneration)){
+      this.isDisplayable = true;
+      this.places$ = this.mapService.getMapMarkers(
         this.pokemonId,
         this.pokemonGeneration,
       );
-      this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
+
+      if(this.debug){
+        this.oldPlaces$ = this.mapService.getMatrixMapMarkers(
+          this.pokemonId,
+          this.pokemonGeneration,
+        );
+        this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
+      }
     }
   }
 
@@ -61,7 +64,7 @@ export class WorldMapComponent implements OnInit {
     return flag;
   }
 
-  isDisplayableMap(generation: string): boolean {
+  isMapAllowed(generation: string): boolean {
     // Authorize some regions to be displayable
     return [1,2].includes(+generation);
   }
