@@ -7,7 +7,7 @@
             [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)"
             [style]="getMapStyle(regionMarkerList)" >
               @for(marker of regionMarkerList.markers; track marker){
-                <span class="marker" style.left='{{ marker.coordinates[0]}}%' style.top='{{ marker.coordinates[1]}}%'><!--{{ marker.name }}--></span>
+                <span class="marker" [style]="getMarkerStyle(marker, regionMarkerList)"></span>
               }
           </div>
         }
@@ -57,7 +57,7 @@
             [attr.world]="getWorldMapClass(regionMarkerList.name,pokemonGeneration)"
             [style]="getMapStyle(regionMarkerList)" >
               @for(marker of regionMarkerList.markers; track marker){
-                <span class="marker" style.left='{{ marker.coordinates[0]}}%' style.top='{{ marker.coordinates[1]}}%'><!--{{ marker.name }}--></span>
+                <span class="marker" [style]="getMarkerStyle(marker, regionMarkerList)"></span>
               }
           </div>
         }

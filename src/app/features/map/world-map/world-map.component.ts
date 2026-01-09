@@ -84,6 +84,18 @@ export class WorldMapComponent implements OnInit {
     };
   }
 
+  getMarkerStyle(marker: MapMarker, region: RegionMarkerList): {} {
+    const style =  {
+      'aspect-ratio': '1/1',
+      'left': marker.coordinates[0]+'%',
+      'top': marker.coordinates[1]+'%',
+      'width': 'calc(100% / '+region.size[0]+' )',
+      'height': 'auto'
+    }
+    console.log(style)
+    return style;
+  }
+
   transformMatrixToRelativeCoordinates(region: Region): Region {
 
     const regionSizes: number[] = region.size;
