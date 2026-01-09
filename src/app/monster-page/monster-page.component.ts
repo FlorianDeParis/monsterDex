@@ -67,6 +67,10 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     this.pokemonEncountersList$ = this.encountersService.getEncountersList(id.toString(), generation);
   }
 
+  getEncounterIcon(key: string): string{
+    return this.encountersService.getEncounterIconPath(key);
+  }
+
   ngAfterViewInit(): void {
     this.audio.nativeElement.volume = this.volume;
   }
