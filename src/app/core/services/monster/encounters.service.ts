@@ -9,6 +9,8 @@ import {
   GenerationGames,
 } from '../../models/monsterDex.type';
 
+import * as encountersIcons from '../../../../../public/assets/data/encounters/types.json';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -73,5 +75,12 @@ export class EncountersService {
     return filteredLocations.version_details.length > 0
       ? { ...filteredLocations }
       : false;
+  }
+
+  getEncounterIconPath(key: string): string{
+    const icon = encountersIcons['types'].find(
+      (e) => e.name === key
+    )
+    return icon?.path ?? '';
   }
 }

@@ -1,0 +1,152 @@
+{
+  "types": [
+    {
+      "name": "walk",
+      "path": "/assets/img/grass.png"
+    },
+    {
+      "name": "old-rod",
+      "path": "/assets/img/fishing.gif"
+    },
+    {
+      "name": "good-rod",
+      "path": "/assets/img/fishing.gif"
+    },
+    {
+      "name": "super-rod",
+      "path": "/assets/img/fishing.gif"
+    },
+    {
+      "name": "surf",
+      "path": null
+    },
+    {
+      "name": "rock-smash",
+      "path": null
+    },
+    {
+      "name": "headbutt",
+      "path": null
+    },
+    {
+      "name": "dark-grass",
+      "path": null
+    },
+    {
+      "name": "grass-spots",
+      "path": null
+    },
+    {
+      "name": "cave-spots",
+      "path": null
+    },
+    {
+      "name": "bridge-spots",
+      "path": null
+    },
+    {
+      "name": "super-rod-spots",
+      "path": null
+    },
+    {
+      "name": "surf-spots",
+      "path": null
+    },
+    {
+      "name": "yellow-flowers",
+      "path": null
+    },
+    {
+      "name": "purple-flowers",
+      "path": null
+    },
+    {
+      "name": "red-flowers",
+      "path": null
+    },
+    {
+      "name": "rough-terrain",
+      "path": null
+    },
+    {
+      "name": "gift",
+      "path": null
+    },
+    {
+      "name": "gift-egg",
+      "path": null
+    },
+    {
+      "name": "only-one",
+      "path": null
+    },
+    {
+      "name": "pokeflute",
+      "path": null
+    },
+    {
+      "name": "headbutt-low",
+      "path": null
+    },
+    {
+      "name": "headbutt-normal",
+      "path": null
+    },
+    {
+      "name": "headbutt-high",
+      "path": null
+    },
+    {
+      "name": "squirt-bottle",
+      "path": null
+    },
+    {
+      "name": "wailmer-pail",
+      "path": null
+    },
+    {
+      "name": "seaweed",
+      "path": null
+    },
+    {
+      "name": "roaming-grass",
+      "path": null
+    },
+    {
+      "name": "roaming-water",
+      "path": null
+    },
+    {
+      "name": "devon-scope",
+      "path": null
+    },
+    {
+      "name": "feebas-tile-fishing",
+      "path": null
+    },
+    {
+      "name": "island-scan",
+      "path": null
+    },
+    {
+      "name": "sos-encounter",
+      "path": null
+    },
+    {
+      "name": "bubbling-spots",
+      "path": null
+    },
+    {
+      "name": "berry-piles",
+      "path": null
+    },
+    {
+      "name": "npc-trade",
+      "path": null
+    },
+    {
+      "name": "sos-from-bubbling-spot",
+      "path": null
+    }
+  ]
+}

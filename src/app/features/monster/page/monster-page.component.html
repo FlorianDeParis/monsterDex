@@ -60,7 +60,14 @@
                     <tbody>
                       @for(encounter_detail of encounterInGame.encounter_details; track encounter_detail){
                         <tr>
-                          <td><span class="sprite-tile" [attr.encounterMethodName]="encounter_detail.method.name"></span>{{ encounter_detail.method.name }}</td>
+                          <td>
+                            @let iconPath = getEncounterIcon(encounter_detail.method.name);
+                            @if( iconPath !== ''){
+                              <img [src]="iconPath">
+                            }
+                            <!--<span class="sprite-tile" [attr.encounterMethodName]="encounter_detail.method.name"></span>-->
+                            {{ encounter_detail.method.name }}
+                          </td>
                           <td>{{ encounter_detail.min_level }}
                             @if( encounter_detail.min_level != encounter_detail.max_level){
                               -{{ encounter_detail.max_level }}
