@@ -66,7 +66,7 @@ export class WorldMapComponent implements OnInit {
 
   isMapAllowed(generation: string): boolean {
     // Authorize some regions to be displayable
-    return [1,2].includes(+generation);
+    return [1,2,3].includes(+generation);
   }
 
   getWorldMapClass(region:string, gen:string): string{
@@ -85,15 +85,13 @@ export class WorldMapComponent implements OnInit {
   }
 
   getMarkerStyle(marker: MapMarker, region: RegionMarkerList): {} {
-    const style =  {
+    return {
       'aspect-ratio': '1/1',
       'left': marker.coordinates[0]+'%',
       'top': marker.coordinates[1]+'%',
       'width': 'calc(100% / '+region.size[0]+' )',
       'height': 'auto'
     }
-    console.log(style)
-    return style;
   }
 
   transformMatrixToRelativeCoordinates(region: Region): Region {

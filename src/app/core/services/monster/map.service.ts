@@ -8,9 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 
 import * as generation1 from '../../../../../public/assets/data/maps/gen-i/data-new.json';
 import * as generation2 from '../../../../../public/assets/data/maps/gen-ii/data-new.json';
+import * as generation3 from '../../../../../public/assets/data/maps/gen-iii/data-new.json';
 
 import * as generation1MTX from '../../../../../public/assets/data/maps/gen-i/data.json';
 import * as generation2MTX from '../../../../../public/assets/data/maps/gen-ii/data.json';
+import * as generation3MTX from '../../../../../public/assets/data/maps/gen-iii/data.json';
 
 interface GenerationDataSet {
   region: Region[];
@@ -21,6 +23,7 @@ const DATASET: {
 } = {
   1: generation1,
   2: generation2,
+  3: generation3,
 };
 
 const DATASETMATRIX: {
@@ -28,6 +31,7 @@ const DATASETMATRIX: {
 } = {
   1: generation1MTX,
   2: generation2MTX,
+  3: generation3MTX,
 };
 
 @Injectable()
@@ -91,6 +95,7 @@ export class MapService {
   // To be rebased later
   getAllMapMarkers(pokemonGeneration: string): Region[]{
     let mapMarkerList: Region[] = [];
+    console.log(this.dataset());
     this.dataset().region.map(
       (regionObj) => {
         console.log(regionObj);
