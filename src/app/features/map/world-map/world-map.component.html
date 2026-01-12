@@ -29,6 +29,7 @@
                 <tr>
                   @for (currentCol of getSize(regionMarkerList.size[0]); track "col_" + currentCol) {
                     <td>
+                      <span style="color:black;font-size:8px;">{{ currentCol + ' - ' + currentRow }}</span>
                       @if (checkTile$(currentCol, currentRow, regionMarkerList)) {
                         <app-tile-map />
                       }

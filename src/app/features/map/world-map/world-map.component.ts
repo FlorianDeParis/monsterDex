@@ -49,7 +49,7 @@ export class WorldMapComponent implements OnInit {
           this.pokemonId,
           this.pokemonGeneration,
         );
-        this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
+        this.allPlaces = this.mapService.getAllMapMarkers();
       }
     }
   }

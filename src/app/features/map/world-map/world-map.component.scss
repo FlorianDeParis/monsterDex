@@ -4,8 +4,10 @@
   flex-wrap: no-wrap;
 }
 .worldMap {
-  --cell-width: 8px;
-  --cell-height: 8px;
+  // --cell-width: 8px;
+  // --cell-height: 8px;
+  --cell-width: 16px;
+  --cell-height: 16px;
   --path-world-map: '';
   position: relative;
   background-image: var(--path-world-map);

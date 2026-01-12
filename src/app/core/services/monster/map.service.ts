@@ -93,10 +93,9 @@ export class MapService {
   }
 
   // To be rebased later
-  getAllMapMarkers(pokemonGeneration: string): Region[]{
+  getAllMapMarkers(): Region[]{
     let mapMarkerList: Region[] = [];
-    console.log(this.dataset());
-    this.dataset().region.map(
+    this.datasetmatrix().region.map(
       (regionObj) => {
         console.log(regionObj);
         mapMarkerList.push(regionObj);
