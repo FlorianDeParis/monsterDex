@@ -12,7 +12,7 @@
   flex-grow:1;
 
   .marker{
-    --background-img-marker: url("/assets/img/maps/map-marker.gif");
+    --background-img-marker: url("/assets/img/maps/map-marker-default.gif");
     position: absolute;
     display: inline-block;
     width: 16px;
@@ -26,12 +26,19 @@
 
   &[world="kanto-1"]{--path-world-map: url("/assets/img/maps/gen-i/kanto.png");}
   &[world="kanto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/kanto.png");}
-  &[world="johto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/johto.png");}
+  &[world="johto-2"]{
+    --path-world-map: url("/assets/img/maps/gen-ii/johto.png");
+    .marker{
+      --background-img-marker: url("/assets/img/maps/gen-ii/marker.png");
+      background-size: 80%;
+      animation: marker-blink-genII 0.5s infinite;
+    }
+  }
   &[world="hoenn-3"]{
     --path-world-map: url("/assets/img/maps/gen-iii/hoenn.png");
     .marker{
       --background-img-marker: none;
-      animation: background-blink 2s infinite;
+      animation: background-blink-genIII 2s infinite;
     }
   }
 }
@@ -74,7 +81,7 @@
       content: " ";
       width: 100%;
       height: 100%;
-      background-image: url("/assets/img/maps/map-marker.gif");
+      background-image: url("/assets/img/maps/map-marker-default.gif");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -82,7 +89,16 @@
   }
 }
 
-@keyframes background-blink {
+@keyframes marker-blink-genII {
+  0%, 49%{
+    opacity: 1;
+  }
+  50%, 100%{
+    opacity: 0;
+  }
+}
+
+@keyframes background-blink-genIII {
   0%{
     background-color: #ffffff00;
   }
