@@ -4,38 +4,43 @@
   flex-wrap: no-wrap;
 }
 .worldMap {
-  // --cell-width: 8px;
-  // --cell-height: 8px;
-  --cell-width: 16px;
-  --cell-height: 16px;
   --path-world-map: '';
   position: relative;
   background-image: var(--path-world-map);
   background-repeat: no-repeat;
   background-size: cover;
-
   flex-grow:1;
+
+  .marker{
+    --background-img-marker: url("/assets/img/maps/map-marker.gif");
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: var(--background-img-marker);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(-50%) translateY(-50%);
+  }
 
   &[world="kanto-1"]{--path-world-map: url("/assets/img/maps/gen-i/kanto.png");}
   &[world="kanto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/kanto.png");}
   &[world="johto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/johto.png");}
-  &[world="hoenn-3"]{--path-world-map: url("/assets/img/maps/gen-iii/hoenn.png");}
+  &[world="hoenn-3"]{
+    --path-world-map: url("/assets/img/maps/gen-iii/hoenn.png");
+    .marker{
+      --background-img-marker: none;
+      animation: background-blink 2s infinite;
+    }
+  }
 }
 
-.marker{
-  position: absolute;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("/assets/img/maps/map-marker.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateX(-50%) translateY(-50%);
-}
 
 
 .worldMap--matrix{
+  --cell-width: 16px;
+  --cell-height: 16px;
   flex-grow: unset;
   tr {
     td {
@@ -77,4 +82,14 @@
   }
 }
 
-
+@keyframes background-blink {
+  0%{
+    background-color: #ffffff00;
+  }
+  25% {
+    background-color: #ff6666;
+  }
+  50%, 100% {
+    background-color: #ffffff00;
+  }
+}
