@@ -1,5 +1,5 @@
 $bg-width: 1.6rem;
-$bg-url: "../../../../public/assets/img/bg.png";
+$bg-url: "../../../../../../../public/assets/img/bg.png";
 
 @keyframes bg-scrolling-reverse {
   100% {
@@ -24,7 +24,7 @@ $bg-url: "../../../../public/assets/img/bg.png";
     right: 0;
     top: 50px;
     transform: translateX(50%);
-    background: url("../../../../public/assets/img/pokenav-outline.svg")
+    background: url("../../../../../../../public/assets/img/pokenav-outline.svg")
       no-repeat;
     opacity: 0.2;
   }

@@ -1,11 +1,11 @@
 import {
   PokedexListEntry,
   PokedexListEntryVariant,
-} from '../../core/models/monsterDex.type';
+} from '../../../../../core/models/monsterDex.type';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ToasterService } from '../../core/services/toaster.service';
+import { ToasterService } from '../../../../../core/services/toaster.service';
 
 type dexEntry = PokedexListEntry | PokedexListEntryVariant;
 

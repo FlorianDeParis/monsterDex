@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { MonsterPageComponent } from './monster-page/monster-page.component';
-import { MonsterDexListPageComponent } from './monster-dex-list/monster-dex-list-page/monster-dex-list-page.component';
-import { MonsterListComponent } from './monster-list/monster-list.component';
-import { WorldMapComponent } from './world-map/world-map.component';
-import { TestComponent as MapTestComponent } from './world-map/test/test.component';
+import { HomeComponent } from './features/home/home.component';
+import { MonsterPageComponent } from './features/monster/page/monster-page.component';
+import { MonsterDexListPageComponent } from './features/pokedex/list/dex/monster-dex-list-page/monster-dex-list-page.component';
+import { MonsterListComponent } from './features/pokedex/list/monster/monster-list/monster-list.component';
+import { WorldMapComponent } from './features/map/world-map/world-map.component';
+import { MapTestComponent } from './features/debug/map/map-test.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },

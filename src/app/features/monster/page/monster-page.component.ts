@@ -1,5 +1,3 @@
-import { EncountersService } from './../core/services/monster/encounters.service';
-import { PokemonPageService } from './../core/services/monster/pokemon-page.service';
 import {
   AfterViewInit,
   Component,
@@ -7,13 +5,15 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
-import { PokeApiService } from '../core/services/poke-api.service';
-import { CommonModule } from '@angular/common';
-import { LocationAreaEncounter, Pokemon, PokemonSprites } from '../core/models/PokeAPI/pokemon.type';
-import { PokedexService } from '../core/services/monster/pokedex.service';
-import { WorldMapComponent } from '../world-map/world-map.component';
+import { LocationAreaEncounter, Pokemon, PokemonSprites } from '../../../core/models/PokeAPI/pokemon.type';
+import { EncountersService } from '../../../core/services/monster/encounters.service';
+import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
+import { PokeApiService } from '../../../core/services/poke-api.service';
+import { PokedexService } from '../../../core/services/monster/pokedex.service';
+import { WorldMapComponent } from '../../map/world-map/world-map.component';
 
 @Component({
   selector: 'app-monster-page',

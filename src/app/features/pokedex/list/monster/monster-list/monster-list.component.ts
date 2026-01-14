@@ -2,10 +2,10 @@ import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable, tap } from 'rxjs';
-import { Pokedex } from '../core/models/PokeAPI/games.type';
-import { PokeApiService } from '../core/services/poke-api.service';
+import { Pokedex } from '../../../../../core/models/PokeAPI/games.type';
+import { PokeApiService } from '../../../../../core/services/poke-api.service';
 import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
-import { PokedexService } from '../core/services/monster/pokedex.service';
+import { PokedexService } from '../../../../../core/services/monster/pokedex.service';
 
 @Component({
   selector: 'app-monster-list',

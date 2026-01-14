@@ -1,16 +1,16 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { WorldMapComponent } from '../world-map.component';
-import { MapMarker } from '../../core/models/monsterDex.type';
+import { WorldMapComponent } from '../../map/world-map/world-map.component';
+import { MapMarker } from '../../../core/models/monsterDex.type';
 import { from, map, Observable, of, tap } from 'rxjs';
 
 @Component({
-  selector: 'app-test',
+  selector: 'app-map-test',
   imports: [WorldMapComponent],
-  templateUrl: './test.component.html',
-  styleUrl: './test.component.scss'
+  templateUrl: './map-test.component.html',
+  styleUrl: './map-test.component.scss'
 })
-export class TestComponent implements OnInit{
+export class MapTestComponent implements OnInit{
   idMonster!: string;
   idPokeGen!: string;
   idDex!: string;

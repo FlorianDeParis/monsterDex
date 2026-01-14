@@ -1,0 +1,16 @@
+@use '../../../core/css/lib/base' as *;
+@use '../../../core/css/config/colors' as colors;
+@use '../../../core/css/components/badges.scss' as *;
+@use '../../../core/css/components/sprites.scss' as *;
+@use '../../../core/css/lib/functions.scss' as *;
+
+.encounters{
+  width: 100%;
+  td{
+    border: 1px solid #000;
+  }
+  .game{
+    vertical-align: middle;
+    text-align: center;
+  }
+}

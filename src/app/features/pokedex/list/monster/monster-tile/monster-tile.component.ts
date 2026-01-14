@@ -1,10 +1,10 @@
-import { PokedexService } from '../core/services/monster/pokedex.service';
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
-import { PokemonEntry } from '../core/models/PokeAPI/games.type';
 import { CommonModule } from '@angular/common';
-import { environment } from '../core/env/environment';
 import { Router } from '@angular/router';
-import { preventTrailingSlashes } from '../core/utils/url';
+import { PokedexService } from '../../../../../core/services/monster/pokedex.service';
+import { PokemonEntry } from '../../../../../core/models/PokeAPI/games.type';
+import { environment } from '../../../../../core/env/environment';
+import { preventTrailingSlashes } from '../../../../../core/utils/url';
 
 @Component({
   selector: 'app-monster-tile',

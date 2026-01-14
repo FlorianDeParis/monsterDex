@@ -1,10 +1,10 @@
 import { Component, Input, OnInit, signal } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
-import { MapMarker, RegionMarkerList, Region } from '../core/models/monsterDex.type';
-import { EncountersService } from '../core/services/monster/encounters.service';
+import { MapMarker, RegionMarkerList, Region } from '../../../core/models/monsterDex.type';
+import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe, JsonPipe } from '@angular/common';
-import { MapService } from '../core/services/monster/map.service';
+import { MapService } from '../../../core/services/monster/map.service';
 
 interface Position {
   x: number;
