@@ -1,3 +1,5 @@
+/* Importing Bootstrap SCSS file. */
+@use 'bootstrap/scss/bootstrap';
 @use "app/core/css" as *;
 
 html {
@@ -10,3 +12,5 @@ html {
 h1 {
   font-family: "Orbitron", sans-serif;
 }
+
+
