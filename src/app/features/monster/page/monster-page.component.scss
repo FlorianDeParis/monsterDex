@@ -4,6 +4,21 @@
 @use '../../../core/css/components/sprites.scss' as *;
 @use '../../../core/css/lib/functions.scss' as *;
 
+
+.monster-page{
+  background-image: url('/assets/img/monster-page/bg.png');
+  padding-top: 0.25em;
+  .summary{
+    border: 0.25rem solid #606070;
+    outline: 0.25rem solid #283840;
+    box-shadow: inset 0px 0px 0px 1rem #FFF;
+    border-radius: 0.25em;
+    background-color: #f8f8f8;
+    font-size: 1em;
+    margin: 0 1.25em;
+  }
+}
+
 .encounters{
   width: 100%;
   td{

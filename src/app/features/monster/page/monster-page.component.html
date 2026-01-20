@@ -5,10 +5,14 @@
     />
   }
 </audio>
-<section>
+<section class="monster-page">
   @if (monsterDetails$ | async; as monsterDetails) {
-    <h1>{{ monsterDetails.name }}</h1>
-    <img [src]="pokemonSelectedSprite" />
+    <header class="summary">
+      <h1>{{ monsterDetails.name }}</h1>
+      <img [src]="pokemonSelectedSprite" />
+
+
+    </header>
 
     @if (monsterDetails.stats) {
       Stats:
