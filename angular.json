@@ -39,6 +39,7 @@
             ],
             "scripts": [],
             "stylePreprocessorOptions": {
+              "includePaths": ["../node_modules", "../src" , "../public"],
               "sass": {
               "silenceDeprecations":["mixed-decls", "color-functions", "global-builtin", "import"]
               }
