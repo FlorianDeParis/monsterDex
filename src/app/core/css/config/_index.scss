@@ -1,6 +1,16 @@
 // Configuration
+@import "colors";
+@import "spacings";
+
+// Bootstrap
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+
+$spacers: map-merge(
+  $spacers,
+  $spacers-4
+);
+
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
