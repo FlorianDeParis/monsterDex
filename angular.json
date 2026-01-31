@@ -37,7 +37,13 @@
               "notyf/notyf.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": ["../node_modules", "../src" , "../public"],
+              "sass": {
+              "silenceDeprecations":["mixed-decls", "color-functions", "global-builtin", "import"]
+              }
+            }
           },
           "configurations": {
             "production": {
