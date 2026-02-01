@@ -1,21 +1,39 @@
+@use "sass:map";
+
 @use '../../../core/css/lib/base' as *;
 @use '../../../core/css/config/colors' as colors;
 @use '../../../core/css/components/badges.scss' as *;
 @use '../../../core/css/components/sprites.scss' as *;
 @use '../../../core/css/lib/functions.scss' as *;
 
+@import "../../../core/css/helpers/include-media";
+
 
 .monster-page{
-  background-image: url('/assets/img/monster-page/bg.png');
-  padding-top: 0.25em;
-  .summary{
-    border: 0.25rem solid #606070;
-    outline: 0.25rem solid #283840;
-    box-shadow: inset 0px 0px 0px 1rem #FFF;
-    border-radius: 0.25em;
-    background-color: #f8f8f8;
+  header{
+    h1{
+      text-shadow: 1px 1px 0px #FFF;
+    }
+
+    --type-slot-1: #eeeeee;
     font-size: 1em;
-    margin: 0 1.25em;
+    color: #000;
+    background: linear-gradient(45deg, var(--type-slot-1) 0%, var(--type-slot-2, var(--type-slot-1)) 100%);
+    text-align: center;
+    @for $index-type from 1 through 2{
+      @each $type, $hexa in map.get(colors.$color-tokens, 'types-color'){
+        &.type-#{$index-type}-#{$type}{
+          --type-slot-#{$index-type}: #{$hexa};
+        }
+      }
+    }
+
+    img{
+      width: 10rem;
+      height: auto;
+      image-rendering: pixelated;
+      mix-blend-mode: multiply;
+    }
   }
 }
 
@@ -28,4 +46,12 @@
     vertical-align: middle;
     text-align: center;
   }
+}
+
+
+.borders{
+  border: 0.25rem solid #606070;
+  outline: 0.25rem solid #283840;
+  box-shadow: inset 0px 0px 0px 1rem #FFF;
+  border-radius: 0.25em;
 }

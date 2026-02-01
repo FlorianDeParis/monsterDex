@@ -8,7 +8,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
-import { LocationAreaEncounter, Pokemon, PokemonSprites } from '../../../core/models/PokeAPI/pokemon.type';
+import { LocationAreaEncounter, Pokemon, PokemonSprites, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
 import { PokeApiService } from '../../../core/services/poke-api.service';
@@ -69,5 +69,13 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.audio.nativeElement.volume = this.volume;
+  }
+
+  setTypeClasses(types: PokemonType[]): string {
+    let classes:string[] = [];
+    types.forEach((t, i) => {
+      classes.push(`type-${i+1}-${t.type.name}`);
+    })
+    return classes.join(' ');
   }
 }
