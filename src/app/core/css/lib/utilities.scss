@@ -4,7 +4,6 @@
 // BGGamesThemes utils
 $ct: c.$color-tokens;
 $BGGamesThemes: f.map-deep-get($ct, 'version-group-color');
-@debug $BGGamesThemes;
 
 @each $theme, $gameColor in $BGGamesThemes{
   .bg-#{$theme}{

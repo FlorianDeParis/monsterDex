@@ -2,9 +2,8 @@
 @use "sass:map";
 @use "sass:meta";
 
-@function generateBgcolor($map, $submap, $key:null) {
-  @return map-deep-get($map, $submap, $key);
-}
+@use "../config/_colors" as colors;
+
 
 @function map-deep-get($map, $keys...) {
   //https://stackoverflow.com/questions/43188418/check-if-value-in-a-sass-map-exists
@@ -14,4 +13,22 @@
     $i: $i + 1;
   }
   @return $scope;
+}
+
+
+// COLORS
+@function generateBgcolor($map, $submap, $key:null) {
+  @return map-deep-get($map, $submap, $key);
+}
+
+@function getColor($keys...){
+
+  @debug map.get(colors.$color-tokens, $keys...);
+
+  @if(map-has-key(colors.$color-tokens, $keys...)){
+    @return map.get(colors.$color-tokens, $keys...)
+  }
+
+  @warn "/!\ La propriété n'existe pas dans le tableau des couleurs";
+  @return #000;
 }
