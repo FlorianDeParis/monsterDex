@@ -11,15 +11,21 @@
 
 .monster-page{
   header{
-    h1{
-      text-shadow: 1px 1px 0px #FFF;
+    .header-inner{
+      position: relative;
+      .title{
+        font-family: 'RussoOne', serif;
+        text-shadow: 2px 2px 0px #000;
+        color: #FFF;
+      }
     }
 
     --type-slot-1: #eeeeee;
     font-size: 1em;
     color: #000;
-    background: linear-gradient(45deg, var(--type-slot-1) 0%, var(--type-slot-2, var(--type-slot-1)) 100%);
+    background: linear-gradient(0deg, var(--type-slot-1) 0%, var(--type-slot-2, var(--type-slot-1)) 100%);
     text-align: center;
+
     @for $index-type from 1 through 2{
       @each $type, $hexa in map.get(colors.$color-tokens, 'types-color'){
         &.type-#{$index-type}-#{$type}{
@@ -27,15 +33,34 @@
         }
       }
     }
+    .medalion{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid grey;
+      background: #FFF;
+      img{
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+      }
+    }
 
-    img{
-      width: 10rem;
-      height: auto;
-      image-rendering: pixelated;
-      mix-blend-mode: multiply;
+    .types{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      padding-right: 32px;
+      img{
+        height: 32px;
+      }
     }
   }
 }
+
+
 
 .encounters{
   width: 100%;

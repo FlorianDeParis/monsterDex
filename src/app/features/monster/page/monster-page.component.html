@@ -7,10 +7,20 @@
 </audio>
 <section class="monster-page">
   @if (monsterDetails$ | async; as monsterDetails) {
-    <header class="py-16 {{setTypeClasses(monsterDetails.types)}}">
-      <h1>{{ monsterDetails.name }}</h1>
-      <div class="medalion">
-        <img [src]="pokemonSelectedSprite" />
+    <header class="{{setTypeClasses(monsterDetails.types)}}">
+      <div class="header-inner container-lg d-flex flex-column align-items-start align-items-sm-center py-16 px-32 ">
+        <div class="d-flex flex-column flex-lg-row-reverse gap-lg-32 align-items-center">
+          <h1 class="fs-1 title text-capitalize">{{ monsterDetails.name }}</h1>
+          <div class="medalion">
+            <img [src]="pokemonSelectedSprite" />
+          </div>
+        </div>
+        <div class="types d-flex flex-column justify-content-center vertical-align-middle gap-16">
+          <img class="type" src="/assets/img/types/{{ monsterDetails.types[0].type.name }}.svg" />
+          @if(monsterDetails.types[1] ){
+            <img class="type" src="/assets/img/types/{{ monsterDetails.types[1].type.name }}.svg" />
+          }
+        </div>
       </div>
     </header>
 
@@ -32,55 +42,55 @@
 
     @if(pokemonEncountersList$ | async; as pokemonEncountersList){
       @if(pokemonEncountersList.length > 0){
-      <table class="encounters">
-        <thead>
-          <tr>
-            <td style="width:200px;">Lieu</td>
-            <td style="width:100px;">Versions</td>
-            <td>Types de recontres</td>
-          </tr>
-        </thead>
-        <tbody>
-          @for (encounter of pokemonEncountersList; track encounter.location_area.name){
-            @for (encounterInGame of encounter.version_details; track encounterInGame.version.name){
-              <tr>
-                @if($first){
-                  <td [attr.rowspan]="encounter.version_details.length > 0 ? encounter.version_details.length:null">
-                    {{ encounter.location_area.name }}
+        <table class="encounters">
+          <thead>
+            <tr>
+              <td style="width:200px;">Lieu</td>
+              <td style="width:100px;">Versions</td>
+              <td>Types de recontres</td>
+            </tr>
+          </thead>
+          <tbody>
+            @for (encounter of pokemonEncountersList; track encounter.location_area.name){
+              @for (encounterInGame of encounter.version_details; track encounterInGame.version.name){
+                <tr>
+                  @if($first){
+                    <td [attr.rowspan]="encounter.version_details.length > 0 ? encounter.version_details.length:null">
+                      {{ encounter.location_area.name }}
+                    </td>
+                  }
+                  <td class="game">
+                    <span class="badge bg-{{encounterInGame.version.name}}">{{ encounterInGame.version.name | uppercase }}</span>
                   </td>
-                }
-                <td class="game">
-                  <span class="badge bg-{{encounterInGame.version.name}}">{{ encounterInGame.version.name | uppercase }}</span>
-                </td>
-                <td>
-                  <table>
-                    <thead>
-                      <tr>
-                        <td>Méthode:</td>
-                        <td>Nv:</td>
-                        <td>Chance:</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      @for(encounter_detail of encounterInGame.encounter_details; track encounter_detail){
+                  <td>
+                    <table>
+                      <thead>
                         <tr>
-                          <td><span class="sprite-tile" [attr.encounterMethodName]="encounter_detail.method.name"></span>{{ encounter_detail.method.name }}</td>
-                          <td>{{ encounter_detail.min_level }}
-                            @if( encounter_detail.min_level != encounter_detail.max_level){
-                              -{{ encounter_detail.max_level }}
-                            }
-                          </td>
-                          <td>{{encounter_detail.chance }}%</td>
+                          <td>Méthode:</td>
+                          <td>Nv:</td>
+                          <td>Chance:</td>
                         </tr>
-                      }
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
+                      </thead>
+                      <tbody>
+                        @for(encounter_detail of encounterInGame.encounter_details; track encounter_detail){
+                          <tr>
+                            <td><span class="sprite-tile" [attr.encounterMethodName]="encounter_detail.method.name"></span>{{ encounter_detail.method.name }}</td>
+                            <td>{{ encounter_detail.min_level }}
+                              @if( encounter_detail.min_level != encounter_detail.max_level){
+                                -{{ encounter_detail.max_level }}
+                              }
+                            </td>
+                            <td>{{encounter_detail.chance }}%</td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              }
             }
-          }
-        </tbody>
-      </table>
+          </tbody>
+        </table>
       }
       @else {
         <p>Pas de données disponibles.</p>
