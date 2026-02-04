@@ -1,0 +1,109 @@
+{
+  "_comment": "This JSON is used to sort Versions and Version Groups names by generation",
+  "generationList": [
+    {
+      "generation": 1,
+      "games": [
+        "red-blue",
+        "red",
+        "blue",
+        "yellow",
+        "red-japan",
+        "blue-japan",
+        "green",
+        "green-japan",
+        "red-green-japan"
+      ]
+    },
+    {
+      "generation": 2,
+      "games": ["gold", "silver", "crystal", "gold-silver"]
+    },
+    {
+      "generation": 3,
+      "games": [
+        "ruby",
+        "sapphire",
+        "emerald",
+        "ruby-sapphire",
+        "firered",
+        "leafgreen",
+        "firered-leafgreen"
+      ]
+    },
+    {
+      "generation": 4,
+      "games": [
+        "diamond",
+        "pearl",
+        "platinum",
+        "diamond-pearl",
+        "heartgold",
+        "soulsilver",
+        "heartgold-soulsilver"
+      ]
+    },
+    {
+      "generation": 5,
+      "games": [
+        "black",
+        "white",
+        "black-white",
+        "black-2",
+        "white-2",
+        "black-2-white-2"
+      ]
+    },
+    {
+      "generation": 6,
+      "games": [
+        "x",
+        "y",
+        "x-y",
+        "omega-ruby",
+        "alpha-sapphire",
+        "omega-ruby-alpha-sapphire"
+      ]
+    },
+    {
+      "generation": 7,
+      "games": [
+        "sun",
+        "moon",
+        "sun-moon",
+        "ultra-sun",
+        "ultra-moon",
+        "ultra-sun-ultra-moon",
+        "lets-go-pikachu",
+        "lets-go-eevee",
+        "lets-go-pikachu-lets-go-eevee"
+      ]
+    },
+    {
+      "generation": 8,
+      "games": [
+        "sword",
+        "shield",
+        "sword-shield",
+        "the-isle-of-armor",
+        "the-crown-tundra",
+        "brilliant-diamond",
+        "shining-pearl",
+        "brilliant-diamond-shining-pearl",
+        "legends-arceus"
+      ]
+    },
+    {
+      "generation": 9,
+      "games": [
+        "scarlet",
+        "violet",
+        "scarlet-violet",
+        "the-teal-mask",
+        "the-indigo-disk",
+        "legends-za",
+        "mega-dimension"
+      ]
+    }
+  ]
+}
