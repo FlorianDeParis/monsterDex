@@ -4,67 +4,120 @@
   flex-wrap: no-wrap;
 }
 .worldMap {
-  --cell-width: 8px;
-  --cell-height: 8px;
   --path-world-map: '';
   position: relative;
   background-image: var(--path-world-map);
   background-repeat: no-repeat;
   background-size: cover;
-
+  image-rendering: pixelated;
   flex-grow:1;
 
-  &[world="kanto-1"]{--path-world-map: url("/assets/img/maps/gen-i/kanto.png");}
+  .marker{
+    --background-img-marker: url("/assets/img/maps/map-marker-default.gif");
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: var(--background-img-marker);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &[world="kanto-1"]{
+    --path-world-map: url("/assets/img/maps/gen-i/kanto.png");
+    .marker{
+      --background-img-marker: url("/assets/img/maps/gen-i/marker.png");
+      background-size: 80%;
+      animation: marker-blink-genII 0.5s infinite;
+    }
+  }
+
   &[world="kanto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/kanto.png");}
   &[world="johto-2"]{--path-world-map: url("/assets/img/maps/gen-ii/johto.png");}
-  // tr {
-  //   td {
-  //     position: relative;
-  //     width: var(--cell-width);
-  //     height: var(--cell-height);
-  //     box-shadow: inset 0px 0px 0px 1px #00000013;
-  //     aspect-ratio: 1;
-  //     line-height: 1;
-  //     font-size: 0;
-  //     span{
-  //       position: absolute;
-  //       top: 50%;
-  //       left: 50%;
-  //       transform: translateX(-50%) translateY(-50%);
-  //       font-size: 4px;
-  //       color: red;
-  //       display: inline-block;
-  //       min-width: 100%;
-  //       min-height: 100%;
-  //     }
-  //   }
-  // }
+
+  &[world="kanto-2"],
+  &[world="johto-2"]{
+    .marker{
+      --background-img-marker: url("/assets/img/maps/gen-ii/marker.png");
+      background-size: 80%;
+      animation: marker-blink-genII 0.5s infinite;
+    }
+  }
+
+  &[world="hoenn-3"]{
+    --path-world-map: url("/assets/img/maps/gen-iii/hoenn.png");
+    .marker{
+      --background-img-marker: none;
+      animation: background-blink-genIII 2s infinite;
+    }
+  }
 }
 
-.marker{
-  position: absolute;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url("/assets/img/maps/map-marker.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateX(-50%) translateY(-50%);
+
+
+.worldMap--matrix{
+  --cell-width: 16px;
+  --cell-height: 16px;
+  flex-grow: unset;
+  tr {
+    td {
+      position: relative;
+      width: var(--cell-width);
+      height: var(--cell-height);
+      box-shadow: inset 0px 0px 0px 1px #00000013;
+      aspect-ratio: 1;
+      line-height: 1;
+      font-size: 0;
+      span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 4px;
+        color: red;
+        display: inline-block;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+  }
+
+  .tile {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/img/maps/map-marker-default.gif");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
 
-// .tile {
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-//   &:before {
-//     position: absolute;
-//     content: " ";
-//     width: 100%;
-//     height: 100%;
-//     background-image: url("/assets/img/maps/map-marker.gif");
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-// }
+@keyframes marker-blink-genII {
+  0%, 49%{
+    opacity: 1;
+  }
+  50%, 100%{
+    opacity: 0;
+  }
+}
+
+@keyframes background-blink-genIII {
+  0%{
+    background-color: #ffffff00;
+  }
+  25% {
+    background-color: #ff6666;
+  }
+  50%, 100% {
+    background-color: #ffffff00;
+  }
+}
