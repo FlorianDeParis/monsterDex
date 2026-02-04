@@ -14,10 +14,11 @@ import { PokemonPageService } from '../../../core/services/monster/pokemon-page.
 import { PokeApiService } from '../../../core/services/poke-api.service';
 import { PokedexService } from '../../../core/services/monster/pokedex.service';
 import { WorldMapComponent } from '../../map/world-map/world-map.component';
+import { NgbProgressbar } from '@ng-bootstrap/ng-bootstrap'
 
 @Component({
   selector: 'app-monster-page',
-  imports: [CommonModule, WorldMapComponent],
+  imports: [CommonModule, WorldMapComponent, NgbProgressbar],
   templateUrl: './monster-page.component.html',
   styleUrl: './monster-page.component.scss',
 })
