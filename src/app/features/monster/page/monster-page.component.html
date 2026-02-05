@@ -29,11 +29,21 @@
         <div class="row gy-4 gx-lg-5 row-cols-1 row-cols-lg-2">
           <div class="col">
             <h2 class="font-russoOne">Description</h2>
-            <p class="m-0">
-              @if(monsterDetailsSpecies$ | async; as monsterDetailsSpecies){
-                {{ monsterDetailsSpecies | json}}
+            @if(monsterDetailsSpecies$ | async; as monsterDetailsSpecies){
+              @if(pokemonFlavorTextList){
+                <ul ngbNav #nav="ngbNav" [(activeId)]="activeFlavorTab" class="nav-tabs">
+                  @for(pokemonFlavorText of pokemonFlavorTextList; track pokemonFlavorText){
+                    <li [ngbNavItem]="$index">
+                      <button ngbNavLink class="font-pokemonRS theme-{{pokemonFlavorText.version.name}}">{{ pokemonFlavorText.version.name | uppercase }}</button>
+                      <ng-template ngbNavContent>
+                        <p>{{ pokemonFlavorText.flavor_text }}</p>
+                      </ng-template>
+                    </li>
+                  }
+                </ul>
+                <div [ngbNavOutlet]="nav" class="mt-16"></div>
               }
-            </p>
+            }
           </div>
           <div class="col">
             @if (monsterDetails.stats) {

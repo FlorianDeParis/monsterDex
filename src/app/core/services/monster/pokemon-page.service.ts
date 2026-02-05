@@ -1,3 +1,4 @@
+import { FlavorText } from './../../models/PokeAPI/utilities.type';
 import { PokeApiService } from './../poke-api.service';
 import { Injectable } from '@angular/core';
 import { toRoman } from 'typescript-roman-numbers-converter';
@@ -10,7 +11,8 @@ import { ToasterService } from '../toaster.service';
 
 import { tap, map } from 'rxjs';
 import { EncountersService } from './encounters.service';
-import { FlavorText } from '../../models/PokeAPI/utilities.type';
+
+import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
 
 import * as gameGenList from '../../../../../public/assets/data/generations/game-list.json';
 
@@ -21,6 +23,7 @@ export class PokemonPageService {
   constructor(
     private toaster: ToasterService,
     private encountersService: EncountersService,
+    private sanitizer: DomSanitizer
   ) {}
 
   getPokemonArtworkByIdGeneration(
@@ -79,6 +82,13 @@ export class PokemonPageService {
       )
       filtered = fallbackfiltered;
     }
+
+    filtered = filtered.map(
+      (FlavorText) => ({
+        ...FlavorText,
+        flavor_text: FlavorText.flavor_text.replace(/[\r\n\f]/g, " ")
+      })
+    )
 
     return filtered;
   }

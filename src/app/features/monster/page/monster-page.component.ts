@@ -15,15 +15,25 @@ import { PokemonPageService } from '../../../core/services/monster/pokemon-page.
 import { PokeApiService } from '../../../core/services/poke-api.service';
 import { PokedexService } from '../../../core/services/monster/pokedex.service';
 import { WorldMapComponent } from '../../map/world-map/world-map.component';
-import { NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbProgressbar,
+  NgbNavContent,
+  NgbNav,
+	NgbNavItem,
+	NgbNavItemRole,
+	NgbNavLinkButton,
+	NgbNavLinkBase,
+	NgbNavOutlet,
+ } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-monster-page',
-  imports: [CommonModule, WorldMapComponent, NgbProgressbar],
+  imports: [CommonModule, WorldMapComponent, NgbProgressbar, NgbNavContent, NgbNav, NgbNavItem, NgbNavItemRole, NgbNavLinkButton, NgbNavLinkBase, NgbNavOutlet],
   templateUrl: './monster-page.component.html',
   styleUrl: './monster-page.component.scss',
 })
 export class MonsterPageComponent implements OnInit, AfterViewInit {
+  activeFlavorTab = 1;
   volume = 0.2;
   idMonster!: string;
   idPokeGen!: string;
