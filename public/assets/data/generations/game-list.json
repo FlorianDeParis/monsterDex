@@ -2,8 +2,7 @@
   "_comment": "This JSON is used to sort Versions and Version Groups names by generation",
   "generationList": [
     {
-      "generation": 1,
-      "games": [
+      "1": [
         "red-blue",
         "red",
         "blue",
@@ -13,15 +12,9 @@
         "green",
         "green-japan",
         "red-green-japan"
-      ]
-    },
-    {
-      "generation": 2,
-      "games": ["gold", "silver", "crystal", "gold-silver"]
-    },
-    {
-      "generation": 3,
-      "games": [
+      ],
+      "2": ["gold", "silver", "crystal", "gold-silver"],
+      "3": [
         "ruby",
         "sapphire",
         "emerald",
@@ -29,11 +22,8 @@
         "firered",
         "leafgreen",
         "firered-leafgreen"
-      ]
-    },
-    {
-      "generation": 4,
-      "games": [
+      ],
+      "4": [
         "diamond",
         "pearl",
         "platinum",
@@ -41,33 +31,24 @@
         "heartgold",
         "soulsilver",
         "heartgold-soulsilver"
-      ]
-    },
-    {
-      "generation": 5,
-      "games": [
+      ],
+      "5": [
         "black",
         "white",
         "black-white",
         "black-2",
         "white-2",
         "black-2-white-2"
-      ]
-    },
-    {
-      "generation": 6,
-      "games": [
+      ],
+      "6": [
         "x",
         "y",
         "x-y",
         "omega-ruby",
         "alpha-sapphire",
         "omega-ruby-alpha-sapphire"
-      ]
-    },
-    {
-      "generation": 7,
-      "games": [
+      ],
+      "7": [
         "sun",
         "moon",
         "sun-moon",
@@ -77,11 +58,8 @@
         "lets-go-pikachu",
         "lets-go-eevee",
         "lets-go-pikachu-lets-go-eevee"
-      ]
-    },
-    {
-      "generation": 8,
-      "games": [
+      ],
+      "8": [
         "sword",
         "shield",
         "sword-shield",
@@ -91,11 +69,8 @@
         "shining-pearl",
         "brilliant-diamond-shining-pearl",
         "legends-arceus"
-      ]
-    },
-    {
-      "generation": 9,
-      "games": [
+      ],
+      "9": [
         "scarlet",
         "violet",
         "scarlet-violet",

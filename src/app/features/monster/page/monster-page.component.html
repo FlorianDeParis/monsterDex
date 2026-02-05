@@ -24,6 +24,12 @@
       }
     }
 
+    @if(monsterDetailsSpecies$ | async; as monsterDetailsSpecies){
+      <p>
+        {{ monsterDetailsSpecies | json}}
+      </p>
+    }
+
     <app-world-map [pokemonGeneration]="idPokeGen" [pokemonId]="idMonster" />
 
     @if(pokemonEncountersList$ | async; as pokemonEncountersList){
