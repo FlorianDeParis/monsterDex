@@ -10,6 +10,9 @@ import { ToasterService } from '../toaster.service';
 
 import { tap, map } from 'rxjs';
 import { EncountersService } from './encounters.service';
+import { FlavorText } from '../../models/PokeAPI/utilities.type';
+
+import * as gameGenList from '../../../../../public/assets/data/generations/game-list.json';
 
 @Injectable({
   providedIn: 'root',
@@ -57,5 +60,26 @@ export class PokemonPageService {
 
   getMyObjectValueCastedKey(myObject: any, key: string): any {
     return myObject[key as keyof typeof myObject];
+  }
+
+  filterPokemonFlavorTextEntriesByIdGeneration(
+    flavorTextList: FlavorText[],
+    IdGen: string,
+    locale='en'
+  ): FlavorText[] {
+    const currentGenGameList = this.getMyObjectValueCastedKey(gameGenList.generationList[0],IdGen);
+
+    let filtered = flavorTextList.filter(
+      (flavorText) => currentGenGameList.includes(flavorText.version.name) && flavorText.language.name === locale
+    )
+
+    if(filtered.length === 0){
+      let fallbackfiltered = flavorTextList.filter(
+        (flavorText) => currentGenGameList.includes(flavorText.version.name) && flavorText.language.name === 'en'
+      )
+      filtered = fallbackfiltered;
+    }
+
+    return filtered;
   }
 }

@@ -1,0 +1,84 @@
+{
+  "_comment": "This JSON is used to sort Versions and Version Groups names by generation",
+  "generationList": [
+    {
+      "1": [
+        "red-blue",
+        "red",
+        "blue",
+        "yellow",
+        "red-japan",
+        "blue-japan",
+        "green",
+        "green-japan",
+        "red-green-japan"
+      ],
+      "2": ["gold", "silver", "crystal", "gold-silver"],
+      "3": [
+        "ruby",
+        "sapphire",
+        "emerald",
+        "ruby-sapphire",
+        "firered",
+        "leafgreen",
+        "firered-leafgreen"
+      ],
+      "4": [
+        "diamond",
+        "pearl",
+        "platinum",
+        "diamond-pearl",
+        "heartgold",
+        "soulsilver",
+        "heartgold-soulsilver"
+      ],
+      "5": [
+        "black",
+        "white",
+        "black-white",
+        "black-2",
+        "white-2",
+        "black-2-white-2"
+      ],
+      "6": [
+        "x",
+        "y",
+        "x-y",
+        "omega-ruby",
+        "alpha-sapphire",
+        "omega-ruby-alpha-sapphire"
+      ],
+      "7": [
+        "sun",
+        "moon",
+        "sun-moon",
+        "ultra-sun",
+        "ultra-moon",
+        "ultra-sun-ultra-moon",
+        "lets-go-pikachu",
+        "lets-go-eevee",
+        "lets-go-pikachu-lets-go-eevee"
+      ],
+      "8": [
+        "sword",
+        "shield",
+        "sword-shield",
+        "the-isle-of-armor",
+        "the-crown-tundra",
+        "brilliant-diamond",
+        "shining-pearl",
+        "brilliant-diamond-shining-pearl",
+        "legends-arceus"
+      ],
+      "9": [
+        "scarlet",
+        "violet",
+        "scarlet-violet",
+        "the-teal-mask",
+        "the-indigo-disk",
+        "legends-za",
+        "mega-dimension"
+      ]
+    }
+  ]
+}

@@ -30,8 +30,9 @@
           <div class="col">
             <h2 class="font-russoOne">Description</h2>
             <p class="m-0">
-              Magna esse minim in laboris excepteur adipisicing et. Ex culpa eu occaecat mollit pariatur cupidatat veniam cillum dolor esse adipisicing. Eiusmod ullamco veniam sunt reprehenderit eiusmod velit sint. Pariatur reprehenderit aute veniam eiusmod amet nulla sunt mollit ipsum. Sit duis incididunt voluptate cillum qui ad sint dolore labore id quis qui qui. Excepteur dolore proident exercitation elit incididunt velit ipsum do. Enim laboris aliqua non ea incididunt.
-              Aute ullamco ad cupidatat id ipsum labore duis exercitation amet. Cupidatat cillum enim laborum fugiat reprehenderit amet ullamco voluptate voluptate laborum amet est enim. Voluptate ex do aute aliquip culpa non non nulla.
+              @if(monsterDetailsSpecies$ | async; as monsterDetailsSpecies){
+                {{ monsterDetailsSpecies | json}}
+              }
             </p>
           </div>
           <div class="col">

@@ -1,3 +1,7 @@
+export interface APIResource {
+  url: string;
+}
+
 export interface Description {
   description: string;
   langague: {
@@ -12,6 +16,12 @@ export interface Encounter {
   condition_values: NamedAPIResource;
   chance: number;
   method: NamedAPIResource;
+}
+
+export interface FlavorText {
+  flavor_text: string;
+  language: NamedAPIResource;
+  version: NamedAPIResource;
 }
 
 export interface Name {

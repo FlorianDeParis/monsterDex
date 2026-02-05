@@ -8,13 +8,14 @@ import {
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
-import { LocationAreaEncounter, Pokemon, PokemonSprites, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
+import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
+import { FlavorText } from '../../../core/models/PokeAPI/utilities.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
 import { PokeApiService } from '../../../core/services/poke-api.service';
 import { PokedexService } from '../../../core/services/monster/pokedex.service';
 import { WorldMapComponent } from '../../map/world-map/world-map.component';
-import { NgbProgressbar } from '@ng-bootstrap/ng-bootstrap'
+import { NgbProgressbar } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-monster-page',
@@ -28,8 +29,10 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   idPokeGen!: string;
   idDex!: string;
   monsterDetails$!: Observable<Pokemon>;
+  monsterDetailsSpecies$!: Observable<PokemonSpecies>;
   pokemonSelectedSprite!: string;
   pokemonEncountersList$!: Observable<LocationAreaEncounter[]>;
+  pokemonFlavorTextList!: FlavorText[];
 
   @ViewChild('audioPlayer', { static: false })
   audio!: ElementRef<HTMLAudioElement>;
@@ -48,12 +51,18 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.monsterDetails$ = this.pokeApi.getPokemonDetails(this.idMonster).pipe(
-      tap((data) => console.log(data)),
       tap((pokemonFullData) => {
         this.setEncountersList$(pokemonFullData.id, this.idPokeGen),
         this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen)}
       ),
     );
+
+    this.monsterDetailsSpecies$ = this.pokeApi.getPokemonSpeciesDetails(this.idMonster).pipe(
+      tap((data) => console.log(data)),
+      tap((detailsSpecies) => {
+        this.setFlavorTextList$(detailsSpecies.flavor_text_entries, this.idPokeGen)
+      })
+    )
   }
 
   setPokemonSprite$(spriteObject: PokemonSprites, generation: string): void {
@@ -66,6 +75,10 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   setEncountersList$(id:number, generation:string): void {
     this.pokemonEncountersList$ = this.encountersService.getEncountersList(id.toString(), generation);
+  }
+
+  setFlavorTextList$(flavorTextList: FlavorText[], generation:string){
+    this.pokemonFlavorTextList = this.pokemonPageService.filterPokemonFlavorTextEntriesByIdGeneration(flavorTextList, generation, 'fr');
   }
 
   ngAfterViewInit(): void {
