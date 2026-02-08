@@ -33,7 +33,7 @@ import {
   styleUrl: './monster-page.component.scss',
 })
 export class MonsterPageComponent implements OnInit, AfterViewInit {
-  activeFlavorTab = 1;
+  activeFlavorTab = 0;
   volume = 0.2;
   idMonster!: string;
   idPokeGen!: string;

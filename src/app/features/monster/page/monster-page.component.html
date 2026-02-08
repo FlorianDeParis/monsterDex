@@ -34,9 +34,11 @@
                 <ul ngbNav #nav="ngbNav" [(activeId)]="activeFlavorTab" class="nav-tabs">
                   @for(pokemonFlavorText of pokemonFlavorTextList; track pokemonFlavorText){
                     <li [ngbNavItem]="$index">
-                      <button ngbNavLink class="font-pokemonRS theme-{{pokemonFlavorText.version.name}}">{{ pokemonFlavorText.version.name | uppercase }}</button>
+                      <button ngbNavLink class="font-orbitron theme-{{pokemonFlavorText.version.name}}">{{ pokemonFlavorText.version.name | uppercase }}</button>
                       <ng-template ngbNavContent>
-                        <p>{{ pokemonFlavorText.flavor_text }}</p>
+                        <blockquote class="font-russoOne">
+                          “{{ pokemonFlavorText.flavor_text }}”
+                        </blockquote>
                       </ng-template>
                     </li>
                   }

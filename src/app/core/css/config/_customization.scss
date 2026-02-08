@@ -4,7 +4,6 @@
 // @debug map.get($color-tokens, 'version-group-color');
 
 @each $version, $hexaVal in map.get($color-tokens, 'version-group-color'){
-  @debug $version, $hexaVal;
   .nav-tabs .nav-link.theme-#{$version}{
     &.active{
       text-shadow: 1px 1px 2px #000;
