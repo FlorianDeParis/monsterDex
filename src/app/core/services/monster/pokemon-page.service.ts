@@ -6,11 +6,30 @@ import {
   PokemonSprites,
   PokemonSpritesVersions,
 } from '../../models/PokeAPI/pokemon.type';
+import { NamedAPIResource } from '../../models/PokeAPI/utilities.type';
 import { ToasterService } from '../toaster.service';
 
-import { tap, map } from 'rxjs';
+import { tap, Observable, map } from 'rxjs';
 import { EncountersService } from './encounters.service';
 
+
+interface TableCell {
+  value: string;
+  rowspan?: number;
+  hidden?: boolean;
+}
+
+export interface TableRow {
+  zone: TableCell;
+  version: TableCell;
+  method: TableCell;
+  level: {
+    min_level: number;
+    max_level?: number;
+  };
+  chance: TableCell;
+  condition_values?: NamedAPIResource[];
+}
 @Injectable({
   providedIn: 'root',
 })
@@ -18,6 +37,7 @@ export class PokemonPageService {
   constructor(
     private toaster: ToasterService,
     private encountersService: EncountersService,
+    private pokeApiService: PokeApiService
   ) {}
 
   getPokemonArtworkByIdGeneration(
@@ -57,5 +77,77 @@ export class PokemonPageService {
 
   getMyObjectValueCastedKey(myObject: any, key: string): any {
     return myObject[key as keyof typeof myObject];
+  }
+
+
+  getFlattenedEncountersList(
+    pokemonId: string,
+    pokemonGeneration: string,
+  ): Observable<TableRow[]> {
+    return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
+      map((encounters) =>
+        this.encountersService.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
+      ),
+      map((encounters) =>
+        this.buildTable(encounters)
+      ),
+      tap((e) => console.log(e))
+    );
+  }
+
+
+  buildTable(data: LocationAreaEncounter[]): TableRow[] {
+    const rows: TableRow[] = [];
+
+    data.forEach(LocationAreaEncounter => {
+      const zoneName = LocationAreaEncounter.location_area.name;
+
+      // Nombre total de lignes pour la zone
+      const zoneRowspan = LocationAreaEncounter.version_details.reduce(
+        (sum, v) => sum + v.encounter_details.length,
+        0
+      );
+
+      let isFirstZoneRow = true;
+
+      LocationAreaEncounter.version_details.forEach(versionDetail => {
+        const versionName = versionDetail.version.name;
+        const versionRowspan = versionDetail.encounter_details.length;
+
+        let isFirstVersionRow = true;
+
+        versionDetail.encounter_details.forEach(encounter => {
+          console.log(encounter),
+          rows.push({
+            zone: {
+              value: zoneName,
+              rowspan: isFirstZoneRow ? zoneRowspan : undefined,
+              hidden: !isFirstZoneRow
+            },
+            version: {
+              value: versionName,
+              rowspan: isFirstVersionRow ? versionRowspan : undefined,
+              hidden: !isFirstVersionRow
+            },
+            method: {
+              value: encounter.method.name
+            },
+            level: {
+              min_level: encounter.min_level,
+              max_level: encounter.max_level
+            },
+            chance: {
+              value: `${encounter.chance}%`
+            },
+            condition_values: encounter.condition_values
+          });
+
+          isFirstZoneRow = false;
+          isFirstVersionRow = false;
+        });
+      });
+    });
+
+    return rows;
   }
 }

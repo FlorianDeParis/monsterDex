@@ -28,7 +28,8 @@ export class EncountersService {
     return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
       map((encounters) =>
         this.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
-      )
+      ),
+      tap((e) => console.log(e))
     );
   }
 

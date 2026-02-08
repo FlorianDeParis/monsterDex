@@ -11,6 +11,7 @@ import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
 import { LocationAreaEncounter, Pokemon, PokemonSprites } from '../../../core/models/PokeAPI/pokemon.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
+import type { TableRow } from '../../../core/services/monster/pokemon-page.service';
 import { PokeApiService } from '../../../core/services/poke-api.service';
 import { PokedexService } from '../../../core/services/monster/pokedex.service';
 import { WorldMapComponent } from '../../map/world-map/world-map.component';
@@ -29,6 +30,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   monsterDetails$!: Observable<Pokemon>;
   pokemonSelectedSprite!: string;
   pokemonEncountersList$!: Observable<LocationAreaEncounter[]>;
+  pokemonFlattenedEncountersList$!: Observable<TableRow[]>;
 
   @ViewChild('audioPlayer', { static: false })
   audio!: ElementRef<HTMLAudioElement>;
@@ -50,7 +52,8 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
       tap((data) => console.log(data)),
       tap((pokemonFullData) => {
         this.setEncountersList$(pokemonFullData.id, this.idPokeGen),
-        this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen)}
+        this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen),
+        this.setFlattenedEncountersList$(pokemonFullData.id, this.idPokeGen)}
       ),
     );
   }
@@ -73,5 +76,9 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.audio.nativeElement.volume = this.volume;
+  }
+
+  setFlattenedEncountersList$(id:number, generation:string): void {
+    this.pokemonFlattenedEncountersList$ = this.pokemonPageService.getFlattenedEncountersList(id.toString(), generation);
   }
 }
