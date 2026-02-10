@@ -1,0 +1,12 @@
+$spacerMultiplier: 4px;
+
+$spacers-4: (
+  4px: $spacerMultiplier,
+  8: $spacerMultiplier * 2,
+  16: $spacerMultiplier * 4,
+  24: $spacerMultiplier * 6,
+  32: $spacerMultiplier * 8,
+  40: $spacerMultiplier * 10,
+  44: $spacerMultiplier * 11,
+  56: $spacerMultiplier * 14,
+) !default;
