@@ -2,19 +2,19 @@
   "types": [
     {
       "name": "walk",
-      "path": "/assets/img/grass.png"
+      "path": "/assets/img/encounters/grass.png"
     },
     {
       "name": "old-rod",
-      "path": "/assets/img/fishing.gif"
+      "path": "/assets/img/encounters/fishing.gif"
     },
     {
       "name": "good-rod",
-      "path": "/assets/img/fishing.gif"
+      "path": "/assets/img/encounters/fishing.gif"
     },
     {
       "name": "super-rod",
-      "path": "/assets/img/fishing.gif"
+      "path": "/assets/img/encounters/fishing.gif"
     },
     {
       "name": "surf",

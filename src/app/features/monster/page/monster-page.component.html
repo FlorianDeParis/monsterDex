@@ -53,7 +53,13 @@
             </span>
           </td>
 
-          <td>{{ row.method.value }}</td>
+          <td>
+            @let iconPath = getEncounterIcon(row.method.value);
+            @if( iconPath !== ''){
+              <img [src]="iconPath">
+            }
+            {{ row.method.value }}
+          </td>
           <td>
             {{ row.level.min_level }}
             @if( row.level.min_level != row.level.max_level ){
@@ -61,10 +67,12 @@
             }
           </td>
           <td>{{ row.chance.value }}</td>
-          <td class="d-flex">
-            @for(condition of row.condition_values; track condition.name){
-              <div class="flex-grow-1">{{ condition.name}}</div>
-            }
+          <td>
+            <div class="d-flex">
+              @for(condition of row.condition_values; track condition.name){
+                <div class="flex-grow-1">{{ condition.name}}</div>
+              }
+            </div>
           </td>
         </tr>
       </table>
