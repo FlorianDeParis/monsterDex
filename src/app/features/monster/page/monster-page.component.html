@@ -55,10 +55,12 @@
 
           <td>
             @let iconPath = getEncounterIcon(row.method.value);
-            @if( iconPath !== ''){
-              <img [src]="iconPath">
-            }
-            {{ row.method.value }}
+            <div class="d-flex align-items-center gap-8 p-4px">
+              @if( iconPath !== ''){
+                <img [src]="iconPath">
+              }
+              {{ row.method.value }}
+            </div>
           </td>
           <td>
             {{ row.level.min_level }}
