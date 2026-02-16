@@ -26,11 +26,11 @@
     },
     {
       "name": "headbutt",
-      "path": null
+      "path": "/assets/img/encounters/headbutt.png"
     },
     {
       "name": "dark-grass",
-      "path": null
+      "path": "/assets/img/encounters/dark-grass.png"
     },
     {
       "name": "grass-spots",
@@ -86,15 +86,15 @@
     },
     {
       "name": "headbutt-low",
-      "path": null
+      "path": "/assets/img/encounters/headbutt.png"
     },
     {
       "name": "headbutt-normal",
-      "path": null
+      "path": "/assets/img/encounters/headbutt.png"
     },
     {
       "name": "headbutt-high",
-      "path": null
+      "path": "/assets/img/encounters/headbutt.png"
     },
     {
       "name": "squirt-bottle",
