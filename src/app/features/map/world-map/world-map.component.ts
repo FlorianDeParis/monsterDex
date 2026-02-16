@@ -17,33 +17,41 @@ interface Places {
 
 @Component({
   selector: 'app-world-map',
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, JsonPipe, TileMapComponent],
   providers: [MapService],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.scss',
 })
 export class WorldMapComponent implements OnInit {
+  @Input() debug: boolean = false;
   @Input() pokemonGeneration!: string;
   @Input() pokemonId!: string;
   @Input() region!: string;
+  isDisplayable: boolean = false;
+  oldPlaces$!: Observable<RegionMarkerList[]>;
   places$!: Observable<RegionMarkerList[]>;
-  allPlaces!: Region[];
+  allPlaces: Region[] = [];
 
   constructor(
     private encountersService: EncountersService,
     private mapService: MapService,
   ) {}
-
   ngOnInit() {
-    this.places$ = this.mapService.getMapMarkers(
-      this.pokemonId,
-      this.pokemonGeneration,
-    );
+    if(this.isMapAllowed(this.pokemonGeneration)){
+      this.isDisplayable = true;
+      this.places$ = this.mapService.getMapMarkers(
+        this.pokemonId,
+        this.pokemonGeneration,
+      );
 
-    // this.allPlaces$ = this.mapService.getAllMapMarkers(
-    //   this.pokemonGeneration
-    // );
-    this.allPlaces = this.mapService.getAllMapMarkers(this.pokemonGeneration);
+      if(this.debug){
+        this.oldPlaces$ = this.mapService.getMatrixMapMarkers(
+          this.pokemonId,
+          this.pokemonGeneration,
+        );
+        this.allPlaces = this.mapService.getAllMapMarkers();
+      }
+    }
   }
 
   checkTile$(x: number, y: number, regionMarkerList: RegionMarkerList): boolean {
@@ -56,9 +64,9 @@ export class WorldMapComponent implements OnInit {
     return flag;
   }
 
-  isDisplayableMap(generation: string): boolean {
+  isMapAllowed(generation: string): boolean {
     // Authorize some regions to be displayable
-    return [1,2].includes(+generation);
+    return [1,2,3].includes(+generation);
   }
 
   getWorldMapClass(region:string, gen:string): string{
@@ -74,6 +82,16 @@ export class WorldMapComponent implements OnInit {
       'aspect-ratio': markerList.size[0]+'/'+markerList.size[1],
       'width': '300px'
     };
+  }
+
+  getMarkerStyle(marker: MapMarker, region: RegionMarkerList): {} {
+    return {
+      'aspect-ratio': '1/1',
+      'left': marker.coordinates[0]+'%',
+      'top': marker.coordinates[1]+'%',
+      'width': 'calc(100% / '+region.size[0]+' )',
+      'height': 'auto'
+    }
   }
 
   transformMatrixToRelativeCoordinates(region: Region): Region {

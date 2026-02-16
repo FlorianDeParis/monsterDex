@@ -14,5 +14,5 @@ export const routes: Routes = [
     path: 'pokemon/:idMonster/:idPokeGen/:idDex',
     component: MonsterPageComponent,
   }, // idMonster => national pokemon id, idPokeGen => pokemon generation, idDex => pokedex id
-  { path: 'map/:idMonster/:idPokeGen/:idDex', component: MapTestComponent }, // world map testing
+  { path: 'debug-map/:idMonster/:idPokeGen/:idDex', component: MapTestComponent }, // world map testing
 ];

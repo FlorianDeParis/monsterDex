@@ -1,0 +1,1081 @@
+{
+  "data": {
+    "region": [
+      {
+        "name": "hoenn",
+        "id": 3,
+        "locations": [
+          {
+            "name": "petalburg-city",
+            "locationareas": [
+              {
+                "id": 350,
+                "name": "petalburg-city-area"
+              }
+            ]
+          },
+          {
+            "name": "slateport-city",
+            "locationareas": [
+              {
+                "id": 351,
+                "name": "slateport-city-area"
+              },
+              {
+                "id": 781,
+                "name": "slateport-city-contest-hall"
+              }
+            ]
+          },
+          {
+            "name": "lilycove-city",
+            "locationareas": [
+              {
+                "id": 352,
+                "name": "lilycove-city-area"
+              },
+              {
+                "id": 784,
+                "name": "lilycove-city-contest-hall"
+              }
+            ]
+          },
+          {
+            "name": "mossdeep-city",
+            "locationareas": [
+              {
+                "id": 353,
+                "name": "mossdeep-city-area"
+              },
+              {
+                "id": 769,
+                "name": "mossdeep-city-stevens-house"
+              }
+            ]
+          },
+          {
+            "name": "sootopolis-city",
+            "locationareas": [
+              {
+                "id": 354,
+                "name": "sootopolis-city-area"
+              }
+            ]
+          },
+          {
+            "name": "ever-grande-city",
+            "locationareas": [
+              {
+                "id": 355,
+                "name": "ever-grande-city-area"
+              }
+            ]
+          },
+          {
+            "name": "meteor-falls",
+            "locationareas": [
+              {
+                "id": 356,
+                "name": "meteor-falls-area"
+              },
+              {
+                "id": 357,
+                "name": "meteor-falls-back"
+              },
+              {
+                "id": 358,
+                "name": "meteor-falls-b1f"
+              },
+              {
+                "id": 359,
+                "name": "meteor-falls-backsmall-room"
+              }
+            ]
+          },
+          {
+            "name": "rusturf-tunnel",
+            "locationareas": [
+              {
+                "id": 360,
+                "name": "rusturf-tunnel-area"
+              }
+            ]
+          },
+          {
+            "name": "granite-cave",
+            "locationareas": [
+              {
+                "id": 361,
+                "name": "granite-cave-1f"
+              },
+              {
+                "id": 362,
+                "name": "granite-cave-b1f"
+              },
+              {
+                "id": 363,
+                "name": "granite-cave-b2f"
+              },
+              {
+                "id": 364,
+                "name": "granite-cave-1fsmall-room"
+              }
+            ]
+          },
+          {
+            "name": "petalburg-woods",
+            "locationareas": [
+              {
+                "id": 365,
+                "name": "petalburg-woods-area"
+              }
+            ]
+          },
+          {
+            "name": "jagged-pass",
+            "locationareas": [
+              {
+                "id": 366,
+                "name": "jagged-pass-area"
+              }
+            ]
+          },
+          {
+            "name": "fiery-path",
+            "locationareas": [
+              {
+                "id": 367,
+                "name": "fiery-path-area"
+              }
+            ]
+          },
+          {
+            "name": "mt-pyre",
+            "locationareas": [
+              {
+                "id": 368,
+                "name": "mt-pyre-1f"
+              },
+              {
+                "id": 369,
+                "name": "mt-pyre-2f"
+              },
+              {
+                "id": 370,
+                "name": "mt-pyre-3f"
+              },
+              {
+                "id": 371,
+                "name": "mt-pyre-4f"
+              },
+              {
+                "id": 372,
+                "name": "mt-pyre-5f"
+              },
+              {
+                "id": 373,
+                "name": "mt-pyre-6f"
+              },
+              {
+                "id": 374,
+                "name": "mt-pyre-outside"
+              },
+              {
+                "id": 375,
+                "name": "mt-pyre-summit"
+              }
+            ]
+          },
+          {
+            "name": "seafloor-cavern",
+            "locationareas": [
+              {
+                "id": 376,
+                "name": "seafloor-cavern-area"
+              }
+            ]
+          },
+          {
+            "name": "cave-of-origin",
+            "locationareas": [
+              {
+                "id": 377,
+                "name": "cave-of-origin-entrance"
+              },
+              {
+                "id": 378,
+                "name": "cave-of-origin-1f"
+              },
+              {
+                "id": 379,
+                "name": "cave-of-origin-b1f"
+              },
+              {
+                "id": 380,
+                "name": "cave-of-origin-b2f"
+              },
+              {
+                "id": 381,
+                "name": "cave-of-origin-b3f"
+              },
+              {
+                "id": 801,
+                "name": "cave-of-origin-b4f"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-victory-road",
+            "locationareas": [
+              {
+                "id": 382,
+                "name": "hoenn-victory-road-1f"
+              },
+              {
+                "id": 383,
+                "name": "hoenn-victory-road-b1f"
+              },
+              {
+                "id": 384,
+                "name": "hoenn-victory-road-b2f"
+              }
+            ]
+          },
+          {
+            "name": "shoal-cave",
+            "locationareas": [
+              {
+                "id": 385,
+                "name": "shoal-cave-area"
+              },
+              {
+                "id": 386,
+                "name": "shoal-cave-b1f"
+              }
+            ]
+          },
+          {
+            "name": "new-mauville",
+            "locationareas": [
+              {
+                "id": 387,
+                "name": "new-mauville-entrance"
+              },
+              {
+                "id": 388,
+                "name": "new-mauville-area"
+              }
+            ]
+          },
+          {
+            "name": "abandoned-ship",
+            "locationareas": [
+              {
+                "id": 389,
+                "name": "abandoned-ship-area"
+              }
+            ]
+          },
+          {
+            "name": "sky-pillar",
+            "locationareas": [
+              {
+                "id": 390,
+                "name": "sky-pillar-1f"
+              },
+              {
+                "id": 391,
+                "name": "sky-pillar-3f"
+              },
+              {
+                "id": 392,
+                "name": "sky-pillar-5f"
+              },
+              {
+                "id": 804,
+                "name": "sky-pillar-apex"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-101",
+            "locationareas": [
+              {
+                "id": 393,
+                "name": "hoenn-route-101-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-102",
+            "locationareas": [
+              {
+                "id": 394,
+                "name": "hoenn-route-102-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-103",
+            "locationareas": [
+              {
+                "id": 395,
+                "name": "hoenn-route-103-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-104",
+            "locationareas": [
+              {
+                "id": 396,
+                "name": "hoenn-route-104-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-105",
+            "locationareas": [
+              {
+                "id": 397,
+                "name": "hoenn-route-105-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-106",
+            "locationareas": [
+              {
+                "id": 398,
+                "name": "hoenn-route-106-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-107",
+            "locationareas": [
+              {
+                "id": 399,
+                "name": "hoenn-route-107-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-108",
+            "locationareas": [
+              {
+                "id": 400,
+                "name": "hoenn-route-108-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-109",
+            "locationareas": [
+              {
+                "id": 401,
+                "name": "hoenn-route-109-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-110",
+            "locationareas": [
+              {
+                "id": 402,
+                "name": "hoenn-route-110-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-111",
+            "locationareas": [
+              {
+                "id": 403,
+                "name": "hoenn-route-111-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-112",
+            "locationareas": [
+              {
+                "id": 404,
+                "name": "hoenn-route-112-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-113",
+            "locationareas": [
+              {
+                "id": 405,
+                "name": "hoenn-route-113-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-114",
+            "locationareas": [
+              {
+                "id": 406,
+                "name": "hoenn-route-114-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-115",
+            "locationareas": [
+              {
+                "id": 407,
+                "name": "hoenn-route-115-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-116",
+            "locationareas": [
+              {
+                "id": 408,
+                "name": "hoenn-route-116-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-117",
+            "locationareas": [
+              {
+                "id": 409,
+                "name": "hoenn-route-117-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-118",
+            "locationareas": [
+              {
+                "id": 410,
+                "name": "hoenn-route-118-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-119",
+            "locationareas": [
+              {
+                "id": 411,
+                "name": "hoenn-route-119-area"
+              },
+              {
+                "id": 768,
+                "name": "hoenn-route-119-weather-institute"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-120",
+            "locationareas": [
+              {
+                "id": 412,
+                "name": "hoenn-route-120-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-121",
+            "locationareas": [
+              {
+                "id": 413,
+                "name": "hoenn-route-121-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-122",
+            "locationareas": [
+              {
+                "id": 414,
+                "name": "hoenn-route-122-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-123",
+            "locationareas": [
+              {
+                "id": 415,
+                "name": "hoenn-route-123-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-124",
+            "locationareas": [
+              {
+                "id": 416,
+                "name": "hoenn-route-124-area"
+              },
+              {
+                "id": 417,
+                "name": "hoenn-route-124-underwater"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-125",
+            "locationareas": [
+              {
+                "id": 418,
+                "name": "hoenn-route-125-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-126",
+            "locationareas": [
+              {
+                "id": 419,
+                "name": "hoenn-route-126-area"
+              },
+              {
+                "id": 420,
+                "name": "hoenn-route-126-underwater"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-127",
+            "locationareas": [
+              {
+                "id": 421,
+                "name": "hoenn-route-127-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-128",
+            "locationareas": [
+              {
+                "id": 422,
+                "name": "hoenn-route-128-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-129",
+            "locationareas": [
+              {
+                "id": 423,
+                "name": "hoenn-route-129-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-130",
+            "locationareas": [
+              {
+                "id": 424,
+                "name": "hoenn-route-130-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-131",
+            "locationareas": [
+              {
+                "id": 425,
+                "name": "hoenn-route-131-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-132",
+            "locationareas": [
+              {
+                "id": 426,
+                "name": "hoenn-route-132-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-133",
+            "locationareas": [
+              {
+                "id": 427,
+                "name": "hoenn-route-133-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-route-134",
+            "locationareas": [
+              {
+                "id": 428,
+                "name": "hoenn-route-134-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-safari-zone",
+            "locationareas": [
+              {
+                "id": 429,
+                "name": "hoenn-safari-zone-nwmach-bike-area"
+              },
+              {
+                "id": 430,
+                "name": "hoenn-safari-zone-neacro-bike-area"
+              },
+              {
+                "id": 431,
+                "name": "hoenn-safari-zone-sw"
+              },
+              {
+                "id": 432,
+                "name": "hoenn-safari-zone-se"
+              },
+              {
+                "id": 435,
+                "name": "hoenn-safari-zone-expansion-south"
+              },
+              {
+                "id": 436,
+                "name": "hoenn-safari-zone-expansion-north"
+              }
+            ]
+          },
+          {
+            "name": "dewford-town",
+            "locationareas": [
+              {
+                "id": 433,
+                "name": "dewford-town-area"
+              }
+            ]
+          },
+          {
+            "name": "pacifidlog-town",
+            "locationareas": [
+              {
+                "id": 434,
+                "name": "pacifidlog-town-area"
+              }
+            ]
+          },
+          {
+            "name": "magma-hideout",
+            "locationareas": [
+              {
+                "id": 437,
+                "name": "magma-hideout-area"
+              }
+            ]
+          },
+          {
+            "name": "mirage-tower",
+            "locationareas": [
+              {
+                "id": 438,
+                "name": "mirage-tower-area"
+              }
+            ]
+          },
+          {
+            "name": "desert-underpass",
+            "locationareas": [
+              {
+                "id": 439,
+                "name": "desert-underpass-area"
+              }
+            ]
+          },
+          {
+            "name": "artisan-cave",
+            "locationareas": [
+              {
+                "id": 440,
+                "name": "artisan-cave-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-altering-cave",
+            "locationareas": [
+              {
+                "id": 441,
+                "name": "hoenn-altering-cave-a"
+              },
+              {
+                "id": 442,
+                "name": "hoenn-altering-cave-b"
+              },
+              {
+                "id": 443,
+                "name": "hoenn-altering-cave-c"
+              },
+              {
+                "id": 444,
+                "name": "hoenn-altering-cave-d"
+              },
+              {
+                "id": 445,
+                "name": "hoenn-altering-cave-e"
+              },
+              {
+                "id": 446,
+                "name": "hoenn-altering-cave-f"
+              },
+              {
+                "id": 447,
+                "name": "hoenn-altering-cave-g"
+              },
+              {
+                "id": 448,
+                "name": "hoenn-altering-cave-h"
+              },
+              {
+                "id": 449,
+                "name": "hoenn-altering-cave-i"
+              }
+            ]
+          },
+          {
+            "name": "littleroot-town",
+            "locationareas": [
+              {
+                "id": 770,
+                "name": "littleroot-town-area"
+              }
+            ]
+          },
+          {
+            "name": "oldale-town",
+            "locationareas": []
+          },
+          {
+            "name": "lavaridge-town",
+            "locationareas": [
+              {
+                "id": 787,
+                "name": "lavaridge-town-area"
+              }
+            ]
+          },
+          {
+            "name": "fallarbor-town",
+            "locationareas": [
+              {
+                "id": 783,
+                "name": "fallarbor-town-contest-hall"
+              }
+            ]
+          },
+          {
+            "name": "verdanturf-town",
+            "locationareas": [
+              {
+                "id": 782,
+                "name": "verdanturf-town-contest-hall"
+              }
+            ]
+          },
+          {
+            "name": "mauville-city",
+            "locationareas": []
+          },
+          {
+            "name": "rustboro-city",
+            "locationareas": [
+              {
+                "id": 834,
+                "name": "rustboro-city-area"
+              }
+            ]
+          },
+          {
+            "name": "fortree-city",
+            "locationareas": []
+          },
+          {
+            "name": "underwater",
+            "locationareas": []
+          },
+          {
+            "name": "mt-chimney",
+            "locationareas": []
+          },
+          {
+            "name": "mirage-island",
+            "locationareas": []
+          },
+          {
+            "name": "southern-island",
+            "locationareas": [
+              {
+                "id": 785,
+                "name": "southern-island-area"
+              }
+            ]
+          },
+          {
+            "name": "sealed-chamber",
+            "locationareas": []
+          },
+          {
+            "name": "scorched-slab",
+            "locationareas": [
+              {
+                "id": 1185,
+                "name": "scorched-slab-1f"
+              },
+              {
+                "id": 1186,
+                "name": "scorched-slab-b1f"
+              },
+              {
+                "id": 1187,
+                "name": "scorched-slab-b2f"
+              },
+              {
+                "id": 1188,
+                "name": "scorched-slab-b3f"
+              }
+            ]
+          },
+          {
+            "name": "island-cave",
+            "locationareas": [
+              {
+                "id": 811,
+                "name": "island-cave-area"
+              }
+            ]
+          },
+          {
+            "name": "desert-ruins",
+            "locationareas": [
+              {
+                "id": 810,
+                "name": "desert-ruins-area"
+              }
+            ]
+          },
+          {
+            "name": "ancient-tomb",
+            "locationareas": [
+              {
+                "id": 812,
+                "name": "ancient-tomb-area"
+              }
+            ]
+          },
+          {
+            "name": "inside-of-truck",
+            "locationareas": []
+          },
+          {
+            "name": "secret-base",
+            "locationareas": []
+          },
+          {
+            "name": "hoenn-battle-tower",
+            "locationareas": []
+          },
+          {
+            "name": "hoenn-pokemon-league",
+            "locationareas": []
+          },
+          {
+            "name": "team-aqua-hideout",
+            "locationareas": [
+              {
+                "id": 1165,
+                "name": "team-aqua-hideout-area"
+              }
+            ]
+          },
+          {
+            "name": "sea-mauville",
+            "locationareas": [
+              {
+                "id": 1178,
+                "name": "sea-mauville-area"
+              },
+              {
+                "id": 1179,
+                "name": "sea-mauville-outside"
+              },
+              {
+                "id": 1180,
+                "name": "sea-mauville-inside"
+              }
+            ]
+          },
+          {
+            "name": "team-magma-hideout",
+            "locationareas": [
+              {
+                "id": 1166,
+                "name": "team-magma-hideout-area"
+              }
+            ]
+          },
+          {
+            "name": "battle-resort",
+            "locationareas": [
+              {
+                "id": 786,
+                "name": "battle-resort-area"
+              }
+            ]
+          },
+          {
+            "name": "ss-tidal",
+            "locationareas": []
+          },
+          {
+            "name": "mirage-forest",
+            "locationareas": []
+          },
+          {
+            "name": "mirage-cave",
+            "locationareas": []
+          },
+          {
+            "name": "mirage-mountain",
+            "locationareas": []
+          },
+          {
+            "name": "trackless-forest",
+            "locationareas": [
+              {
+                "id": 1177,
+                "name": "trackless-forest-area"
+              }
+            ]
+          },
+          {
+            "name": "pathless-plain",
+            "locationareas": [
+              {
+                "id": 1190,
+                "name": "pathless-plain-area"
+              }
+            ]
+          },
+          {
+            "name": "nameless-cavern",
+            "locationareas": [
+              {
+                "id": 1183,
+                "name": "nameless-cavern-area"
+              }
+            ]
+          },
+          {
+            "name": "fabled-cave",
+            "locationareas": [
+              {
+                "id": 1191,
+                "name": "fabled-cave-area"
+              }
+            ]
+          },
+          {
+            "name": "gnarled-den",
+            "locationareas": [
+              {
+                "id": 1192,
+                "name": "gnarled-den-area"
+              }
+            ]
+          },
+          {
+            "name": "crescent-isle",
+            "locationareas": [
+              {
+                "id": 1189,
+                "name": "crescent-isle-area"
+              }
+            ]
+          },
+          {
+            "name": "secret-islet",
+            "locationareas": []
+          },
+          {
+            "name": "soaring-in-the-sky",
+            "locationareas": [
+              {
+                "id": 1184,
+                "name": "soaring-in-the-sky-area"
+              }
+            ]
+          },
+          {
+            "name": "secret-shore",
+            "locationareas": []
+          },
+          {
+            "name": "secret-meadow",
+            "locationareas": []
+          },
+          {
+            "name": "roaming-hoenn",
+            "locationareas": [
+              {
+                "id": 796,
+                "name": "roaming-hoenn-area"
+              }
+            ]
+          },
+          {
+            "name": "terra-cave",
+            "locationareas": [
+              {
+                "id": 802,
+                "name": "terra-cave-area"
+              }
+            ]
+          },
+          {
+            "name": "marine-cave",
+            "locationareas": [
+              {
+                "id": 803,
+                "name": "marine-cave-area"
+              }
+            ]
+          },
+          {
+            "name": "faraway-island",
+            "locationareas": [
+              {
+                "id": 808,
+                "name": "faraway-island-area"
+              }
+            ]
+          },
+          {
+            "name": "hoenn-battle-frontier",
+            "locationareas": [
+              {
+                "id": 809,
+                "name": "hoenn-battle-frontier-area"
+              }
+            ]
+          },
+          {
+            "name": "mossdeep-space-center",
+            "locationareas": [
+              {
+                "id": 1181,
+                "name": "mossdeep-space-center-area"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

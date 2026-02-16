@@ -8,6 +8,11 @@ import { ActivatedRoute } from '@angular/router';
 
 import * as generation1 from '../../../../../public/assets/data/maps/gen-i/data-new.json';
 import * as generation2 from '../../../../../public/assets/data/maps/gen-ii/data-new.json';
+import * as generation3 from '../../../../../public/assets/data/maps/gen-iii/data-new.json';
+
+import * as generation1MTX from '../../../../../public/assets/data/maps/gen-i/data.json';
+import * as generation2MTX from '../../../../../public/assets/data/maps/gen-ii/data.json';
+import * as generation3MTX from '../../../../../public/assets/data/maps/gen-iii/data.json';
 
 interface GenerationDataSet {
   region: Region[];
@@ -17,12 +22,22 @@ const DATASET: {
   [key: number]: GenerationDataSet;
 } = {
   1: generation1,
-  2: generation2, // TODO: Add JSON data.
+  2: generation2,
+  3: generation3,
+};
+
+const DATASETMATRIX: {
+  [key: number]: GenerationDataSet;
+} = {
+  1: generation1MTX,
+  2: generation2MTX,
+  3: generation3MTX,
 };
 
 @Injectable()
 export class MapService {
   readonly dataset = signal<GenerationDataSet>(generation1);
+  readonly datasetmatrix = signal<GenerationDataSet>(generation1MTX);
 
   constructor(
     private pokeApiService: PokeApiService,
@@ -33,6 +48,7 @@ export class MapService {
       .pipe(map((params) => +params['idPokeGen']))
       .subscribe((generation) => {
         this.dataset.set(DATASET[generation]);
+        this.datasetmatrix.set(DATASETMATRIX[generation]);
       }
     );
   }
@@ -77,14 +93,53 @@ export class MapService {
   }
 
   // To be rebased later
-  getAllMapMarkers(pokemonGeneration: string): Region[]{
+  getAllMapMarkers(): Region[]{
     let mapMarkerList: Region[] = [];
-    this.dataset().region.map(
+    this.datasetmatrix().region.map(
       (regionObj) => {
         console.log(regionObj);
         mapMarkerList.push(regionObj);
       }
     );
+    return mapMarkerList;
+  }
+
+  // WILL BE DEPECATED SOON
+  getMatrixMapMarkers(
+    pokemonId: string,
+    pokemonGeneration: string,
+  ): Observable<RegionMarkerList[]> {
+    return this.encountersService
+      .getEncountersList(pokemonId, pokemonGeneration)
+      .pipe(map((PKMNencounters) => this.generateMatrixMapMarkers(PKMNencounters)));
+  }
+
+  generateMatrixMapMarkers(PKMNencounters: LocationAreaEncounter[]): RegionMarkerList[] {
+    const PKMNencountersList = PKMNencounters.map(
+      (PKMNencounter) => PKMNencounter.location_area.name,
+    );
+
+    let mapMarkerList: RegionMarkerList[] = [];
+
+    this.datasetmatrix().region.map(
+      (regionObj) => {
+        let RegionMarkerList:RegionMarkerList = {'name': regionObj.name, 'size': regionObj.size, 'markers': []}
+        regionObj.locations.forEach((locationsGroup) => {
+          locationsGroup.locationareas.forEach((locationArea: any) => {
+            if (PKMNencountersList.includes(locationArea.name)) {
+
+              locationsGroup.coordinates.forEach((c) => {
+                RegionMarkerList.markers.push({
+                  name: locationArea.name,
+                  coordinates: c,
+                });
+              });
+            }
+          });
+        });
+        mapMarkerList.push(RegionMarkerList);
+      }
+    )
     return mapMarkerList;
   }
 }

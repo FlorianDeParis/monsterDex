@@ -1,0 +1,2058 @@
+{
+  "region": [
+    {
+      "name": "hoenn",
+      "id": 3,
+      "size": [
+        32,
+        20
+      ],
+      "locations": [
+        {
+          "name": "petalburg-city",
+          "coordinates": [
+            [
+              7.8125,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 350,
+              "name": "petalburg-city-area"
+            }
+          ]
+        },
+        {
+          "name": "slateport-city",
+          "coordinates": [
+            [
+              29.6875,
+              62.5
+            ],
+            [
+              29.6875,
+              67.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 351,
+              "name": "slateport-city-area"
+            },
+            {
+              "id": 781,
+              "name": "slateport-city-contest-hall"
+            }
+          ]
+        },
+        {
+          "name": "lilycove-city",
+          "coordinates": [
+            [
+              60.9375,
+              27.5
+            ],
+            [
+              64.0625,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 352,
+              "name": "lilycove-city-area"
+            },
+            {
+              "id": 784,
+              "name": "lilycove-city-contest-hall"
+            }
+          ]
+        },
+        {
+          "name": "mossdeep-city",
+          "coordinates": [
+            [
+              79.6875,
+              37.5
+            ],
+            [
+              82.8125,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 353,
+              "name": "mossdeep-city-area"
+            },
+            {
+              "id": 769,
+              "name": "mossdeep-city-stevens-house"
+            }
+          ]
+        },
+        {
+          "name": "sootopolis-city",
+          "coordinates": [
+            [
+              70.3125,
+              47.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 354,
+              "name": "sootopolis-city-area"
+            }
+          ]
+        },
+        {
+          "name": "ever-grande-city",
+          "coordinates": [
+            [
+              89.0625,
+              52.5
+            ],
+            [
+              89.0625,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 355,
+              "name": "ever-grande-city-area"
+            }
+          ]
+        },
+        {
+          "name": "meteor-falls",
+          "coordinates": [
+            [
+              4.6875,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 356,
+              "name": "meteor-falls-area"
+            },
+            {
+              "id": 357,
+              "name": "meteor-falls-back"
+            },
+            {
+              "id": 358,
+              "name": "meteor-falls-b1f"
+            },
+            {
+              "id": 359,
+              "name": "meteor-falls-backsmall-room"
+            }
+          ]
+        },
+        {
+          "name": "rusturf-tunnel",
+          "coordinates": [
+            [
+              10.9375,
+              37.5
+            ],
+            [
+              14.0625,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 360,
+              "name": "rusturf-tunnel-area"
+            }
+          ]
+        },
+        {
+          "name": "granite-cave",
+          "coordinates": [
+            [
+              7.8125,
+              77.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 361,
+              "name": "granite-cave-1f"
+            },
+            {
+              "id": 362,
+              "name": "granite-cave-b1f"
+            },
+            {
+              "id": 363,
+              "name": "granite-cave-b2f"
+            },
+            {
+              "id": 364,
+              "name": "granite-cave-1fsmall-room"
+            }
+          ]
+        },
+        {
+          "name": "petalburg-woods",
+          "coordinates": [
+            [
+              4.6875,
+              52.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 365,
+              "name": "petalburg-woods-area"
+            }
+          ]
+        },
+        {
+          "name": "jagged-pass",
+          "coordinates": [
+            [
+              23.4375,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 366,
+              "name": "jagged-pass-area"
+            }
+          ]
+        },
+        {
+          "name": "fiery-path",
+          "coordinates": [
+            [
+              23.4375,
+              27.5
+            ],
+            [
+              26.5625,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 367,
+              "name": "fiery-path-area"
+            }
+          ]
+        },
+        {
+          "name": "mt-pyre",
+          "coordinates": [
+            [
+              54.6875,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 368,
+              "name": "mt-pyre-1f"
+            },
+            {
+              "id": 369,
+              "name": "mt-pyre-2f"
+            },
+            {
+              "id": 370,
+              "name": "mt-pyre-3f"
+            },
+            {
+              "id": 371,
+              "name": "mt-pyre-4f"
+            },
+            {
+              "id": 372,
+              "name": "mt-pyre-5f"
+            },
+            {
+              "id": 373,
+              "name": "mt-pyre-6f"
+            },
+            {
+              "id": 374,
+              "name": "mt-pyre-outside"
+            },
+            {
+              "id": 375,
+              "name": "mt-pyre-summit"
+            }
+          ]
+        },
+        {
+          "name": "seafloor-cavern",
+          "coordinates": [
+            [
+              79.6875,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 376,
+              "name": "seafloor-cavern-area"
+            }
+          ]
+        },
+        {
+          "name": "cave-of-origin",
+          "coordinates": [
+            [
+              70.3125,
+              47.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 377,
+              "name": "cave-of-origin-entrance"
+            },
+            {
+              "id": 378,
+              "name": "cave-of-origin-1f"
+            },
+            {
+              "id": 379,
+              "name": "cave-of-origin-b1f"
+            },
+            {
+              "id": 380,
+              "name": "cave-of-origin-b2f"
+            },
+            {
+              "id": 381,
+              "name": "cave-of-origin-b3f"
+            },
+            {
+              "id": 801,
+              "name": "cave-of-origin-b4f"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-victory-road",
+          "coordinates": [
+            [
+              89.0625,
+              52.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 382,
+              "name": "hoenn-victory-road-1f"
+            },
+            {
+              "id": 383,
+              "name": "hoenn-victory-road-b1f"
+            },
+            {
+              "id": 384,
+              "name": "hoenn-victory-road-b2f"
+            }
+          ]
+        },
+        {
+          "name": "shoal-cave",
+          "coordinates": [
+            [
+              79.6875,
+              32.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 385,
+              "name": "shoal-cave-area"
+            },
+            {
+              "id": 386,
+              "name": "shoal-cave-b1f"
+            }
+          ]
+        },
+        {
+          "name": "new-mauville",
+          "coordinates": [
+            [
+              29.6875,
+              47.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 387,
+              "name": "new-mauville-entrance"
+            },
+            {
+              "id": 388,
+              "name": "new-mauville-area"
+            }
+          ]
+        },
+        {
+          "name": "abandoned-ship",
+          "coordinates": [
+            [
+              20.3125,
+              82.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 389,
+              "name": "abandoned-ship-area"
+            }
+          ]
+        },
+        {
+          "name": "sky-pillar",
+          "coordinates": [
+            [
+              64.0625,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 390,
+              "name": "sky-pillar-1f"
+            },
+            {
+              "id": 391,
+              "name": "sky-pillar-3f"
+            },
+            {
+              "id": 392,
+              "name": "sky-pillar-5f"
+            },
+            {
+              "id": 804,
+              "name": "sky-pillar-apex"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-101",
+          "coordinates": [
+            [
+              17.1875,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 393,
+              "name": "hoenn-route-101-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-102",
+          "coordinates": [
+            [
+              10.9375,
+              57.5
+            ],
+            [
+              14.0625,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 394,
+              "name": "hoenn-route-102-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-103",
+          "coordinates": [
+            [
+              17.1875,
+              52.5
+            ],
+            [
+              20.3125,
+              52.5
+            ],
+            [
+              23.4375,
+              52.5
+            ],
+            [
+              26.5625,
+              52.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 395,
+              "name": "hoenn-route-103-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-104",
+          "coordinates": [
+            [
+              4.6875,
+              47.5
+            ],
+            [
+              4.6875,
+              52.5
+            ],
+            [
+              4.6875,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 396,
+              "name": "hoenn-route-104-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-105",
+          "coordinates": [
+            [
+              4.6875,
+              62.5
+            ],
+            [
+              4.6875,
+              67.5
+            ],
+            [
+              4.6875,
+              72.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 397,
+              "name": "hoenn-route-105-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-106",
+          "coordinates": [
+            [
+              4.6875,
+              77.5
+            ],
+            [
+              7.8125,
+              77.5
+            ],
+            [
+              10.9375,
+              77.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 398,
+              "name": "hoenn-route-106-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-107",
+          "coordinates": [
+            [
+              14.0625,
+              82.5
+            ],
+            [
+              17.1875,
+              82.5
+            ],
+            [
+              20.3125,
+              82.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 399,
+              "name": "hoenn-route-107-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-108",
+          "coordinates": [
+            [
+              23.4375,
+              82.5
+            ],
+            [
+              26.5625,
+              82.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 400,
+              "name": "hoenn-route-108-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-109",
+          "coordinates": [
+            [
+              29.6875,
+              72.5
+            ],
+            [
+              29.6875,
+              77.5
+            ],
+            [
+              29.6875,
+              82.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 401,
+              "name": "hoenn-route-109-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-110",
+          "coordinates": [
+            [
+              29.6875,
+              47.5
+            ],
+            [
+              29.6875,
+              52.5
+            ],
+            [
+              29.6875,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 402,
+              "name": "hoenn-route-110-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-111",
+          "coordinates": [
+            [
+              29.6875,
+              12.5
+            ],
+            [
+              29.6875,
+              17.5
+            ],
+            [
+              29.6875,
+              22.5
+            ],
+            [
+              29.6875,
+              27.5
+            ],
+            [
+              29.6875,
+              32.5
+            ],
+            [
+              29.6875,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 403,
+              "name": "hoenn-route-111-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-112",
+          "coordinates": [
+            [
+              23.4375,
+              27.5
+            ],
+            [
+              26.5625,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 404,
+              "name": "hoenn-route-112-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-113",
+          "coordinates": [
+            [
+              17.1875,
+              12.5
+            ],
+            [
+              20.3125,
+              12.5
+            ],
+            [
+              23.4375,
+              12.5
+            ],
+            [
+              26.5625,
+              12.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 405,
+              "name": "hoenn-route-113-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-114",
+          "coordinates": [
+            [
+              10.9375,
+              12.5
+            ],
+            [
+              7.8125,
+              12.5
+            ],
+            [
+              7.8125,
+              17.5
+            ],
+            [
+              7.8125,
+              22.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 406,
+              "name": "hoenn-route-114-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-115",
+          "coordinates": [
+            [
+              4.6875,
+              22.5
+            ],
+            [
+              4.6875,
+              27.5
+            ],
+            [
+              4.6875,
+              32.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 407,
+              "name": "hoenn-route-115-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-116",
+          "coordinates": [
+            [
+              7.8125,
+              37.5
+            ],
+            [
+              10.9375,
+              37.5
+            ],
+            [
+              14.0625,
+              37.5
+            ],
+            [
+              17.1875,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 408,
+              "name": "hoenn-route-116-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-117",
+          "coordinates": [
+            [
+              20.3125,
+              42.5
+            ],
+            [
+              23.4375,
+              42.5
+            ],
+            [
+              26.5625,
+              42.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 409,
+              "name": "hoenn-route-117-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-118",
+          "coordinates": [
+            [
+              35.9375,
+              42.5
+            ],
+            [
+              39.0625,
+              42.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 410,
+              "name": "hoenn-route-118-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-119",
+          "coordinates": [
+            [
+              39.0625,
+              37.5
+            ],
+            [
+              39.0625,
+              32.5
+            ],
+            [
+              39.0625,
+              27.5
+            ],
+            [
+              39.0625,
+              22.5
+            ],
+            [
+              39.0625,
+              17.5
+            ],
+            [
+              39.0625,
+              12.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 411,
+              "name": "hoenn-route-119-area"
+            },
+            {
+              "id": 768,
+              "name": "hoenn-route-119-weather-institute"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-120",
+          "coordinates": [
+            [
+              45.3125,
+              12.5
+            ],
+            [
+              45.3125,
+              17.5
+            ],
+            [
+              45.3125,
+              22.5
+            ],
+            [
+              45.3125,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 412,
+              "name": "hoenn-route-120-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-121",
+          "coordinates": [
+            [
+              48.4375,
+              27.5
+            ],
+            [
+              51.5625,
+              27.5
+            ],
+            [
+              54.6875,
+              27.5
+            ],
+            [
+              57.8125,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 413,
+              "name": "hoenn-route-121-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-122",
+          "coordinates": [
+            [
+              54.6875,
+              32.5
+            ],
+            [
+              54.6875,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 414,
+              "name": "hoenn-route-122-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-123",
+          "coordinates": [
+            [
+              54.6875,
+              42.5
+            ],
+            [
+              51.5625,
+              42.5
+            ],
+            [
+              48.4375,
+              42.5
+            ],
+            [
+              45.3125,
+              42.5
+            ],
+            [
+              42.1875,
+              42.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 415,
+              "name": "hoenn-route-123-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-124",
+          "coordinates": [
+            [
+              67.1875,
+              27.5
+            ],
+            [
+              70.3125,
+              27.5
+            ],
+            [
+              73.4375,
+              27.5
+            ],
+            [
+              76.5625,
+              27.5
+            ],
+            [
+              67.1875,
+              32.5
+            ],
+            [
+              70.3125,
+              32.5
+            ],
+            [
+              73.4375,
+              32.5
+            ],
+            [
+              76.5625,
+              32.5
+            ],
+            [
+              67.1875,
+              37.5
+            ],
+            [
+              70.3125,
+              37.5
+            ],
+            [
+              73.4375,
+              37.5
+            ],
+            [
+              76.5625,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 416,
+              "name": "hoenn-route-124-area"
+            },
+            {
+              "id": 417,
+              "name": "hoenn-route-124-underwater"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-125",
+          "coordinates": [
+            [
+              79.6875,
+              27.5
+            ],
+            [
+              82.8125,
+              27.5
+            ],
+            [
+              79.6875,
+              32.5
+            ],
+            [
+              82.8125,
+              32.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 418,
+              "name": "hoenn-route-125-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-126",
+          "coordinates": [
+            [
+              67.1875,
+              42.5
+            ],
+            [
+              70.3125,
+              42.5
+            ],
+            [
+              73.4375,
+              42.5
+            ],
+            [
+              67.1875,
+              47.5
+            ],
+            [
+              70.3125,
+              47.5
+            ],
+            [
+              73.4375,
+              47.5
+            ],
+            [
+              67.1875,
+              52.5
+            ],
+            [
+              70.3125,
+              52.5
+            ],
+            [
+              73.4375,
+              52.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 419,
+              "name": "hoenn-route-126-area"
+            },
+            {
+              "id": 420,
+              "name": "hoenn-route-126-underwater"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-127",
+          "coordinates": [
+            [
+              76.5625,
+              42.5
+            ],
+            [
+              79.6875,
+              42.5
+            ],
+            [
+              82.8125,
+              42.5
+            ],
+            [
+              76.5625,
+              47.5
+            ],
+            [
+              79.6875,
+              47.5
+            ],
+            [
+              82.8125,
+              47.5
+            ],
+            [
+              76.5625,
+              52.5
+            ],
+            [
+              79.6875,
+              52.5
+            ],
+            [
+              82.8125,
+              52.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 421,
+              "name": "hoenn-route-127-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-128",
+          "coordinates": [
+            [
+              76.5625,
+              57.5
+            ],
+            [
+              79.6875,
+              57.5
+            ],
+            [
+              82.8125,
+              57.5
+            ],
+            [
+              85.9375,
+              57.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 422,
+              "name": "hoenn-route-128-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-129",
+          "coordinates": [
+            [
+              79.6875,
+              62.5
+            ],
+            [
+              82.8125,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 423,
+              "name": "hoenn-route-129-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-130",
+          "coordinates": [
+            [
+              76.5625,
+              62.5
+            ],
+            [
+              73.4375,
+              62.5
+            ],
+            [
+              70.3125,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 424,
+              "name": "hoenn-route-130-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-131",
+          "coordinates": [
+            [
+              67.1875,
+              62.5
+            ],
+            [
+              64.0625,
+              62.5
+            ],
+            [
+              60.9375,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 425,
+              "name": "hoenn-route-131-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-132",
+          "coordinates": [
+            [
+              54.6875,
+              62.5
+            ],
+            [
+              51.5625,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 426,
+              "name": "hoenn-route-132-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-133",
+          "coordinates": [
+            [
+              48.4375,
+              62.5
+            ],
+            [
+              45.3125,
+              62.5
+            ],
+            [
+              42.1875,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 427,
+              "name": "hoenn-route-133-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-route-134",
+          "coordinates": [
+            [
+              39.0625,
+              62.5
+            ],
+            [
+              35.9375,
+              62.5
+            ],
+            [
+              32.8125,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 428,
+              "name": "hoenn-route-134-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-safari-zone",
+          "coordinates": [
+            [
+              54.6875,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 429,
+              "name": "hoenn-safari-zone-nwmach-bike-area"
+            },
+            {
+              "id": 430,
+              "name": "hoenn-safari-zone-neacro-bike-area"
+            },
+            {
+              "id": 431,
+              "name": "hoenn-safari-zone-sw"
+            },
+            {
+              "id": 432,
+              "name": "hoenn-safari-zone-se"
+            },
+            {
+              "id": 435,
+              "name": "hoenn-safari-zone-expansion-south"
+            },
+            {
+              "id": 436,
+              "name": "hoenn-safari-zone-expansion-north"
+            }
+          ]
+        },
+        {
+          "name": "dewford-town",
+          "coordinates": [
+            [
+              10.9375,
+              82.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 433,
+              "name": "dewford-town-area"
+            }
+          ]
+        },
+        {
+          "name": "pacifidlog-town",
+          "coordinates": [
+            [
+              57.8125,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 434,
+              "name": "pacifidlog-town-area"
+            }
+          ]
+        },
+        {
+          "name": "magma-hideout",
+          "coordinates": [
+            [
+              23.4375,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 437,
+              "name": "magma-hideout-area"
+            }
+          ]
+        },
+        {
+          "name": "mirage-tower",
+          "coordinates": [
+            [
+              29.6875,
+              12.5
+            ],
+            [
+              29.6875,
+              17.5
+            ],
+            [
+              29.6875,
+              22.5
+            ],
+            [
+              29.6875,
+              27.5
+            ],
+            [
+              29.6875,
+              32.5
+            ],
+            [
+              29.6875,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 438,
+              "name": "mirage-tower-area"
+            }
+          ]
+        },
+        {
+          "name": "desert-underpass",
+          "coordinates": [
+            [
+              14.0625,
+              7.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 439,
+              "name": "desert-underpass-area"
+            }
+          ]
+        },
+        {
+          "name": "artisan-cave",
+          "coordinates": [
+            [
+              45.3125,
+              117.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 440,
+              "name": "artisan-cave-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-altering-cave",
+          "coordinates": [
+            [
+              23.4375,
+              52.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 441,
+              "name": "hoenn-altering-cave-a"
+            },
+            {
+              "id": 442,
+              "name": "hoenn-altering-cave-b"
+            },
+            {
+              "id": 443,
+              "name": "hoenn-altering-cave-c"
+            },
+            {
+              "id": 444,
+              "name": "hoenn-altering-cave-d"
+            },
+            {
+              "id": 445,
+              "name": "hoenn-altering-cave-e"
+            },
+            {
+              "id": 446,
+              "name": "hoenn-altering-cave-f"
+            },
+            {
+              "id": 447,
+              "name": "hoenn-altering-cave-g"
+            },
+            {
+              "id": 448,
+              "name": "hoenn-altering-cave-h"
+            },
+            {
+              "id": 449,
+              "name": "hoenn-altering-cave-i"
+            }
+          ]
+        },
+        {
+          "name": "littleroot-town",
+          "coordinates": [
+            [
+              17.1875,
+              67.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 770,
+              "name": "littleroot-town-area"
+            }
+          ]
+        },
+        {
+          "name": "oldale-town",
+          "coordinates": [
+            [
+              17.1875,
+              57.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "lavaridge-town",
+          "coordinates": [
+            [
+              20.3125,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 787,
+              "name": "lavaridge-town-area"
+            }
+          ]
+        },
+        {
+          "name": "fallarbor-town",
+          "coordinates": [
+            [
+              14.0625,
+              12.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 783,
+              "name": "fallarbor-town-contest-hall"
+            }
+          ]
+        },
+        {
+          "name": "verdanturf-town",
+          "coordinates": [
+            [
+              17.1875,
+              42.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 782,
+              "name": "verdanturf-town-contest-hall"
+            }
+          ]
+        },
+        {
+          "name": "mauville-city",
+          "coordinates": [
+            [
+              29.6875,
+              42.5
+            ],
+            [
+              32.8125,
+              42.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "rustboro-city",
+          "coordinates": [
+            [
+              4.6875,
+              37.5
+            ],
+            [
+              4.6875,
+              42.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 834,
+              "name": "rustboro-city-area"
+            }
+          ]
+        },
+        {
+          "name": "fortree-city",
+          "coordinates": [
+            [
+              42.1875,
+              12.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "underwater",
+          "coordinates": [
+            [
+              1.5625,
+              2.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "mt-chimney",
+          "coordinates": [
+            [
+              26.5625,
+              22.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "mirage-island",
+          "coordinates": [
+            [
+              73.4375,
+              62.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "southern-island",
+          "coordinates": [
+            [
+              42.1875,
+              82.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 785,
+              "name": "southern-island-area"
+            }
+          ]
+        },
+        {
+          "name": "sealed-chamber",
+          "coordinates": [
+            [
+              39.0625,
+              62.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "scorched-slab",
+          "coordinates": [
+            [
+              45.3125,
+              12.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 1185,
+              "name": "scorched-slab-1f"
+            },
+            {
+              "id": 1186,
+              "name": "scorched-slab-b1f"
+            },
+            {
+              "id": 1187,
+              "name": "scorched-slab-b2f"
+            },
+            {
+              "id": 1188,
+              "name": "scorched-slab-b3f"
+            }
+          ]
+        },
+        {
+          "name": "island-cave",
+          "coordinates": [
+            [
+              4.6875,
+              67.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 811,
+              "name": "island-cave-area"
+            }
+          ]
+        },
+        {
+          "name": "desert-ruins",
+          "coordinates": [
+            [
+              29.6875,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 810,
+              "name": "desert-ruins-area"
+            }
+          ]
+        },
+        {
+          "name": "ancient-tomb",
+          "coordinates": [
+            [
+              45.3125,
+              22.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 812,
+              "name": "ancient-tomb-area"
+            }
+          ]
+        },
+        {
+          "name": "inside-of-truck",
+          "coordinates": [
+            [
+              17.1875,
+              67.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "secret-base",
+          "coordinates": [
+            [
+              1.5625,
+              2.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "hoenn-battle-tower",
+          "coordinates": [
+            [
+              73.4375,
+              72.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "hoenn-pokemon-league",
+          "coordinates": [
+            [
+              89.0625,
+              52.5
+            ],
+            [
+              89.0625,
+              57.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "team-aqua-hideout",
+          "coordinates": [
+            [
+              64.0625,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 1165,
+              "name": "team-aqua-hideout-area"
+            }
+          ]
+        },
+        {
+          "name": "team-magma-hideout",
+          "coordinates": [
+            [
+              64.0625,
+              27.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 1166,
+              "name": "team-magma-hideout-area"
+            }
+          ]
+        },
+        {
+          "name": "ss-tidal",
+          "coordinates": [
+            [
+              64.0625,
+              27.5
+            ]
+          ],
+          "locationareas": []
+        },
+        {
+          "name": "roaming-hoenn",
+          "coordinates": [
+            [
+              1.5625,
+              2.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 796,
+              "name": "roaming-hoenn-area"
+            }
+          ]
+        },
+        {
+          "name": "terra-cave",
+          "coordinates": [
+            [
+              7.8125,
+              12.5
+            ],
+            [
+              7.8125,
+              17.5
+            ],
+            [
+              4.6875,
+              22.5
+            ],
+            [
+              14.0625,
+              37.5
+            ],
+            [
+              17.1875,
+              37.5
+            ],
+            [
+              35.9375,
+              42.5
+            ],
+            [
+              39.0625,
+              42.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 802,
+              "name": "terra-cave-area"
+            }
+          ]
+        },
+        {
+          "name": "marine-cave",
+          "coordinates": [
+            [
+              4.6875,
+              62.5
+            ],
+            [
+              4.6875,
+              67.5
+            ],
+            [
+              4.6875,
+              72.5
+            ],
+            [
+              79.6875,
+              27.5
+            ],
+            [
+              82.8125,
+              27.5
+            ],
+            [
+              79.6875,
+              32.5
+            ],
+            [
+              82.8125,
+              32.5
+            ],
+            [
+              76.5625,
+              42.5
+            ],
+            [
+              79.6875,
+              42.5
+            ],
+            [
+              82.8125,
+              42.5
+            ],
+            [
+              76.5625,
+              47.5
+            ],
+            [
+              79.6875,
+              47.5
+            ],
+            [
+              82.8125,
+              47.5
+            ],
+            [
+              76.5625,
+              52.5
+            ],
+            [
+              79.6875,
+              52.5
+            ],
+            [
+              82.8125,
+              52.5
+            ],
+            [
+              79.6875,
+              62.5
+            ],
+            [
+              82.8125,
+              62.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 803,
+              "name": "marine-cave-area"
+            }
+          ]
+        },
+        {
+          "name": "faraway-island",
+          "coordinates": [
+            [
+              1.5625,
+              2.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 808,
+              "name": "faraway-island-area"
+            }
+          ]
+        },
+        {
+          "name": "hoenn-battle-frontier",
+          "coordinates": [
+            [
+              73.4375,
+              72.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 809,
+              "name": "hoenn-battle-frontier-area"
+            }
+          ]
+        },
+        {
+          "name": "mossdeep-space-center",
+          "coordinates": [
+            [
+              79.6875,
+              37.5
+            ],
+            [
+              82.8125,
+              37.5
+            ]
+          ],
+          "locationareas": [
+            {
+              "id": 1181,
+              "name": "mossdeep-space-center-area"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

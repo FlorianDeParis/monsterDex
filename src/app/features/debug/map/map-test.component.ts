@@ -14,6 +14,7 @@ export class MapTestComponent implements OnInit{
   idMonster!: string;
   idPokeGen!: string;
   idDex!: string;
+
   constructor(
     private route: ActivatedRoute
   ){
