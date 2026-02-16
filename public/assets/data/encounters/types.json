@@ -22,7 +22,7 @@
     },
     {
       "name": "rock-smash",
-      "path": null
+      "path": "/assets/img/encounters/rock-smash.gif"
     },
     {
       "name": "headbutt",
@@ -70,7 +70,7 @@
     },
     {
       "name": "gift",
-      "path": null
+      "path": "/assets/img/encounters/gift-pack.png"
     },
     {
       "name": "gift-egg",
@@ -78,7 +78,7 @@
     },
     {
       "name": "only-one",
-      "path": null
+      "path": "/assets/img/encounters/pokeball.png"
     },
     {
       "name": "pokeflute",
