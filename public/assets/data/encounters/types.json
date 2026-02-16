@@ -98,15 +98,15 @@
     },
     {
       "name": "squirt-bottle",
-      "path": null
+      "path": "/assets/img/encounters/squirt-bottle.png"
     },
     {
       "name": "wailmer-pail",
-      "path": null
+      "path": "/assets/img/encounters/wailmer-pail.png"
     },
     {
       "name": "seaweed",
-      "path": null
+      "path": "/assets/img/encounters/diver.gif"
     },
     {
       "name": "roaming-grass",
