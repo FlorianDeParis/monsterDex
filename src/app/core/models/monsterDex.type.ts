@@ -38,6 +38,12 @@ export interface MapMarker {
 export interface Region {
   name: string;
   id: number;
+  subregions: Subregion[];
+}
+
+export interface Subregion {
+  name: string;
+  id: string;
   size: number[];
   locations: Location[];
 }
