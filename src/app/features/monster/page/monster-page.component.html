@@ -66,63 +66,59 @@
       </section>
 
       <app-world-map [pokemonGeneration]="idPokeGen" [pokemonId]="idMonster" />
+      @if(pokemonFlattenedEncountersList$ | async; as flattenedPokemonEncountersList){
+        {{ flattenedPokemonEncountersList | json }}
 
-      @if(pokemonEncountersList$ | async; as pokemonEncountersList){
-        @if(pokemonEncountersList.length > 0){
-          <table class="encounters">
-            <thead>
-              <tr>
-                <td style="width:200px;">Lieu</td>
-                <td style="width:100px;">Versions</td>
-                <td>Types de recontres</td>
-              </tr>
-            </thead>
-            <tbody>
-              @for (encounter of pokemonEncountersList; track encounter.location_area.name){
-                @for (encounterInGame of encounter.version_details; track encounterInGame.version.name){
-                  <tr>
-                    @if($first){
-                      <td [attr.rowspan]="encounter.version_details.length > 0 ? encounter.version_details.length:null">
-                        {{ encounter.location_area.name }}
-                      </td>
-                    }
-                    <td class="game">
-                      <span class="badge bg-{{encounterInGame.version.name}}">{{ encounterInGame.version.name | uppercase }}</span>
-                    </td>
-                    <td>
-                      <table>
-                        <thead>
-                          <tr>
-                            <td>Méthode:</td>
-                            <td>Nv:</td>
-                            <td>Chance:</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          @for(encounter_detail of encounterInGame.encounter_details; track encounter_detail){
-                            <tr>
-                              <td><span class="sprite-tile" [attr.encounterMethodName]="encounter_detail.method.name"></span>{{ encounter_detail.method.name }}</td>
-                              <td>{{ encounter_detail.min_level }}
-                                @if( encounter_detail.min_level != encounter_detail.max_level){
-                                  -{{ encounter_detail.max_level }}
-                                }
-                              </td>
-                              <td>{{encounter_detail.chance }}%</td>
-                            </tr>
-                          }
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
+        <table class="encounters">
+          <tr>
+            <th style="width:200px;">Lieu</th>
+            <th style="width:100px;">Version</th>
+            <th>Méthode</th>
+            <th>Niv.</th>
+            <th>Chance</th>
+            <th>Conditions</th>
+          </tr>
+
+          <tr *ngFor="let row of flattenedPokemonEncountersList">
+            <td *ngIf="!row.zone.hidden"
+                [attr.rowspan]="row.zone.rowspan">
+              {{ row.zone.value }}
+            </td>
+
+            <td *ngIf="!row.version.hidden"
+                [attr.rowspan]="row.version.rowspan"
+                class="game">
+              <span class="badge bg-{{row.version.value}}">
+                {{ row.version.value | uppercase }}
+              </span>
+            </td>
+
+            <td>
+              @let iconPath = getEncounterIcon(row.method.value);
+              <div class="d-flex align-items-center gap-8 p-4px">
+                @if( iconPath !== ''){
+                  <img [src]="iconPath">
                 }
+                {{ row.method.value }}
+              </div>
+            </td>
+            <td>
+              {{ row.level.min_level }}
+              @if( row.level.min_level != row.level.max_level ){
+                -{{ row.level.max_level }}
               }
-            </tbody>
-          </table>
-        }
-        @else {
-          <p>Pas de données disponibles.</p>
-        }
-      } @else {
+            </td>
+            <td>{{ row.chance.value }}</td>
+            <td>
+              <div class="d-flex">
+                @for(condition of row.condition_values; track condition.name){
+                  <div class="flex-grow-1">{{ condition.name}}</div>
+                }
+              </div>
+            </td>
+          </tr>
+        </table>
+      }@else {
         <p>Chargement...</p>
       }
 

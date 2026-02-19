@@ -13,7 +13,7 @@ export interface Description {
 export interface Encounter {
   min_level: number;
   max_level: number;
-  condition_values: NamedAPIResource;
+  condition_values: NamedAPIResource[];
   chance: number;
   method: NamedAPIResource;
 }

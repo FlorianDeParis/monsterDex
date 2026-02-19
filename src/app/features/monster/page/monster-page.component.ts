@@ -12,6 +12,7 @@ import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, Pokemon
 import { FlavorText } from '../../../core/models/PokeAPI/utilities.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
+import type { TableRow } from '../../../core/services/monster/pokemon-page.service';
 import { PokeApiService } from '../../../core/services/poke-api.service';
 import { PokedexService } from '../../../core/services/monster/pokedex.service';
 import { WorldMapComponent } from '../../map/world-map/world-map.component';
@@ -43,6 +44,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   pokemonSelectedSprite!: string;
   pokemonEncountersList$!: Observable<LocationAreaEncounter[]>;
   pokemonFlavorTextList!: FlavorText[];
+  pokemonFlattenedEncountersList$!: Observable<TableRow[]>;
 
   @ViewChild('audioPlayer', { static: false })
   audio!: ElementRef<HTMLAudioElement>;
@@ -63,7 +65,8 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     this.monsterDetails$ = this.pokeApi.getPokemonDetails(this.idMonster).pipe(
       tap((pokemonFullData) => {
         this.setEncountersList$(pokemonFullData.id, this.idPokeGen),
-        this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen)}
+        this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen),
+        this.setFlattenedEncountersList$(pokemonFullData.id, this.idPokeGen)}
       ),
     );
 
@@ -91,6 +94,10 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     this.pokemonFlavorTextList = this.pokemonPageService.filterPokemonFlavorTextEntriesByIdGeneration(flavorTextList, generation, 'fr');
   }
 
+  getEncounterIcon(key: string): string{
+    return this.encountersService.getEncounterIconPath(key);
+  }
+
   ngAfterViewInit(): void {
     this.audio.nativeElement.volume = this.volume;
   }
@@ -101,5 +108,9 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
       classes.push(`type-${i+1}-${t.type.name}`);
     })
     return classes.join(' ');
+  }
+
+  setFlattenedEncountersList$(id:number, generation:string): void {
+    this.pokemonFlattenedEncountersList$ = this.pokemonPageService.getFlattenedEncountersList(id.toString(), generation);
   }
 }

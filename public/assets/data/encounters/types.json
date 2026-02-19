@@ -1,0 +1,176 @@
+{
+  "types": [
+    {
+      "name": "walk",
+      "path": "/assets/img/encounters/grass.png"
+    },
+    {
+      "name": "old-rod",
+      "path": "/assets/img/encounters/fishing.gif"
+    },
+    {
+      "name": "good-rod",
+      "path": "/assets/img/encounters/fishing.gif"
+    },
+    {
+      "name": "super-rod",
+      "path": "/assets/img/encounters/fishing.gif"
+    },
+    {
+      "name": "surf",
+      "path": "/assets/img/encounters/surf.gif"
+    },
+    {
+      "name": "rock-smash",
+      "path": "/assets/img/encounters/rock-smash.gif"
+    },
+    {
+      "name": "headbutt",
+      "path": "/assets/img/encounters/headbutt.png"
+    },
+    {
+      "name": "dark-grass",
+      "path": "/assets/img/encounters/dark-grass.png"
+    },
+    {
+      "name": "grass-spots",
+      "path": null
+    },
+    {
+      "name": "cave-spots",
+      "path": null
+    },
+    {
+      "name": "bridge-spots",
+      "path": null
+    },
+    {
+      "name": "super-rod-spots",
+      "path": null
+    },
+    {
+      "name": "surf-spots",
+      "path": null
+    },
+    {
+      "name": "yellow-flowers",
+      "path": null
+    },
+    {
+      "name": "purple-flowers",
+      "path": null
+    },
+    {
+      "name": "red-flowers",
+      "path": null
+    },
+    {
+      "name": "rough-terrain",
+      "path": null
+    },
+    {
+      "name": "gift",
+      "path": "/assets/img/encounters/gift-pack.png"
+    },
+    {
+      "name": "gift-egg",
+      "path": null
+    },
+    {
+      "name": "only-one",
+      "path": "/assets/img/encounters/pokeball.png"
+    },
+    {
+      "name": "pokeflute",
+      "path": null
+    },
+    {
+      "name": "headbutt-low",
+      "path": "/assets/img/encounters/headbutt.png"
+    },
+    {
+      "name": "headbutt-normal",
+      "path": "/assets/img/encounters/headbutt.png"
+    },
+    {
+      "name": "headbutt-high",
+      "path": "/assets/img/encounters/headbutt.png"
+    },
+    {
+      "name": "squirt-bottle",
+      "path": "/assets/img/encounters/squirt-bottle.png"
+    },
+    {
+      "name": "wailmer-pail",
+      "path": "/assets/img/encounters/wailmer-pail.png"
+    },
+    {
+      "name": "seaweed",
+      "path": "/assets/img/encounters/diver.gif"
+    },
+    {
+      "name": "roaming-grass",
+      "path": "/assets/img/encounters/roaming.gif"
+    },
+    {
+      "name": "roaming-water",
+      "path": "/assets/img/encounters/roaming-water.gif"
+    },
+    {
+      "name": "devon-scope",
+      "path": null
+    },
+    {
+      "name": "feebas-tile-fishing",
+      "path": "/assets/img/encounters/fishing.gif"
+    },
+    {
+      "name": "island-scan",
+      "path": null
+    },
+    {
+      "name": "sos-encounter",
+      "path": null
+    },
+    {
+      "name": "bubbling-spots",
+      "path": null
+    },
+    {
+      "name": "berry-piles",
+      "path": null
+    },
+    {
+      "name": "npc-trade",
+      "path": null
+    },
+    {
+      "name": "sos-from-bubbling-spot",
+      "path": null
+    },
+    {
+      "name": "overworld",
+      "path": null
+    },
+    {
+      "name": "overworld-water",
+      "path": null
+    },
+    {
+      "name": "overworld-flying",
+      "path": null
+    },
+    {
+      "name": "overworld-special",
+      "path": null
+    },
+    {
+      "name": "overworld-flying-special",
+      "path": null
+    },
+    {
+      "name": "overworld-water-special",
+      "path": null
+    }
+  ]
+}
