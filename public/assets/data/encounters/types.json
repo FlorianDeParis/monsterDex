@@ -110,7 +110,7 @@
     },
     {
       "name": "roaming-grass",
-      "path": null
+      "path": "/assets/img/encounters/roaming.gif"
     },
     {
       "name": "roaming-water",
@@ -122,7 +122,7 @@
     },
     {
       "name": "feebas-tile-fishing",
-      "path": null
+      "path": "/assets/img/encounters/fishing.gif"
     },
     {
       "name": "island-scan",
@@ -146,6 +146,30 @@
     },
     {
       "name": "sos-from-bubbling-spot",
+      "path": null
+    },
+    {
+      "name": "overworld",
+      "path": null
+    },
+    {
+      "name": "overworld-water",
+      "path": null
+    },
+    {
+      "name": "overworld-flying",
+      "path": null
+    },
+    {
+      "name": "overworld-special",
+      "path": null
+    },
+    {
+      "name": "overworld-flying-special",
+      "path": null
+    },
+    {
+      "name": "overworld-water-special",
       "path": null
     }
   ]
