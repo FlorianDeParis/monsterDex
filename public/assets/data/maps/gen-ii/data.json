@@ -353,7 +353,7 @@
             },
             {
               "name": "johto-sea-route-41",
-              "coordinates": [[2,1]],
+              "coordinates": [[2,9],[2,10]],
               "locationareas": [
                 {
                   "id": 226,

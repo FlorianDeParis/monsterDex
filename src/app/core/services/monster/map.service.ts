@@ -1,3 +1,4 @@
+import { Subregion, SubRegionMarkerList } from './../../models/monsterDex.type';
 import { Injectable, signal } from '@angular/core';
 import { PokeApiService } from '../poke-api.service';
 import { LocationAreaEncounter } from '../../models/PokeAPI/pokemon.type';
@@ -71,29 +72,46 @@ export class MapService {
 
     this.dataset().region.map(
       (regionObj) => {
-        let RegionMarkerList:RegionMarkerList = {'name': regionObj.name, 'size': regionObj.size, 'markers': []}
-        regionObj.locations.forEach((locationsGroup) => {
-          locationsGroup.locationareas.forEach((locationArea: any) => {
-            if (PKMNencountersList.includes(locationArea.name)) {
+        let regionMarkerList:RegionMarkerList = {'name': regionObj.name, 'subregions': []}
+        regionObj.subregions.forEach((subregion) => {
+          let subRegionMarkerList: SubRegionMarkerList = {
+            'name': subregion.name,
+            'id': subregion.id,
+            'size': subregion.size,
+            'markers': []
+          };
 
-              locationsGroup.coordinates.forEach((c) => {
-                RegionMarkerList.markers.push({
-                  name: locationArea.name,
-                  coordinates: c,
+          subregion.locations.forEach((location) => {
+            location.locationareas.forEach((locationArea: any) => {
+            if (PKMNencountersList.includes(locationArea.name)) {
+                location.coordinates.forEach((c) => {
+                  subRegionMarkerList.markers.push({
+                    name: locationArea.name,
+                    coordinates: c,
+                  });
                 });
-              });
-            }
-          });
-        });
-        mapMarkerList.push(RegionMarkerList);
+              }
+            });
+          })
+
+          if(subRegionMarkerList.markers.length > 0){
+            regionMarkerList['subregions'].push(subRegionMarkerList);
+          }
+
+        })
+
+        if(regionMarkerList.subregions.length > 0){
+          mapMarkerList.push(regionMarkerList);
+        }
+
       }
-    )
-    // console.log("MAP MARKER LIST", mapMarkerList);
+    );
+
     return mapMarkerList;
   }
 
   // To be rebased later
-  getAllMapMarkers(): Region[]{
+  getAllMapPlaces(): Region[]{
     let mapMarkerList: Region[] = [];
     this.datasetmatrix().region.map(
       (regionObj) => {
@@ -123,23 +141,40 @@ export class MapService {
 
     this.datasetmatrix().region.map(
       (regionObj) => {
-        let RegionMarkerList:RegionMarkerList = {'name': regionObj.name, 'size': regionObj.size, 'markers': []}
-        regionObj.locations.forEach((locationsGroup) => {
-          locationsGroup.locationareas.forEach((locationArea: any) => {
-            if (PKMNencountersList.includes(locationArea.name)) {
+        let regionMarkerList:RegionMarkerList = {'name': regionObj.name, 'subregions': []}
+        regionObj.subregions.forEach((subregion) => {
+          let subRegionMarkerList: SubRegionMarkerList = {
+            'name': subregion.name,
+            'id': subregion.id,
+            'size': subregion.size,
+            'markers': []
+          };
 
-              locationsGroup.coordinates.forEach((c) => {
-                RegionMarkerList.markers.push({
-                  name: locationArea.name,
-                  coordinates: c,
+          subregion.locations.forEach((location) => {
+            location.locationareas.forEach((locationArea: any) => {
+            if (PKMNencountersList.includes(locationArea.name)) {
+                location.coordinates.forEach((c) => {
+                  subRegionMarkerList.markers.push({
+                    name: locationArea.name,
+                    coordinates: c,
+                  });
                 });
-              });
-            }
-          });
-        });
-        mapMarkerList.push(RegionMarkerList);
+              }
+            });
+          })
+
+          if(subRegionMarkerList.markers.length > 0){
+            regionMarkerList['subregions'].push(subRegionMarkerList);
+          }
+
+        })
+
+        if(regionMarkerList.subregions.length > 0){
+          mapMarkerList.push(regionMarkerList);
+        }
+
       }
-    )
+    );
     return mapMarkerList;
   }
 }
