@@ -3,7 +3,7 @@ import { TileMapComponent } from './tile-map/tile-map.component';
 import { MapMarker, RegionMarkerList, Region, SubRegionMarkerList, Subregion } from '../../../core/models/monsterDex.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { Observable } from 'rxjs';
-import { AsyncPipe, JsonPipe } from '@angular/common';
+import { AsyncPipe, CommonModule, JsonPipe } from '@angular/common';
 import { MapService } from '../../../core/services/monster/map.service';
 
 interface Position {
@@ -17,7 +17,7 @@ interface Places {
 
 @Component({
   selector: 'app-world-map',
-  imports: [AsyncPipe, JsonPipe, TileMapComponent],
+  imports: [AsyncPipe, JsonPipe, TileMapComponent, CommonModule],
   providers: [MapService],
   templateUrl: './world-map.component.html',
   styleUrl: './world-map.component.scss',
@@ -75,8 +75,7 @@ export class WorldMapComponent implements OnInit {
 
   getMapStyle(markerList: SubRegionMarkerList): {} {
     return {
-      'aspect-ratio': markerList.size[0]+'/'+markerList.size[1],
-      'width': '300px'
+      'aspect-ratio': markerList.size[0]+'/'+markerList.size[1]
     };
   }
 

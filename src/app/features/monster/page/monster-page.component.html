@@ -65,9 +65,9 @@
         </div>
       </section>
 
+      <h2 class="font-russoOne">Cartes des rencontres</h2>
       <app-world-map [pokemonGeneration]="idPokeGen" [pokemonId]="idMonster" />
       @if(pokemonFlattenedEncountersList$ | async; as flattenedPokemonEncountersList){
-        {{ flattenedPokemonEncountersList | json }}
 
         <table class="encounters">
           <tr>
