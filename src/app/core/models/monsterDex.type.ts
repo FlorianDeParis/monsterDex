@@ -26,6 +26,12 @@ export interface SimplifiedEncounter {
 // Map, markers & regions
 export interface RegionMarkerList {
   name: string;
+  subregions: SubRegionMarkerList[];
+}
+
+export interface SubRegionMarkerList {
+  name: string;
+  id: string;
   size: number[];
   markers: MapMarker[];
 }
@@ -38,6 +44,12 @@ export interface MapMarker {
 export interface Region {
   name: string;
   id: number;
+  subregions: Subregion[];
+}
+
+export interface Subregion {
+  name: string;
+  id: string;
   size: number[];
   locations: Location[];
 }

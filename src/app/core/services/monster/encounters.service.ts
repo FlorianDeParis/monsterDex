@@ -39,7 +39,6 @@ export class EncountersService {
   ): LocationAreaEncounter[] {
     let encountersList: LocationAreaEncounter[] = [];
     encountersAPI.map((encounter) => {
-      // console.log(encounter);
       (encountersList as any[]).push(
         this.filterCurrentGameGeneration(encounter, pokemonGeneration),
       );

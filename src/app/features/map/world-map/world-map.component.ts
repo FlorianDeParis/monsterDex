@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, signal } from '@angular/core';
 import { TileMapComponent } from './tile-map/tile-map.component';
-import { MapMarker, RegionMarkerList, Region } from '../../../core/models/monsterDex.type';
+import { MapMarker, RegionMarkerList, Region, SubRegionMarkerList, Subregion } from '../../../core/models/monsterDex.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe, JsonPipe } from '@angular/common';
@@ -49,12 +49,12 @@ export class WorldMapComponent implements OnInit {
           this.pokemonId,
           this.pokemonGeneration,
         );
-        this.allPlaces = this.mapService.getAllMapMarkers();
+        this.allPlaces = this.mapService.getAllMapPlaces();
       }
     }
   }
 
-  checkTile$(x: number, y: number, regionMarkerList: RegionMarkerList): boolean {
+  checkTile$(x: number, y: number, regionMarkerList: SubRegionMarkerList): boolean {
     let flag = false;
     regionMarkerList.markers.map((e) => {
       if (e.coordinates[0] === x && e.coordinates[1] === y) {
@@ -69,22 +69,18 @@ export class WorldMapComponent implements OnInit {
     return [1,2,3].includes(+generation);
   }
 
-  getWorldMapClass(region:string, gen:string): string{
-    return `${region}-${gen}`;
-  }
-
   getSize(value: number): number[] {
     return [...Array(value).keys()]
   }
 
-  getMapStyle(markerList: RegionMarkerList): {} {
+  getMapStyle(markerList: SubRegionMarkerList): {} {
     return {
       'aspect-ratio': markerList.size[0]+'/'+markerList.size[1],
       'width': '300px'
     };
   }
 
-  getMarkerStyle(marker: MapMarker, region: RegionMarkerList): {} {
+  getMarkerStyle(marker: MapMarker, region: SubRegionMarkerList): {} {
     return {
       'aspect-ratio': '1/1',
       'left': marker.coordinates[0]+'%',
@@ -94,7 +90,7 @@ export class WorldMapComponent implements OnInit {
     }
   }
 
-  transformMatrixToRelativeCoordinates(region: Region): Region {
+  transformMatrixToRelativeCoordinates(region: Subregion): Subregion {
 
     const regionSizes: number[] = region.size;
     const percentScale: number[] = [(100/regionSizes[0]), (100/regionSizes[1])]
