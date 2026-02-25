@@ -53,6 +53,7 @@
       animation: background-blink-genIII 2s infinite;
     }
   }
+  &[world="kanto-3"]{--path-world-map: url("/assets/img/maps/gen-iii/kanto.png");}
 }
 
 
