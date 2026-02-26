@@ -1738,7 +1738,7 @@
             },
             {
               "name": "viridian-city",
-              "coordinates": [[0, 0]],
+              "coordinates": [[5, 10]],
               "locationareas": [
                 {
                   "id": 280,
