@@ -2,11 +2,11 @@
   @if (isDisplayable) {
     @if(!debug){
       @if (places$ | async; as places) {
-        <div class="row row-cols-1 row-cols-md-2">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
           @for (regionMarkerList of places; track regionMarkerList.name){
-            <section class="col">
-              <h3>{{ regionMarkerList.name | titlecase }}</h3>
-              @for(subregionsMarkerList of regionMarkerList.subregions; track subregionsMarkerList.name){
+            @for(subregionsMarkerList of regionMarkerList.subregions; track subregionsMarkerList.name){
+              <section class="col">
+                <h3>{{ subregionsMarkerList.name }}</h3>
                 <div class="worldMap"
                 [attr.world]="subregionsMarkerList.id"
                 [style]="getMapStyle(subregionsMarkerList)" >
@@ -14,8 +14,8 @@
                     <span class="marker" [style]="getMarkerStyle(marker, subregionsMarkerList)" [attr.data-title-debug]="marker.name"></span>
                   }
                 </div>
-              }
-            </section>
+              </section>
+            }
           }
         </div>
       } @else {

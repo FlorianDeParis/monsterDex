@@ -1718,7 +1718,7 @@
           ]
         },
         {
-          "name": "kanto",
+          "name": "Îles Sevii I II et III",
           "id": "sevii_1_2_3-3",
           "size": [24, 18],
           "locations": [
@@ -1812,7 +1812,7 @@
           ]
         },
         {
-          "name": "kanto",
+          "name": "Îles Sevii IV et V",
           "id": "sevii_4_5-3",
           "size": [24, 18],
           "locations": [
@@ -1896,7 +1896,7 @@
           ]
         },
         {
-          "name": "kanto",
+          "name": "Îles Sevii VI et VII",
           "id": "sevii_6-7-3",
           "size": [24, 18],
           "locations": [

@@ -10,6 +10,7 @@
   background-size: cover;
   image-rendering: pixelated;
   flex-grow:1;
+  border-radius: 15px;
 
   .marker{
     --background-img-marker: url("/assets/img/maps/map-marker-default.gif");

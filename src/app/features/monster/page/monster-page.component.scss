@@ -61,13 +61,13 @@
   }
 }
 
-::ng-deep #map{
-  .col{
-    @include media('>=tablet'){
-      --bs-gutter-x: 0;
-    }
-  }
-}
+// ::ng-deep #map{
+//   .col{
+//     @include media('>=tablet'){
+//       --bs-gutter-x: 0;
+//     }
+//   }
+// }
 
 .encounters{
   width: 100%;
