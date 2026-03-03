@@ -16,6 +16,7 @@ import { EncountersService } from './encounters.service';
 import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
 
 import * as gameGenList from '../../../../../public/assets/data/generations/game-list.json';
+import { filterContentByLocale } from '../../utils/locale';
 
 
 interface TableCell {
@@ -92,25 +93,16 @@ export class PokemonPageService {
   ): FlavorText[] {
     const currentGenGameList = this.getMyObjectValueCastedKey(gameGenList.generationList[0],IdGen);
 
-    let filtered = flavorTextList.filter(
-      (flavorText) => currentGenGameList.includes(flavorText.version.name) && flavorText.language.name === locale
+    let ft = flavorTextList.filter(
+      (flavorText) => currentGenGameList.includes(flavorText.version.name)
     )
 
-    if(filtered.length === 0){
-      let fallbackfiltered = flavorTextList.filter(
-        (flavorText) => currentGenGameList.includes(flavorText.version.name) && flavorText.language.name === 'en'
-      )
-      filtered = fallbackfiltered;
-    }
-
-    filtered = filtered.map(
+    return (this.getLocalizedContent(locale, ft) as FlavorText[]).map(
       (FlavorText) => ({
         ...FlavorText,
         flavor_text: FlavorText.flavor_text.replace(/[\r\n\f]/g, " ")
       })
     )
-
-    return filtered;
   }
 
   getFlattenedEncountersList(
@@ -122,6 +114,17 @@ export class PokemonPageService {
         this.buildTable(encounters)
       )
     );
+  }
+
+  getLocalizedContent(locale: string, el: any[]): any[]{
+    const localized = filterContentByLocale(locale, el);
+
+    if(localized.length > 0){
+      console.log(localized);
+      return localized;
+    }
+
+    return filterContentByLocale('en', el);
   }
 
 
