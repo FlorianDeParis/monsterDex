@@ -4,10 +4,7 @@ import { GenerationGamesList } from '../../env/config';
 import { LocationAreaEncounter } from '../../models/PokeAPI/pokemon.type';
 import { PokeApiService } from '../poke-api.service';
 import { map, Observable, tap } from 'rxjs';
-import {
-  SimplifiedEncounter,
-  GenerationGames,
-} from '../../models/monsterDex.type';
+import { GenerationGames } from '../../models/monsterDex.type';
 
 import * as encountersIcons from '../../../../../public/assets/data/encounters/types.json';
 
@@ -21,43 +18,34 @@ export class EncountersService {
     this.generationGamesList = GenerationGamesList;
   }
 
-  getEncountersList(
-    pokemonId: string,
-    pokemonGeneration: string,
-  ): Observable<LocationAreaEncounter[]> {
-    return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
-      map((encounters) =>
-        this.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
-      ),
-      tap((e) => console.log(e))
-    );
+  getEncounters(pokemonId: string): Observable<LocationAreaEncounter[]>{
+    return this.pokeApiService.getPokemonEncounters(pokemonId);
   }
 
-  getEncountersByRegionAndGeneration$(
-    encountersAPI: LocationAreaEncounter[],
-    pokemonGeneration: string,
-  ): LocationAreaEncounter[] {
-    let encountersList: LocationAreaEncounter[] = [];
-    encountersAPI.map((encounter) => {
-      (encountersList as any[]).push(
-        this.filterCurrentGameGeneration(encounter, pokemonGeneration),
-      );
-    });
-    encountersList = encountersList.filter(Boolean);
-    return encountersList;
+  getEncountersByGeneration(pokemonId: string, generation: string): Observable<LocationAreaEncounter[]>{
+    const currentGenGameList = this.generationGamesList.filter(
+      (list) => list.generation == Number.parseInt(generation)
+    )[0].games;
+
+    return this.getEncounters(pokemonId).pipe(
+      map(encountersList => {
+        let filteredEncountersList: LocationAreaEncounter[] = [];
+        encountersList.map((encounter) => {
+          const filteredEncounter = this.filterCurrentGameGeneration(encounter, currentGenGameList);
+          filteredEncounter && (filteredEncountersList as any[]).push(filteredEncounter);
+        });
+
+        return filteredEncountersList;
+      })
+    );
   }
 
   // Some encounters are on the same region
   // but not in the same game generation
   filterCurrentGameGeneration(
     locationAreaEncounter: LocationAreaEncounter,
-    pokemonGeneration: string,
+    currentGenGameList: string[],
   ): false | LocationAreaEncounter {
-    const idxGen = this.generationGamesList.findIndex(
-      (element) => element.generation == parseInt(pokemonGeneration),
-    );
-    const currentGenGameList = this.generationGamesList[idxGen].games;
-    // console.log('before', locationAreaEncounter.version_details);
 
     const locationAreaEncounterFiltered =
       locationAreaEncounter.version_details.filter((version_detail) => {
@@ -66,7 +54,7 @@ export class EncountersService {
         }
         return false;
       });
-    // console.log("locationAreaEncounterFiltered", locationAreaEncounterFiltered)
+
     const filteredLocations: LocationAreaEncounter = {
       ...locationAreaEncounter,
       version_details: locationAreaEncounterFiltered,

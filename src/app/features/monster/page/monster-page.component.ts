@@ -87,7 +87,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   }
 
   setEncountersList$(id:number, generation:string): void {
-    this.pokemonEncountersList$ = this.encountersService.getEncountersList(id.toString(), generation);
+    this.pokemonEncountersList$ = this.encountersService.getEncountersByGeneration(id.toString(), generation);
   }
 
   setFlavorTextList$(flavorTextList: FlavorText[], generation:string){

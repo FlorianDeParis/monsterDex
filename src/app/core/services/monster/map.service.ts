@@ -59,7 +59,7 @@ export class MapService {
     pokemonGeneration: string,
   ): Observable<RegionMarkerList[]> {
     return this.encountersService
-      .getEncountersList(pokemonId, pokemonGeneration)
+      .getEncountersByGeneration(pokemonId, pokemonGeneration)
       .pipe(map((PKMNencounters) => this.generateMapMarkers(PKMNencounters)));
   }
 
@@ -115,7 +115,7 @@ export class MapService {
     let mapMarkerList: Region[] = [];
     this.datasetmatrix().region.map(
       (regionObj) => {
-        console.log(regionObj);
+        // console.log(regionObj);
         mapMarkerList.push(regionObj);
       }
     );
@@ -128,7 +128,7 @@ export class MapService {
     pokemonGeneration: string,
   ): Observable<RegionMarkerList[]> {
     return this.encountersService
-      .getEncountersList(pokemonId, pokemonGeneration)
+      .getEncountersByGeneration(pokemonId, pokemonGeneration)
       .pipe(map((PKMNencounters) => this.generateMatrixMapMarkers(PKMNencounters)));
   }
 

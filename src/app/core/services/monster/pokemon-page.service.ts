@@ -115,16 +115,12 @@ export class PokemonPageService {
 
   getFlattenedEncountersList(
     pokemonId: string,
-    pokemonGeneration: string,
+    generation: string,
   ): Observable<TableRow[]> {
-    return this.pokeApiService.getPokemonEncounters(pokemonId).pipe(
-      map((encounters) =>
-        this.encountersService.getEncountersByRegionAndGeneration$(encounters, pokemonGeneration),
-      ),
+    return this.encountersService.getEncountersByGeneration(pokemonId, generation).pipe(
       map((encounters) =>
         this.buildTable(encounters)
-      ),
-      tap((e) => console.log(e))
+      )
     );
   }
 
