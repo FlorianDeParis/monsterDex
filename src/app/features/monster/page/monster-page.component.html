@@ -1,12 +1,12 @@
 <audio class="pokemonCry" autoplay #audioPlayer>
-  @if (monsterDetails$ | async; as monsterDetails) {
+  @if (monsterDetails) {
     <source
       [src]="monsterDetails.cries.latest || monsterDetails.cries.legacy"
     />
   }
 </audio>
 <section class="monster-page">
-  @if (monsterDetails$ | async; as monsterDetails) {
+  @if (monsterDetails) {
     <header class="{{setTypeClasses(monsterDetails.types)}}">
       <div class="header-inner container-lg d-flex flex-column align-items-start align-items-sm-center py-16 px-32 ">
         <div class="d-flex flex-column flex-lg-row-reverse gap-lg-32 align-items-center">
@@ -29,7 +29,7 @@
         <div class="row gy-4 gx-lg-5 row-cols-1 row-cols-lg-2">
           <div class="col">
             <h2 class="font-russoOne">Description</h2>
-            @if(monsterDetailsSpecies$ | async; as monsterDetailsSpecies){
+            @if(monsterDetailsSpecies){
               @if(pokemonFlavorTextList){
                 <ul ngbNav #nav="ngbNav" [(activeId)]="activeFlavorTab" class="nav-tabs">
                   @for(pokemonFlavorText of pokemonFlavorTextList; track pokemonFlavorText){

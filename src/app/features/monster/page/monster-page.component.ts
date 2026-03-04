@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
+import { forkJoin, map, Observable, of, Subject, switchMap, tap } from 'rxjs';
 import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
 import { FlavorText } from '../../../core/models/PokeAPI/utilities.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
@@ -39,8 +39,8 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   idMonster!: string;
   idPokeGen!: string;
   idDex!: string;
-  monsterDetails$!: Observable<Pokemon>;
-  monsterDetailsSpecies$!: Observable<PokemonSpecies>;
+  monsterDetails!: Pokemon;
+  monsterDetailsSpecies!: PokemonSpecies;
   pokemonSelectedSprite!: string;
   pokemonEncountersList$!: Observable<LocationAreaEncounter[]>;
   pokemonFlavorTextList!: FlavorText[];
@@ -62,20 +62,22 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.monsterDetails$ = this.pokeApi.getPokemonDetails(this.idMonster).pipe(
-      tap((pokemonFullData) => {
-        this.setEncountersList$(pokemonFullData.id, this.idPokeGen),
-        this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen),
-        this.setFlattenedEncountersList$(pokemonFullData.id, this.idPokeGen)}
-      ),
-    );
-
-    this.monsterDetailsSpecies$ = this.pokeApi.getPokemonSpeciesDetails(this.idMonster).pipe(
-      tap((data) => console.log(data)),
-      tap((detailsSpecies) => {
-        this.setFlavorTextList$(detailsSpecies.flavor_text_entries, this.idPokeGen)
-      })
-    )
+    forkJoin({
+      monsterDetails: this.pokeApi.getPokemonDetails(this.idMonster).pipe(
+        tap((pokemonFullData) => {
+          this.setEncountersList$(pokemonFullData.id, this.idPokeGen),
+          this.setPokemonSprite$(pokemonFullData.sprites, this.idPokeGen),
+          this.setFlattenedEncountersList$(pokemonFullData.id, this.idPokeGen)
+        })),
+      monsterDetailsSpecies: this.pokeApi.getPokemonSpeciesDetails(this.idMonster).pipe(
+        tap((data) => console.log(data)),
+        tap((detailsSpecies) => {
+          this.setFlavorTextList$(detailsSpecies.flavor_text_entries, this.idPokeGen)
+        }))
+    }).subscribe(({monsterDetails, monsterDetailsSpecies}) => {
+      this.monsterDetails = { ...monsterDetails, 'name': (this.pokemonPageService.getLocalizedContent('fr', monsterDetailsSpecies.names))[0].name },
+      this.monsterDetailsSpecies = monsterDetailsSpecies
+    })
   }
 
   setPokemonSprite$(spriteObject: PokemonSprites, generation: string): void {
