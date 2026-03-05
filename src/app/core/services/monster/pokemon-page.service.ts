@@ -16,6 +16,7 @@ import { EncountersService } from './encounters.service';
 import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
 
 import * as gameGenList from '../../../../../public/assets/data/generations/game-list.json';
+// import { MapService } from './map.service';
 
 
 interface TableCell {
@@ -43,7 +44,8 @@ export class PokemonPageService {
     private toaster: ToasterService,
     private encountersService: EncountersService,
     private sanitizer: DomSanitizer,
-    private pokeApiService: PokeApiService
+    private pokeApiService: PokeApiService,
+    // private mapService: MapService
   ) {}
 
   getPokemonArtworkByIdGeneration(
@@ -118,9 +120,10 @@ export class PokemonPageService {
     generation: string,
   ): Observable<TableRow[]> {
     return this.encountersService.getEncountersByGeneration(pokemonId, generation).pipe(
-      map((encounters) =>
-        this.buildTable(encounters)
-      )
+      tap(encounters => console.log(encounters)),
+      // map(encounters => this.mapService.filterEncountersBySubRegions(encounters)),
+      map(encounters => this.buildTable(encounters)),
+      tap(encounters => console.log(encounters))
     );
   }
 
@@ -146,7 +149,7 @@ export class PokemonPageService {
         let isFirstVersionRow = true;
 
         versionDetail.encounter_details.forEach(encounter => {
-          console.log(encounter),
+          // console.log(encounter),
           rows.push({
             zone: {
               value: zoneName,
