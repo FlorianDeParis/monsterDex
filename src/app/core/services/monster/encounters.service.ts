@@ -46,7 +46,7 @@ export class EncountersService {
     locationAreaEncounter: LocationAreaEncounter,
     currentGenGameList: string[],
   ): false | LocationAreaEncounter {
-
+          // console.log(locationAreaEncounter);
     const locationAreaEncounterFiltered =
       locationAreaEncounter.version_details.filter((version_detail) => {
         if (currentGenGameList.indexOf(version_detail.version.name) !== -1) {
