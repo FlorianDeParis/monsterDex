@@ -1,3 +1,4 @@
+import { Encounter } from './../../models/PokeAPI/utilities.type';
 import { Subregion, SubRegionMarkerList } from './../../models/monsterDex.type';
 import { Injectable, signal } from '@angular/core';
 import { PokeApiService } from '../poke-api.service';
@@ -17,6 +18,12 @@ import * as generation3MTX from '../../../../../public/assets/data/maps/gen-iii/
 
 interface GenerationDataSet {
   region: Region[];
+}
+
+interface EncounterSubRegionList {
+  region: string,
+  Subregion: string,
+  encounters: LocationAreaEncounter[]
 }
 
 const DATASET: {
@@ -110,6 +117,16 @@ export class MapService {
     return mapMarkerList;
   }
 
+  // filterEncountersBySubRegions(encounters: LocationAreaEncounter[]): EncounterSubRegionList[]{
+  //   encounters.map(
+  //     encounter =>
+  //   )
+  // }
+
+
+
+
+  /// DEBUG ///
   // To be rebased later
   getAllMapPlaces(): Region[]{
     let mapMarkerList: Region[] = [];
