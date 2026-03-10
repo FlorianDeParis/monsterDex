@@ -48,10 +48,11 @@
             }
           </div>
           <div class="col">
-            @if (monsterDetails.stats) {
+            @let renderedStats = setCurrentGenerationStats(this.idPokeGen, monsterDetails.stats, monsterDetails.past_stats);
+            @if (renderedStats) {
               <h2 class="font-russoOne">Stats</h2>
               <div class="row row-cols-2">
-                @for (statGroup of monsterDetails.stats; track statGroup.stat.name) {
+                @for (statGroup of renderedStats; track statGroup.stat.name) {
                   <div class="col py-8 font-russoOne">{{ statGroup.stat.name }}</div>
                   <div class="col">
                     <ngb-progressbar [showValue]="false" type="info" [value]="statGroup.base_stat" [max]="255">
