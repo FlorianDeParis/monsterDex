@@ -8,7 +8,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, of, tap } from 'rxjs';
-import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
+import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonStat, PokemonStatPast, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
 import { FlavorText } from '../../../core/models/PokeAPI/utilities.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
@@ -122,10 +122,6 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     return this.encountersService.getEncounterIconPath(key);
   }
 
-  ngAfterViewInit(): void {
-    this.audio.nativeElement.volume = this.volume;
-  }
-
   setTypeClasses(types: PokemonType[]): string {
     let classes:string[] = [];
     types.forEach((t, i) => {
@@ -140,5 +136,29 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   setPokemonCrySource(monsterDetails:Pokemon): string {
     return parseInt(this.idPokeGen) > 5 ? (monsterDetails.cries.latest || monsterDetails.cries.legacy) : monsterDetails.cries.legacy;
+  }
+
+  setCurrentGenerationStats(generation: string, stats: PokemonStat[], past_stats?: PokemonStatPast[]): PokemonStat[]{
+    if(past_stats && past_stats.length > 0 && generation === '1'){
+      let renderedStats:PokemonStat[] = [];
+      renderedStats = stats.filter(
+        (groupStat) => !['special-attack','special-defense'].includes(groupStat.stat.name)
+      )
+      past_stats.map(
+        (groupPastStat) => {
+          if(groupPastStat.generation.name === 'generation-i'){
+            groupPastStat.stats.map(
+              (pastStat) => renderedStats.push(pastStat)
+            )
+          }
+        }
+      )
+      return renderedStats
+    }
+    return stats;
+  }
+
+  ngAfterViewInit(): void {
+    this.audio.nativeElement.volume = this.volume;
   }
 }

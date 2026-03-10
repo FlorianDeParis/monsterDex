@@ -21,7 +21,8 @@ export interface Pokemon {
   location_area_encounters: string;
   moves: PokemonMove[];
   name: string;
-  past_abilities?: [];
+  past_abilities?: PokemonAbilityPast[];
+  past_stats?: PokemonStatPast[];
   past_types: PokemonTypePast[];
   species: NamedAPIResource;
   sprites: PokemonSprites;
@@ -34,6 +35,11 @@ export interface PokemonAbility {
   ability: NamedAPIResource;
   is_hidden: boolean;
   slot: number;
+}
+
+export interface PokemonAbilityPast {
+  generation: NamedAPIResource;
+  abilities: PokemonAbility[];
 }
 
 export interface PokemonCries {
@@ -282,6 +288,11 @@ export interface PokemonStat {
   base_stat: number;
   effort: number;
   stat: NamedAPIResource;
+}
+
+export interface PokemonStatPast {
+  generation: NamedAPIResource
+  stats: PokemonStat[];
 }
 
 export interface LocationAreaEncounter {
