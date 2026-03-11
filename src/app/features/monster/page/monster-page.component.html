@@ -7,7 +7,8 @@
 </audio>
 <section class="monster-page">
   @if (monsterDetails$ | async; as monsterDetails) {
-    <header class="{{setTypeClasses(monsterDetails.types)}}">
+    @let renderedTypes = setCurrentGenerationType(this.idPokeGen, monsterDetails.types, monsterDetails.past_types);
+    <header class="{{setTypeClasses(renderedTypes)}}">
       <div class="header-inner container-lg d-flex flex-column align-items-start align-items-sm-center py-16 px-32 ">
         <div class="d-flex flex-column flex-lg-row-reverse gap-lg-32 align-items-center">
           <h1 class="fs-1 title text-capitalize">{{ monsterDetails.name }}</h1>
@@ -16,9 +17,9 @@
           </div>
         </div>
         <div class="types d-flex flex-column justify-content-center vertical-align-middle gap-16">
-          <img class="type" src="/assets/img/types/{{ monsterDetails.types[0].type.name }}.svg" />
-          @if(monsterDetails.types[1] ){
-            <img class="type" src="/assets/img/types/{{ monsterDetails.types[1].type.name }}.svg" />
+          <img class="type" src="/assets/img/types/{{ renderedTypes[0].type.name }}.svg" />
+          @if(renderedTypes[1] ){
+            <img class="type" src="/assets/img/types/{{ renderedTypes[1].type.name }}.svg" />
           }
         </div>
       </div>

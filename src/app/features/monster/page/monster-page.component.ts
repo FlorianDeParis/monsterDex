@@ -8,7 +8,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
-import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonStat, PokemonStatPast, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
+import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonStat, PokemonStatPast, PokemonType, PokemonTypePast } from '../../../core/models/PokeAPI/pokemon.type';
 import { FlavorText } from '../../../core/models/PokeAPI/utilities.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
@@ -26,6 +26,7 @@ import {
 	NgbNavLinkBase,
 	NgbNavOutlet,
  } from '@ng-bootstrap/ng-bootstrap';
+ import { toArabic } from 'typescript-roman-numbers-converter';
 
 @Component({
   selector: 'app-monster-page',
@@ -128,6 +129,30 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
       return renderedStats
     }
     return stats;
+  }
+
+  setCurrentGenerationType(generation: string, types: PokemonType[], past_types?: PokemonTypePast[]): PokemonType[] {
+    if(past_types && past_types.length > 0){
+      let renderedTypes:PokemonType[] = [];
+      past_types.map(
+        (groupType) =>  {
+          if(this.genLitteralToGenString(groupType.generation.name) >= generation){
+            groupType.types.map(
+              type => renderedTypes.push(type)
+            )
+          }
+        }
+      )
+      return (renderedTypes.length != 0 ? renderedTypes : types);
+    }
+    return types;
+  }
+
+  genLitteralToGenString(entry: string): string {
+    if(entry.match(/generation-/)){
+      return ''+toArabic(entry.split(/generation-/)[1]);
+    }
+    return entry
   }
 
   ngAfterViewInit(): void {
