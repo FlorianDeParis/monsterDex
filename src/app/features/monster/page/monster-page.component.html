@@ -50,11 +50,20 @@
 
             <h2 class="font-russoOne">Capacités spéciales</h2>
             @if(monsterDetails.abilities){
-              <ul>
+              <div ngbAccordion [closeOthers]="true">
                 @for(pokemonAbility of monsterDetails.abilities; track pokemonAbility.ability.name){
-                  <li>{{ pokemonAbility.ability.name }}</li>
+                  <div ngbAccordionItem>
+                    <h2 ngbAccordionHeader>
+                      <button ngbAccordionButton>{{ pokemonAbility.ability.name }}</button>
+                    </h2>
+                    <div ngbAccordionCollapse>
+                      <div ngbAccordionBody>
+                        <ng-template>Lorem ipsum</ng-template>
+                      </div>
+                    </div>
+                  </div>
                 }
-              </ul>
+              </div>
             }
           </div>
           <div class="col">
