@@ -24,6 +24,13 @@ import {
 	NgbNavLinkButton,
 	NgbNavLinkBase,
 	NgbNavOutlet,
+  NgbAccordionButton,
+	NgbAccordionDirective,
+	NgbAccordionItem,
+	NgbAccordionHeader,
+	NgbAccordionToggle,
+	NgbAccordionBody,
+	NgbAccordionCollapse,
  } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from '../../../core/components/header/header.component';
 import { HeaderService } from '../../../core/services/components/header.service';
@@ -31,7 +38,26 @@ import { toArabic } from 'typescript-roman-numbers-converter';
 
 @Component({
   selector: 'app-monster-page',
-  imports: [CommonModule, HeaderComponent, WorldMapComponent, NgbProgressbar, NgbNavContent, NgbNav, NgbNavItem, NgbNavItemRole, NgbNavLinkButton, NgbNavLinkBase, NgbNavOutlet],
+  imports: [
+    CommonModule,
+    HeaderComponent,
+    WorldMapComponent,
+    NgbProgressbar,
+    NgbNavContent,
+    NgbNav,
+    NgbNavItem,
+    NgbNavItemRole,
+    NgbNavLinkButton,
+    NgbNavLinkBase,
+    NgbNavOutlet,
+    NgbAccordionButton,
+		NgbAccordionDirective,
+		NgbAccordionItem,
+		NgbAccordionHeader,
+		NgbAccordionToggle,
+		NgbAccordionBody,
+		NgbAccordionCollapse,
+  ],
   templateUrl: './monster-page.component.html',
   styleUrl: './monster-page.component.scss',
 })
