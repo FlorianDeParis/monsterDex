@@ -47,6 +47,15 @@
                 <div [ngbNavOutlet]="nav" class="mt-16"></div>
               }
             }
+
+            <h2 class="font-russoOne">Capacités spéciales</h2>
+            @if(monsterDetails.abilities){
+              <ul>
+                @for(pokemonAbility of monsterDetails.abilities; track pokemonAbility.ability.name){
+                  <li>{{ pokemonAbility.ability.name }}</li>
+                }
+              </ul>
+            }
           </div>
           <div class="col">
             @let renderedStats = setCurrentGenerationStats(this.idPokeGen, monsterDetails.stats, monsterDetails.past_stats);
