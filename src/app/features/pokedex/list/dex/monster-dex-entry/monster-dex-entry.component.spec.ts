@@ -13,6 +13,7 @@ describe('MonsterDexEntryComponent', () => {
 
     fixture = TestBed.createComponent(MonsterDexEntryComponent);
     component = fixture.componentInstance;
+    component.dexEntry = { label: 'Test Dex', pokedexVariants: [] };
     fixture.detectChanges();
   });
 

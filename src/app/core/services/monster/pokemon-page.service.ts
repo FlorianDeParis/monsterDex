@@ -15,7 +15,7 @@ import { EncountersService } from './encounters.service';
 
 import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
 
-import * as gameGenList from '../../../../../public/assets/data/generations/game-list.json';
+import gameGenList from '../../../../../public/assets/data/generations/game-list.json';
 
 
 interface TableCell {

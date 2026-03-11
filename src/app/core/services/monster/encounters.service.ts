@@ -6,7 +6,7 @@ import { PokeApiService } from '../poke-api.service';
 import { map, Observable, tap } from 'rxjs';
 import { GenerationGames } from '../../models/monsterDex.type';
 
-import * as encountersIcons from '../../../../../public/assets/data/encounters/types.json';
+import encountersIcons from '../../../../../public/assets/data/encounters/types.json';
 
 @Injectable({
   providedIn: 'root',
