@@ -5,9 +5,11 @@ import { MonsterDexListPageComponent } from './features/pokedex/list/dex/monster
 import { MonsterListComponent } from './features/pokedex/list/monster/monster-list/monster-list.component';
 import { WorldMapComponent } from './features/map/world-map/world-map.component';
 import { MapTestComponent } from './features/debug/map/map-test.component';
+import { TestCanvasComponent } from './features/test-canvas/test-canvas.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'test-canvas', component: TestCanvasComponent},
   { path: 'pokedexes', component: MonsterDexListPageComponent },
   { path: 'pokedex/:region', component: MonsterListComponent }, // region => pokedex id
   {

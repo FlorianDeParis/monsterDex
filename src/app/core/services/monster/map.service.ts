@@ -35,7 +35,9 @@ const DATASETMATRIX: {
   3: generation3MTX,
 };
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class MapService {
   readonly dataset = signal<GenerationDataSet>(generation1);
   readonly datasetmatrix = signal<GenerationDataSet>(generation1MTX);
@@ -46,7 +48,7 @@ export class MapService {
     private route: ActivatedRoute,
   ) {
     this.route.params
-      .pipe(map((params) => +params['idPokeGen']))
+      .pipe(map((params) => params['idPokeGen'] ? +params['idPokeGen']:'1'))
       .subscribe((generation) => {
         this.dataset.set(DATASET[generation]);
         this.datasetmatrix.set(DATASETMATRIX[generation]);
