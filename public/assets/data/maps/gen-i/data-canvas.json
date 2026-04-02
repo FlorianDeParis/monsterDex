@@ -11,7 +11,7 @@
           "locations": [
             {
               "name": "celadon-city",
-              "coordinates": [[72, 40]],
+              "coordinates": [[72, 40],[80, 40], [80, 48], [72, 48]],
               "locationareas": [
                 {
                   "id": 283,
@@ -25,7 +25,7 @@
             },
             {
               "name": "cerulean-city",
-              "coordinates": [[96, 16]],
+              "coordinates": [[96, 16],[104, 16],[104, 24],[96, 24]],
               "locationareas": [
                 {
                   "id": 281,
@@ -35,7 +35,7 @@
             },
             {
               "name": "cinnabar-island",
-              "coordinates": [[32, 120]],
+              "coordinates": [[32, 120],[40, 120],[40, 128],[32, 128]],
               "locationareas": [
                 {
                   "id": 279,
@@ -49,7 +49,7 @@
             },
             {
               "name": "digletts-cave",
-              "coordinates": [[40, 32]],
+              "coordinates": [[40, 32],[48, 32],[48, 40],[40, 40]],
               "locationareas": [
                 {
                   "id": 317,
@@ -59,7 +59,7 @@
             },
             {
               "name": "fuchsia-city",
-              "coordinates": [[80, 104]],
+              "coordinates": [[80, 104],[88, 104],[88, 112],[80, 112]],
               "locationareas": [
                 {
                   "id": 284,
@@ -69,7 +69,7 @@
             },
             {
               "name": "mt-moon",
-              "coordinates": [[64, 16]],
+              "coordinates": [[64, 16],[72, 16],[72, 24],[64, 24]],
               "locationareas": [
                 {
                   "id": 256,
@@ -95,7 +95,7 @@
             },
             {
               "name": "pallet-town",
-              "coordinates": [[32, 88]],
+              "coordinates": [[32, 88],[40, 88],[40, 96],[32, 96]],
               "locationareas": [
                 {
                   "id": 285,
@@ -105,7 +105,7 @@
             },
             {
               "name": "rock-tunnel",
-              "coordinates": [[128, 16]],
+              "coordinates": [[128, 16],[136, 16],[136, 24],[128, 24]],
               "locationareas": [
                 {
                   "id": 292,
@@ -123,10 +123,7 @@
             },
             {
               "name": "kanto-route-1",
-              "coordinates": [
-                [32, 72],
-                [32, 80]
-              ],
+              "coordinates": [[32, 72],[40, 72],[40, 88],[32, 88]],
               "locationareas": [
                 {
                   "id": 295,
@@ -136,10 +133,7 @@
             },
             {
               "name": "kanto-route-10",
-              "coordinates": [
-                [128, 16],
-                [128, 32]
-              ],
+              "coordinates": [[128, 16],[136, 16],[136, 40],[128, 40]],
               "locationareas": [
                 {
                   "id": 304,
@@ -149,11 +143,7 @@
             },
             {
               "name": "kanto-route-11",
-              "coordinates": [
-                [104, 72],
-                [112, 72],
-                [120, 72]
-              ],
+              "coordinates": [[104, 72],[128, 72],[128, 80],[104, 80]],
               "locationareas": [
                 {
                   "id": 305,
@@ -163,13 +153,7 @@
             },
             {
               "name": "kanto-route-12",
-              "coordinates": [
-                [128, 48],
-                [128, 56],
-                [128, 64],
-                [128, 72],
-                [128, 80]
-              ],
+              "coordinates": [[128, 48],[136, 48],[136, 88],[128, 88]],
               "locationareas": [
                 {
                   "id": 276,
@@ -179,11 +163,7 @@
             },
             {
               "name": "kanto-route-13",
-              "coordinates": [
-                [112, 88],
-                [120, 88],
-                [128, 88]
-              ],
+              "coordinates": [[112, 88],[136, 88],[136, 96],[112, 96]],
               "locationareas": [
                 {
                   "id": 306,
@@ -193,11 +173,7 @@
             },
             {
               "name": "kanto-route-14",
-              "coordinates": [
-                [104, 88],
-                [104, 96],
-                [104, 104]
-              ],
+              "coordinates": [[104, 88],[112, 88],[112, 112],[104, 112]],
               "locationareas": [
                 {
                   "id": 307,
@@ -207,10 +183,7 @@
             },
             {
               "name": "kanto-route-15",
-              "coordinates": [
-                [88, 104],
-                [96, 104]
-              ],
+              "coordinates": [[88, 104],[104, 104],[104, 112],[88, 112]],
               "locationareas": [
                 {
                   "id": 308,
@@ -220,11 +193,7 @@
             },
             {
               "name": "kanto-route-16",
-              "coordinates": [
-                [48, 40],
-                [56, 40],
-                [64, 40]
-              ],
+              "coordinates": [[48, 40],[56, 40],[56, 48],[48, 48]],
               "locationareas": [
                 {
                   "id": 309,
@@ -234,15 +203,7 @@
             },
             {
               "name": "kanto-route-17",
-              "coordinates": [
-                [48, 48],
-                [48, 56],
-                [48, 64],
-                [48, 72],
-                [48, 80],
-                [48, 88],
-                [48, 96]
-              ],
+              "coordinates": [[48, 48],[56, 48],[56, 104],[48, 104]],
               "locationareas": [
                 {
                   "id": 310,
@@ -252,12 +213,7 @@
             },
             {
               "name": "kanto-route-18",
-              "coordinates": [
-                [48, 104],
-                [56, 104],
-                [64, 104],
-                [72, 104]
-              ],
+              "coordinates": [[48, 104],[80, 104],[80, 112],[48, 112]],
               "locationareas": [
                 {
                   "id": 311,
@@ -267,10 +223,7 @@
             },
             {
               "name": "kanto-sea-route-19",
-              "coordinates": [
-                [80, 112],
-                [80, 120]
-              ],
+              "coordinates": [[80, 112],[88, 112],[88, 128],[80, 128]],
               "locationareas": [
                 {
                   "id": 277,
@@ -280,11 +233,7 @@
             },
             {
               "name": "kanto-route-2",
-              "coordinates": [
-                [32, 40],
-                [32, 48],
-                [32, 56]
-              ],
+              "coordinates": [[32, 40],[40, 40],[40, 64],[32, 64]],
               "locationareas": [
                 {
                   "id": 296,
@@ -298,12 +247,7 @@
             },
             {
               "name": "kanto-sea-route-20",
-              "coordinates": [
-                [40, 120],
-                [48, 120],
-                [64, 120],
-                [72, 120]
-              ],
+              "coordinates": [[40, 120],[80, 120],[80, 128],[40, 128]],
               "locationareas": [
                 {
                   "id": 278,
@@ -313,11 +257,7 @@
             },
             {
               "name": "kanto-sea-route-21",
-              "coordinates": [
-                [32, 96],
-                [32, 104],
-                [32, 112]
-              ],
+              "coordinates": [[32, 96],[40, 96],[40, 120],[32, 120]],
               "locationareas": [
                 {
                   "id": 312,
@@ -327,10 +267,7 @@
             },
             {
               "name": "kanto-route-22",
-              "coordinates": [
-                [16, 64],
-                [24, 64]
-              ],
+              "coordinates": [[16, 64],[24, 64],[24, 72],[16, 72]],
               "locationareas": [
                 {
                   "id": 313,
@@ -340,10 +277,7 @@
             },
             {
               "name": "kanto-route-24",
-              "coordinates": [
-                [96, 0],
-                [96, 8]
-              ],
+              "coordinates": [[96, 0],[104, 0],[104, 8],[96, 8]],
               "locationareas": [
                 {
                   "id": 314,
@@ -353,10 +287,7 @@
             },
             {
               "name": "kanto-route-25",
-              "coordinates": [
-                [104, 0],
-                [112, 0]
-              ],
+              "coordinates": [[104, 0],[120, 0],[120, 8],[104, 8]],
               "locationareas": [
                 {
                   "id": 315,
@@ -366,11 +297,7 @@
             },
             {
               "name": "kanto-route-3",
-              "coordinates": [
-                [40, 24],
-                [48, 24],
-                [56, 24]
-              ],
+              "coordinates": [[40, 24],[48, 24],[48, 32],[40, 32]],
               "locationareas": [
                 {
                   "id": 297,
@@ -389,6 +316,8 @@
                 [72, 16],
                 [80, 16],
                 [88, 16]
+
+                [56, 16],[56, 16],[56, 16],[56, 16]
               ],
               "locationareas": [
                 {
