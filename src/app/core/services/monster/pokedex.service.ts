@@ -23,12 +23,12 @@ export class PokedexService {
     const pokedexes = this.getPokedexList();
     return pokedexes
       .reduce((acc, pokedex) => {
-        const { label, generation } = pokedex;
+        const label = pokedex;
         return [
           ...acc,
           pokedex.pokedexVariants.map((variante) => ({
             label,
-            generation,
+            generationVariant: variante.generationVariant,
             pokedexVariantName: variante.pokedexVariantName,
             pokedexId: variante.pokedexId,
           })),
@@ -46,8 +46,8 @@ export class PokedexService {
       entry?.pokedexVariants.find((variant) => variant.pokedexId == pokedexId),
     );
     console.log(
-      `Pokedex Id: ${pokedexId}, Pokemon generation: ${poke?.generation}`,
+      `Pokedex Id: ${pokedexId}, Pokemon generation: ${poke?.generationVariant}`,
     );
-    return poke?.generation || null;
+    return poke?.generationVariant || null;
   }
 }

@@ -2,7 +2,7 @@
 
 export interface PokedexListEntry {
   label: string;
-  generation?: number | null;
+  imgPath?: string;
   pokedexVariants: PokedexListEntryVariant[];
 }
 
@@ -15,7 +15,6 @@ export interface PokedexListEntryVariant {
 
 export interface PokedexListEntryFlattened extends PokedexListEntryVariant {
   label: string;
-  generation?: number | null;
 }
 
 //Encounters

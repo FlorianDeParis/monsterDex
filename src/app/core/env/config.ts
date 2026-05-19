@@ -4,6 +4,7 @@ import { PokedexListEntry } from '../models/monsterDex.type';
 export const PokedexList: PokedexListEntry[] = [
   {
     label: 'Pokédex National',
+    imgPath: 'world.png',
     pokedexVariants: [
       {
         pokedexId: 1,
@@ -13,7 +14,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Région de Kanto',
-    generation: 1,
+    imgPath: 'kanto.png',
     pokedexVariants: [
       {
         pokedexId: 2,
@@ -35,7 +36,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Région de Johto',
-    generation: 2,
+    imgPath: 'johto.png',
     pokedexVariants: [
       {
         pokedexId: 3,
@@ -51,7 +52,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: "Région d'Hoenn",
-    generation: 3,
+    imgPath: 'hoenn.png',
     pokedexVariants: [
       {
         pokedexId: 4,
@@ -66,8 +67,8 @@ export const PokedexList: PokedexListEntry[] = [
     ],
   },
   {
-    label: 'Région de Sinoh',
-    generation: 4,
+    label: 'Région de Sinnoh',
+    imgPath: 'sinnoh.png',
     pokedexVariants: [
       {
         pokedexId: 5,
@@ -89,7 +90,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: "Région d'Unys",
-    generation: 5,
+    imgPath: 'unova.png',
     pokedexVariants: [
       {
         pokedexId: 8,
@@ -110,7 +111,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Région de Kalos',
-    generation: 6,
+    imgPath: 'kalos.png',
     pokedexVariants: [
       {
         pokedexId: 12,
@@ -141,7 +142,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: "Région d'Alola",
-    generation: 7,
+    imgPath: 'alola.png',
     pokedexVariants: [
       {
         pokedexId: 16,
@@ -201,7 +202,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Région de Galar',
-    generation: 8,
+    imgPath: 'galar.png',
     pokedexVariants: [
       {
         pokedexId: 27,
@@ -225,7 +226,7 @@ export const PokedexList: PokedexListEntry[] = [
 
   {
     label: "Région d'Hisui",
-    generation: 8,
+    imgPath: 'hisui.png',
     pokedexVariants: [
       {
         pokedexId: 30,
@@ -236,7 +237,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: 'Région de Paldea',
-    generation: 9,
+    imgPath: 'paldea.png',
     pokedexVariants: [
       {
         pokedexId: 31,
@@ -247,7 +248,7 @@ export const PokedexList: PokedexListEntry[] = [
   },
   {
     label: "Région de Septentria",
-    generation: 9,
+    imgPath: 'kitakami.png',
     pokedexVariants: [
       {
         pokedexId: 32,
