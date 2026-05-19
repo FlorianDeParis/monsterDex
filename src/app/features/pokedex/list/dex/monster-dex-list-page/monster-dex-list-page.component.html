@@ -1,11 +1,13 @@
 <section id="pokedexList">
-  <h1>Liste des poxédexs issus de la franchise originale</h1>
-  <div class="container" *ngIf="pokedexList" (keydown)="onKeyDown($event)">
-    @for (
-      pokedexEntry of pokedexList;
-      track pokedexEntry.pokedexVariants[0].pokedexId
-    ) {
-      <app-monster-dex-entry [dexEntry]="pokedexEntry" />
-    }
+  <div class="container-lg py-32">
+    <h1>Liste des poxédexs issus de la franchise originale</h1>
+    <div class="list" *ngIf="pokedexList" (keydown)="onKeyDown($event)">
+      @for (
+        pokedexEntry of pokedexList;
+        track pokedexEntry.pokedexVariants[0].pokedexId
+      ) {
+        <app-monster-dex-entry [dexEntry]="pokedexEntry" />
+      }
+    </div>
   </div>
 </section>

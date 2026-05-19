@@ -1,3 +1,9 @@
 <header id="header">
-  <img [src]="logoPath" alt="Monster Dex" height="25px" />
+  <div class="container-lg d-flex">
+    <img [src]="logoPath"
+      alt="Monster Dex"
+      class="cursor-pointer"
+      height="25px"
+      (click)="goToHomePage()" />
+  </div>
 </header>
