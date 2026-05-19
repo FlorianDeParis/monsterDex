@@ -9,6 +9,8 @@ export interface PokedexListEntry {
 export interface PokedexListEntryVariant {
   pokedexId: number;
   pokedexVariantName: string;
+  isAvailable?: boolean;
+  generationVariant?: number;
 }
 
 export interface PokedexListEntryFlattened extends PokedexListEntryVariant {

@@ -7,194 +7,253 @@ export const PokedexList: PokedexListEntry[] = [
     pokedexVariants: [
       {
         pokedexId: 1,
-        pokedexVariantName: 'National',
+        pokedexVariantName: 'Pokédex National',
       },
     ],
   },
   {
-    label: 'Pokédex de Kanto',
+    label: 'Région de Kanto',
     generation: 1,
     pokedexVariants: [
       {
         pokedexId: 2,
-        pokedexVariantName: 'Kanto',
+        pokedexVariantName: 'Pokédex de Rouge / Bleu / Jaune',
+        generationVariant: 1,
+      },
+      {
+        pokedexId: 0,
+        pokedexVariantName: 'Pokédex de Vert Feuille / Rouge Feu',
+        isAvailable: false,
+        generationVariant: 3,
+      },
+      {
+        pokedexId: 26,
+        pokedexVariantName: 'Pokédex de Let\'s Go: Pikachu/Let\'s Go: Évoli',
+        generationVariant: 8,
       },
     ],
   },
   {
-    label: 'Pokédex de Johto',
+    label: 'Région de Johto',
     generation: 2,
     pokedexVariants: [
       {
         pokedexId: 3,
-        pokedexVariantName: 'Johto',
+        pokedexVariantName: 'Pokédex d\'Or / Argent / Cristal',
+        generationVariant: 2,
+      },
+      {
+        pokedexId: 7,
+        pokedexVariantName: 'Pokédex d`Or-Heartgold / Argent-Soulsilver',
+        generationVariant: 4,
       },
     ],
   },
   {
-    label: "Pokédex d'Hoenn",
+    label: "Région d'Hoenn",
     generation: 3,
     pokedexVariants: [
       {
         pokedexId: 4,
-        pokedexVariantName: 'Hoenn',
+        pokedexVariantName: 'Pokédex de Pokémon Rubis / Saphire / Émeraude',
+        generationVariant: 3,
+      },
+      {
+        pokedexId: 15,
+        pokedexVariantName: 'Pokédex de Rubis-Oméga / Saphir-Alpha',
+        generationVariant: 6
       },
     ],
   },
   {
-    label: 'Pokédex de Sinoh',
+    label: 'Région de Sinoh',
     generation: 4,
     pokedexVariants: [
       {
         pokedexId: 5,
         pokedexVariantName: 'Pokédex de Piamant / Perle',
+        generationVariant: 4,
       },
       {
         pokedexId: 6,
         pokedexVariantName: 'Pokédex de Platine',
+        generationVariant: 4,
       },
-    ],
-  },
-  {
-    label: 'Pokédex de Johto (Gen IV)',
-    generation: 4,
-    pokedexVariants: [
       {
-        pokedexId: 7,
-        pokedexVariantName: "Pokédex d'Or-Heartgold / Argent-Soulsilver",
+        pokedexId: 0,
+        pokedexVariantName: 'Pokédex de Diamant Étincelant et Perle Scintillante',
+        generationVariant: 8,
+        isAvailable: false
       },
     ],
   },
   {
-    label: "Pokédex d'Unys",
+    label: "Région d'Unys",
     generation: 5,
     pokedexVariants: [
       {
         pokedexId: 8,
         pokedexVariantName: 'Pokédex de Noir / Blanc',
+        generationVariant: 5,
       },
       {
         pokedexId: 9,
         pokedexVariantName: 'Pokédex de Noir 2 / Blanc 2',
+        generationVariant: 5,
+      },
+      {
+        pokedexId: 33,
+        pokedexVariantName: 'Pokédex de Écarlate et Violet - Le Disque Indigo',
+        generationVariant: 9
       },
     ],
   },
   {
-    label: 'Pokédex de Kalos',
+    label: 'Région de Kalos',
     generation: 6,
     pokedexVariants: [
       {
         pokedexId: 12,
-        pokedexVariantName: 'Pokédex de Kalos Centre',
+        pokedexVariantName: 'Pokédex X/Y, de Kalos Centre',
+        generationVariant: 6,
       },
       {
         pokedexId: 13,
-        pokedexVariantName: 'Pokédex de Kalos Côtes',
+        pokedexVariantName: 'Pokédex X/Y, de Kalos Côtes',
+        generationVariant: 6,
       },
       {
         pokedexId: 14,
-        pokedexVariantName: 'Pokédex de Kalos Monts',
+        pokedexVariantName: 'Pokédex X/Y, de Kalos Monts',
+        generationVariant: 6,
       },
-    ],
-  },
-  {
-    label: "Pokédex d'Hoenn (Gen VI)",
-    generation: 6,
-    pokedexVariants: [
       {
-        pokedexId: 15,
-        pokedexVariantName: 'Pokédex de Rubis-Oméga / Saphir-Alpha',
+        pokedexId: 34,
+        pokedexVariantName: 'Pokédex de Légendes Pokémon : Z-A',
+        generationVariant: 9
+      },
+      {
+        pokedexId: 35,
+        pokedexVariantName: 'Pokédex de Légendes Pokémon : Z-A - Méga Dimension',
+        generationVariant: 9
       },
     ],
   },
   {
-    label: "Pokédex d'Alola",
+    label: "Région d'Alola",
     generation: 7,
     pokedexVariants: [
       {
         pokedexId: 16,
         pokedexVariantName: 'Pokédex régional de Soleil / Lune',
+        generationVariant: 7,
       },
       {
         pokedexId: 17,
         pokedexVariantName: 'Pokédex de Soleil / Lune de la région de Melemele',
+        generationVariant: 7,
       },
       {
         pokedexId: 18,
         pokedexVariantName: "Pokédex de Soleil / Lune de la région d'Akala",
+        generationVariant: 7,
       },
       {
         pokedexId: 19,
         pokedexVariantName: "Pokédex de Soleil / Lune de la région d'Ula'ula",
+        generationVariant: 7,
       },
       {
         pokedexId: 20,
         pokedexVariantName: 'Pokédex de Soleil / Lune de la région Poni',
+        generationVariant: 7,
       },
       {
         pokedexId: 21,
         pokedexVariantName: "Pokédex régional d'Ultra-Soleil / Ultra-Lune",
+        generationVariant: 7,
       },
       {
         pokedexId: 22,
         pokedexVariantName:
           "Pokédex d'Ultra-Soleil / Ultra-Lune de la région de Melemele",
+        generationVariant: 7,
       },
       {
         pokedexId: 23,
         pokedexVariantName:
           "Pokédex d'Ultra-Soleil / Ultra-Lune de la région d'Akala",
+        generationVariant: 7,
       },
       {
         pokedexId: 24,
         pokedexVariantName:
           "Pokédex d'Ultra-Soleil / Ultra-Lune de la région d'Ula'ula",
+        generationVariant: 7,
       },
       {
         pokedexId: 25,
         pokedexVariantName:
           "Pokédex d'Ultra-Soleil / Ultra-Lune de la région Poni",
+        generationVariant: 7,
       },
     ],
   },
   {
-    label: 'Pokédex de Galar',
+    label: 'Région de Galar',
     generation: 8,
     pokedexVariants: [
       {
         pokedexId: 27,
         pokedexVariantName: "Pokédex régional d'Épée / Bouclier",
+        generationVariant: 8,
       },
       {
         pokedexId: 28,
         pokedexVariantName:
           "Pokédex d'Épée / Bouclier de la région d'Isolarmure",
+        generationVariant: 8,
       },
       {
         pokedexId: 29,
         pokedexVariantName:
           "Pokédex d'Épée / Bouclier de la région de Couronneige",
+        generationVariant: 8,
       },
     ],
   },
+
   {
-    label: "Pokédex d'Hisui",
+    label: "Région d'Hisui",
     generation: 8,
     pokedexVariants: [
       {
         pokedexId: 30,
-        pokedexVariantName: 'Hisui',
+        pokedexVariantName: 'Pokédex de	Légendes Pokémon : Arceus',
+        generationVariant: 8,
       },
     ],
   },
   {
-    label: 'Pokédex de Paldea',
+    label: 'Région de Paldea',
     generation: 9,
     pokedexVariants: [
       {
         pokedexId: 31,
-        pokedexVariantName: 'Paldea',
+        pokedexVariantName: 'Pokédex de Écarlate et Violet',
+        generationVariant: 9,
       },
+    ],
+  },
+  {
+    label: "Région de Septentria",
+    generation: 9,
+    pokedexVariants: [
+      {
+        pokedexId: 32,
+        pokedexVariantName: 'Pokédex de Écarlate et Violet - Le Masque Turquoise',
+        generationVariant: 9,
+      }
     ],
   },
 ];
