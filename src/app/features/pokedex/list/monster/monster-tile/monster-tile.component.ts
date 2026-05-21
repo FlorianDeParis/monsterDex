@@ -5,6 +5,7 @@ import { PokedexService } from '../../../../../core/services/monster/pokedex.ser
 import { PokemonEntry } from '../../../../../core/models/PokeAPI/games.type';
 import { environment } from '../../../../../core/env/environment';
 import { preventTrailingSlashes } from '../../../../../core/utils/url';
+import { PokemonFlattenedEntry } from '../../../../../core/models/monsterDex.type';
 
 @Component({
   selector: 'app-monster-tile',
@@ -15,8 +16,8 @@ import { preventTrailingSlashes } from '../../../../../core/utils/url';
 export class MonsterTileComponent implements OnInit {
   @Input() pokemon!: PokemonEntry;
   @Input() idDex!: number;
+  @Input() generation!: number;
   pokemonNationalId!: number;
-  pokemonGeneration!: number | null;
   imageUrl!: string;
 
   constructor(
@@ -28,9 +29,7 @@ export class MonsterTileComponent implements OnInit {
     this.pokemonNationalId = this.getIdMonster(
       this.pokemon.pokemon_species.url,
     );
-    this.pokemonGeneration = this.pokedexService.getPokedexPokemonGeneration(
-      this.idDex,
-    );
+
     this.imageUrl = `${environment.SPRITE_URL}/pokemon/${this.pokemonNationalId}.png`;
   }
 
@@ -41,7 +40,7 @@ export class MonsterTileComponent implements OnInit {
 
   goToMonsterPage(): void {
     this.router.navigateByUrl(
-      `/pokemon/${this.pokemonNationalId}/${this.pokemonGeneration}/${this.idDex}`,
+      `/pokemon/${this.pokemonNationalId}/${this.generation}/${this.idDex}`,
     );
   }
 }

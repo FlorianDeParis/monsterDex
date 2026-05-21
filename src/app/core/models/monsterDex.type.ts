@@ -13,8 +13,13 @@ export interface PokedexListEntryVariant {
   generationVariant?: number;
 }
 
-export interface PokedexListEntryFlattened extends PokedexListEntryVariant {
+export interface PokemonFlattenedEntry {
   label: string;
+  imgPath?: string;
+  pokedexId: number;
+  pokedexVariantName: string;
+  isAvailable?: boolean;
+  generationVariant?: number;
 }
 
 //Encounters
