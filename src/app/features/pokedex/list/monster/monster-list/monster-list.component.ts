@@ -1,4 +1,4 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable, tap } from 'rxjs';
@@ -20,13 +20,16 @@ export class MonsterListComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private pokeApi: PokeApiService,
     private pokedexService: PokedexService
   ) {
     this.pokedexId = this.route.snapshot.params['region'];
-    this.pokemonGeneration = this.pokedexService.selectPokedexById(
-      this.pokedexId,
-    ).generationVariant || 0;
+    const navigation = this.router.getCurrentNavigation();
+
+    if (navigation?.extras.state) {
+      console.log(navigation.extras.state);
+    }
   }
 
   ngOnInit(): void {

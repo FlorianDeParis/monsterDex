@@ -33,14 +33,17 @@ export class MonsterDexEntryComponent implements OnInit{
     this.BGCardStyle = `url(${this.imgPath})`;
   }
 
-  goToDex(dexId: number): void {
-    this.route.navigateByUrl(`/pokedex/${dexId}`);
+  goToDex(pokedexSubEntry: PokedexListEntryVariant): void {
+    this.route.navigate(
+      [`/pokedex/${pokedexSubEntry.pokedexId}`],
+      { state: { ...pokedexSubEntry}}
+    );
   }
 
-  handleClick(entry: PokedexListEntryVariant): void {
+  handleClick(pokedexSubEntry: PokedexListEntryVariant): void {
     this.toaster.success(
-      `Navigation vers le pokédex ${entry.pokedexVariantName}`,
+      `Navigation vers le pokédex ${pokedexSubEntry.pokedexVariantName}`,
     );
-    this.goToDex(entry.pokedexId);
+    this.goToDex(pokedexSubEntry);
   }
 }
