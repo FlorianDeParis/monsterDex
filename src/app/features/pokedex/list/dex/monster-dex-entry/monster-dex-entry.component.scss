@@ -37,4 +37,9 @@
     font-size: 1.6rem;
     font-weight: 700;
   }
+  .subEntry{
+    &.disabled{
+      cursor: not-allowed;
+    }
+  }
 }

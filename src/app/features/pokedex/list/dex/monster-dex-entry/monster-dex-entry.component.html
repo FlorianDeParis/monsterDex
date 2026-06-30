@@ -5,8 +5,12 @@
   <div class="list p-32">
     <p class="title">{{ dexEntry.label }}</p>
     @for (pokedexSubEntry of dexEntry.pokedexVariants; track pokedexSubEntry.pokedexId) {
-      <div class="cursor-pointer pb-8" (click)="handleClick(pokedexSubEntry)">
+      <div class="subEntry pb-8"
+        [class.cursor-pointer]="!!pokedexSubEntry.pokedexId"
+        [class.disabled]="!pokedexSubEntry.pokedexId"
+        (click)="!!pokedexSubEntry.pokedexId && handleClick(pokedexSubEntry)">
         {{ pokedexSubEntry.pokedexVariantName }}
+        @if(!pokedexSubEntry.pokedexId){<span class="badge rounded-pill text-bg-danger">indisponible</span>}
       </div>
     }
   </div>
