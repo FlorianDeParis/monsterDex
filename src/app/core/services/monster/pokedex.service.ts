@@ -30,7 +30,6 @@ export class PokedexService {
 
       return selectedVariant ? flatten : false;
     }).filter((e) => e);
-
     return poke[0] as PokemonFlattenedEntry;
   }
 }

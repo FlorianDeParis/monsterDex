@@ -16,7 +16,7 @@ import { MonsterTileComponent } from '../monster-tile/monster-tile.component';
 export class MonsterListComponent implements OnInit {
   pokedex$!: Observable<Pokedex>;
   pokedexId!: number;
-  pokemonGeneration!: number;
+  pokemonGeneration?: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,7 +26,7 @@ export class MonsterListComponent implements OnInit {
     this.pokedexId = this.route.snapshot.params['region'];
     this.pokemonGeneration = this.pokedexService.selectPokedexById(
       this.pokedexId,
-    ).generationVariant || 0;
+    )?.generationVariant;
   }
 
   ngOnInit(): void {
