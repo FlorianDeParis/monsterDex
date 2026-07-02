@@ -24,17 +24,12 @@ $bg-url: "/assets/img/bg.png";
     right: 0;
     top: 50px;
     transform: translateX(50%);
-    background: url("/assets/img/pokenav-outline.svg")
-      no-repeat;
+    background: url("/assets/img/pokenav-outline.svg") no-repeat;
     opacity: 0.2;
   }
 
-  .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    margin-top: 1.5rem;
+  .list{
+    --bs-gutter-x:16px;
+    --bs-gutter-y:16px;
   }
 }

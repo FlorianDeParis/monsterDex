@@ -6,15 +6,14 @@ import {
   ViewChild,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
-import { map, Observable, of, Subject, switchMap, tap } from 'rxjs';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, of, tap } from 'rxjs';
 import { LocationAreaEncounter, Pokemon, PokemonSpecies, PokemonSprites, PokemonType } from '../../../core/models/PokeAPI/pokemon.type';
 import { FlavorText } from '../../../core/models/PokeAPI/utilities.type';
 import { EncountersService } from '../../../core/services/monster/encounters.service';
 import { PokemonPageService } from '../../../core/services/monster/pokemon-page.service';
 import type { TableRow } from '../../../core/services/monster/pokemon-page.service';
 import { PokeApiService } from '../../../core/services/poke-api.service';
-import { PokedexService } from '../../../core/services/monster/pokedex.service';
 import { WorldMapComponent } from '../../map/world-map/world-map.component';
 import {
   NgbProgressbar,
@@ -41,6 +40,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   idDex!: string;
   monsterDetails$!: Observable<Pokemon>;
   monsterDetailsSpecies$!: Observable<PokemonSpecies>;
+  monsterDetailsSpeciesState?: PokemonSpecies;
   pokemonSelectedSprite!: string;
   pokemonEncountersList$!: Observable<LocationAreaEncounter[]>;
   pokemonFlavorTextList!: FlavorText[];
@@ -51,14 +51,24 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private pokeApi: PokeApiService,
-    private pokedexService: PokedexService,
     private pokemonPageService: PokemonPageService,
     private encountersService: EncountersService,
   ) {
     this.idMonster = this.route.snapshot.params['idMonster'];
     this.idPokeGen = this.route.snapshot.params['idPokeGen'];
     this.idDex = this.route.snapshot.params['idDex'];
+
+    const navigation = this.router.getCurrentNavigation();
+
+    if (
+      navigation?.extras.state &&
+      navigation.extras.state['species']
+    ) {
+      console.log(navigation.extras.state['species']);
+      this.monsterDetailsSpeciesState = navigation.extras.state['species'];
+    }
   }
 
   ngOnInit(): void {
@@ -70,12 +80,23 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
       ),
     );
 
-    this.monsterDetailsSpecies$ = this.pokeApi.getPokemonSpeciesDetails(this.idMonster).pipe(
-      tap((data) => console.log(data)),
-      tap((detailsSpecies) => {
-        this.setFlavorTextList$(detailsSpecies.flavor_text_entries, this.idPokeGen)
-      })
-    )
+    if (typeof this.monsterDetailsSpeciesState != 'undefined') {
+      // Prevents an unnecessary 'pokemon species' API request when you went from national Dex list
+      // pokemon 'species' state is sent when you click from pokemon tile on National Pokedex
+      this.monsterDetailsSpecies$ = of(this.monsterDetailsSpeciesState).pipe(
+        tap((data) => console.log(data)),
+        tap((detailsSpecies) => {
+          this.setFlavorTextList$(detailsSpecies.flavor_text_entries, this.idPokeGen)
+        })
+      );
+    } else {
+      this.monsterDetailsSpecies$ = this.pokeApi.getPokemonSpeciesDetails(this.idMonster).pipe(
+        tap((data) => console.log(data)),
+        tap((detailsSpecies) => {
+          this.setFlavorTextList$(detailsSpecies.flavor_text_entries, this.idPokeGen)
+        })
+      )
+    }
   }
 
   setPokemonSprite$(spriteObject: PokemonSprites, generation: string): void {

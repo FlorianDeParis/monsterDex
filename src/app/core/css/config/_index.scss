@@ -15,6 +15,14 @@ $spacers: map-merge(
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
+$utilities: (
+  "cursor": (
+    responsive: true,
+    property: cursor,
+    values: default pointer auto,
+  ),
+);
 @import "bootstrap/scss/utilities";
+
 
 @import "customization";

@@ -2,18 +2,24 @@
 
 export interface PokedexListEntry {
   label: string;
-  generation?: number | null;
+  imgPath?: string;
   pokedexVariants: PokedexListEntryVariant[];
 }
 
 export interface PokedexListEntryVariant {
   pokedexId: number;
   pokedexVariantName: string;
+  isAvailable?: boolean;
+  generationVariant?: number;
 }
 
-export interface PokedexListEntryFlattened extends PokedexListEntryVariant {
+export interface PokemonFlattenedEntry {
   label: string;
-  generation?: number | null;
+  imgPath?: string;
+  pokedexId: number;
+  pokedexVariantName: string;
+  isAvailable?: boolean;
+  generationVariant?: number;
 }
 
 //Encounters

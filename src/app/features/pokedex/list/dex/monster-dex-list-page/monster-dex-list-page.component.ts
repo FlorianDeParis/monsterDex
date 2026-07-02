@@ -34,22 +34,4 @@ export class MonsterDexListPageComponent {
   goToDex(dexId: number): void {
     this.route.navigateByUrl(`/pokedex/${dexId}`);
   }
-
-  onKeyDown(event: KeyboardEvent) {
-    // switch (event.key) {
-    //   case 'Enter':
-    //       // this.menuOpened = true;
-    //       // // make sure that the menu is open before setting focus
-    //       // setTimeout(() => this.multiLevelDropDown.setFocusOnFirstMenuItem(), 1);
-    //       break;
-    //   case 'Tab':
-    //   case 'ArrowDown':
-    //     // if (this.menuOpened) {
-    //     //   this.menuOpened = false;
-    //     // }
-    //     // event.preventDefault();
-    //     console.log(event);
-    //     break;
-    // }
-  }
 }

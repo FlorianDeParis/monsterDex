@@ -81,7 +81,7 @@ export class PokemonPageService {
     return returnedSprite as string;
   }
 
-  getMyObjectValueCastedKey(myObject: any, key: string): any {
+  private getMyObjectValueCastedKey(myObject: any, key: string): any {
     return myObject[key as keyof typeof myObject];
   }
 
@@ -125,7 +125,7 @@ export class PokemonPageService {
   }
 
 
-  buildTable(data: LocationAreaEncounter[]): TableRow[] {
+  private buildTable(data: LocationAreaEncounter[]): TableRow[] {
     const rows: TableRow[] = [];
 
     data.forEach(LocationAreaEncounter => {

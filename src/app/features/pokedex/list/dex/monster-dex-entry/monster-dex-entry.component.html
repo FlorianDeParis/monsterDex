@@ -1,18 +1,17 @@
-<div
-  class="pokedexEntry"
-  (click)="handleClick(dexEntry)"
-  [ngClass]="{ active: toggle }"
->
-  <span class="badge"></span>
-  {{ label | uppercase }}
-</div>
-@if (isMainEntry(dexEntry) && !isJustMainWithOneElement(dexEntry)) {
-  <div class="pokedexEntry-subList" [ngClass]="{ active: toggle }">
-    @for (
-      pokedexSubEntry of dexEntry.pokedexVariants;
-      track pokedexSubEntry.pokedexId
-    ) {
-      <app-monster-dex-entry [dexEntry]="pokedexSubEntry" />
+<article class="card card--pokedexEntry h-100" [style.--bgCard]="BGCardStyle">
+  <div class="frame">
+    <img [src]="imgPath" class="card-img-top">
+  </div>
+  <div class="list p-32">
+    <p class="title">{{ dexEntry.label }}</p>
+    @for (pokedexSubEntry of dexEntry.pokedexVariants; track pokedexSubEntry.pokedexId) {
+      <div class="subEntry pb-8"
+        [class.cursor-pointer]="!!pokedexSubEntry.pokedexId"
+        [class.disabled]="!pokedexSubEntry.pokedexId"
+        (click)="!!pokedexSubEntry.pokedexId && handleClick(pokedexSubEntry)">
+        {{ pokedexSubEntry.pokedexVariantName }}
+        @if(!pokedexSubEntry.pokedexId){<span class="badge rounded-pill text-bg-danger">indisponible</span>}
+      </div>
     }
   </div>
-}
+</article>
