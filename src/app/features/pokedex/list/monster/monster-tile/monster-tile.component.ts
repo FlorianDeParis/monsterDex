@@ -50,7 +50,7 @@ export class MonsterTileComponent implements OnInit {
         map(species => {
           const generation = toArabic(species.generation.name.split('-')[1]);
            this.router.navigate(
-            [`/pokemon/${this.pokemonNationalId}/${generation}/${this.idDex}`],
+            [`/pokemon/${this.pokemonNationalId}/${generation}`],
             // We send 'species' object to prevent another query once redirected
             { state: { 'species': {...species}}}
           );
@@ -58,7 +58,7 @@ export class MonsterTileComponent implements OnInit {
       ).subscribe();
     } else {
       this.router.navigateByUrl(
-        `/pokemon/${this.pokemonNationalId}/${this.generation}/${this.idDex}`,
+        `/pokemon/${this.pokemonNationalId}/${this.generation}`,
       );
     }
   }
