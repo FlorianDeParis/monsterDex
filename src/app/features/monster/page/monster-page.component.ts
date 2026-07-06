@@ -132,4 +132,8 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   setFlattenedEncountersList$(id:number, generation:string): void {
     this.pokemonFlattenedEncountersList$ = this.pokemonPageService.getFlattenedEncountersList(id.toString(), generation);
   }
+
+  setPokemonCrySource(monsterDetails:Pokemon): string {
+    return parseInt(this.idPokeGen) > 5 ? (monsterDetails.cries.latest || monsterDetails.cries.legacy) : monsterDetails.cries.legacy;
+  }
 }
