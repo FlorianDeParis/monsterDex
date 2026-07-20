@@ -46,7 +46,7 @@ export class MapService {
     private route: ActivatedRoute,
   ) {
     this.route.params
-      .pipe(map((params) => +params['idPokeGen']))
+      .pipe(map((params) => +params['generation']))
       .subscribe((generation) => {
         this.dataset.set(DATASET[generation]);
         this.datasetmatrix.set(DATASETMATRIX[generation]);

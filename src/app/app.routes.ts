@@ -10,9 +10,6 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'pokedexes', component: MonsterDexListPageComponent },
   { path: 'pokedex/:region', component: MonsterListComponent }, // region => pokedex id
-  {
-    path: 'pokemon/:idMonster/:idPokeGen/:idDex',
-    component: MonsterPageComponent,
-  }, // idMonster => national pokemon id, idPokeGen => pokemon generation, idDex => pokedex id
+  { path: 'pokemon/:idMonster/:generation', component: MonsterPageComponent,},
   { path: 'debug-map/:idMonster/:idPokeGen/:idDex', component: MapTestComponent }, // world map testing
 ];

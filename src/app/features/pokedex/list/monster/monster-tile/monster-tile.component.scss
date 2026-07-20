@@ -10,6 +10,16 @@
 
   img {
     width: 10rem;
+    height: 10rem;
+  }
+
+  .inner{
+    background-image: url('/assets/img/placeholder.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 

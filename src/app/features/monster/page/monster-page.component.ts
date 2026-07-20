@@ -37,7 +37,6 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   volume = 0.2;
   idMonster!: string;
   idPokeGen!: string;
-  idDex!: string;
   monsterDetails$!: Observable<Pokemon>;
   monsterDetailsSpecies$!: Observable<PokemonSpecies>;
   monsterDetailsSpeciesState?: PokemonSpecies;
@@ -57,8 +56,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
     private encountersService: EncountersService,
   ) {
     this.idMonster = this.route.snapshot.params['idMonster'];
-    this.idPokeGen = this.route.snapshot.params['idPokeGen'];
-    this.idDex = this.route.snapshot.params['idDex'];
+    this.idPokeGen = this.route.snapshot.params['generation'];
 
     const navigation = this.router.getCurrentNavigation();
 
@@ -133,5 +131,9 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
 
   setFlattenedEncountersList$(id:number, generation:string): void {
     this.pokemonFlattenedEncountersList$ = this.pokemonPageService.getFlattenedEncountersList(id.toString(), generation);
+  }
+
+  setPokemonCrySource(monsterDetails:Pokemon): string {
+    return parseInt(this.idPokeGen) > 5 ? (monsterDetails.cries.latest || monsterDetails.cries.legacy) : monsterDetails.cries.legacy;
   }
 }
