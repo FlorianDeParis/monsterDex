@@ -6,11 +6,12 @@
 @use '../../../core/css/components/sprites.scss' as *;
 @use '../../../core/css/lib/functions.scss' as *;
 
-@import '../../../core/css/config/breakpoints';
-@import "../../../core/css/helpers/include-media";
-
+@use '../../../core/css/config/breakpoints' as *;
 
 .monster-page{
+  &-body{
+    --bs-gutter-x: 48px;
+  }
   header{
     .header-inner{
       position: relative;

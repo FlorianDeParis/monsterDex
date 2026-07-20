@@ -1,5 +1,9 @@
+@use "../../../../../core/css/helpers/include-media" as *;
+
 $bg-width: 1.6rem;
 $bg-url: "/assets/img/bg.png";
+
+
 
 @keyframes bg-scrolling-reverse {
   100% {
@@ -28,8 +32,12 @@ $bg-url: "/assets/img/bg.png";
     opacity: 0.2;
   }
 
+  .pokedexList-body{
+    --bs-gutter-x: 48px;
+  }
+
   .list{
-    --bs-gutter-x:16px;
-    --bs-gutter-y:16px;
+    --bs-gutter-x:24px;
+    --bs-gutter-y:24px;
   }
 }
