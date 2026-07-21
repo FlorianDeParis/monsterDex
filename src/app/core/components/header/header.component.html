@@ -1,9 +1,17 @@
 <header id="header">
-  <div class="container-lg d-flex">
+  <div class="container-lg d-flex flex-column flex-md-row gap-16 align-items-center justify-content-between">
     <img [src]="logoPath"
       alt="Monster Dex"
       class="cursor-pointer"
       height="25px"
       (click)="goToHomePage()" />
+
+      @if(showSearch$ | async){
+        <input class="form-control"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="rechercher...">
+      }
   </div>
 </header>

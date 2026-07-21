@@ -1,6 +1,15 @@
+@use "../../css/config/breakpoints" as *;
+@use "../../css/helpers/include-media" as *;
+
 #header {
   background-color: rgb(228, 228, 228);
   font-size: 2rem;
   text-align: center;
   padding: 1.5rem;
+
+  #search{
+    @include media(">=tablet") {
+      max-width: 150px;
+    }
+  }
 }
