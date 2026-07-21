@@ -1,7 +1,7 @@
 {
   "name": "monsterDex",
   "short_name": "monsterDex",
-  "theme_color": "#1976d2",
+  "theme_color": "#e4e4e4",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
