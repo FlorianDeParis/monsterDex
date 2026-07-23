@@ -1,5 +1,6 @@
+<app-header />
 <section id="monsterList">
-  <div class="monsterList-body container-lg" *ngIf="pokedex$ | async as pokedex">
+  <div class="monsterList-body container-lg" *ngIf="filteredPokedex$ | async as pokedex">
     <h1 class="title">{{ pokedex.descriptions[0].description }}</h1>
     <div class="pokeList">
       @for (

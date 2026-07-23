@@ -1,3 +1,6 @@
+@use "../../css/config/breakpoints" as *;
+@use "../../css/helpers/include-media" as *;
+
 #header {
   background-color: rgb(228, 228, 228);
   font-size: 2rem;
@@ -8,5 +11,11 @@
   z-index: 2;
   .inner{
     --bs-gutter-x: 48px;
+  }
+
+  #search{
+    @include media(">=tablet") {
+      max-width: 150px;
+    }
   }
 }
