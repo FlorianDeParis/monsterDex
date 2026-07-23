@@ -53,7 +53,7 @@ export class MonsterListComponent implements OnInit {
       map(([pokedex, filterValue]) => {
         let filteredPokemonList = pokedex.pokemon_entries;
         filteredPokemonList = filteredPokemonList.filter(
-          (entry) => entry.pokemon_species.name.toLowerCase().includes(filterValue)
+          (entry) => entry.pokemon_species.name.toLowerCase().includes(filterValue.toLowerCase())
         )
         return { ...pokedex, 'pokemon_entries':filteredPokemonList}
       })
