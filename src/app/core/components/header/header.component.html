@@ -9,6 +9,7 @@
       @if(showSearch$ | async){
         <input class="form-control"
           type="text"
+          [formControl]="search"
           name="search"
           id="search"
           placeholder="rechercher...">
