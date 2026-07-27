@@ -51,8 +51,7 @@ export class MonsterListComponent implements OnInit {
   filterPokemonList(){
     this.filteredPokedex$ = combineLatest([this.pokedex$, this.filter$]).pipe(
       map(([pokedex, filterValue]) => {
-        let filteredPokemonList = pokedex.pokemon_entries;
-        filteredPokemonList = filteredPokemonList.filter(
+        const filteredPokemonList = pokedex.pokemon_entries.filter(
           (entry) => entry.pokemon_species.name.toLowerCase().includes(filterValue.toLowerCase())
         )
         return { ...pokedex, 'pokemon_entries':filteredPokemonList}
