@@ -1,9 +1,7 @@
 @use "../../../../../core/css/helpers/include-media" as *;
 
-$bg-width: 1.6rem;
+$bg-width: 16px;
 $bg-url: "/assets/img/bg.png";
-
-
 
 @keyframes bg-scrolling-reverse {
   100% {
@@ -33,11 +31,21 @@ $bg-url: "/assets/img/bg.png";
   }
 
   .pokedexList-body{
-    --bs-gutter-x: 48px;
+    --bs-gutter-x: 0;
   }
 
   .list{
     --bs-gutter-x:24px;
-    --bs-gutter-y:24px;
+    --bs-gutter-y:0;
+  }
+
+  @include media(">=tablet") {
+    .pokedexList-body{
+      --bs-gutter-x: 48px;
+    }
+
+    .list{
+      --bs-gutter-y:24px;
+    }
   }
 }

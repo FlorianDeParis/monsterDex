@@ -1,7 +1,7 @@
 <app-header />
 <section id="pokedexList">
-  <div class="pokedexList-body container-lg py-32">
-    <h1 class="mb-32 text-uppercase">Liste des poxédexs issus de la franchise originale</h1>
+  <div class="pokedexList-body container-lg pt-32 pb-md-32">
+    <h1 class="mb-32 px-16 px-md-0 font-russoOne text-center text-md-start">Liste des poxédexs issus de la franchise originale</h1>
     <div class="list row row-cols-1 row-cols-md-2" *ngIf="pokedexList">
       @for (pokedexEntry of pokedexList; track pokedexEntry.label) {
         <app-monster-dex-entry [dexEntry]="pokedexEntry" class="col" />

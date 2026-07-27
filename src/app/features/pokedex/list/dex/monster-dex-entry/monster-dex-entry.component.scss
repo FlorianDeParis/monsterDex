@@ -1,5 +1,7 @@
+@use "../../../../../core/css/helpers/include-media" as *;
+
 .card--pokedexEntry {
-  --bs-card-border-radius: 2.6rem;
+  --bs-card-border-radius: 0;
   --bs-card-border-width: 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   overflow: hidden;
@@ -23,23 +25,43 @@
     background-size: 300%;
     background-position: center;
     z-index: 0;
-    opacity: 0.1;
+    opacity: 0.2;
   }
   .frame{
     aspect-ratio: 16/9;
     overflow: hidden;
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    img{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
   .list{
     z-index: 1;
   }
   .title{
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 2rem;
   }
   .subEntry{
+    background: white;
+    color: black;
+    padding: 16px 12px;
+    border-radius: 1000px;
+    text-align: center;
+    font-weight: 600;
     &.disabled{
       cursor: not-allowed;
+      background: rgba(255, 255, 255, 0.541);
+    }
+  }
+
+  @include media(">=tablet") {
+    --bs-card-border-radius: 2.6rem;
+    .frame{
+      img{
+        border-top-left-radius: var(--bs-card-inner-border-radius);
+        border-top-right-radius: var(--bs-card-inner-border-radius);
+      }
     }
   }
 }
