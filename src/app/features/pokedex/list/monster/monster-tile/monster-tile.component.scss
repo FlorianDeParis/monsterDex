@@ -1,40 +1,64 @@
 @use "../../../../../core/css/helpers/include-media" as *;
 
+
 .pokemon-tile {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 24px;
-  background-color: rgb(243, 243, 243);
-  border: 0.1rem solid rgb(226, 226, 226);
+  column-gap: 24px;
+  background-color: #000;
+  color: #FFF;
   border-radius: 0.5rem;
-  padding: 1.2rem;
+  overflow: hidden;
 
   img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     width: 100px;
     height: 100px;
+    image-rendering: pixelated;
   }
 
   .inner{
     background-image: url('/assets/img/placeholder.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200%;
+    image-rendering: pixelated;
     width: 100px;
     height: 100px;
+    mask-image: linear-gradient(to right, black 0%, transparent 100%);
   }
 
   .name {
-    font-family: Orbitron, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin: 0;
   }
 
   @include media(">=tablet") {
-    width: 12rem;
-    gap: 16px;
     flex-direction: column;
     justify-content: center;
+
+    img {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: auto;
+    }
+
+    .inner{
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      mask-image: radial-gradient(black 0%, transparent 75%)
+    }
+
     .name {
-      font-size: 1.2rem;
+      margin-bottom: 16px;
     }
   }
 }

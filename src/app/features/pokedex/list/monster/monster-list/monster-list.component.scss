@@ -10,13 +10,6 @@
     margin-bottom: 1.6rem;
   }
   .pokeList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    flex-direction: column;
-    @include media(">=tablet") {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+    --bs-gutter-y: 1.5rem;
   }
 }
