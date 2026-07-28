@@ -1,3 +1,8 @@
+#map .map-list{
+  --bs-gutter-x: 32px;
+  --bs-gutter-y: 32px;
+}
+
 .mapWrapper{
   display: flex;
   flex-wrap: no-wrap;
@@ -63,8 +68,6 @@
     }
   }
 }
-
-
 
 .worldMap--matrix{
   --cell-width: 16px!important;

@@ -9,10 +9,21 @@
 @use '../../../core/css/config/breakpoints' as *;
 @use "../../../core/css/helpers/include-media" as *;
 
-.monster-page{
-  &-body{
+:host{
+  ::ng-deep app-world-map .inner{
     --bs-gutter-x: 48px;
   }
+}
+
+
+.monster-page{
+  &-body,
+  .details,
+  .encounters-table{
+    --bs-gutter-x: 48px;
+  }
+
+
   header{
     .header-inner{
       position: relative;

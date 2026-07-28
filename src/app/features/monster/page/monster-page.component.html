@@ -25,8 +25,8 @@
       </div>
     </header>
 
-    <main class="monster-page-body container-lg py-32">
-      <section class="details pb-32">
+    <main class="monster-page-body py-32">
+      <section class="details container-lg pb-32">
         <div class="row gy-4 gx-lg-5 row-cols-1 row-cols-lg-2">
           <div class="description col">
             <h2 class="font-russoOne">Description</h2>
@@ -66,11 +66,10 @@
         </div>
       </section>
 
-      <h2 class="font-russoOne">Cartes des rencontres</h2>
       <app-world-map [pokemonGeneration]="idPokeGen" [pokemonId]="idMonster" />
       @if(pokemonFlattenedEncountersList$ | async; as flattenedPokemonEncountersList){
         @if(flattenedPokemonEncountersList.length > 0){
-          <div class="overflow-x-auto mt-16">
+          <div class="encounters-table container-lg overflow-x-auto py-32">
             <table class="encounters table overflow-x-auto">
               <thead>
                 <tr>
@@ -83,52 +82,51 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let row of flattenedPokemonEncountersList"
-
-                  class="{{!row.zone.hidden ? 'mt-32' : (!row.version.hidden ? 'mt-16' : 'mt-8') }}"
-                >
-                  <td *ngIf="!row.zone.hidden"
-                      [attr.rowspan]="row.zone.rowspan"
-                      data-label="Zone"
-                      class="no-label fw-bold text-center">
-                    {{ row.zone.value }}
-                  </td>
-                  <td *ngIf="!row.version.hidden"
-                      [attr.rowspan]="row.version.rowspan"
-                      data-label="Version"
-                      class="game no-label fw-bold text-white bg-{{row.version.value}}"
-                      [class.aaa]="row.version.rowspan && row.version.rowspan > 1">
-                      {{ row.version.value | uppercase }}
-                  </td>
-                  <td data-label="Méthode">
-                    @let iconPath = getEncounterIcon(row.method.value);
-                    <div class="d-flex align-items-center gap-8 p-4px">
-                      @if( iconPath !== ''){
-                        <img [src]="iconPath">
-                      }
-                      {{ row.method.value }}
-                    </div>
-                  </td>
-                  <td data-label="Niveaux">
-                    {{ row.level.min_level }}
-                    @if( row.level.min_level != row.level.max_level ){
-                      - {{ row.level.max_level }}
-                    }
-                  </td>
-                  @if(row.condition_values && row.condition_values.length > 0){
-                    <td data-label="Chance">{{ row.chance.value }}</td>
-                    <td data-label="Conditions">
-                      <div class="d-flex">
-                        @for(condition of row.condition_values; track condition.name){
-                          <div class="flex-grow-1">{{ condition.name}}</div>
+                @for(row of flattenedPokemonEncountersList; track row.zone.value){
+                  <tr class="{{ $first ? '' : (!row.zone.hidden ? 'mt-32' : (!row.version.hidden ? 'mt-16' : 'mt-8')) }}">
+                    <td *ngIf="!row.zone.hidden"
+                        [attr.rowspan]="row.zone.rowspan"
+                        data-label="Zone"
+                        class="no-label fw-bold text-center">
+                      {{ row.zone.value }}
+                    </td>
+                    <td *ngIf="!row.version.hidden"
+                        [attr.rowspan]="row.version.rowspan"
+                        data-label="Version"
+                        class="game no-label fw-bold text-white bg-{{row.version.value}}"
+                        [class.aaa]="row.version.rowspan && row.version.rowspan > 1">
+                        {{ row.version.value | uppercase }}
+                    </td>
+                    <td data-label="Méthode">
+                      @let iconPath = getEncounterIcon(row.method.value);
+                      <div class="d-flex align-items-center gap-8 p-4px">
+                        @if( iconPath !== ''){
+                          <img [src]="iconPath">
                         }
+                        {{ row.method.value }}
                       </div>
                     </td>
-                  }
-                  @else {
-                    <td data-label="Chance" colspan="2">{{ row.chance.value }}</td>
-                  }
-                </tr>
+                    <td data-label="Niveaux">
+                      {{ row.level.min_level }}
+                      @if( row.level.min_level != row.level.max_level ){
+                        - {{ row.level.max_level }}
+                      }
+                    </td>
+                    @if(row.condition_values && row.condition_values.length > 0){
+                      <td data-label="Chance">{{ row.chance.value }}</td>
+                      <td data-label="Conditions">
+                        <div class="d-flex">
+                          @for(condition of row.condition_values; track condition.name){
+                            <div class="flex-grow-1">{{ condition.name}}</div>
+                          }
+                        </div>
+                      </td>
+                    }
+                    @else {
+                      <td data-label="Chance" colspan="2">{{ row.chance.value }}</td>
+                    }
+                  </tr>
+                }
               </tbody>
             </table>
           </div>
