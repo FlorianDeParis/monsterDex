@@ -7,6 +7,7 @@
 @use '../../../core/css/lib/functions.scss' as *;
 
 @use '../../../core/css/config/breakpoints' as *;
+@use "../../../core/css/helpers/include-media" as *;
 
 .monster-page{
   &-body{
@@ -62,22 +63,96 @@
   }
 }
 
-// ::ng-deep #map{
-//   .col{
-//     @include media('>=tablet'){
-//       --bs-gutter-x: 0;
-//     }
-//   }
-// }
+.description{
+  ul button{
+    --bs-nav-tabs-border-radius: 0;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+  }
+}
 
 .encounters{
   width: 100%;
-  td{
+
+  &, thead, tbody, tr, td, th{
+    display: block;
+  }
+
+  thead{
+    display: none;
+  }
+
+  tr{
     border: 1px solid #000;
+    --bs-border-width: 0;
+  }
+
+  td{
+    --td-label-offset: 50%;
+    &:not(:last-child){
+      border-bottom: 1px solid #000;
+    }
+    padding-left: var(--td-label-offset);
+    position: relative;
+
+    &:before{
+      position: absolute;
+      content: attr(data-label);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: calc(var(--td-label-offset) - 16px);
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      font-weight: 600;
+    }
+
+    &.no-label{
+      --td-label-offset: 0;
+      &:before{
+        display: none;
+      }
+    }
+
+    &[data-label="Zone"]{
+      background-color: #000;
+      color: #FFF;
+      font-size: 1.5rem;
+    }
   }
   .game{
     vertical-align: middle;
     text-align: center;
+    text-shadow: 1px 1px 2px #000;
+  }
+
+  @include media(">=tablet") {
+    &, thead, tbody, tr, td, th{
+      display: revert-layer;
+      vertical-align: middle;
+    }
+
+    th{
+      background-color: #000;
+      color: #FFF;
+    }
+
+    tr{
+      margin-bottom: 0;
+    }
+
+    td{
+      --td-label-offset: 0;
+      &:before{
+        display: none;
+      }
+
+      &[data-label="Zone"]{
+        background-color: transparent;
+        color: #000;
+        font-size: 1rem;
+      }
+    }
   }
 }
 
