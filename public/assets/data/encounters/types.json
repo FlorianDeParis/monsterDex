@@ -2,175 +2,279 @@
   "types": [
     {
       "name": "walk",
-      "path": "/assets/img/encounters/grass.png"
+      "path": "/assets/img/encounters/walk.svg"
     },
     {
       "name": "old-rod",
-      "path": "/assets/img/encounters/fishing.gif"
+      "path": "/assets/img/encounters/old-rod.svg"
     },
     {
       "name": "good-rod",
-      "path": "/assets/img/encounters/fishing.gif"
+      "path": "/assets/img/encounters/good-rod.svg"
     },
     {
       "name": "super-rod",
-      "path": "/assets/img/encounters/fishing.gif"
+      "path": "/assets/img/encounters/super-rod.svg"
     },
     {
       "name": "surf",
-      "path": "/assets/img/encounters/surf.gif"
+      "path": "/assets/img/encounters/surf.svg"
     },
     {
       "name": "rock-smash",
-      "path": "/assets/img/encounters/rock-smash.gif"
+      "path": "/assets/img/encounters/rock-smash.svg"
     },
     {
       "name": "headbutt",
-      "path": "/assets/img/encounters/headbutt.png"
+      "path": "/assets/img/encounters/headbutt.svg"
     },
     {
       "name": "dark-grass",
-      "path": "/assets/img/encounters/dark-grass.png"
+      "path": "/assets/img/encounters/dark-grass.svg"
     },
     {
       "name": "grass-spots",
-      "path": null
+      "path": "/assets/img/encounters/grass-spots.svg"
     },
     {
       "name": "cave-spots",
-      "path": null
+      "path": "/assets/img/encounters/cave-spots.svg"
     },
     {
       "name": "bridge-spots",
-      "path": null
+      "path": "/assets/img/encounters/bridge-spots.svg"
     },
     {
       "name": "super-rod-spots",
-      "path": null
+      "path": "/assets/img/encounters/super-rod-spots.svg"
     },
     {
       "name": "surf-spots",
-      "path": null
+      "path": "/assets/img/encounters/surf-spots.svg"
     },
     {
       "name": "yellow-flowers",
-      "path": null
+      "path": "/assets/img/encounters/yellow-flowers.svg"
     },
     {
       "name": "purple-flowers",
-      "path": null
+      "path": "/assets/img/encounters/purple-flowers.svg"
     },
     {
       "name": "red-flowers",
-      "path": null
+      "path": "/assets/img/encounters/red-flowers.svg"
     },
     {
       "name": "rough-terrain",
-      "path": null
+      "path": "/assets/img/encounters/rough-terrain.svg"
     },
     {
       "name": "gift",
-      "path": "/assets/img/encounters/gift-pack.png"
+      "path": "/assets/img/encounters/gift.svg"
     },
     {
       "name": "gift-egg",
-      "path": null
+      "path": "/assets/img/encounters/gift-egg.svg"
     },
     {
-      "name": "only-one",
-      "path": "/assets/img/encounters/pokeball.png"
+      "name": "static",
+      "path": "/assets/img/encounters/static.svg"
     },
     {
       "name": "pokeflute",
-      "path": null
+      "path": "/assets/img/encounters/pokeflute.svg"
     },
     {
       "name": "headbutt-low",
-      "path": "/assets/img/encounters/headbutt.png"
+      "path": "/assets/img/encounters/headbutt-low.svg"
     },
     {
       "name": "headbutt-normal",
-      "path": "/assets/img/encounters/headbutt.png"
+      "path": "/assets/img/encounters/headbutt-normal.svg"
     },
     {
       "name": "headbutt-high",
-      "path": "/assets/img/encounters/headbutt.png"
+      "path": "/assets/img/encounters/headbutt-high.svg"
     },
     {
       "name": "squirt-bottle",
-      "path": "/assets/img/encounters/squirt-bottle.png"
+      "path": "/assets/img/encounters/squirt-bottle.svg"
     },
     {
       "name": "wailmer-pail",
-      "path": "/assets/img/encounters/wailmer-pail.png"
+      "path": "/assets/img/encounters/wailmer-pail.svg"
     },
     {
       "name": "seaweed",
-      "path": "/assets/img/encounters/diver.gif"
+      "path": "/assets/img/encounters/seaweed.svg"
     },
     {
       "name": "roaming-grass",
-      "path": "/assets/img/encounters/roaming.gif"
+      "path": "/assets/img/encounters/roaming-grass.svg"
     },
     {
       "name": "roaming-water",
-      "path": "/assets/img/encounters/roaming-water.gif"
+      "path": "/assets/img/encounters/roaming-water.svg"
     },
     {
       "name": "devon-scope",
-      "path": null
+      "path": "/assets/img/encounters/devon-scope.svg"
     },
     {
       "name": "feebas-tile-fishing",
-      "path": "/assets/img/encounters/fishing.gif"
+      "path": "/assets/img/encounters/feebas-tile-fishing.svg"
     },
     {
       "name": "island-scan",
-      "path": null
+      "path": "/assets/img/encounters/island-scan.svg"
     },
     {
-      "name": "sos-encounter",
-      "path": null
+      "name": "sos",
+      "path": "/assets/img/encounters/sos.svg"
     },
     {
       "name": "bubbling-spots",
-      "path": null
+      "path": "/assets/img/encounters/bubbling-spots.svg"
     },
     {
-      "name": "berry-piles",
-      "path": null
+      "name": "berry-trees",
+      "path": "/assets/img/encounters/berry-trees.svg"
     },
     {
       "name": "npc-trade",
-      "path": null
+      "path": "/assets/img/encounters/npc-trade.svg"
     },
     {
       "name": "sos-from-bubbling-spot",
-      "path": null
+      "path": "/assets/img/encounters/sos-from-bubbling-spot.svg"
     },
     {
       "name": "overworld",
-      "path": null
+      "path": "/assets/img/encounters/overworld.svg"
     },
     {
       "name": "overworld-water",
-      "path": null
+      "path": "/assets/img/encounters/overworld-water.svg"
     },
     {
       "name": "overworld-flying",
-      "path": null
+      "path": "/assets/img/encounters/overworld-flying.svg"
     },
     {
       "name": "overworld-special",
-      "path": null
+      "path": "/assets/img/encounters/overworld-special.svg"
     },
     {
       "name": "overworld-flying-special",
-      "path": null
+      "path": "/assets/img/encounters/overworld-flying-special.svg"
     },
     {
       "name": "overworld-water-special",
-      "path": null
+      "path": "/assets/img/encounters/overworld-water-special.svg"
+    },
+    {
+      "name": "horde",
+      "path": "/assets/img/encounters/horde.svg"
+    },
+    {
+      "name": "colosseum-bonus-disc-us",
+      "path": "/assets/img/encounters/colosseum-bonus-disc-us.svg"
+    },
+    {
+      "name": "colosseum-bonus-disc-jpn",
+      "path": "/assets/img/encounters/colosseum-bonus-disc-jpn.svg"
+    },
+    {
+      "name": "pokemon-channel-pal",
+      "path": "/assets/img/encounters/pokemon-channel-pal.svg"
+    },
+    {
+      "name": "pokemon-ranger",
+      "path": "/assets/img/encounters/pokemon-ranger.svg"
+    },
+    {
+      "name": "pokemon-battle-revolution",
+      "path": "/assets/img/encounters/pokemon-battle-revolution.svg"
+    },
+    {
+      "name": "new-york-pokecenter-wish-eggs",
+      "path": "/assets/img/encounters/new-york-pokecenter-wish-eggs.svg"
+    },
+    {
+      "name": "snag",
+      "path": "/assets/img/encounters/snag.svg"
+    },
+    {
+      "name": "snag-rematch",
+      "path": "/assets/img/encounters/snag-rematch.svg"
+    },
+    {
+      "name": "pokespot",
+      "path": "/assets/img/encounters/pokespot.svg"
+    },
+    {
+      "name": "hidden-grotto",
+      "path": "/assets/img/encounters/hidden-grotto.svg"
+    },
+    {
+      "name": "honey-tree",
+      "path": "/assets/img/encounters/honey-tree.svg"
+    },
+    {
+      "name": "overworld-dirt",
+      "path": "/assets/img/encounters/overworld-dirt.svg"
+    },
+    {
+      "name": "wanderer",
+      "path": "/assets/img/encounters/wanderer.svg"
+    },
+    {
+      "name": "wanderer-water",
+      "path": "/assets/img/encounters/wanderer-water.svg"
+    },
+    {
+      "name": "chase-water",
+      "path": "/assets/img/encounters/chase-water.svg"
+    },
+    {
+      "name": "dynamax-adventure",
+      "path": "/assets/img/encounters/dynamax-adventure.svg"
+    },
+    {
+      "name": "max-raid",
+      "path": "/assets/img/encounters/max-raid.svg"
+    },
+    {
+      "name": "trash-can-ambush",
+      "path": "/assets/img/encounters/trash-can-ambush.svg"
+    },
+    {
+      "name": "rustling-bush-ambush",
+      "path": "/assets/img/encounters/rustling-bush-ambush.svg"
+    },
+    {
+      "name": "ceiling-ambush",
+      "path": "/assets/img/encounters/ceiling-ambush.svg"
+    },
+    {
+      "name": "ground-ambush",
+      "path": "/assets/img/encounters/ground-ambush.svg"
+    },
+    {
+      "name": "sky-ambush",
+      "path": "/assets/img/encounters/sky-ambush.svg"
+    },
+    {
+      "name": "only-one",
+      "path": "/assets/img/encounters/static.svg"
+    },
+    {
+      "name": "sos-encounter",
+      "path": "/assets/img/encounters/sos.svg"
+    },
+    {
+      "name": "berry-piles",
+      "path": "/assets/img/encounters/berry-trees.svg"
     }
   ]
 }

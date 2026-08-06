@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3824"/>
+      <stop offset="100%" stop-color="#061C10"/>
+    </linearGradient>
+  </defs>
+  <!-- GBA Emerald Outer Frame -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#emeraldBg)" stroke="#F8D030" stroke-width="1.5"/>
+  <!-- Inner Highlight Ring -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5.5" fill="none" stroke="#00F080" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Graphic Content -->
+  
+    <!-- Cracked Boulder + Yellow HM06 Hammer -->
+    <polygon points="7,24 10,14 19,12 26,17 23,25" fill="#787878" stroke="#484848" stroke-width="1.5"/>
+    <line x1="13" y1="14" x2="18" y2="22" stroke="#282828" stroke-width="2"/>
+    <polygon points="17,5 26,10 23,13 14,8" fill="#F8D030" stroke="#C09010" stroke-width="1"/>
+  
+</svg>

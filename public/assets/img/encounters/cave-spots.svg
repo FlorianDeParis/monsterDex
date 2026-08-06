@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3824"/>
+      <stop offset="100%" stop-color="#061C10"/>
+    </linearGradient>
+  </defs>
+  <!-- GBA Emerald Outer Frame -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#emeraldBg)" stroke="#A88060" stroke-width="1.5"/>
+  <!-- Inner Highlight Ring -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5.5" fill="none" stroke="#00F080" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Graphic Content -->
+  
+    <!-- Granite Cave Entrance -->
+    <path d="M7 25 L7 16 C7 9 25 9 25 16 L25 25 Z" fill="#382820" stroke="#886040" stroke-width="1.5"/>
+    <polygon points="16,12 17.5,14.5 20,15.5 17.5,16.5 16,19 14.5,16.5 12,15.5 14.5,14.5" fill="#F8D030"/>
+  
+</svg>

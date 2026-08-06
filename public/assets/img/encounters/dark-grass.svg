@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3824"/>
+      <stop offset="100%" stop-color="#061C10"/>
+    </linearGradient>
+  </defs>
+  <!-- GBA Emerald Outer Frame -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#emeraldBg)" stroke="#00A048" stroke-width="1.5"/>
+  <!-- Inner Highlight Ring -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5.5" fill="none" stroke="#00F080" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Graphic Content -->
+  
+    <!-- Dark Grass (Route 120) -->
+    <path d="M6 24 C7 14 11 9 14 6 C12 15 9 24 9 24 Z" fill="#008038"/>
+    <path d="M11 24 C13 13 17 8 20 5 C17 14 14 24 14 24 Z" fill="#00C050"/>
+    <path d="M16 24 C18 14 22 9 25 6 C22 15 19 24 19 24 Z" fill="#008038"/>
+    <path d="M21 24 C23 16 25 12 27 9 C25 17 23 24 23 24 Z" fill="#00C050"/>
+  
+</svg>

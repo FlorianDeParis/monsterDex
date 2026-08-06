@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3824"/>
+      <stop offset="100%" stop-color="#061C10"/>
+    </linearGradient>
+  </defs>
+  <!-- GBA Emerald Outer Frame -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#emeraldBg)" stroke="#50C0F8" stroke-width="1.5"/>
+  <!-- Inner Highlight Ring -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5.5" fill="none" stroke="#00F080" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Graphic Content -->
+  
+    <path d="M4 22 Q12 18 28 22 L28 25 L4 25 Z" fill="#2070D0"/>
+    <line x1="6" y1="12" x2="19" y2="12" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="11" y1="16" x2="24" y2="16" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round"/>
+  
+</svg>

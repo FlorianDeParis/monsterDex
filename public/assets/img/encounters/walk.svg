@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3824"/>
+      <stop offset="100%" stop-color="#061C10"/>
+    </linearGradient>
+  </defs>
+  <!-- GBA Emerald Outer Frame -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#emeraldBg)" stroke="#00E070" stroke-width="1.5"/>
+  <!-- Inner Highlight Ring -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5.5" fill="none" stroke="#00F080" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Graphic Content -->
+  
+    <!-- Hoenn Tall Grass Blades -->
+    <path d="M8 24 C8 17 12 12 16 9 C13 16 11 24 11 24 Z" fill="#00E070"/>
+    <path d="M13 24 C14 15 18 10 23 7 C19 15 17 24 17 24 Z" fill="#50F890"/>
+    <path d="M18 24 C20 16 23 12 26 9 C24 16 22 24 22 24 Z" fill="#00C860"/>
+  
+</svg>

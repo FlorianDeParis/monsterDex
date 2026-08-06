@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="emeraldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F3824"/>
+      <stop offset="100%" stop-color="#061C10"/>
+    </linearGradient>
+  </defs>
+  <!-- GBA Emerald Outer Frame -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#emeraldBg)" stroke="#D8A060" stroke-width="1.5"/>
+  <!-- Inner Highlight Ring -->
+  <rect x="2.5" y="2.5" width="27" height="27" rx="5.5" fill="none" stroke="#00F080" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Graphic Content -->
+  
+    <!-- Route 111 Desert Sandstorm Dust -->
+    <path d="M7 23 C6 19 9 16 14 17 C16 14 21 15 23 18 C26 19 26 23 23 23 Z" fill="#B88040"/>
+    <circle cx="10" cy="13" r="1.5" fill="#F8D030"/>
+    <circle cx="21" cy="12" r="1.5" fill="#F8D030"/>
+  
+</svg>
