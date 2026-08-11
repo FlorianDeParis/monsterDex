@@ -1,13 +1,16 @@
+@use "../../../../../core/css/helpers/include-media" as *;
+
 #monsterList {
-  padding: 5rem;
+  .monsterList-body{
+    margin-top: 1.6rem;
+    --bs-gutter-x: 48px;
+  }
   .title {
-    font-size: 2.5rem;
-    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
   }
   .pokeList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    justify-content: space-between;
+    --bs-gutter-y: 1.5rem;
   }
 }

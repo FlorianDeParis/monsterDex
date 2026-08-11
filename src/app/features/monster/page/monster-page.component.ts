@@ -25,10 +25,12 @@ import {
 	NgbNavLinkBase,
 	NgbNavOutlet,
  } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from '../../../core/components/header/header.component';
+import { HeaderService } from '../../../core/services/components/header.service';
 
 @Component({
   selector: 'app-monster-page',
-  imports: [CommonModule, WorldMapComponent, NgbProgressbar, NgbNavContent, NgbNav, NgbNavItem, NgbNavItemRole, NgbNavLinkButton, NgbNavLinkBase, NgbNavOutlet],
+  imports: [CommonModule, HeaderComponent, WorldMapComponent, NgbProgressbar, NgbNavContent, NgbNav, NgbNavItem, NgbNavItemRole, NgbNavLinkButton, NgbNavLinkBase, NgbNavOutlet],
   templateUrl: './monster-page.component.html',
   styleUrl: './monster-page.component.scss',
 })
@@ -51,6 +53,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private headerService: HeaderService,
     private pokeApi: PokeApiService,
     private pokemonPageService: PokemonPageService,
     private encountersService: EncountersService,
@@ -70,6 +73,8 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
+    this.headerService.setSearch(false);
+
     this.monsterDetails$ = this.pokeApi.getPokemonDetails(this.idMonster).pipe(
       tap((pokemonFullData) => {
         this.setEncountersList$(pokemonFullData.id, this.idPokeGen),

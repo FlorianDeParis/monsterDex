@@ -31,9 +31,59 @@ $version-group-colors: (
   'diamond-pearl': "linear-gradient(135deg,rgba(95, 150, 202, 1) 0%, rgba(201, 131, 194, 1) 100%)",
   'heartgold': "#fcd229",
   'soulsilver': "#7a8693",
-  'heartgold-soulsilver': "linear-gradient(135deg,rgba(252, 210, 41, 1) 0%, rgba(122, 134, 147, 1) 100%)"
-
-  // NEXT GAMES COMMING SOON...
+  'heartgold-soulsilver': "linear-gradient(135deg,rgba(252, 210, 41, 1) 0%, rgba(122, 134, 147, 1) 100%)",
+  // 5th gen
+  'black': "#010101",
+  'white': "#fdfdfd",
+  'black-white': "linear-gradient(135deg,rgba(1, 1, 1, 1) 0%, rgba(253, 253, 253, 1) 100%)",
+  'black-2': "linear-gradient(135deg,rgba(1, 1, 1, 1) 0%, rgba(0, 148, 223, 1) 100%)",
+  'white-2': "linear-gradient(135deg,rgba(255, 255, 255, 1) 0%, rgba(250, 194, 0, 1) 100%)",
+  'black-2-white-2': "linear-gradient(135deg,rgba(1, 1, 1, 1) 0%, rgba(0, 148, 255, 1) 33%, rgba(255, 255, 255, 1) 66%, rgba(250, 194, 0, 1) 100%)",
+  // 6th gen
+  'x': "linear-gradient(135deg,rgba(38, 63, 157, 1) 0%, rgba(14, 44, 58, 1) 100%)",
+  'y': "linear-gradient(135deg,rgba(220, 0, 50, 1) 0%, rgba(64, 0, 0, 1) 100%)",
+  'x-y': "linear-gradient(135deg,rgba(38, 63, 157, 1) 0%, rgba(14, 44, 58, 1) 33%, rgba(64, 0, 0, 1) 66%, rgba(220, 0, 50, 1) 100%)",
+  'omega-ruby': "linear-gradient(135deg,rgba(115, 0, 8, 1) 0%, rgba(212, 0, 0, 1) 100%)",
+  'alpha-sapphire': "linear-gradient(135deg,rgba(65, 0, 137, 1) 0%, rgba(59, 165, 177, 1) 100%)",
+  'omega-ruby-alpha-sapphire': "linear-gradient(135deg,rgba(115, 0, 8, 1) 0%, rgba(14, 44, 58, 1) 33%, rgba(59, 165, 177, 1) 66%, rgba(65, 0, 137, 1) 100%)",
+  // 7th gen
+  'sun': "linear-gradient(135deg,rgba(178, 59, 19, 1) 0%, rgba(223, 163, 0, 1) 100%)",
+  'moon': "linear-gradient(135deg,rgba(63, 189, 212, 1) 0%, rgba(72, 128, 180, 1) 100%)",
+  'sun-moon': "linear-gradient(135deg,rgba(178, 59, 19, 1) 0%, rgba(223, 163, 0, 1) 33%, rgba(72, 128, 180, 1) 66%, rgba(63, 189, 212, 1) 100%)",
+  'ultra-sun': "linear-gradient(135deg,rgba(178, 59, 19, 1) 0%, rgba(0, 0, 0, 1) 100%)",
+  'ultra-moon': "linear-gradient(135deg,rgba(72, 128, 180, 1) 0%, rgba(0, 0, 0, 1) 100%)",
+  'ultra-sun-ultra-moon': "linear-gradient(135deg,rgba(178, 59, 19, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(72, 128, 180, 1) 100%)",
+  'lets-go-pikachu': "#f6d200",
+  'lets-go-eevee': "#b3602c",
+  'lets-go-pikachu-lets-go-eevee': "linear-gradient(135deg,rgba(246, 210, 0, 1) 0%, rgba(179, 96, 44, 1) 100%)",
+  // 8th gen
+  'sword': "linear-gradient(135deg,rgba(41,46,167, 1) 0%, rgba(42,0,107, 1) 100%)",
+  'shield': "linear-gradient(135deg,rgba(190,0,0, 1) 0%, rgba(125,0,0, 1) 100%)",
+  'sword-shield': "linear-gradient(135deg,rgba(42,0,107, 1) 0%, rgba(41,46,167, 1) 33%, rgba(190,0,0, 1) 66%, rgba(125,0,0, 1) 100%)",
+  'the-isle-of-armor': "linear-gradient(135deg,rgba(239,236,0, 1) 0%, rgba(248,198,0, 1) 100%)",
+  'the-isle-of-armor-sword': "linear-gradient(135deg,rgba(239,236,0, 1) 0%, rgba(248,198,0, 1) 100%)",
+  'the-isle-of-armor-shield': "linear-gradient(135deg,rgba(239,236,0, 1) 0%, rgba(248,198,0, 1) 100%)",
+  'the-crown-tundra': "linear-gradient(135deg,rgba(0,70,106, 1) 0%, rgba(0,164,145, 1) 100%)",
+  'the-crown-tundra-sword': "linear-gradient(135deg,rgba(0,70,106, 1) 0%, rgba(0,164,145, 1) 100%)",
+  'the-crown-tundra-shield': "linear-gradient(135deg,rgba(0,70,106, 1) 0%, rgba(0,164,145, 1) 100%)",
+  'brilliant-diamond': "linear-gradient(135deg,rgba(7,4,11, 1) 0%, rgba(41,106,171, 1) 100%)",
+  'shining-pearl': "linear-gradient(135deg,rgba(13,9,1, 1) 0%, rgba(177,32,96, 1) 100%)",
+  'brilliant-diamond-shining-pearl': "linear-gradient(135deg,rgba(41,106,171, 1) 0%, rgba(7,4,11, 1) 40%, rgba(13,9,1, 1) 51%, rgba(177,32,96, 1) 100%)",
+  'legends-arceus': "#44c28f",
+  // 9th gen
+  'scarlet': "#a20015",
+  'violet': "#5c0073",
+  'scarlet-violet': "linear-gradient(135deg,rgba(162,0,21, 1) 0%, rgba(92,0,115, 1) 100%)",
+  'the-indigo-disk': "#146297",
+  'the-indigo-disk-scarlet': "#146297",
+  'the-indigo-disk-violet': "#146297",
+  'the-teal-mask': "#008f8a",
+  'the-teal-mask-scarlet': "#008f8a",
+  'the-teal-mask-violet': "#008f8a",
+  'legends-za': "linear-gradient(135deg,rgba(41,39,40, 1) 0%, rgba(0,199,122, 1) 100%)",
+  'mega-dimension': "linear-gradient(135deg,rgba(234, 94, 26, 1) 0%, rgba(178, 0, 126, 1) 25%, rgba(223, 168, 0, 1) 50%, rgba(102, 101, 162, 1) 75%, rgba(0, 166, 137, 1) 100%)",
+  // 10th gen
+  // TBA later...
 );
 
 

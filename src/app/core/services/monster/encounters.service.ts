@@ -45,7 +45,7 @@ export class EncountersService {
   filterCurrentGameGeneration(
     locationAreaEncounter: LocationAreaEncounter,
     currentGenGameList: string[],
-  ): false | LocationAreaEncounter {
+  ): null | LocationAreaEncounter {
 
     const locationAreaEncounterFiltered =
       locationAreaEncounter.version_details.filter((version_detail) => {
@@ -62,7 +62,7 @@ export class EncountersService {
 
     return filteredLocations.version_details.length > 0
       ? { ...filteredLocations }
-      : false;
+      : null;
   }
 
   getEncounterIconPath(key: string): string{

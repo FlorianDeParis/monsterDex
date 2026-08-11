@@ -2,16 +2,18 @@
   <div class="frame">
     <img [src]="imgPath" class="card-img-top">
   </div>
-  <div class="list p-32">
-    <p class="title">{{ dexEntry.label }}</p>
-    @for (pokedexSubEntry of dexEntry.pokedexVariants; track pokedexSubEntry.pokedexId) {
-      <div class="subEntry pb-8"
-        [class.cursor-pointer]="!!pokedexSubEntry.pokedexId"
-        [class.disabled]="!pokedexSubEntry.pokedexId"
-        (click)="!!pokedexSubEntry.pokedexId && handleClick(pokedexSubEntry)">
-        {{ pokedexSubEntry.pokedexVariantName }}
-        @if(!pokedexSubEntry.pokedexId){<span class="badge rounded-pill text-bg-danger">indisponible</span>}
-      </div>
-    }
+  <div class="list p-16">
+    <p class="title font-russoOne text-center mb-32">{{ dexEntry.label }}</p>
+    <div class="d-flex flex-column gap-16 mb-32 mb-md-0">
+      @for (pokedexSubEntry of dexEntry.pokedexVariants; track pokedexSubEntry.pokedexId) {
+        <div class="subEntry"
+          [class.cursor-pointer]="!!pokedexSubEntry.pokedexId"
+          [class.disabled]="!pokedexSubEntry.pokedexId"
+          (click)="!!pokedexSubEntry.pokedexId && handleClick(pokedexSubEntry)">
+          {{ pokedexSubEntry.pokedexVariantName }}
+          @if(!pokedexSubEntry.pokedexId){<span class="badge rounded-pill text-bg-danger">indisponible</span>}
+        </div>
+      }
+    </div>
   </div>
 </article>

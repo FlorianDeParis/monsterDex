@@ -1,6 +1,5 @@
 <article class="pokemon-tile cursor-pointer" (click)="goToMonsterPage()">
-  <div class="inner">
-    <img [src]="imageUrl" alt="" loading="lazy"/>
-  </div>
-  <p class="name">{{ pokemon.pokemon_species.name | titlecase }}</p>
+  <div class="inner"></div>
+  <img [src]="imageUrl" alt="" loading="lazy"/>
+  <p class="name font-russoOne">{{ pokemon.pokemon_species.name | titlecase }}</p>
 </article>

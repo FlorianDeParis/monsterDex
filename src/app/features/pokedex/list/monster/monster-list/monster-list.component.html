@@ -1,12 +1,13 @@
+<app-header />
 <section id="monsterList">
-  <div class="container-lg" *ngIf="pokedex$ | async as pokedex">
+  <div class="monsterList-body container-lg" *ngIf="filteredPokedex$ | async as pokedex">
     <h1 class="title">{{ pokedex.descriptions[0].description }}</h1>
-    <div class="pokeList">
+    <div class="pokeList row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
       @for (
         pokemon_entry of pokedex.pokemon_entries;
         track pokemon_entry.entry_number
       ) {
-        <app-monster-tile [pokemon]="pokemon_entry" [idDex]="pokedexId" [generation]="pokemonGeneration" />
+        <app-monster-tile class="col" [pokemon]="pokemon_entry" [idDex]="pokedexId" [generation]="pokemonGeneration" />
       }
     </div>
   </div>
