@@ -1,0 +1,222 @@
+<section id="poi-map" class="poi-map bg-black text-white pt-32 pb-56">
+  <div class="inner container-lg">
+    <h2 class="font-russoOne">Carte des points d'intérêt</h2>
+
+    <div class="poi-tabs">
+      <div class="poi-tabs-group">
+        <span class="poi-label">Génération</span>
+        <div class="poi-tabs-row" role="group" aria-label="Génération">
+          @for (generation of generations; track generation.generation) {
+            <button
+              type="button"
+              class="poi-tab"
+              [attr.aria-pressed]="$index === generationIndex()"
+              (click)="selectGeneration($index)"
+            >
+              {{ generation.label }}
+            </button>
+          }
+        </div>
+      </div>
+
+      <div class="poi-tabs-group">
+        <span class="poi-label">Carte</span>
+        <div
+          class="poi-tabs-row poi-tabs-row--scroll"
+          role="group"
+          aria-label="Carte"
+        >
+          @for (map of currentGeneration().maps; track map.id) {
+            <button
+              type="button"
+              class="poi-tab"
+              [attr.aria-pressed]="$index === mapIndex()"
+              (click)="selectMap($index)"
+            >
+              {{ map.label }}
+              @if (matchCounts()[$index] > 0) {
+                <span class="poi-badge">{{ matchCounts()[$index] }}</span>
+              }
+            </button>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="poi-stage">
+      <div class="poi-map-column">
+        <div class="poi-frame" #mapFrame>
+          <canvas
+            #mapCanvas
+            role="img"
+            [attr.aria-label]="
+              'Carte de ' +
+              currentMap().label +
+              ' : ' +
+              plural(stats().locations, 'lieu', 'lieux')
+            "
+            (pointermove)="onPointerMove($event)"
+            (pointerleave)="onPointerLeave()"
+            (click)="onCanvasClick($event)"
+          ></canvas>
+          @if (tooltip(); as tip) {
+            <div
+              class="poi-tooltip"
+              [class.poi-tooltip--left]="tip.alignLeft"
+              [style.left.%]="tip.left"
+              [style.top.%]="tip.top"
+            >
+              <strong>{{ tip.name }}</strong>
+              <span>{{ tip.detail }}</span>
+            </div>
+          }
+        </div>
+
+        <div class="poi-map-meta">
+          <div class="poi-legend">
+            <span
+              ><i class="poi-dot poi-dot--full"></i>Lieu avec zones de
+              rencontre</span
+            >
+            <span
+              ><i class="poi-dot poi-dot--empty"></i>Lieu sans zone de
+              rencontre</span
+            >
+          </div>
+          <span class="poi-stats">
+            {{ plural(stats().locations, "lieu", "lieux") }} ·
+            {{ plural(stats().points, "point", "points") }}
+            @if (stats().withoutArea > 0) {
+              · {{ stats().withoutArea }} sans zone
+            }
+          </span>
+        </div>
+      </div>
+
+      <aside class="poi-panel" aria-label="Lieux">
+        <div class="poi-tools">
+          <input
+            #searchInput
+            id="poi-search"
+            class="poi-search"
+            type="search"
+            placeholder="Rechercher un lieu"
+            autocomplete="off"
+            aria-label="Rechercher un lieu"
+            [value]="query()"
+            (input)="query.set(searchInput.value)"
+          />
+          <div class="poi-checks">
+            <label for="poi-names">
+              <input
+                #namesInput
+                id="poi-names"
+                type="checkbox"
+                [checked]="showNames()"
+                (change)="showNames.set(namesInput.checked)"
+              />
+              Afficher les noms
+            </label>
+            <label for="poi-grid">
+              <input
+                #gridInput
+                id="poi-grid"
+                type="checkbox"
+                [checked]="showGrid()"
+                (change)="showGrid.set(gridInput.checked)"
+              />
+              Grille
+            </label>
+          </div>
+        </div>
+
+        @if (selectedLocation(); as location) {
+          <div class="poi-detail">
+            <h3 class="poi-detail-title">{{ location.name }}</h3>
+            <span class="poi-slug">{{ location.slug }}</span>
+
+            <span class="poi-label">
+              {{
+                plural(
+                  location.points.length + location.offMapPoints.length,
+                  "point",
+                  "points"
+                )
+              }}
+              sur la carte
+            </span>
+            <ul class="poi-detail-list">
+              @for (point of location.points; track $index) {
+                <li>
+                  <span>{{ cellLabel(currentMap(), point) }}</span>
+                  <code>{{ point[0] }} % · {{ point[1] }} %</code>
+                </li>
+              }
+              @for (point of location.offMapPoints; track $index) {
+                <li>
+                  <span>Hors de la carte</span>
+                  <code>{{ point[0] }} % · {{ point[1] }} %</code>
+                </li>
+              }
+            </ul>
+
+            <span class="poi-label">
+              @if (location.areas.length) {
+                {{
+                  plural(
+                    location.areas.length,
+                    "zone de rencontre",
+                    "zones de rencontre"
+                  )
+                }}
+              } @else {
+                Zones de rencontre
+              }
+            </span>
+            @if (location.areas.length) {
+              <ul class="poi-detail-list">
+                @for (area of location.areas; track area.id) {
+                  <li>
+                    <span>{{ area.label }}</span>
+                    <code>#{{ area.id }}</code>
+                  </li>
+                }
+              </ul>
+            } @else {
+              <p class="poi-note">
+                Aucune zone de rencontre enregistrée pour ce lieu.
+              </p>
+            }
+
+            <button type="button" class="poi-clear" (click)="clearSelection()">
+              Effacer la sélection
+            </button>
+          </div>
+        }
+
+        <div class="poi-list">
+          @for (entry of visibleLocations(); track entry.index) {
+            <button
+              type="button"
+              class="poi-item"
+              [attr.aria-current]="
+                entry.index === selectedIndex() ? 'true' : null
+              "
+              (click)="selectLocation(entry.index)"
+              (mouseenter)="hoverLocation(entry.index)"
+              (mouseleave)="hoverLocation(-1)"
+            >
+              <span>{{ entry.location.name }}</span>
+              <span class="poi-item-meta">{{ listMeta(entry.location) }}</span>
+            </button>
+          } @empty {
+            <div class="poi-empty">
+              Aucun lieu de cette carte ne correspond à «
+              {{ query().trim() }} ».
+            </div>
+          }
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

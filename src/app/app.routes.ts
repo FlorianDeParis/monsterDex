@@ -5,6 +5,7 @@ import { MonsterDexListPageComponent } from './features/pokedex/list/dex/monster
 import { MonsterListComponent } from './features/pokedex/list/monster/monster-list/monster-list.component';
 import { WorldMapComponent } from './features/map/world-map/world-map.component';
 import { MapTestComponent } from './features/debug/map/map-test.component';
+import { PoiMapComponent } from './features/map/poi-map/poi-map.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'pokedex/:region', component: MonsterListComponent }, // region => pokedex id
   { path: 'pokemon/:idMonster/:generation', component: MonsterPageComponent,},
   { path: 'debug-map/:idMonster/:idPokeGen/:idDex', component: MapTestComponent }, // world map testing
+  { path: 'poi-map', component: PoiMapComponent }, // map of all points of interest
 ];
