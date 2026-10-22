@@ -1,19 +1,23 @@
 import { FlavorText } from './../../models/PokeAPI/utilities.type';
-import { PokeApiService } from './../poke-api.service';
-import { Injectable } from '@angular/core';
-import { toRoman } from 'typescript-roman-numbers-converter';
+import { NamedAPIResource } from '../../models/PokeAPI/utilities.type';
 import {
   LocationAreaEncounter,
   PokemonSprites,
   PokemonSpritesVersions,
 } from '../../models/PokeAPI/pokemon.type';
-import { NamedAPIResource } from '../../models/PokeAPI/utilities.type';
-import { ToasterService } from '../toaster.service';
-
-import { tap, Observable, map } from 'rxjs';
-import { EncountersService } from './encounters.service';
-
+import { computed, effect, Injectable } from '@angular/core';
 import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
+import { tap, Observable, map } from 'rxjs';
+import { PokeApiService } from './../poke-api.service';
+import { ToasterService } from '../toaster.service';
+import {
+  EncountersService,
+  ExtendedLocationAreaEncounter
+} from './encounters.service';
+import { PoiMapService } from './poi-map.service';
+import { MapService } from './map.service';
+
+import { toRoman } from 'typescript-roman-numbers-converter';
 
 import * as gameGenList from '../../../../../public/assets/data/generations/game-list.json';
 
@@ -25,6 +29,7 @@ interface TableCell {
 }
 
 export interface TableRow {
+  // mainZone: TableCell;
   zone: TableCell;
   version: TableCell;
   method: TableCell;
@@ -43,7 +48,9 @@ export class PokemonPageService {
     private toaster: ToasterService,
     private encountersService: EncountersService,
     private sanitizer: DomSanitizer,
-    private pokeApiService: PokeApiService
+    private pokeApiService: PokeApiService,
+    private mapService: MapService,
+    private poiMapService: PoiMapService,
   ) {}
 
   getPokemonArtworkByIdGeneration(
@@ -113,22 +120,23 @@ export class PokemonPageService {
     return filtered;
   }
 
-  getFlattenedEncountersList(
+  getTableEncountersList(
     pokemonId: string,
     generation: string,
   ): Observable<TableRow[]> {
     return this.encountersService.getEncountersByGeneration(pokemonId, generation).pipe(
       map((encounters) =>
-        this.buildTable(encounters)
+        this.buildTableList(encounters, generation)
       )
     );
   }
 
 
-  private buildTable(data: LocationAreaEncounter[]): TableRow[] {
+  private buildTableList(data: LocationAreaEncounter[], generation: string): TableRow[] {
     const rows: TableRow[] = [];
 
     data.forEach(LocationAreaEncounter => {
+      console.log(LocationAreaEncounter);
       const zoneName = LocationAreaEncounter.location_area.name;
 
       // Nombre total de lignes pour la zone
@@ -140,13 +148,14 @@ export class PokemonPageService {
       let isFirstZoneRow = true;
 
       LocationAreaEncounter.version_details.forEach(versionDetail => {
+
+
         const versionName = versionDetail.version.name;
         const versionRowspan = versionDetail.encounter_details.length;
 
         let isFirstVersionRow = true;
 
         versionDetail.encounter_details.forEach(encounter => {
-          console.log(encounter),
           rows.push({
             zone: {
               value: zoneName,
@@ -178,5 +187,9 @@ export class PokemonPageService {
     });
 
     return rows;
+  }
+
+  private combineMainZonesAndEncounters(){
+
   }
 }

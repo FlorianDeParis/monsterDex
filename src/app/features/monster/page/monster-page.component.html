@@ -67,8 +67,8 @@
       </section>
 
       <app-world-map [pokemonGeneration]="idPokeGen" [pokemonId]="idMonster" />
-      @if(pokemonFlattenedEncountersList$ | async; as flattenedPokemonEncountersList){
-        @if(flattenedPokemonEncountersList.length > 0){
+      @if(getTableEncountersList$ | async; as getTableEncountersList){
+        @if(getTableEncountersList.length > 0){
           <div class="encounters-table container-lg overflow-x-auto py-32">
             <table class="encounters table overflow-x-auto">
               <thead>
@@ -82,8 +82,9 @@
                 </tr>
               </thead>
               <tbody>
-                @for(row of flattenedPokemonEncountersList; track row.zone.value){
+                @for(row of getTableEncountersList; track row.zone.value){
                   <tr class="{{ $first ? '' : (!row.zone.hidden ? 'mt-32' : (!row.version.hidden ? 'mt-16' : 'mt-8')) }}">
+
                     <td *ngIf="!row.zone.hidden"
                         [attr.rowspan]="row.zone.rowspan"
                         data-label="Zone"

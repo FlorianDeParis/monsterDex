@@ -35,7 +35,9 @@ const DATASETMATRIX: {
   3: generation3MTX,
 };
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class MapService {
   readonly dataset = signal<GenerationDataSet>(generation1);
   readonly datasetmatrix = signal<GenerationDataSet>(generation1MTX);
@@ -52,6 +54,11 @@ export class MapService {
         this.datasetmatrix.set(DATASETMATRIX[generation]);
       }
     );
+  }
+
+  getDataset(generation: number){
+    this.dataset.set(DATASET[generation]);
+    return this.dataset();
   }
 
   getMapMarkers(
@@ -108,6 +115,22 @@ export class MapService {
     );
 
     return mapMarkerList;
+  }
+
+  getMainZoneForEachSubZone(regions: Region[]): string[]{
+    let regionMatching:string[] = [];
+
+    regions.map(region => {
+      region.subregions.map(subregion => {
+        subregion.locations.map(location => {
+          location.locationareas.map(locationarea => {
+            regionMatching[+locationarea.name] = location.name;
+          })
+        })
+      })
+    });
+
+    return regionMatching;
   }
 
   // To be rebased later

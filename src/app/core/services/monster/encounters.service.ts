@@ -8,6 +8,10 @@ import { GenerationGames } from '../../models/monsterDex.type';
 
 import * as encountersIcons from '../../../../../public/assets/data/encounters/types.json';
 
+export interface ExtendedLocationAreaEncounter extends LocationAreaEncounter{
+  main_zone: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })

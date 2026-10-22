@@ -145,7 +145,7 @@ export class PoiMapService {
   }
 
   // "celadon-city-celadon-mansion" => "Celadon Mansion"
-  private areaLabel(locationSlug: string, areaSlug: string): string {
+  public areaLabel(locationSlug: string, areaSlug: string): string {
     const prefix = locationSlug + '-';
     const rest = areaSlug.startsWith(prefix)
       ? areaSlug.slice(prefix.length)

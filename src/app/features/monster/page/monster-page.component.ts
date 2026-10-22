@@ -45,7 +45,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   pokemonSelectedSprite!: string;
   pokemonEncountersList$!: Observable<LocationAreaEncounter[]>;
   pokemonFlavorTextList!: FlavorText[];
-  pokemonFlattenedEncountersList$!: Observable<TableRow[]>;
+  getTableEncountersList$!: Observable<TableRow[]>;
 
   @ViewChild('audioPlayer', { static: false })
   audio!: ElementRef<HTMLAudioElement>;
@@ -135,7 +135,7 @@ export class MonsterPageComponent implements OnInit, AfterViewInit {
   }
 
   setFlattenedEncountersList$(id:number, generation:string): void {
-    this.pokemonFlattenedEncountersList$ = this.pokemonPageService.getFlattenedEncountersList(id.toString(), generation);
+    this.getTableEncountersList$ = this.pokemonPageService.getTableEncountersList(id.toString(), generation);
   }
 
   setPokemonCrySource(monsterDetails:Pokemon): string {
