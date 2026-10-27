@@ -11,669 +11,614 @@
           "locations": [
             {
               "name": "blackthorn-city",
-              "coordinates": [[15,3]],
-              "locationareas": [
-                {
-                  "id": 249,
-                  "name": "blackthorn-city-area"
-                }
-              ]
+              "coordinates": [[15, 3]],
+              "area": "blackthorn-city-area",
+              "areaId": 249
             },
             {
               "name": "burned-tower",
-              "coordinates": [[7,3]],
-              "locationareas": [
-                {
-                  "id": 212,
-                  "name": "burned-tower-1f"
-                },
-                {
-                  "id": 213,
-                  "name": "burned-tower-b1f"
-                }
-              ]
+              "coordinates": [[7, 3]],
+              "area": "burned-tower-1f",
+              "areaId": 212
+            },
+            {
+              "name": "burned-tower",
+              "coordinates": [[7, 3]],
+              "area": "burned-tower-b1f",
+              "areaId": 213
             },
             {
               "name": "cherrygrove-city",
-              "coordinates": [[11,10]],
-              "locationareas": [
-                {
-                  "id": 186,
-                  "name": "cherrygrove-city-area"
-                }
-              ]
+              "coordinates": [[11, 10]],
+              "area": "cherrygrove-city-area",
+              "areaId": 186
             },
             {
               "name": "cianwood-city",
-              "coordinates": [[1,10]],
-              "locationareas": [
-                {
-                  "id": 235,
-                  "name": "cianwood-city-area"
-                },
-                {
-                  "id": 767,
-                  "name": "cianwood-city-manias-house"
-                },
-                {
-                  "id": 773,
-                  "name": "cianwood-city-kirks-house"
-                },
-                {
-                  "id": 836,
-                  "name": "cianwood-city-pokemon-center"
-                }
-              ]
+              "coordinates": [[1, 10]],
+              "area": "cianwood-city-area",
+              "areaId": 235
+            },
+            {
+              "name": "cianwood-city",
+              "coordinates": [[1, 10]],
+              "area": "cianwood-city-manias-house",
+              "areaId": 767
+            },
+            {
+              "name": "cianwood-city",
+              "coordinates": [[1, 10]],
+              "area": "cianwood-city-kirks-house",
+              "areaId": 773
+            },
+            {
+              "name": "cianwood-city",
+              "coordinates": [[1, 10]],
+              "area": "cianwood-city-pokemon-center",
+              "areaId": 836
             },
             {
               "name": "dark-cave",
-              "coordinates": [[11,5],[14,7],[15,4]],
-              "locationareas": [
-                {
-                  "id": 253,
-                  "name": "dark-cave-violet-city-entrance"
-                },
-                {
-                  "id": 254,
-                  "name": "dark-cave-blackthorn-city-entrance"
-                }
-              ]
+              "coordinates": [
+                [11, 5],
+                [14, 7],
+                [15, 4]
+              ],
+              "area": "dark-cave-violet-city-entrance",
+              "areaId": 253
+            },
+            {
+              "name": "dark-cave",
+              "coordinates": [
+                [11, 5],
+                [14, 7],
+                [15, 4]
+              ],
+              "area": "dark-cave-blackthorn-city-entrance",
+              "areaId": 254
             },
             {
               "name": "dragons-den",
-              "coordinates": [[15,2]],
-              "locationareas": [
-                {
-                  "id": 250,
-                  "name": "dragons-den-area"
-                }
-              ]
+              "coordinates": [[15, 2]],
+              "area": "dragons-den-area",
+              "areaId": 250
             },
             {
               "name": "ecruteak-city",
-              "coordinates": [[7,3]],
-              "locationareas": [
-                {
-                  "id": 211,
-                  "name": "ecruteak-city-area"
-                }
-              ]
+              "coordinates": [[7, 3]],
+              "area": "ecruteak-city-area",
+              "areaId": 211
             },
             {
               "name": "ice-path",
-              "coordinates": [[14,2]],
-              "locationareas": [
-                {
-                  "id": 244,
-                  "name": "ice-path-1f"
-                },
-                {
-                  "id": 245,
-                  "name": "ice-path-b1f"
-                },
-                {
-                  "id": 246,
-                  "name": "ice-path-b2f"
-                },
-                {
-                  "id": 247,
-                  "name": "ice-path-b3f"
-                }
-              ]
+              "coordinates": [[14, 2]],
+              "area": "ice-path-1f",
+              "areaId": 244
+            },
+            {
+              "name": "ice-path",
+              "coordinates": [[14, 2]],
+              "area": "ice-path-b1f",
+              "areaId": 245
+            },
+            {
+              "name": "ice-path",
+              "coordinates": [[14, 2]],
+              "area": "ice-path-b2f",
+              "areaId": 246
+            },
+            {
+              "name": "ice-path",
+              "coordinates": [[14, 2]],
+              "area": "ice-path-b3f",
+              "areaId": 247
             },
             {
               "name": "ilex-forest",
-              "coordinates": [[5,13]],
-              "locationareas": [
-                {
-                  "id": 204,
-                  "name": "ilex-forest-area"
-                }
-              ]
+              "coordinates": [[5, 13]],
+              "area": "ilex-forest-area",
+              "areaId": 204
             },
             {
               "name": "lake-of-rage",
-              "coordinates": [[12,1]],
-              "locationareas": [
-                {
-                  "id": 242,
-                  "name": "lake-of-rage-area"
-                }
-              ]
+              "coordinates": [[12, 1]],
+              "area": "lake-of-rage-area",
+              "areaId": 242
             },
             {
               "name": "mt-mortar",
-              "coordinates": [[9,3]],
-              "locationareas": [
-                {
-                  "id": 237,
-                  "name": "mt-mortar-1f"
-                },
-                {
-                  "id": 238,
-                  "name": "mt-mortar-lower-cave"
-                },
-                {
-                  "id": 239,
-                  "name": "mt-mortar-upper-cave"
-                },
-                {
-                  "id": 240,
-                  "name": "mt-mortar-b1f"
-                }
-              ]
+              "coordinates": [[9, 3]],
+              "area": "mt-mortar-1f",
+              "areaId": 237
+            },
+            {
+              "name": "mt-mortar",
+              "coordinates": [[9, 3]],
+              "area": "mt-mortar-lower-cave",
+              "areaId": 238
+            },
+            {
+              "name": "mt-mortar",
+              "coordinates": [[9, 3]],
+              "area": "mt-mortar-upper-cave",
+              "areaId": 239
+            },
+            {
+              "name": "mt-mortar",
+              "coordinates": [[9, 3]],
+              "area": "mt-mortar-b1f",
+              "areaId": 240
             },
             {
               "name": "mt-silver",
-              "coordinates": [[17,6]],
-              "locationareas": [
-                {
-                  "id": 263,
-                  "name": "mt-silver-2f"
-                },
-                {
-                  "id": 264,
-                  "name": "mt-silver-1f-top"
-                },
-                {
-                  "id": 265,
-                  "name": "mt-silver-4f"
-                },
-                {
-                  "id": 269,
-                  "name": "mt-silver-outside"
-                },
-                {
-                  "id": 270,
-                  "name": "mt-silver-1f"
-                },
-                {
-                  "id": 271,
-                  "name": "mt-silver-mountainside"
-                },
-                {
-                  "id": 272,
-                  "name": "mt-silver-3f"
-                },
-                {
-                  "id": 273,
-                  "name": "mt-silver-top"
-                }
-              ]
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-2f",
+              "areaId": 263
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-1f-top",
+              "areaId": 264
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-4f",
+              "areaId": 265
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-outside",
+              "areaId": 269
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-1f",
+              "areaId": 270
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-mountainside",
+              "areaId": 271
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-3f",
+              "areaId": 272
+            },
+            {
+              "name": "mt-silver",
+              "coordinates": [[17, 6]],
+              "area": "mt-silver-top",
+              "areaId": 273
             },
             {
               "name": "national-park",
-              "coordinates": [[5,5]],
-              "locationareas": [
-                {
-                  "id": 207,
-                  "name": "national-park-area"
-                }
-              ]
+              "coordinates": [[5, 5]],
+              "area": "national-park-area",
+              "areaId": 207
             },
             {
               "name": "new-bark-town",
-              "coordinates": [[16,10]],
-              "locationareas": [
-                {
-                  "id": 184,
-                  "name": "new-bark-town-area"
-                }
-              ]
+              "coordinates": [[16, 10]],
+              "area": "new-bark-town-area",
+              "areaId": 184
             },
             {
               "name": "olivine-city",
-              "coordinates": [[3,5]],
-              "locationareas": [
-                {
-                  "id": 224,
-                  "name": "olivine-city-area"
-                }
-              ]
+              "coordinates": [[3, 5]],
+              "area": "olivine-city-area",
+              "areaId": 224
             },
             {
               "name": "johto-route-29",
-              "coordinates": [[12,10],[13,10],[14,10],[15,10]],
-              "locationareas": [
-                {
-                  "id": 185,
-                  "name": "johto-route-29-area"
-                }
-              ]
+              "coordinates": [
+                [12, 10],
+                [13, 10],
+                [14, 10],
+                [15, 10]
+              ],
+              "area": "johto-route-29-area",
+              "areaId": 185
             },
             {
               "name": "johto-route-30",
-              "coordinates": [[11,5],[11,6],[11,7],[11,8],[11,9]],
-              "locationareas": [
-                {
-                  "id": 187,
-                  "name": "johto-route-30-area"
-                }
-              ]
+              "coordinates": [
+                [11, 5],
+                [11, 6],
+                [11, 7],
+                [11, 8],
+                [11, 9]
+              ],
+              "area": "johto-route-30-area",
+              "areaId": 187
             },
             {
               "name": "johto-route-31",
-              "coordinates": [[10,5]],
-              "locationareas": [
-                {
-                  "id": 188,
-                  "name": "johto-route-31-area"
-                }
-              ]
+              "coordinates": [[10, 5]],
+              "area": "johto-route-31-area",
+              "areaId": 188
             },
             {
               "name": "johto-route-32",
-              "coordinates": [[9,6],[9,7],[9,8],[9,9],[9,10],[9,11],[9,12]],
-              "locationareas": [
-                {
-                  "id": 192,
-                  "name": "johto-route-32-area"
-                }
-              ]
+              "coordinates": [
+                [9, 6],
+                [9, 7],
+                [9, 8],
+                [9, 9],
+                [9, 10],
+                [9, 11],
+                [9, 12]
+              ],
+              "area": "johto-route-32-area",
+              "areaId": 192
             },
             {
               "name": "johto-route-33",
-              "coordinates": [[8,13]],
-              "locationareas": [
-                {
-                  "id": 201,
-                  "name": "johto-route-33-area"
-                }
-              ]
+              "coordinates": [[8, 13]],
+              "area": "johto-route-33-area",
+              "areaId": 201
             },
             {
               "name": "johto-route-34",
-              "coordinates": [[5,10],[5,11],[5,12],[5,13]],
-              "locationareas": [
-                {
-                  "id": 205,
-                  "name": "johto-route-34-area"
-                }
-              ]
+              "coordinates": [
+                [5, 10],
+                [5, 11],
+                [5, 12],
+                [5, 13]
+              ],
+              "area": "johto-route-34-area",
+              "areaId": 205
             },
             {
               "name": "johto-route-35",
-              "coordinates": [[5,6],[5,7],[5,8]],
-              "locationareas": [
-                {
-                  "id": 206,
-                  "name": "johto-route-35-area"
-                }
-              ]
+              "coordinates": [
+                [5, 6],
+                [5, 7],
+                [5, 8]
+              ],
+              "area": "johto-route-35-area",
+              "areaId": 206
             },
             {
               "name": "johto-route-36",
-              "coordinates": [[6,5],[7,5],[8,5]],
-              "locationareas": [
-                {
-                  "id": 209,
-                  "name": "johto-route-36-area"
-                }
-              ]
+              "coordinates": [
+                [6, 5],
+                [7, 5],
+                [8, 5]
+              ],
+              "area": "johto-route-36-area",
+              "areaId": 209
             },
             {
               "name": "johto-route-37",
-              "coordinates": [[7,4]],
-              "locationareas": [
-                {
-                  "id": 210,
-                  "name": "johto-route-37-area"
-                }
-              ]
+              "coordinates": [[7, 4]],
+              "area": "johto-route-37-area",
+              "areaId": 210
             },
             {
               "name": "johto-route-38",
-              "coordinates": [[4,3],[5,3],[6,3]],
-              "locationareas": [
-                {
-                  "id": 222,
-                  "name": "johto-route-38-area"
-                }
-              ]
+              "coordinates": [
+                [4, 3],
+                [5, 3],
+                [6, 3]
+              ],
+              "area": "johto-route-38-area",
+              "areaId": 222
             },
             {
               "name": "johto-route-39",
-              "coordinates": [[3,3],[3,4]],
-              "locationareas": [
-                {
-                  "id": 223,
-                  "name": "johto-route-39-area"
-                }
-              ]
+              "coordinates": [
+                [3, 3],
+                [3, 4]
+              ],
+              "area": "johto-route-39-area",
+              "areaId": 223
             },
             {
               "name": "johto-sea-route-40",
-              "coordinates": [[2,5],[2,6],[2,7],[2,8]],
-              "locationareas": [
-                {
-                  "id": 225,
-                  "name": "johto-sea-route-40-area"
-                }
-              ]
+              "coordinates": [
+                [2, 5],
+                [2, 6],
+                [2, 7],
+                [2, 8]
+              ],
+              "area": "johto-sea-route-40-area",
+              "areaId": 225
             },
             {
               "name": "johto-sea-route-41",
-              "coordinates": [[2,9],[2,10]],
-              "locationareas": [
-                {
-                  "id": 226,
-                  "name": "johto-sea-route-41-area"
-                }
-              ]
+              "coordinates": [
+                [2, 9],
+                [2, 10]
+              ],
+              "area": "johto-sea-route-41-area",
+              "areaId": 226
             },
             {
               "name": "johto-route-42",
-              "coordinates": [[8,3],[10,3],[11,3]],
-              "locationareas": [
-                {
-                  "id": 236,
-                  "name": "johto-route-42-area"
-                }
-              ]
+              "coordinates": [
+                [8, 3],
+                [10, 3],
+                [11, 3]
+              ],
+              "area": "johto-route-42-area",
+              "areaId": 236
             },
             {
               "name": "johto-route-43",
-              "coordinates": [[12,2]],
-              "locationareas": [
-                {
-                  "id": 241,
-                  "name": "johto-route-43-area"
-                }
-              ]
+              "coordinates": [[12, 2]],
+              "area": "johto-route-43-area",
+              "areaId": 241
             },
             {
               "name": "johto-route-44",
-              "coordinates": [[13,3],[14,3]],
-              "locationareas": [
-                {
-                  "id": 243,
-                  "name": "johto-route-44-area"
-                }
-              ]
+              "coordinates": [
+                [13, 3],
+                [14, 3]
+              ],
+              "area": "johto-route-44-area",
+              "areaId": 243
             },
             {
               "name": "johto-route-45",
-              "coordinates": [[15,4],[15,5],[15,6],[15,7]],
-              "locationareas": [
-                {
-                  "id": 251,
-                  "name": "johto-route-45-area"
-                }
-              ]
+              "coordinates": [
+                [15, 4],
+                [15, 5],
+                [15, 6],
+                [15, 7]
+              ],
+              "area": "johto-route-45-area",
+              "areaId": 251
             },
             {
               "name": "johto-route-46",
-              "coordinates": [[14,7],[14,8],[14,9]],
-              "locationareas": [
-                {
-                  "id": 252,
-                  "name": "johto-route-46-area"
-                }
-              ]
+              "coordinates": [
+                [14, 7],
+                [14, 8],
+                [14, 9]
+              ],
+              "area": "johto-route-46-area",
+              "areaId": 252
             },
             {
               "name": "ruins-of-alph",
-              "coordinates": [[8,7]],
-              "locationareas": [
-                {
-                  "id": 193,
-                  "name": "ruins-of-alph-outside"
-                },
-                {
-                  "id": 194,
-                  "name": "ruins-of-alph-interior-a"
-                },
-                {
-                  "id": 195,
-                  "name": "ruins-of-alph-interior-b"
-                },
-                {
-                  "id": 196,
-                  "name": "ruins-of-alph-interior-c"
-                },
-                {
-                  "id": 197,
-                  "name": "ruins-of-alph-interior-d"
-                }
-              ]
+              "coordinates": [[8, 7]],
+              "area": "ruins-of-alph-outside",
+              "areaId": 193
+            },
+            {
+              "name": "ruins-of-alph",
+              "coordinates": [[8, 7]],
+              "area": "ruins-of-alph-interior-a",
+              "areaId": 194
+            },
+            {
+              "name": "ruins-of-alph",
+              "coordinates": [[8, 7]],
+              "area": "ruins-of-alph-interior-b",
+              "areaId": 195
+            },
+            {
+              "name": "ruins-of-alph",
+              "coordinates": [[8, 7]],
+              "area": "ruins-of-alph-interior-c",
+              "areaId": 196
+            },
+            {
+              "name": "ruins-of-alph",
+              "coordinates": [[8, 7]],
+              "area": "ruins-of-alph-interior-d",
+              "areaId": 197
             },
             {
               "name": "slowpoke-well",
-              "coordinates": [[7,12]],
-              "locationareas": [
-                {
-                  "id": 202,
-                  "name": "slowpoke-well-1f"
-                },
-                {
-                  "id": 203,
-                  "name": "slowpoke-well-b1f"
-                }
-              ]
+              "coordinates": [[7, 12]],
+              "area": "slowpoke-well-1f",
+              "areaId": 202
+            },
+            {
+              "name": "slowpoke-well",
+              "coordinates": [[7, 12]],
+              "area": "slowpoke-well-b1f",
+              "areaId": 203
             },
             {
               "name": "sprout-tower",
-              "coordinates": [[9,5]],
-              "locationareas": [
-                {
-                  "id": 190,
-                  "name": "sprout-tower-2f"
-                },
-                {
-                  "id": 191,
-                  "name": "sprout-tower-3f"
-                }
-              ]
+              "coordinates": [[9, 5]],
+              "area": "sprout-tower-2f",
+              "areaId": 190
+            },
+            {
+              "name": "sprout-tower",
+              "coordinates": [[9, 5]],
+              "area": "sprout-tower-3f",
+              "areaId": 191
             },
             {
               "name": "bell-tower",
-              "coordinates": [[7,2]],
-              "locationareas": [
-                {
-                  "id": 214,
-                  "name": "bell-tower-2f"
-                },
-                {
-                  "id": 215,
-                  "name": "bell-tower-3f"
-                },
-                {
-                  "id": 216,
-                  "name": "bell-tower-4f"
-                },
-                {
-                  "id": 217,
-                  "name": "bell-tower-5f"
-                },
-                {
-                  "id": 218,
-                  "name": "bell-tower-6f"
-                },
-                {
-                  "id": 219,
-                  "name": "bell-tower-7f"
-                },
-                {
-                  "id": 220,
-                  "name": "bell-tower-8f"
-                },
-                {
-                  "id": 221,
-                  "name": "bell-tower-9f"
-                },
-                {
-                  "id": 268,
-                  "name": "bell-tower-10f"
-                },
-                {
-                  "id": 793,
-                  "name": "bell-tower-roof"
-                },
-                {
-                  "id": 805,
-                  "name": "bell-tower-1f"
-                }
-              ]
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-2f",
+              "areaId": 214
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-3f",
+              "areaId": 215
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-4f",
+              "areaId": 216
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-5f",
+              "areaId": 217
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-6f",
+              "areaId": 218
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-7f",
+              "areaId": 219
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-8f",
+              "areaId": 220
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-9f",
+              "areaId": 221
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-10f",
+              "areaId": 268
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-roof",
+              "areaId": 793
+            },
+            {
+              "name": "bell-tower",
+              "coordinates": [[7, 2]],
+              "area": "bell-tower-1f",
+              "areaId": 805
             },
             {
               "name": "tohjo-falls",
-              "coordinates": [[17,9]],
-              "locationareas": [
-                {
-                  "id": 316,
-                  "name": "tohjo-falls-area"
-                }
-              ]
+              "coordinates": [[17, 9]],
+              "area": "tohjo-falls-area",
+              "areaId": 316
             },
             {
               "name": "union-cave",
-              "coordinates": [[9,13]],
-              "locationareas": [
-                {
-                  "id": 198,
-                  "name": "union-cave-1f"
-                },
-                {
-                  "id": 199,
-                  "name": "union-cave-b1f"
-                },
-                {
-                  "id": 200,
-                  "name": "union-cave-b2f"
-                }
-              ]
+              "coordinates": [[9, 13]],
+              "area": "union-cave-1f",
+              "areaId": 198
+            },
+            {
+              "name": "union-cave",
+              "coordinates": [[9, 13]],
+              "area": "union-cave-b1f",
+              "areaId": 199
+            },
+            {
+              "name": "union-cave",
+              "coordinates": [[9, 13]],
+              "area": "union-cave-b2f",
+              "areaId": 200
             },
             {
               "name": "violet-city",
-              "coordinates": [[9,5]],
-              "locationareas": [
-                {
-                  "id": 189,
-                  "name": "violet-city-area"
-                },
-                {
-                  "id": 790,
-                  "name": "violet-city-poke-mart"
-                },
-                {
-                  "id": 791,
-                  "name": "violet-city-pokemon-center"
-                }
-              ]
+              "coordinates": [[9, 5]],
+              "area": "violet-city-area",
+              "areaId": 189
+            },
+            {
+              "name": "violet-city",
+              "coordinates": [[9, 5]],
+              "area": "violet-city-poke-mart",
+              "areaId": 790
+            },
+            {
+              "name": "violet-city",
+              "coordinates": [[9, 5]],
+              "area": "violet-city-pokemon-center",
+              "areaId": 791
             },
             {
               "name": "whirl-islands",
-              "coordinates": [[2,9]],
-              "locationareas": [
-                {
-                  "id": 227,
-                  "name": "whirl-islands-1f"
-                },
-                {
-                  "id": 228,
-                  "name": "whirl-islands-b1f"
-                },
-                {
-                  "id": 229,
-                  "name": "whirl-islands-empty-floor-x"
-                },
-                {
-                  "id": 230,
-                  "name": "whirl-islands-b2f"
-                },
-                {
-                  "id": 231,
-                  "name": "whirl-islands-empty-floor-y"
-                },
-                {
-                  "id": 232,
-                  "name": "whirl-islands-b3f"
-                }
-              ]
+              "coordinates": [[2, 9]],
+              "area": "whirl-islands-1f",
+              "areaId": 227
+            },
+            {
+              "name": "whirl-islands",
+              "coordinates": [[2, 9]],
+              "area": "whirl-islands-b1f",
+              "areaId": 228
+            },
+            {
+              "name": "whirl-islands",
+              "coordinates": [[2, 9]],
+              "area": "whirl-islands-empty-floor-x",
+              "areaId": 229
+            },
+            {
+              "name": "whirl-islands",
+              "coordinates": [[2, 9]],
+              "area": "whirl-islands-b2f",
+              "areaId": 230
+            },
+            {
+              "name": "whirl-islands",
+              "coordinates": [[2, 9]],
+              "area": "whirl-islands-empty-floor-y",
+              "areaId": 231
+            },
+            {
+              "name": "whirl-islands",
+              "coordinates": [[2, 9]],
+              "area": "whirl-islands-b3f",
+              "areaId": 232
             },
             {
               "name": "azalea-town",
-              "coordinates": [[7,13]],
-              "locationareas": [
-                {
-                  "id": 798,
-                  "name": "azalea-town-area"
-                }
-              ]
+              "coordinates": [[7, 13]],
+              "area": "azalea-town-area",
+              "areaId": 798
             },
             {
               "name": "goldenrod-city",
-              "coordinates": [[5,9]],
-              "locationareas": [
-                {
-                  "id": 765,
-                  "name": "goldenrod-city-north-gate"
-                },
-                {
-                  "id": 766,
-                  "name": "goldenrod-city-bills-house"
-                }
-              ]
+              "coordinates": [[5, 9]],
+              "area": "goldenrod-city-north-gate",
+              "areaId": 765
+            },
+            {
+              "name": "goldenrod-city",
+              "coordinates": [[5, 9]],
+              "area": "goldenrod-city-bills-house",
+              "areaId": 766
             },
             {
               "name": "mahogany-town",
-              "coordinates": [[12,3]],
-              "locationareas": [
-                {
-                  "id": 800,
-                  "name": "mahogany-town-area"
-                }
-              ]
-            },
-            {
-              "name": "johto-lighthouse",
-              "coordinates": [[3,5]],
-              "locationareas": []
+              "coordinates": [[12, 3]],
+              "area": "mahogany-town-area",
+              "areaId": 800
             },
             {
               "name": "team-rocket-hq",
-              "coordinates": [[12,3]],
-              "locationareas": [
-                {
-                  "id": 841,
-                  "name": "team-rocket-hq-area"
-                }
-              ]
-            },
-            {
-              "name": "goldenrod-tunnel",
-              "coordinates": [[5,9]],
-              "locationareas": []
-            },
-            {
-              "name": "mt-silver-cave",
-              "coordinates": [[17,6]],
-              "locationareas": []
-            },
-            {
-              "name": "ss-aqua",
-              "coordinates": [[3,5]],
-              "locationareas": []
-            },
-            {
-              "name": "bellchime-trail",
-              "coordinates": [[7,2]],
-              "locationareas": []
-            },
-            {
-              "name": "radio-tower",
-              "coordinates": [[5,9]],
-              "locationareas": []
+              "coordinates": [[12, 3]],
+              "area": "team-rocket-hq-area",
+              "areaId": 841
             },
             {
               "name": "roaming-johto",
-              "coordinates": [[0,0]],
-              "locationareas": [
-                {
-                  "id": 795,
-                  "name": "roaming-johto-area"
-                }
-              ]
+              "coordinates": [[0, 0]],
+              "area": "roaming-johto-area",
+              "areaId": 795
             }
           ]
         }
@@ -691,114 +636,98 @@
             {
               "name": "celadon-city",
               "coordinates": [[8, 6]],
-              "locationareas": [
-                {
-                  "id": 283,
-                  "name": "celadon-city-area"
-                },
-                {
-                  "id": 763,
-                  "name": "celadon-city-celadon-mansion"
-                }
-              ]
+              "area": "celadon-city-area",
+              "areaId": 283
+            },
+            {
+              "name": "celadon-city",
+              "coordinates": [[8, 6]],
+              "area": "celadon-city-celadon-mansion",
+              "areaId": 763
             },
             {
               "name": "cerulean-city",
               "coordinates": [[11, 4]],
-              "locationareas": [
-                {
-                  "id": 281,
-                  "name": "cerulean-city-area"
-                }
-              ]
+              "area": "cerulean-city-area",
+              "areaId": 281
             },
             {
               "name": "cinnabar-island",
               "coordinates": [[5, 14]],
-              "locationareas": [
-                {
-                  "id": 279,
-                  "name": "cinnabar-island-area"
-                },
-                {
-                  "id": 833,
-                  "name": "cinnabar-island-cinnabar-lab"
-                }
-              ]
+              "area": "cinnabar-island-area",
+              "areaId": 279
+            },
+            {
+              "name": "cinnabar-island",
+              "coordinates": [[5, 14]],
+              "area": "cinnabar-island-cinnabar-lab",
+              "areaId": 833
             },
             {
               "name": "digletts-cave",
               "coordinates": [[6, 5]],
-              "locationareas": [
-                {
-                  "id": 317,
-                  "name": "digletts-cave-area"
-                }
-              ]
+              "area": "digletts-cave-area",
+              "areaId": 317
             },
             {
               "name": "fuchsia-city",
               "coordinates": [[10, 12]],
-              "locationareas": [
-                {
-                  "id": 284,
-                  "name": "fuchsia-city-area"
-                }
-              ]
+              "area": "fuchsia-city-area",
+              "areaId": 284
             },
             {
               "name": "mt-moon",
               "coordinates": [[8, 4]],
-              "locationareas": [
-                {
-                  "id": 256,
-                  "name": "mt-moon-mt-moon-square"
-                },
-                {
-                  "id": 290,
-                  "name": "mt-moon-1f"
-                },
-                {
-                  "id": 291,
-                  "name": "mt-moon-2f"
-                },
-                {
-                  "id": 326,
-                  "name": "mt-moon-b1f"
-                },
-                {
-                  "id": 327,
-                  "name": "mt-moon-b2f"
-                }
-              ]
+              "area": "mt-moon-mt-moon-square",
+              "areaId": 256
+            },
+            {
+              "name": "mt-moon",
+              "coordinates": [[8, 4]],
+              "area": "mt-moon-1f",
+              "areaId": 290
+            },
+            {
+              "name": "mt-moon",
+              "coordinates": [[8, 4]],
+              "area": "mt-moon-2f",
+              "areaId": 291
+            },
+            {
+              "name": "mt-moon",
+              "coordinates": [[8, 4]],
+              "area": "mt-moon-b1f",
+              "areaId": 326
+            },
+            {
+              "name": "mt-moon",
+              "coordinates": [[8, 4]],
+              "area": "mt-moon-b2f",
+              "areaId": 327
             },
             {
               "name": "pallet-town",
               "coordinates": [[5, 11]],
-              "locationareas": [
-                {
-                  "id": 285,
-                  "name": "pallet-town-area"
-                }
-              ]
+              "area": "pallet-town-area",
+              "areaId": 285
             },
             {
               "name": "rock-tunnel",
               "coordinates": [[15, 4]],
-              "locationareas": [
-                {
-                  "id": 292,
-                  "name": "rock-tunnel-1f"
-                },
-                {
-                  "id": 293,
-                  "name": "rock-tunnel-b1f"
-                },
-                {
-                  "id": 328,
-                  "name": "rock-tunnel-b2f"
-                }
-              ]
+              "area": "rock-tunnel-1f",
+              "areaId": 292
+            },
+            {
+              "name": "rock-tunnel",
+              "coordinates": [[15, 4]],
+              "area": "rock-tunnel-b1f",
+              "areaId": 293
+            },
+            {
+              "name": "rock-tunnel",
+              "coordinates": [[15, 4]],
+              "area": "rock-tunnel-b2f",
+              "areaId": 328
             },
             {
               "name": "kanto-route-1",
@@ -807,22 +736,14 @@
                 [5, 9],
                 [5, 10]
               ],
-              "locationareas": [
-                {
-                  "id": 295,
-                  "name": "kanto-route-1-area"
-                }
-              ]
+              "area": "kanto-route-1-area",
+              "areaId": 295
             },
             {
               "name": "kanto-route-10",
               "coordinates": [[15, 5]],
-              "locationareas": [
-                {
-                  "id": 304,
-                  "name": "kanto-route-10-area"
-                }
-              ]
+              "area": "kanto-route-10-area",
+              "areaId": 304
             },
             {
               "name": "kanto-route-11",
@@ -831,12 +752,8 @@
                 [13, 8],
                 [14, 8]
               ],
-              "locationareas": [
-                {
-                  "id": 305,
-                  "name": "kanto-route-11-area"
-                }
-              ]
+              "area": "kanto-route-11-area",
+              "areaId": 305
             },
             {
               "name": "kanto-route-12",
@@ -845,12 +762,8 @@
                 [15, 8],
                 [15, 9]
               ],
-              "locationareas": [
-                {
-                  "id": 276,
-                  "name": "kanto-route-12-area"
-                }
-              ]
+              "area": "kanto-route-12-area",
+              "areaId": 276
             },
             {
               "name": "kanto-route-13",
@@ -859,12 +772,8 @@
                 [14, 10],
                 [15, 10]
               ],
-              "locationareas": [
-                {
-                  "id": 306,
-                  "name": "kanto-route-13-area"
-                }
-              ]
+              "area": "kanto-route-13-area",
+              "areaId": 306
             },
             {
               "name": "kanto-route-14",
@@ -872,12 +781,8 @@
                 [13, 11],
                 [13, 12]
               ],
-              "locationareas": [
-                {
-                  "id": 307,
-                  "name": "kanto-route-14-area"
-                }
-              ]
+              "area": "kanto-route-14-area",
+              "areaId": 307
             },
             {
               "name": "kanto-route-15",
@@ -885,22 +790,14 @@
                 [11, 12],
                 [12, 12]
               ],
-              "locationareas": [
-                {
-                  "id": 308,
-                  "name": "kanto-route-15-area"
-                }
-              ]
+              "area": "kanto-route-15-area",
+              "areaId": 308
             },
             {
               "name": "kanto-route-16",
               "coordinates": [[7, 6]],
-              "locationareas": [
-                {
-                  "id": 309,
-                  "name": "kanto-route-16-area"
-                }
-              ]
+              "area": "kanto-route-16-area",
+              "areaId": 309
             },
             {
               "name": "kanto-route-17",
@@ -911,12 +808,8 @@
                 [7, 10],
                 [7, 11]
               ],
-              "locationareas": [
-                {
-                  "id": 310,
-                  "name": "kanto-route-17-area"
-                }
-              ]
+              "area": "kanto-route-17-area",
+              "areaId": 310
             },
             {
               "name": "kanto-route-18",
@@ -925,12 +818,8 @@
                 [8, 12],
                 [9, 12]
               ],
-              "locationareas": [
-                {
-                  "id": 311,
-                  "name": "kanto-route-18-area"
-                }
-              ]
+              "area": "kanto-route-18-area",
+              "areaId": 311
             },
             {
               "name": "kanto-sea-route-19",
@@ -938,26 +827,20 @@
                 [10, 13],
                 [10, 14]
               ],
-              "locationareas": [
-                {
-                  "id": 277,
-                  "name": "kanto-sea-route-19-area"
-                }
-              ]
+              "area": "kanto-sea-route-19-area",
+              "areaId": 277
             },
             {
               "name": "kanto-route-2",
               "coordinates": [[5, 6]],
-              "locationareas": [
-                {
-                  "id": 296,
-                  "name": "kanto-route-2-south-towards-viridian-city"
-                },
-                {
-                  "id": 320,
-                  "name": "kanto-route-2-north-towards-pewter-city"
-                }
-              ]
+              "area": "kanto-route-2-south-towards-viridian-city",
+              "areaId": 296
+            },
+            {
+              "name": "kanto-route-2",
+              "coordinates": [[5, 6]],
+              "area": "kanto-route-2-north-towards-pewter-city",
+              "areaId": 320
             },
             {
               "name": "kanto-sea-route-20",
@@ -966,12 +849,8 @@
                 [8, 14],
                 [9, 14]
               ],
-              "locationareas": [
-                {
-                  "id": 278,
-                  "name": "kanto-sea-route-20-area"
-                }
-              ]
+              "area": "kanto-sea-route-20-area",
+              "areaId": 278
             },
             {
               "name": "kanto-sea-route-21",
@@ -979,12 +858,8 @@
                 [5, 12],
                 [5, 13]
               ],
-              "locationareas": [
-                {
-                  "id": 312,
-                  "name": "kanto-sea-route-21-area"
-                }
-              ]
+              "area": "kanto-sea-route-21-area",
+              "areaId": 312
             },
             {
               "name": "kanto-route-22",
@@ -992,22 +867,14 @@
                 [3, 6],
                 [4, 6]
               ],
-              "locationareas": [
-                {
-                  "id": 313,
-                  "name": "kanto-route-22-area"
-                }
-              ]
+              "area": "kanto-route-22-area",
+              "areaId": 313
             },
             {
               "name": "kanto-route-24",
               "coordinates": [[11, 3]],
-              "locationareas": [
-                {
-                  "id": 314,
-                  "name": "kanto-route-24-area"
-                }
-              ]
+              "area": "kanto-route-24-area",
+              "areaId": 314
             },
             {
               "name": "kanto-route-25",
@@ -1016,12 +883,8 @@
                 [12, 2],
                 [13, 2]
               ],
-              "locationareas": [
-                {
-                  "id": 315,
-                  "name": "kanto-route-25-area"
-                }
-              ]
+              "area": "kanto-route-25-area",
+              "areaId": 315
             },
             {
               "name": "kanto-route-26",
@@ -1030,22 +893,14 @@
                 [2, 8],
                 [2, 9]
               ],
-              "locationareas": [
-                {
-                  "id": 287,
-                  "name": "kanto-route-26-area"
-                }
-              ]
+              "area": "kanto-route-26-area",
+              "areaId": 287
             },
             {
               "name": "kanto-route-27",
               "coordinates": [[1, 10]],
-              "locationareas": [
-                {
-                  "id": 288,
-                  "name": "kanto-route-27-area"
-                }
-              ]
+              "area": "kanto-route-27-area",
+              "areaId": 288
             },
             {
               "name": "kanto-route-28",
@@ -1053,12 +908,8 @@
                 [0, 6],
                 [1, 6]
               ],
-              "locationareas": [
-                {
-                  "id": 289,
-                  "name": "kanto-route-28-area"
-                }
-              ]
+              "area": "kanto-route-28-area",
+              "areaId": 289
             },
             {
               "name": "kanto-route-3",
@@ -1066,16 +917,17 @@
                 [6, 4],
                 [7, 4]
               ],
-              "locationareas": [
-                {
-                  "id": 297,
-                  "name": "kanto-route-3-area"
-                },
-                {
-                  "id": 832,
-                  "name": "kanto-route-3-pokemon-center"
-                }
-              ]
+              "area": "kanto-route-3-area",
+              "areaId": 297
+            },
+            {
+              "name": "kanto-route-3",
+              "coordinates": [
+                [6, 4],
+                [7, 4]
+              ],
+              "area": "kanto-route-3-pokemon-center",
+              "areaId": 832
             },
             {
               "name": "kanto-route-4",
@@ -1083,36 +935,29 @@
                 [9, 4],
                 [10, 4]
               ],
-              "locationareas": [
-                {
-                  "id": 298,
-                  "name": "kanto-route-4-area"
-                },
-                {
-                  "id": 761,
-                  "name": "kanto-route-4-pokemon-center"
-                }
-              ]
+              "area": "kanto-route-4-area",
+              "areaId": 298
+            },
+            {
+              "name": "kanto-route-4",
+              "coordinates": [
+                [9, 4],
+                [10, 4]
+              ],
+              "area": "kanto-route-4-pokemon-center",
+              "areaId": 761
             },
             {
               "name": "kanto-route-5",
               "coordinates": [[11, 5]],
-              "locationareas": [
-                {
-                  "id": 299,
-                  "name": "kanto-route-5-area"
-                }
-              ]
+              "area": "kanto-route-5-area",
+              "areaId": 299
             },
             {
               "name": "kanto-route-6",
               "coordinates": [[11, 7]],
-              "locationareas": [
-                {
-                  "id": 300,
-                  "name": "kanto-route-6-area"
-                }
-              ]
+              "area": "kanto-route-6-area",
+              "areaId": 300
             },
             {
               "name": "kanto-route-7",
@@ -1120,12 +965,8 @@
                 [9, 6],
                 [10, 6]
               ],
-              "locationareas": [
-                {
-                  "id": 301,
-                  "name": "kanto-route-7-area"
-                }
-              ]
+              "area": "kanto-route-7-area",
+              "areaId": 301
             },
             {
               "name": "kanto-route-8",
@@ -1134,12 +975,8 @@
                 [13, 6],
                 [14, 6]
               ],
-              "locationareas": [
-                {
-                  "id": 302,
-                  "name": "kanto-route-8-area"
-                }
-              ]
+              "area": "kanto-route-8-area",
+              "areaId": 302
             },
             {
               "name": "kanto-route-9",
@@ -1148,108 +985,98 @@
                 [13, 4],
                 [14, 4]
               ],
-              "locationareas": [
-                {
-                  "id": 303,
-                  "name": "kanto-route-9-area"
-                }
-              ]
+              "area": "kanto-route-9-area",
+              "areaId": 303
             },
             {
               "name": "seafoam-islands",
               "coordinates": [[7, 14]],
-              "locationareas": [
-                {
-                  "id": 258,
-                  "name": "seafoam-islands-1f"
-                },
-                {
-                  "id": 259,
-                  "name": "seafoam-islands-b1f"
-                },
-                {
-                  "id": 260,
-                  "name": "seafoam-islands-b2f"
-                },
-                {
-                  "id": 261,
-                  "name": "seafoam-islands-b3f"
-                },
-                {
-                  "id": 262,
-                  "name": "seafoam-islands-b4f"
-                }
-              ]
+              "area": "seafoam-islands-1f",
+              "areaId": 258
+            },
+            {
+              "name": "seafoam-islands",
+              "coordinates": [[7, 14]],
+              "area": "seafoam-islands-b1f",
+              "areaId": 259
+            },
+            {
+              "name": "seafoam-islands",
+              "coordinates": [[7, 14]],
+              "area": "seafoam-islands-b2f",
+              "areaId": 260
+            },
+            {
+              "name": "seafoam-islands",
+              "coordinates": [[7, 14]],
+              "area": "seafoam-islands-b3f",
+              "areaId": 261
+            },
+            {
+              "name": "seafoam-islands",
+              "coordinates": [[7, 14]],
+              "area": "seafoam-islands-b4f",
+              "areaId": 262
             },
             {
               "name": "cerulean-cave",
               "coordinates": [[11, 4]],
-              "locationareas": [
-                {
-                  "id": 323,
-                  "name": "cerulean-cave-1f"
-                },
-                {
-                  "id": 324,
-                  "name": "cerulean-cave-2f"
-                },
-                {
-                  "id": 325,
-                  "name": "cerulean-cave-b1f"
-                }
-              ]
+              "area": "cerulean-cave-1f",
+              "areaId": 323
+            },
+            {
+              "name": "cerulean-cave",
+              "coordinates": [[11, 4]],
+              "area": "cerulean-cave-2f",
+              "areaId": 324
+            },
+            {
+              "name": "cerulean-cave",
+              "coordinates": [[11, 4]],
+              "area": "cerulean-cave-b1f",
+              "areaId": 325
             },
             {
               "name": "vermilion-city",
               "coordinates": [[11, 8]],
-              "locationareas": [
-                {
-                  "id": 282,
-                  "name": "vermilion-city-area"
-                },
-                {
-                  "id": 349,
-                  "name": "vermilion-city-ss-anne-dock"
-                }
-              ]
+              "area": "vermilion-city-area",
+              "areaId": 282
+            },
+            {
+              "name": "vermilion-city",
+              "coordinates": [[11, 8]],
+              "area": "vermilion-city-ss-anne-dock",
+              "areaId": 349
             },
             {
               "name": "kanto-victory-road-1",
               "coordinates": [[2, 4]],
-              "locationareas": [
-                {
-                  "id": 294,
-                  "name": "kanto-victory-road-1-1f"
-                },
-                {
-                  "id": 318,
-                  "name": "kanto-victory-road-1-2f"
-                },
-                {
-                  "id": 319,
-                  "name": "kanto-victory-road-1-3f"
-                }
-              ]
+              "area": "kanto-victory-road-1-1f",
+              "areaId": 294
+            },
+            {
+              "name": "kanto-victory-road-1",
+              "coordinates": [[2, 4]],
+              "area": "kanto-victory-road-1-2f",
+              "areaId": 318
+            },
+            {
+              "name": "kanto-victory-road-1",
+              "coordinates": [[2, 4]],
+              "area": "kanto-victory-road-1-3f",
+              "areaId": 319
             },
             {
               "name": "viridian-city",
               "coordinates": [[5, 7]],
-              "locationareas": [
-                {
-                  "id": 280,
-                  "name": "viridian-city-area"
-                }
-              ]
+              "area": "viridian-city-area",
+              "areaId": 280
             },
             {
               "name": "viridian-forest",
               "coordinates": [[5, 8]],
-              "locationareas": [
-                {
-                  "id": 321,
-                  "name": "viridian-forest-area"
-                }
-              ]
+              "area": "viridian-forest-area",
+              "areaId": 321
             },
             {
               "name": "kanto-route-23",
@@ -1257,171 +1084,152 @@
                 [2, 3],
                 [2, 5]
               ],
-              "locationareas": [
-                {
-                  "id": 329,
-                  "name": "kanto-route-23-area"
-                }
-              ]
+              "area": "kanto-route-23-area",
+              "areaId": 329
             },
             {
               "name": "power-plant",
               "coordinates": [[15, 5]],
-              "locationareas": [
-                {
-                  "id": 330,
-                  "name": "power-plant-area"
-                }
-              ]
+              "area": "power-plant-area",
+              "areaId": 330
             },
             {
               "name": "kanto-victory-road-2",
               "coordinates": [[2, 4]],
-              "locationareas": [
-                {
-                  "id": 331,
-                  "name": "kanto-victory-road-2-1f"
-                },
-                {
-                  "id": 332,
-                  "name": "kanto-victory-road-2-2f"
-                },
-                {
-                  "id": 333,
-                  "name": "kanto-victory-road-2-3f"
-                }
-              ]
+              "area": "kanto-victory-road-2-1f",
+              "areaId": 331
+            },
+            {
+              "name": "kanto-victory-road-2",
+              "coordinates": [[2, 4]],
+              "area": "kanto-victory-road-2-2f",
+              "areaId": 332
+            },
+            {
+              "name": "kanto-victory-road-2",
+              "coordinates": [[2, 4]],
+              "area": "kanto-victory-road-2-3f",
+              "areaId": 333
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[15, 6]],
-              "locationareas": [
-                {
-                  "id": 334,
-                  "name": "pokemon-tower-1f"
-                },
-                {
-                  "id": 335,
-                  "name": "pokemon-tower-2f"
-                },
-                {
-                  "id": 336,
-                  "name": "pokemon-tower-3f"
-                },
-                {
-                  "id": 337,
-                  "name": "pokemon-tower-4f"
-                },
-                {
-                  "id": 338,
-                  "name": "pokemon-tower-5f"
-                },
-                {
-                  "id": 339,
-                  "name": "pokemon-tower-6f"
-                },
-                {
-                  "id": 340,
-                  "name": "pokemon-tower-7f"
-                }
-              ]
+              "area": "pokemon-tower-1f",
+              "areaId": 334
+            },
+            {
+              "name": "pokemon-tower",
+              "coordinates": [[15, 6]],
+              "area": "pokemon-tower-2f",
+              "areaId": 335
+            },
+            {
+              "name": "pokemon-tower",
+              "coordinates": [[15, 6]],
+              "area": "pokemon-tower-3f",
+              "areaId": 336
+            },
+            {
+              "name": "pokemon-tower",
+              "coordinates": [[15, 6]],
+              "area": "pokemon-tower-4f",
+              "areaId": 337
+            },
+            {
+              "name": "pokemon-tower",
+              "coordinates": [[15, 6]],
+              "area": "pokemon-tower-5f",
+              "areaId": 338
+            },
+            {
+              "name": "pokemon-tower",
+              "coordinates": [[15, 6]],
+              "area": "pokemon-tower-6f",
+              "areaId": 339
+            },
+            {
+              "name": "pokemon-tower",
+              "coordinates": [[15, 6]],
+              "area": "pokemon-tower-7f",
+              "areaId": 340
             },
             {
               "name": "pokemon-mansion",
               "coordinates": [[5, 14]],
-              "locationareas": [
-                {
-                  "id": 341,
-                  "name": "pokemon-mansion-1f"
-                },
-                {
-                  "id": 342,
-                  "name": "pokemon-mansion-2f"
-                },
-                {
-                  "id": 343,
-                  "name": "pokemon-mansion-3f"
-                },
-                {
-                  "id": 344,
-                  "name": "pokemon-mansion-b1f"
-                }
-              ]
+              "area": "pokemon-mansion-1f",
+              "areaId": 341
+            },
+            {
+              "name": "pokemon-mansion",
+              "coordinates": [[5, 14]],
+              "area": "pokemon-mansion-2f",
+              "areaId": 342
+            },
+            {
+              "name": "pokemon-mansion",
+              "coordinates": [[5, 14]],
+              "area": "pokemon-mansion-3f",
+              "areaId": 343
+            },
+            {
+              "name": "pokemon-mansion",
+              "coordinates": [[5, 14]],
+              "area": "pokemon-mansion-b1f",
+              "areaId": 344
             },
             {
               "name": "kanto-safari-zone",
               "coordinates": [[10, 12]],
-              "locationareas": [
-                {
-                  "id": 345,
-                  "name": "kanto-safari-zone-middle"
-                },
-                {
-                  "id": 346,
-                  "name": "kanto-safari-zone-area-1-east"
-                },
-                {
-                  "id": 347,
-                  "name": "kanto-safari-zone-area-2-north"
-                },
-                {
-                  "id": 348,
-                  "name": "kanto-safari-zone-area-3-west"
-                }
-              ]
+              "area": "kanto-safari-zone-middle",
+              "areaId": 345
             },
             {
-              "name": "pewter-city",
-              "coordinates": [[5, 4]],
-              "locationareas": []
+              "name": "kanto-safari-zone",
+              "coordinates": [[10, 12]],
+              "area": "kanto-safari-zone-area-1-east",
+              "areaId": 346
             },
             {
-              "name": "lavender-town",
-              "coordinates": [[15, 6]],
-              "locationareas": []
+              "name": "kanto-safari-zone",
+              "coordinates": [[10, 12]],
+              "area": "kanto-safari-zone-area-2-north",
+              "areaId": 347
             },
             {
-              "name": "indigo-plateau",
-              "coordinates": [[2, 2]],
-              "locationareas": []
+              "name": "kanto-safari-zone",
+              "coordinates": [[10, 12]],
+              "area": "kanto-safari-zone-area-3-west",
+              "areaId": 348
             },
             {
               "name": "saffron-city",
               "coordinates": [[11, 6]],
-              "locationareas": [
-                {
-                  "id": 762,
-                  "name": "saffron-city-fighting-dojo"
-                },
-                {
-                  "id": 764,
-                  "name": "saffron-city-silph-co-7f"
-                },
-                {
-                  "id": 835,
-                  "name": "saffron-city-silph-co"
-                }
-              ]
+              "area": "saffron-city-fighting-dojo",
+              "areaId": 762
+            },
+            {
+              "name": "saffron-city",
+              "coordinates": [[11, 6]],
+              "area": "saffron-city-silph-co-7f",
+              "areaId": 764
+            },
+            {
+              "name": "saffron-city",
+              "coordinates": [[11, 6]],
+              "area": "saffron-city-silph-co",
+              "areaId": 835
             },
             {
               "name": "ss-anne",
               "coordinates": [[11, 8]],
-              "locationareas": [
-                {
-                  "id": 461,
-                  "name": "ss-anne-area"
-                }
-              ]
+              "area": "ss-anne-area",
+              "areaId": 461
             },
             {
               "name": "roaming-kanto",
               "coordinates": [[0, 0]],
-              "locationareas": [
-                {
-                  "id": 794,
-                  "name": "roaming-kanto-area"
-                }
-              ]
+              "area": "roaming-kanto-area",
+              "areaId": 794
             }
           ]
         }

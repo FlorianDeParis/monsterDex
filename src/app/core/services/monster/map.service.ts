@@ -82,16 +82,15 @@ export class MapService {
           };
 
           subregion.locations.forEach((location) => {
-            location.locationareas.forEach((locationArea: any) => {
-            if (PKMNencountersList.includes(locationArea.name)) {
-                location.coordinates.forEach((c) => {
-                  subRegionMarkerList.markers.push({
-                    name: locationArea.name,
-                    coordinates: c,
-                  });
+            if (PKMNencountersList.includes(location.area)) {
+              location.coordinates.forEach((c) => {
+                subRegionMarkerList.markers.push({
+                  area: location.name,
+                  name: location.area,
+                  coordinates: c,
                 });
-              }
-            });
+              });
+            }
           })
 
           if(subRegionMarkerList.markers.length > 0){
@@ -151,16 +150,15 @@ export class MapService {
           };
 
           subregion.locations.forEach((location) => {
-            location.locationareas.forEach((locationArea: any) => {
-            if (PKMNencountersList.includes(locationArea.name)) {
-                location.coordinates.forEach((c) => {
-                  subRegionMarkerList.markers.push({
-                    name: locationArea.name,
-                    coordinates: c,
-                  });
+            if (PKMNencountersList.includes(location.area)) {
+              location.coordinates.forEach((c) => {
+                subRegionMarkerList.markers.push({
+                  area: location.name,
+                  name: location.area,
+                  coordinates: c,
                 });
-              }
-            });
+              });
+            }
           })
 
           if(subRegionMarkerList.markers.length > 0){

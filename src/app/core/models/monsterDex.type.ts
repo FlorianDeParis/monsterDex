@@ -43,6 +43,7 @@ export interface SubRegionMarkerList {
 }
 
 export interface MapMarker {
+  area: string;
   name: string;
   coordinates: number[];
 }
@@ -63,12 +64,8 @@ export interface Subregion {
 export interface Location {
   name: string;
   coordinates: number[][];
-  locationareas: LocationArea[];
-}
-
-export interface LocationArea {
-  name: string;
-  id: number;
+  area: string;
+  areaId: number;
 }
 
 
