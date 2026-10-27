@@ -12,8 +12,7 @@
             {
               "name": "petalburg-city",
               "coordinates": [[7.8125, 57.5]],
-              "area": "petalburg-city-area",
-              "areaId": 350
+              "area": "petalburg-city-area"
             },
             {
               "name": "slateport-city",
@@ -21,8 +20,7 @@
                 [29.6875, 62.5],
                 [29.6875, 67.5]
               ],
-              "area": "slateport-city-area",
-              "areaId": 351
+              "area": "slateport-city-area"
             },
             {
               "name": "slateport-city",
@@ -30,8 +28,7 @@
                 [29.6875, 62.5],
                 [29.6875, 67.5]
               ],
-              "area": "slateport-city-contest-hall",
-              "areaId": 781
+              "area": "slateport-city-contest-hall"
             },
             {
               "name": "lilycove-city",
@@ -39,8 +36,7 @@
                 [60.9375, 27.5],
                 [64.0625, 27.5]
               ],
-              "area": "lilycove-city-area",
-              "areaId": 352
+              "area": "lilycove-city-area"
             },
             {
               "name": "lilycove-city",
@@ -48,8 +44,7 @@
                 [60.9375, 27.5],
                 [64.0625, 27.5]
               ],
-              "area": "lilycove-city-contest-hall",
-              "areaId": 784
+              "area": "lilycove-city-contest-hall"
             },
             {
               "name": "mossdeep-city",
@@ -57,8 +52,7 @@
                 [79.6875, 37.5],
                 [82.8125, 37.5]
               ],
-              "area": "mossdeep-city-area",
-              "areaId": 353
+              "area": "mossdeep-city-area"
             },
             {
               "name": "mossdeep-city",
@@ -66,14 +60,12 @@
                 [79.6875, 37.5],
                 [82.8125, 37.5]
               ],
-              "area": "mossdeep-city-stevens-house",
-              "areaId": 769
+              "area": "mossdeep-city-stevens-house"
             },
             {
               "name": "sootopolis-city",
               "coordinates": [[70.3125, 47.5]],
-              "area": "sootopolis-city-area",
-              "areaId": 354
+              "area": "sootopolis-city-area"
             },
             {
               "name": "ever-grande-city",
@@ -81,32 +73,27 @@
                 [89.0625, 52.5],
                 [89.0625, 57.5]
               ],
-              "area": "ever-grande-city-area",
-              "areaId": 355
+              "area": "ever-grande-city-area"
             },
             {
               "name": "meteor-falls",
               "coordinates": [[4.6875, 27.5]],
-              "area": "meteor-falls-area",
-              "areaId": 356
+              "area": "meteor-falls-area"
             },
             {
               "name": "meteor-falls",
               "coordinates": [[4.6875, 27.5]],
-              "area": "meteor-falls-back",
-              "areaId": 357
+              "area": "meteor-falls-back"
             },
             {
               "name": "meteor-falls",
               "coordinates": [[4.6875, 27.5]],
-              "area": "meteor-falls-b1f",
-              "areaId": 358
+              "area": "meteor-falls-b1f"
             },
             {
               "name": "meteor-falls",
               "coordinates": [[4.6875, 27.5]],
-              "area": "meteor-falls-backsmall-room",
-              "areaId": 359
+              "area": "meteor-falls-backsmall-room"
             },
             {
               "name": "rusturf-tunnel",
@@ -114,44 +101,37 @@
                 [10.9375, 37.5],
                 [14.0625, 37.5]
               ],
-              "area": "rusturf-tunnel-area",
-              "areaId": 360
+              "area": "rusturf-tunnel-area"
             },
             {
               "name": "granite-cave",
               "coordinates": [[7.8125, 77.5]],
-              "area": "granite-cave-1f",
-              "areaId": 361
+              "area": "granite-cave-1f"
             },
             {
               "name": "granite-cave",
               "coordinates": [[7.8125, 77.5]],
-              "area": "granite-cave-b1f",
-              "areaId": 362
+              "area": "granite-cave-b1f"
             },
             {
               "name": "granite-cave",
               "coordinates": [[7.8125, 77.5]],
-              "area": "granite-cave-b2f",
-              "areaId": 363
+              "area": "granite-cave-b2f"
             },
             {
               "name": "granite-cave",
               "coordinates": [[7.8125, 77.5]],
-              "area": "granite-cave-1fsmall-room",
-              "areaId": 364
+              "area": "granite-cave-1fsmall-room"
             },
             {
               "name": "petalburg-woods",
               "coordinates": [[4.6875, 52.5]],
-              "area": "petalburg-woods-area",
-              "areaId": 365
+              "area": "petalburg-woods-area"
             },
             {
               "name": "jagged-pass",
               "coordinates": [[23.4375, 27.5]],
-              "area": "jagged-pass-area",
-              "areaId": 366
+              "area": "jagged-pass-area"
             },
             {
               "name": "fiery-path",
@@ -159,176 +139,147 @@
                 [23.4375, 27.5],
                 [26.5625, 27.5]
               ],
-              "area": "fiery-path-area",
-              "areaId": 367
+              "area": "fiery-path-area"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-1f",
-              "areaId": 368
+              "area": "mt-pyre-1f"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-2f",
-              "areaId": 369
+              "area": "mt-pyre-2f"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-3f",
-              "areaId": 370
+              "area": "mt-pyre-3f"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-4f",
-              "areaId": 371
+              "area": "mt-pyre-4f"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-5f",
-              "areaId": 372
+              "area": "mt-pyre-5f"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-6f",
-              "areaId": 373
+              "area": "mt-pyre-6f"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-outside",
-              "areaId": 374
+              "area": "mt-pyre-outside"
             },
             {
               "name": "mt-pyre",
               "coordinates": [[54.6875, 37.5]],
-              "area": "mt-pyre-summit",
-              "areaId": 375
+              "area": "mt-pyre-summit"
             },
             {
               "name": "seafloor-cavern",
               "coordinates": [[79.6875, 57.5]],
-              "area": "seafloor-cavern-area",
-              "areaId": 376
+              "area": "seafloor-cavern-area"
             },
             {
               "name": "cave-of-origin",
               "coordinates": [[70.3125, 47.5]],
-              "area": "cave-of-origin-entrance",
-              "areaId": 377
+              "area": "cave-of-origin-entrance"
             },
             {
               "name": "cave-of-origin",
               "coordinates": [[70.3125, 47.5]],
-              "area": "cave-of-origin-1f",
-              "areaId": 378
+              "area": "cave-of-origin-1f"
             },
             {
               "name": "cave-of-origin",
               "coordinates": [[70.3125, 47.5]],
-              "area": "cave-of-origin-b1f",
-              "areaId": 379
+              "area": "cave-of-origin-b1f"
             },
             {
               "name": "cave-of-origin",
               "coordinates": [[70.3125, 47.5]],
-              "area": "cave-of-origin-b2f",
-              "areaId": 380
+              "area": "cave-of-origin-b2f"
             },
             {
               "name": "cave-of-origin",
               "coordinates": [[70.3125, 47.5]],
-              "area": "cave-of-origin-b3f",
-              "areaId": 381
+              "area": "cave-of-origin-b3f"
             },
             {
               "name": "cave-of-origin",
               "coordinates": [[70.3125, 47.5]],
-              "area": "cave-of-origin-b4f",
-              "areaId": 801
+              "area": "cave-of-origin-b4f"
             },
             {
               "name": "hoenn-victory-road",
               "coordinates": [[89.0625, 52.5]],
-              "area": "hoenn-victory-road-1f",
-              "areaId": 382
+              "area": "hoenn-victory-road-1f"
             },
             {
               "name": "hoenn-victory-road",
               "coordinates": [[89.0625, 52.5]],
-              "area": "hoenn-victory-road-b1f",
-              "areaId": 383
+              "area": "hoenn-victory-road-b1f"
             },
             {
               "name": "hoenn-victory-road",
               "coordinates": [[89.0625, 52.5]],
-              "area": "hoenn-victory-road-b2f",
-              "areaId": 384
+              "area": "hoenn-victory-road-b2f"
             },
             {
               "name": "shoal-cave",
               "coordinates": [[79.6875, 32.5]],
-              "area": "shoal-cave-area",
-              "areaId": 385
+              "area": "shoal-cave-area"
             },
             {
               "name": "shoal-cave",
               "coordinates": [[79.6875, 32.5]],
-              "area": "shoal-cave-b1f",
-              "areaId": 386
+              "area": "shoal-cave-b1f"
             },
             {
               "name": "new-mauville",
               "coordinates": [[29.6875, 47.5]],
-              "area": "new-mauville-entrance",
-              "areaId": 387
+              "area": "new-mauville-entrance"
             },
             {
               "name": "new-mauville",
               "coordinates": [[29.6875, 47.5]],
-              "area": "new-mauville-area",
-              "areaId": 388
+              "area": "new-mauville-area"
             },
             {
               "name": "abandoned-ship",
               "coordinates": [[20.3125, 82.5]],
-              "area": "abandoned-ship-area",
-              "areaId": 389
+              "area": "abandoned-ship-area"
             },
             {
               "name": "sky-pillar",
               "coordinates": [[64.0625, 62.5]],
-              "area": "sky-pillar-1f",
-              "areaId": 390
+              "area": "sky-pillar-1f"
             },
             {
               "name": "sky-pillar",
               "coordinates": [[64.0625, 62.5]],
-              "area": "sky-pillar-3f",
-              "areaId": 391
+              "area": "sky-pillar-3f"
             },
             {
               "name": "sky-pillar",
               "coordinates": [[64.0625, 62.5]],
-              "area": "sky-pillar-5f",
-              "areaId": 392
+              "area": "sky-pillar-5f"
             },
             {
               "name": "sky-pillar",
               "coordinates": [[64.0625, 62.5]],
-              "area": "sky-pillar-apex",
-              "areaId": 804
+              "area": "sky-pillar-apex"
             },
             {
               "name": "hoenn-route-101",
               "coordinates": [[17.1875, 62.5]],
-              "area": "hoenn-route-101-area",
-              "areaId": 393
+              "area": "hoenn-route-101-area"
             },
             {
               "name": "hoenn-route-102",
@@ -336,8 +287,7 @@
                 [10.9375, 57.5],
                 [14.0625, 57.5]
               ],
-              "area": "hoenn-route-102-area",
-              "areaId": 394
+              "area": "hoenn-route-102-area"
             },
             {
               "name": "hoenn-route-103",
@@ -347,8 +297,7 @@
                 [23.4375, 52.5],
                 [26.5625, 52.5]
               ],
-              "area": "hoenn-route-103-area",
-              "areaId": 395
+              "area": "hoenn-route-103-area"
             },
             {
               "name": "hoenn-route-104",
@@ -357,8 +306,7 @@
                 [4.6875, 52.5],
                 [4.6875, 57.5]
               ],
-              "area": "hoenn-route-104-area",
-              "areaId": 396
+              "area": "hoenn-route-104-area"
             },
             {
               "name": "hoenn-route-105",
@@ -367,8 +315,7 @@
                 [4.6875, 67.5],
                 [4.6875, 72.5]
               ],
-              "area": "hoenn-route-105-area",
-              "areaId": 397
+              "area": "hoenn-route-105-area"
             },
             {
               "name": "hoenn-route-106",
@@ -377,8 +324,7 @@
                 [7.8125, 77.5],
                 [10.9375, 77.5]
               ],
-              "area": "hoenn-route-106-area",
-              "areaId": 398
+              "area": "hoenn-route-106-area"
             },
             {
               "name": "hoenn-route-107",
@@ -387,8 +333,7 @@
                 [17.1875, 82.5],
                 [20.3125, 82.5]
               ],
-              "area": "hoenn-route-107-area",
-              "areaId": 399
+              "area": "hoenn-route-107-area"
             },
             {
               "name": "hoenn-route-108",
@@ -396,8 +341,7 @@
                 [23.4375, 82.5],
                 [26.5625, 82.5]
               ],
-              "area": "hoenn-route-108-area",
-              "areaId": 400
+              "area": "hoenn-route-108-area"
             },
             {
               "name": "hoenn-route-109",
@@ -406,8 +350,7 @@
                 [29.6875, 77.5],
                 [29.6875, 82.5]
               ],
-              "area": "hoenn-route-109-area",
-              "areaId": 401
+              "area": "hoenn-route-109-area"
             },
             {
               "name": "hoenn-route-110",
@@ -416,8 +359,7 @@
                 [29.6875, 52.5],
                 [29.6875, 57.5]
               ],
-              "area": "hoenn-route-110-area",
-              "areaId": 402
+              "area": "hoenn-route-110-area"
             },
             {
               "name": "hoenn-route-111",
@@ -429,8 +371,7 @@
                 [29.6875, 32.5],
                 [29.6875, 37.5]
               ],
-              "area": "hoenn-route-111-area",
-              "areaId": 403
+              "area": "hoenn-route-111-area"
             },
             {
               "name": "hoenn-route-112",
@@ -438,8 +379,7 @@
                 [23.4375, 27.5],
                 [26.5625, 27.5]
               ],
-              "area": "hoenn-route-112-area",
-              "areaId": 404
+              "area": "hoenn-route-112-area"
             },
             {
               "name": "hoenn-route-113",
@@ -449,8 +389,7 @@
                 [23.4375, 12.5],
                 [26.5625, 12.5]
               ],
-              "area": "hoenn-route-113-area",
-              "areaId": 405
+              "area": "hoenn-route-113-area"
             },
             {
               "name": "hoenn-route-114",
@@ -460,8 +399,7 @@
                 [7.8125, 17.5],
                 [7.8125, 22.5]
               ],
-              "area": "hoenn-route-114-area",
-              "areaId": 406
+              "area": "hoenn-route-114-area"
             },
             {
               "name": "hoenn-route-115",
@@ -470,8 +408,7 @@
                 [4.6875, 27.5],
                 [4.6875, 32.5]
               ],
-              "area": "hoenn-route-115-area",
-              "areaId": 407
+              "area": "hoenn-route-115-area"
             },
             {
               "name": "hoenn-route-116",
@@ -481,8 +418,7 @@
                 [14.0625, 37.5],
                 [17.1875, 37.5]
               ],
-              "area": "hoenn-route-116-area",
-              "areaId": 408
+              "area": "hoenn-route-116-area"
             },
             {
               "name": "hoenn-route-117",
@@ -491,8 +427,7 @@
                 [23.4375, 42.5],
                 [26.5625, 42.5]
               ],
-              "area": "hoenn-route-117-area",
-              "areaId": 409
+              "area": "hoenn-route-117-area"
             },
             {
               "name": "hoenn-route-118",
@@ -500,8 +435,7 @@
                 [35.9375, 42.5],
                 [39.0625, 42.5]
               ],
-              "area": "hoenn-route-118-area",
-              "areaId": 410
+              "area": "hoenn-route-118-area"
             },
             {
               "name": "hoenn-route-119",
@@ -513,8 +447,7 @@
                 [39.0625, 17.5],
                 [39.0625, 12.5]
               ],
-              "area": "hoenn-route-119-area",
-              "areaId": 411
+              "area": "hoenn-route-119-area"
             },
             {
               "name": "hoenn-route-119",
@@ -526,8 +459,7 @@
                 [39.0625, 17.5],
                 [39.0625, 12.5]
               ],
-              "area": "hoenn-route-119-weather-institute",
-              "areaId": 768
+              "area": "hoenn-route-119-weather-institute"
             },
             {
               "name": "hoenn-route-120",
@@ -537,8 +469,7 @@
                 [45.3125, 22.5],
                 [45.3125, 27.5]
               ],
-              "area": "hoenn-route-120-area",
-              "areaId": 412
+              "area": "hoenn-route-120-area"
             },
             {
               "name": "hoenn-route-121",
@@ -548,8 +479,7 @@
                 [54.6875, 27.5],
                 [57.8125, 27.5]
               ],
-              "area": "hoenn-route-121-area",
-              "areaId": 413
+              "area": "hoenn-route-121-area"
             },
             {
               "name": "hoenn-route-122",
@@ -557,8 +487,7 @@
                 [54.6875, 32.5],
                 [54.6875, 37.5]
               ],
-              "area": "hoenn-route-122-area",
-              "areaId": 414
+              "area": "hoenn-route-122-area"
             },
             {
               "name": "hoenn-route-123",
@@ -569,8 +498,7 @@
                 [45.3125, 42.5],
                 [42.1875, 42.5]
               ],
-              "area": "hoenn-route-123-area",
-              "areaId": 415
+              "area": "hoenn-route-123-area"
             },
             {
               "name": "hoenn-route-124",
@@ -588,8 +516,7 @@
                 [73.4375, 37.5],
                 [76.5625, 37.5]
               ],
-              "area": "hoenn-route-124-area",
-              "areaId": 416
+              "area": "hoenn-route-124-area"
             },
             {
               "name": "hoenn-route-124",
@@ -607,8 +534,7 @@
                 [73.4375, 37.5],
                 [76.5625, 37.5]
               ],
-              "area": "hoenn-route-124-underwater",
-              "areaId": 417
+              "area": "hoenn-route-124-underwater"
             },
             {
               "name": "hoenn-route-125",
@@ -618,8 +544,7 @@
                 [79.6875, 32.5],
                 [82.8125, 32.5]
               ],
-              "area": "hoenn-route-125-area",
-              "areaId": 418
+              "area": "hoenn-route-125-area"
             },
             {
               "name": "hoenn-route-126",
@@ -634,8 +559,7 @@
                 [70.3125, 52.5],
                 [73.4375, 52.5]
               ],
-              "area": "hoenn-route-126-area",
-              "areaId": 419
+              "area": "hoenn-route-126-area"
             },
             {
               "name": "hoenn-route-126",
@@ -650,8 +574,7 @@
                 [70.3125, 52.5],
                 [73.4375, 52.5]
               ],
-              "area": "hoenn-route-126-underwater",
-              "areaId": 420
+              "area": "hoenn-route-126-underwater"
             },
             {
               "name": "hoenn-route-127",
@@ -666,8 +589,7 @@
                 [79.6875, 52.5],
                 [82.8125, 52.5]
               ],
-              "area": "hoenn-route-127-area",
-              "areaId": 421
+              "area": "hoenn-route-127-area"
             },
             {
               "name": "hoenn-route-128",
@@ -677,8 +599,7 @@
                 [82.8125, 57.5],
                 [85.9375, 57.5]
               ],
-              "area": "hoenn-route-128-area",
-              "areaId": 422
+              "area": "hoenn-route-128-area"
             },
             {
               "name": "hoenn-route-129",
@@ -686,8 +607,7 @@
                 [79.6875, 62.5],
                 [82.8125, 62.5]
               ],
-              "area": "hoenn-route-129-area",
-              "areaId": 423
+              "area": "hoenn-route-129-area"
             },
             {
               "name": "hoenn-route-130",
@@ -696,8 +616,7 @@
                 [73.4375, 62.5],
                 [70.3125, 62.5]
               ],
-              "area": "hoenn-route-130-area",
-              "areaId": 424
+              "area": "hoenn-route-130-area"
             },
             {
               "name": "hoenn-route-131",
@@ -706,8 +625,7 @@
                 [64.0625, 62.5],
                 [60.9375, 62.5]
               ],
-              "area": "hoenn-route-131-area",
-              "areaId": 425
+              "area": "hoenn-route-131-area"
             },
             {
               "name": "hoenn-route-132",
@@ -715,8 +633,7 @@
                 [54.6875, 62.5],
                 [51.5625, 62.5]
               ],
-              "area": "hoenn-route-132-area",
-              "areaId": 426
+              "area": "hoenn-route-132-area"
             },
             {
               "name": "hoenn-route-133",
@@ -725,8 +642,7 @@
                 [45.3125, 62.5],
                 [42.1875, 62.5]
               ],
-              "area": "hoenn-route-133-area",
-              "areaId": 427
+              "area": "hoenn-route-133-area"
             },
             {
               "name": "hoenn-route-134",
@@ -735,62 +651,52 @@
                 [35.9375, 62.5],
                 [32.8125, 62.5]
               ],
-              "area": "hoenn-route-134-area",
-              "areaId": 428
+              "area": "hoenn-route-134-area"
             },
             {
               "name": "hoenn-safari-zone",
               "coordinates": [[54.6875, 27.5]],
-              "area": "hoenn-safari-zone-nwmach-bike-area",
-              "areaId": 429
+              "area": "hoenn-safari-zone-nwmach-bike-area"
             },
             {
               "name": "hoenn-safari-zone",
               "coordinates": [[54.6875, 27.5]],
-              "area": "hoenn-safari-zone-neacro-bike-area",
-              "areaId": 430
+              "area": "hoenn-safari-zone-neacro-bike-area"
             },
             {
               "name": "hoenn-safari-zone",
               "coordinates": [[54.6875, 27.5]],
-              "area": "hoenn-safari-zone-sw",
-              "areaId": 431
+              "area": "hoenn-safari-zone-sw"
             },
             {
               "name": "hoenn-safari-zone",
               "coordinates": [[54.6875, 27.5]],
-              "area": "hoenn-safari-zone-se",
-              "areaId": 432
+              "area": "hoenn-safari-zone-se"
             },
             {
               "name": "hoenn-safari-zone",
               "coordinates": [[54.6875, 27.5]],
-              "area": "hoenn-safari-zone-expansion-south",
-              "areaId": 435
+              "area": "hoenn-safari-zone-expansion-south"
             },
             {
               "name": "hoenn-safari-zone",
               "coordinates": [[54.6875, 27.5]],
-              "area": "hoenn-safari-zone-expansion-north",
-              "areaId": 436
+              "area": "hoenn-safari-zone-expansion-north"
             },
             {
               "name": "dewford-town",
               "coordinates": [[10.9375, 82.5]],
-              "area": "dewford-town-area",
-              "areaId": 433
+              "area": "dewford-town-area"
             },
             {
               "name": "pacifidlog-town",
               "coordinates": [[57.8125, 62.5]],
-              "area": "pacifidlog-town-area",
-              "areaId": 434
+              "area": "pacifidlog-town-area"
             },
             {
               "name": "magma-hideout",
               "coordinates": [[23.4375, 27.5]],
-              "area": "magma-hideout-area",
-              "areaId": 437
+              "area": "magma-hideout-area"
             },
             {
               "name": "mirage-tower",
@@ -802,98 +708,82 @@
                 [29.6875, 32.5],
                 [29.6875, 37.5]
               ],
-              "area": "mirage-tower-area",
-              "areaId": 438
+              "area": "mirage-tower-area"
             },
             {
               "name": "desert-underpass",
               "coordinates": [[14.0625, 7.5]],
-              "area": "desert-underpass-area",
-              "areaId": 439
+              "area": "desert-underpass-area"
             },
             {
               "name": "artisan-cave",
               "coordinates": [[45.3125, 117.5]],
-              "area": "artisan-cave-area",
-              "areaId": 440
+              "area": "artisan-cave-area"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-a",
-              "areaId": 441
+              "area": "hoenn-altering-cave-a"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-b",
-              "areaId": 442
+              "area": "hoenn-altering-cave-b"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-c",
-              "areaId": 443
+              "area": "hoenn-altering-cave-c"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-d",
-              "areaId": 444
+              "area": "hoenn-altering-cave-d"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-e",
-              "areaId": 445
+              "area": "hoenn-altering-cave-e"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-f",
-              "areaId": 446
+              "area": "hoenn-altering-cave-f"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-g",
-              "areaId": 447
+              "area": "hoenn-altering-cave-g"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-h",
-              "areaId": 448
+              "area": "hoenn-altering-cave-h"
             },
             {
               "name": "hoenn-altering-cave",
               "coordinates": [[23.4375, 52.5]],
-              "area": "hoenn-altering-cave-i",
-              "areaId": 449
+              "area": "hoenn-altering-cave-i"
             },
             {
               "name": "littleroot-town",
               "coordinates": [[17.1875, 67.5]],
-              "area": "littleroot-town-area",
-              "areaId": 770
+              "area": "littleroot-town-area"
             },
             {
               "name": "lavaridge-town",
               "coordinates": [[20.3125, 27.5]],
-              "area": "lavaridge-town-area",
-              "areaId": 787
+              "area": "lavaridge-town-area"
             },
             {
               "name": "fallarbor-town",
               "coordinates": [[14.0625, 12.5]],
-              "area": "fallarbor-town-contest-hall",
-              "areaId": 783
+              "area": "fallarbor-town-contest-hall"
             },
             {
               "name": "verdanturf-town",
               "coordinates": [[17.1875, 42.5]],
-              "area": "verdanturf-town-contest-hall",
-              "areaId": 782
+              "area": "verdanturf-town-contest-hall"
             },
             {
               "name": "rustboro-city",
@@ -901,74 +791,62 @@
                 [4.6875, 37.5],
                 [4.6875, 42.5]
               ],
-              "area": "rustboro-city-area",
-              "areaId": 834
+              "area": "rustboro-city-area"
             },
             {
               "name": "southern-island",
               "coordinates": [[42.1875, 82.5]],
-              "area": "southern-island-area",
-              "areaId": 785
+              "area": "southern-island-area"
             },
             {
               "name": "scorched-slab",
               "coordinates": [[45.3125, 12.5]],
-              "area": "scorched-slab-1f",
-              "areaId": 1185
+              "area": "scorched-slab-1f"
             },
             {
               "name": "scorched-slab",
               "coordinates": [[45.3125, 12.5]],
-              "area": "scorched-slab-b1f",
-              "areaId": 1186
+              "area": "scorched-slab-b1f"
             },
             {
               "name": "scorched-slab",
               "coordinates": [[45.3125, 12.5]],
-              "area": "scorched-slab-b2f",
-              "areaId": 1187
+              "area": "scorched-slab-b2f"
             },
             {
               "name": "scorched-slab",
               "coordinates": [[45.3125, 12.5]],
-              "area": "scorched-slab-b3f",
-              "areaId": 1188
+              "area": "scorched-slab-b3f"
             },
             {
               "name": "island-cave",
               "coordinates": [[4.6875, 67.5]],
-              "area": "island-cave-area",
-              "areaId": 811
+              "area": "island-cave-area"
             },
             {
               "name": "desert-ruins",
               "coordinates": [[29.6875, 27.5]],
-              "area": "desert-ruins-area",
-              "areaId": 810
+              "area": "desert-ruins-area"
             },
             {
               "name": "ancient-tomb",
               "coordinates": [[45.3125, 22.5]],
-              "area": "ancient-tomb-area",
-              "areaId": 812
+              "area": "ancient-tomb-area"
             },
             {
               "name": "team-aqua-hideout",
               "coordinates": [[64.0625, 27.5]],
-              "area": "team-aqua-hideout-area",
-              "areaId": 1165
+              "area": "team-aqua-hideout-area"
             },
             {
               "name": "team-magma-hideout",
               "coordinates": [[64.0625, 27.5]],
-              "area": "team-magma-hideout-area",
-              "areaId": 1166
+              "area": "team-magma-hideout-area"
             },
             {
               "name": "roaming-hoenn",
               "coordinates": [[1.5625, 2.5]],
-              "area": "roaming-hoenn-area",
-              "areaId": 796
+              "area": "roaming-hoenn-area"
             },
             {
               "name": "terra-cave",
@@ -981,8 +859,7 @@
                 [35.9375, 42.5],
                 [39.0625, 42.5]
               ],
-              "area": "terra-cave-area",
-              "areaId": 802
+              "area": "terra-cave-area"
             },
             {
               "name": "marine-cave",
@@ -1006,20 +883,17 @@
                 [79.6875, 62.5],
                 [82.8125, 62.5]
               ],
-              "area": "marine-cave-area",
-              "areaId": 803
+              "area": "marine-cave-area"
             },
             {
               "name": "faraway-island",
               "coordinates": [[1.5625, 2.5]],
-              "area": "faraway-island-area",
-              "areaId": 808
+              "area": "faraway-island-area"
             },
             {
               "name": "hoenn-battle-frontier",
               "coordinates": [[73.4375, 72.5]],
-              "area": "hoenn-battle-frontier-area",
-              "areaId": 809
+              "area": "hoenn-battle-frontier-area"
             },
             {
               "name": "mossdeep-space-center",
@@ -1027,8 +901,7 @@
                 [79.6875, 37.5],
                 [82.8125, 37.5]
               ],
-              "area": "mossdeep-space-center-area",
-              "areaId": 1181
+              "area": "mossdeep-space-center-area"
             }
           ]
         }
@@ -1046,32 +919,27 @@
             {
               "name": "celadon-city",
               "coordinates": [[52.083333333333336, 47.22222222222222]],
-              "area": "celadon-city-area",
-              "areaId": 283
+              "area": "celadon-city-area"
             },
             {
               "name": "celadon-city",
               "coordinates": [[52.083333333333336, 47.22222222222222]],
-              "area": "celadon-city-celadon-mansion",
-              "areaId": 763
+              "area": "celadon-city-celadon-mansion"
             },
             {
               "name": "cerulean-city",
               "coordinates": [[64.58333333333334, 30.555555555555557]],
-              "area": "cerulean-city-area",
-              "areaId": 281
+              "area": "cerulean-city-area"
             },
             {
               "name": "cinnabar-island",
               "coordinates": [[22.916666666666668, 91.66666666666666]],
-              "area": "cinnabar-island-area",
-              "areaId": 279
+              "area": "cinnabar-island-area"
             },
             {
               "name": "cinnabar-island",
               "coordinates": [[22.916666666666668, 91.66666666666666]],
-              "area": "cinnabar-island-cinnabar-lab",
-              "areaId": 833
+              "area": "cinnabar-island-cinnabar-lab"
             },
             {
               "name": "digletts-cave",
@@ -1079,68 +947,57 @@
                 [22.916666666666668, 41.666666666666664],
                 [68.75, 63.888888888888886]
               ],
-              "area": "digletts-cave-area",
-              "areaId": 317
+              "area": "digletts-cave-area"
             },
             {
               "name": "fuchsia-city",
               "coordinates": [[56.25000000000001, 80.55555555555554]],
-              "area": "fuchsia-city-area",
-              "areaId": 284
+              "area": "fuchsia-city-area"
             },
             {
               "name": "mt-moon",
               "coordinates": [[43.75000000000001, 30.555555555555557]],
-              "area": "mt-moon-mt-moon-square",
-              "areaId": 256
+              "area": "mt-moon-mt-moon-square"
             },
             {
               "name": "mt-moon",
               "coordinates": [[43.75000000000001, 30.555555555555557]],
-              "area": "mt-moon-1f",
-              "areaId": 290
+              "area": "mt-moon-1f"
             },
             {
               "name": "mt-moon",
               "coordinates": [[43.75000000000001, 30.555555555555557]],
-              "area": "mt-moon-2f",
-              "areaId": 291
+              "area": "mt-moon-2f"
             },
             {
               "name": "mt-moon",
               "coordinates": [[43.75000000000001, 30.555555555555557]],
-              "area": "mt-moon-b1f",
-              "areaId": 326
+              "area": "mt-moon-b1f"
             },
             {
               "name": "mt-moon",
               "coordinates": [[43.75000000000001, 30.555555555555557]],
-              "area": "mt-moon-b2f",
-              "areaId": 327
+              "area": "mt-moon-b2f"
             },
             {
               "name": "pallet-town",
               "coordinates": [[22.916666666666668, 74.99999999999999]],
-              "area": "pallet-town-area",
-              "areaId": 285
+              "area": "pallet-town-area"
             },
             {
               "name": "rock-tunnel",
               "coordinates": [[81.25, 30.555555555555557]],
-              "area": "rock-tunnel-1f",
-              "areaId": 292
+              "area": "rock-tunnel-1f"
             },
             {
               "name": "rock-tunnel",
               "coordinates": [[81.25, 30.555555555555557]],
-              "area": "rock-tunnel-b1f",
-              "areaId": 293
+              "area": "rock-tunnel-b1f"
             },
             {
               "name": "rock-tunnel",
               "coordinates": [[81.25, 30.555555555555557]],
-              "area": "rock-tunnel-b2f",
-              "areaId": 328
+              "area": "rock-tunnel-b2f"
             },
             {
               "name": "kanto-route-1",
@@ -1148,14 +1005,12 @@
                 [22.916666666666668, 63.888888888888886],
                 [22.916666666666668, 69.44444444444443]
               ],
-              "area": "kanto-route-1-area",
-              "areaId": 295
+              "area": "kanto-route-1-area"
             },
             {
               "name": "kanto-route-10",
               "coordinates": [[81.25, 41.666666666666664]],
-              "area": "kanto-route-10-area",
-              "areaId": 304
+              "area": "kanto-route-10-area"
             },
             {
               "name": "kanto-route-11",
@@ -1163,8 +1018,7 @@
                 [72.91666666666667, 63.888888888888886],
                 [77.08333333333333, 63.888888888888886]
               ],
-              "area": "kanto-route-11-area",
-              "areaId": 305
+              "area": "kanto-route-11-area"
             },
             {
               "name": "kanto-route-12",
@@ -1174,8 +1028,7 @@
                 [81.25, 63.888888888888886],
                 [81.25, 69.44444444444443]
               ],
-              "area": "kanto-route-12-area",
-              "areaId": 276
+              "area": "kanto-route-12-area"
             },
             {
               "name": "kanto-route-13",
@@ -1185,14 +1038,12 @@
                 [77.08333333333333, 74.99999999999999],
                 [81.25, 74.99999999999999]
               ],
-              "area": "kanto-route-13-area",
-              "areaId": 306
+              "area": "kanto-route-13-area"
             },
             {
               "name": "kanto-route-14",
               "coordinates": [[68.75, 80.55555555555554]],
-              "area": "kanto-route-14-area",
-              "areaId": 307
+              "area": "kanto-route-14-area"
             },
             {
               "name": "kanto-route-15",
@@ -1200,8 +1051,7 @@
                 [60.41666666666667, 80.55555555555554],
                 [64.58333333333334, 80.55555555555554]
               ],
-              "area": "kanto-route-15-area",
-              "areaId": 308
+              "area": "kanto-route-15-area"
             },
             {
               "name": "kanto-route-16",
@@ -1211,8 +1061,7 @@
                 [43.75000000000001, 47.22222222222222],
                 [47.91666666666667, 47.22222222222222]
               ],
-              "area": "kanto-route-16-area",
-              "areaId": 309
+              "area": "kanto-route-16-area"
             },
             {
               "name": "kanto-route-17",
@@ -1223,8 +1072,7 @@
                 [35.41666666666667, 69.44444444444443],
                 [35.41666666666667, 74.99999999999999]
               ],
-              "area": "kanto-route-17-area",
-              "areaId": 310
+              "area": "kanto-route-17-area"
             },
             {
               "name": "kanto-route-18",
@@ -1235,8 +1083,7 @@
                 [47.91666666666667, 80.55555555555554],
                 [52.083333333333336, 80.55555555555554]
               ],
-              "area": "kanto-route-18-area",
-              "areaId": 311
+              "area": "kanto-route-18-area"
             },
             {
               "name": "kanto-sea-route-19",
@@ -1244,20 +1091,17 @@
                 [56.25000000000001, 86.1111111111111],
                 [56.25000000000001, 91.66666666666666]
               ],
-              "area": "kanto-sea-route-19-area",
-              "areaId": 277
+              "area": "kanto-sea-route-19-area"
             },
             {
               "name": "kanto-route-2",
               "coordinates": [[22.916666666666668, 52.77777777777778]],
-              "area": "kanto-route-2-south-towards-viridian-city",
-              "areaId": 296
+              "area": "kanto-route-2-south-towards-viridian-city"
             },
             {
               "name": "kanto-route-2",
               "coordinates": [[22.916666666666668, 52.77777777777778]],
-              "area": "kanto-route-2-north-towards-pewter-city",
-              "areaId": 320
+              "area": "kanto-route-2-north-towards-pewter-city"
             },
             {
               "name": "kanto-sea-route-20",
@@ -1269,8 +1113,7 @@
                 [47.91666666666667, 91.66666666666666],
                 [52.083333333333336, 91.66666666666666]
               ],
-              "area": "kanto-sea-route-20-area",
-              "areaId": 278
+              "area": "kanto-sea-route-20-area"
             },
             {
               "name": "kanto-sea-route-21",
@@ -1278,8 +1121,7 @@
                 [22.916666666666668, 80.55555555555554],
                 [22.916666666666668, 86.1111111111111]
               ],
-              "area": "kanto-sea-route-21-area",
-              "areaId": 312
+              "area": "kanto-sea-route-21-area"
             },
             {
               "name": "kanto-route-22",
@@ -1287,14 +1129,12 @@
                 [14.583333333333334, 58.333333333333336],
                 [18.75, 58.333333333333336]
               ],
-              "area": "kanto-route-22-area",
-              "areaId": 313
+              "area": "kanto-route-22-area"
             },
             {
               "name": "kanto-route-24",
               "coordinates": [[64.58333333333334, 25]],
-              "area": "kanto-route-24-area",
-              "areaId": 314
+              "area": "kanto-route-24-area"
             },
             {
               "name": "kanto-route-25",
@@ -1303,8 +1143,7 @@
                 [68.75, 19.444444444444443],
                 [72.91666666666667, 19.444444444444443]
               ],
-              "area": "kanto-route-25-area",
-              "areaId": 315
+              "area": "kanto-route-25-area"
             },
             {
               "name": "kanto-route-3",
@@ -1315,8 +1154,7 @@
                 [39.583333333333336, 36.11111111111111],
                 [39.583333333333336, 30.555555555555557]
               ],
-              "area": "kanto-route-3-area",
-              "areaId": 297
+              "area": "kanto-route-3-area"
             },
             {
               "name": "kanto-route-3",
@@ -1327,8 +1165,7 @@
                 [39.583333333333336, 36.11111111111111],
                 [39.583333333333336, 30.555555555555557]
               ],
-              "area": "kanto-route-3-pokemon-center",
-              "areaId": 832
+              "area": "kanto-route-3-pokemon-center"
             },
             {
               "name": "kanto-route-4",
@@ -1338,8 +1175,7 @@
                 [56.25000000000001, 30.555555555555557],
                 [60.41666666666667, 30.555555555555557]
               ],
-              "area": "kanto-route-4-area",
-              "areaId": 298
+              "area": "kanto-route-4-area"
             },
             {
               "name": "kanto-route-4",
@@ -1349,8 +1185,7 @@
                 [56.25000000000001, 30.555555555555557],
                 [60.41666666666667, 30.555555555555557]
               ],
-              "area": "kanto-route-4-pokemon-center",
-              "areaId": 761
+              "area": "kanto-route-4-pokemon-center"
             },
             {
               "name": "kanto-route-5",
@@ -1358,8 +1193,7 @@
                 [64.58333333333334, 36.11111111111111],
                 [64.58333333333334, 41.666666666666664]
               ],
-              "area": "kanto-route-5-area",
-              "areaId": 299
+              "area": "kanto-route-5-area"
             },
             {
               "name": "kanto-route-6",
@@ -1367,8 +1201,7 @@
                 [64.58333333333334, 52.77777777777778],
                 [64.58333333333334, 58.333333333333336]
               ],
-              "area": "kanto-route-6-area",
-              "areaId": 300
+              "area": "kanto-route-6-area"
             },
             {
               "name": "kanto-route-7",
@@ -1376,8 +1209,7 @@
                 [56.25000000000001, 47.22222222222222],
                 [60.41666666666667, 47.22222222222222]
               ],
-              "area": "kanto-route-7-area",
-              "areaId": 301
+              "area": "kanto-route-7-area"
             },
             {
               "name": "kanto-route-8",
@@ -1386,8 +1218,7 @@
                 [72.91666666666667, 47.22222222222222],
                 [77.08333333333333, 47.22222222222222]
               ],
-              "area": "kanto-route-8-area",
-              "areaId": 302
+              "area": "kanto-route-8-area"
             },
             {
               "name": "kanto-route-9",
@@ -1396,98 +1227,82 @@
                 [72.91666666666667, 30.555555555555557],
                 [77.08333333333333, 30.555555555555557]
               ],
-              "area": "kanto-route-9-area",
-              "areaId": 303
+              "area": "kanto-route-9-area"
             },
             {
               "name": "seafoam-islands",
               "coordinates": [[39.583333333333336, 91.66666666666666]],
-              "area": "seafoam-islands-1f",
-              "areaId": 258
+              "area": "seafoam-islands-1f"
             },
             {
               "name": "seafoam-islands",
               "coordinates": [[39.583333333333336, 91.66666666666666]],
-              "area": "seafoam-islands-b1f",
-              "areaId": 259
+              "area": "seafoam-islands-b1f"
             },
             {
               "name": "seafoam-islands",
               "coordinates": [[39.583333333333336, 91.66666666666666]],
-              "area": "seafoam-islands-b2f",
-              "areaId": 260
+              "area": "seafoam-islands-b2f"
             },
             {
               "name": "seafoam-islands",
               "coordinates": [[39.583333333333336, 91.66666666666666]],
-              "area": "seafoam-islands-b3f",
-              "areaId": 261
+              "area": "seafoam-islands-b3f"
             },
             {
               "name": "seafoam-islands",
               "coordinates": [[39.583333333333336, 91.66666666666666]],
-              "area": "seafoam-islands-b4f",
-              "areaId": 262
+              "area": "seafoam-islands-b4f"
             },
             {
               "name": "cerulean-cave",
               "coordinates": [[64.58333333333334, 30.555555555555557]],
-              "area": "cerulean-cave-1f",
-              "areaId": 323
+              "area": "cerulean-cave-1f"
             },
             {
               "name": "cerulean-cave",
               "coordinates": [[64.58333333333334, 30.555555555555557]],
-              "area": "cerulean-cave-2f",
-              "areaId": 324
+              "area": "cerulean-cave-2f"
             },
             {
               "name": "cerulean-cave",
               "coordinates": [[64.58333333333334, 30.555555555555557]],
-              "area": "cerulean-cave-b1f",
-              "areaId": 325
+              "area": "cerulean-cave-b1f"
             },
             {
               "name": "vermilion-city",
               "coordinates": [[64.58333333333334, 63.888888888888886]],
-              "area": "vermilion-city-area",
-              "areaId": 282
+              "area": "vermilion-city-area"
             },
             {
               "name": "vermilion-city",
               "coordinates": [[64.58333333333334, 63.888888888888886]],
-              "area": "vermilion-city-ss-anne-dock",
-              "areaId": 349
+              "area": "vermilion-city-ss-anne-dock"
             },
             {
               "name": "kanto-victory-road-1",
               "coordinates": [[14.583333333333334, 36.11111111111111]],
-              "area": "kanto-victory-road-1-1f",
-              "areaId": 294
+              "area": "kanto-victory-road-1-1f"
             },
             {
               "name": "kanto-victory-road-1",
               "coordinates": [[14.583333333333334, 36.11111111111111]],
-              "area": "kanto-victory-road-1-2f",
-              "areaId": 318
+              "area": "kanto-victory-road-1-2f"
             },
             {
               "name": "kanto-victory-road-1",
               "coordinates": [[14.583333333333334, 36.11111111111111]],
-              "area": "kanto-victory-road-1-3f",
-              "areaId": 319
+              "area": "kanto-victory-road-1-3f"
             },
             {
               "name": "viridian-city",
               "coordinates": [[22.916666666666668, 58.333333333333336]],
-              "area": "viridian-city-area",
-              "areaId": 280
+              "area": "viridian-city-area"
             },
             {
               "name": "viridian-forest",
               "coordinates": [[22.916666666666668, 58.333333333333336]],
-              "area": "viridian-forest-area",
-              "areaId": 321
+              "area": "viridian-forest-area"
             },
             {
               "name": "kanto-route-23",
@@ -1497,152 +1312,127 @@
                 [14.583333333333334, 47.22222222222222],
                 [14.583333333333334, 52.77777777777778]
               ],
-              "area": "kanto-route-23-area",
-              "areaId": 329
+              "area": "kanto-route-23-area"
             },
             {
               "name": "power-plant",
               "coordinates": [[81.25, 36.11111111111111]],
-              "area": "power-plant-area",
-              "areaId": 330
+              "area": "power-plant-area"
             },
             {
               "name": "kanto-victory-road-2",
               "coordinates": [[14.583333333333334, 36.11111111111111]],
-              "area": "kanto-victory-road-2-1f",
-              "areaId": 331
+              "area": "kanto-victory-road-2-1f"
             },
             {
               "name": "kanto-victory-road-2",
               "coordinates": [[14.583333333333334, 36.11111111111111]],
-              "area": "kanto-victory-road-2-2f",
-              "areaId": 332
+              "area": "kanto-victory-road-2-2f"
             },
             {
               "name": "kanto-victory-road-2",
               "coordinates": [[14.583333333333334, 36.11111111111111]],
-              "area": "kanto-victory-road-2-3f",
-              "areaId": 333
+              "area": "kanto-victory-road-2-3f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-1f",
-              "areaId": 334
+              "area": "pokemon-tower-1f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-2f",
-              "areaId": 335
+              "area": "pokemon-tower-2f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-3f",
-              "areaId": 336
+              "area": "pokemon-tower-3f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-4f",
-              "areaId": 337
+              "area": "pokemon-tower-4f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-5f",
-              "areaId": 338
+              "area": "pokemon-tower-5f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-6f",
-              "areaId": 339
+              "area": "pokemon-tower-6f"
             },
             {
               "name": "pokemon-tower",
               "coordinates": [[81.25, 47.22222222222222]],
-              "area": "pokemon-tower-7f",
-              "areaId": 340
+              "area": "pokemon-tower-7f"
             },
             {
               "name": "pokemon-mansion",
               "coordinates": [[22.916666666666668, 91.66666666666666]],
-              "area": "pokemon-mansion-1f",
-              "areaId": 341
+              "area": "pokemon-mansion-1f"
             },
             {
               "name": "pokemon-mansion",
               "coordinates": [[22.916666666666668, 91.66666666666666]],
-              "area": "pokemon-mansion-2f",
-              "areaId": 342
+              "area": "pokemon-mansion-2f"
             },
             {
               "name": "pokemon-mansion",
               "coordinates": [[22.916666666666668, 91.66666666666666]],
-              "area": "pokemon-mansion-3f",
-              "areaId": 343
+              "area": "pokemon-mansion-3f"
             },
             {
               "name": "pokemon-mansion",
               "coordinates": [[22.916666666666668, 91.66666666666666]],
-              "area": "pokemon-mansion-b1f",
-              "areaId": 344
+              "area": "pokemon-mansion-b1f"
             },
             {
               "name": "kanto-safari-zone",
               "coordinates": [[56.25000000000001, 80.55555555555554]],
-              "area": "kanto-safari-zone-middle",
-              "areaId": 345
+              "area": "kanto-safari-zone-middle"
             },
             {
               "name": "kanto-safari-zone",
               "coordinates": [[56.25000000000001, 80.55555555555554]],
-              "area": "kanto-safari-zone-area-1-east",
-              "areaId": 346
+              "area": "kanto-safari-zone-area-1-east"
             },
             {
               "name": "kanto-safari-zone",
               "coordinates": [[56.25000000000001, 80.55555555555554]],
-              "area": "kanto-safari-zone-area-2-north",
-              "areaId": 347
+              "area": "kanto-safari-zone-area-2-north"
             },
             {
               "name": "kanto-safari-zone",
               "coordinates": [[56.25000000000001, 80.55555555555554]],
-              "area": "kanto-safari-zone-area-3-west",
-              "areaId": 348
+              "area": "kanto-safari-zone-area-3-west"
             },
             {
               "name": "saffron-city",
               "coordinates": [[64.58333333333334, 47.22222222222222]],
-              "area": "saffron-city-fighting-dojo",
-              "areaId": 762
+              "area": "saffron-city-fighting-dojo"
             },
             {
               "name": "saffron-city",
               "coordinates": [[64.58333333333334, 47.22222222222222]],
-              "area": "saffron-city-silph-co-7f",
-              "areaId": 764
+              "area": "saffron-city-silph-co-7f"
             },
             {
               "name": "saffron-city",
               "coordinates": [[64.58333333333334, 47.22222222222222]],
-              "area": "saffron-city-silph-co",
-              "areaId": 835
+              "area": "saffron-city-silph-co"
             },
             {
               "name": "ss-anne",
               "coordinates": [[64.58333333333334, 63.888888888888886]],
-              "area": "ss-anne-area",
-              "areaId": 461
+              "area": "ss-anne-area"
             },
             {
               "name": "roaming-kanto",
               "coordinates": [[2.0833333333333335, 2.7777777777777777]],
-              "area": "roaming-kanto-area",
-              "areaId": 794
+              "area": "roaming-kanto-area"
             }
           ]
         },
@@ -1654,56 +1444,47 @@
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-area",
-              "areaId": 488
+              "area": "mt-ember-area"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-cave",
-              "areaId": 489
+              "area": "mt-ember-cave"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-inside",
-              "areaId": 490
+              "area": "mt-ember-inside"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-1f-cave-behind-team-rocket",
-              "areaId": 491
+              "area": "mt-ember-1f-cave-behind-team-rocket"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-b1f",
-              "areaId": 492
+              "area": "mt-ember-b1f"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-b2f",
-              "areaId": 493
+              "area": "mt-ember-b2f"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-b3f",
-              "areaId": 494
+              "area": "mt-ember-b3f"
             },
             {
               "name": "mt-ember",
               "coordinates": [[14.583333333333334, 30.555555555555557]],
-              "area": "mt-ember-summit",
-              "areaId": 825
+              "area": "mt-ember-summit"
             },
             {
               "name": "berry-forest",
               "coordinates": [[64.58333333333334, 80.55555555555554]],
-              "area": "berry-forest-area",
-              "areaId": 495
+              "area": "berry-forest-area"
             },
             {
               "name": "kindle-road",
@@ -1714,8 +1495,7 @@
                 [14.583333333333334, 52.77777777777778],
                 [14.583333333333334, 58.333333333333336]
               ],
-              "area": "kindle-road-area",
-              "areaId": 512
+              "area": "kindle-road-area"
             },
             {
               "name": "treasure-beach",
@@ -1723,8 +1503,7 @@
                 [10.416666666666668, 63.888888888888886],
                 [10.416666666666668, 69.44444444444443]
               ],
-              "area": "treasure-beach-area",
-              "areaId": 513
+              "area": "treasure-beach-area"
             },
             {
               "name": "cape-brink",
@@ -1732,8 +1511,7 @@
                 [43.75000000000001, 52.77777777777778],
                 [43.75000000000001, 58.333333333333336]
               ],
-              "area": "cape-brink-area",
-              "areaId": 514
+              "area": "cape-brink-area"
             },
             {
               "name": "bond-bridge",
@@ -1743,8 +1521,7 @@
                 [72.91666666666667, 80.55555555555554],
                 [77.08333333333333, 80.55555555555554]
               ],
-              "area": "bond-bridge-area",
-              "areaId": 515
+              "area": "bond-bridge-area"
             },
             {
               "name": "three-isle-port",
@@ -1752,14 +1529,12 @@
                 [81.25, 86.1111111111111],
                 [85.41666666666667, 86.1111111111111]
               ],
-              "area": "three-isle-port-area",
-              "areaId": 516
+              "area": "three-isle-port-area"
             },
             {
               "name": "one-island",
               "coordinates": [[10.416666666666668, 58.333333333333336]],
-              "area": "one-island-area",
-              "areaId": 561
+              "area": "one-island-area"
             }
           ]
         },
@@ -1771,92 +1546,77 @@
             {
               "name": "icefall-cave",
               "coordinates": [[18.75, 36.11111111111111]],
-              "area": "icefall-cave-entrance",
-              "areaId": 496
+              "area": "icefall-cave-entrance"
             },
             {
               "name": "icefall-cave",
               "coordinates": [[18.75, 36.11111111111111]],
-              "area": "icefall-cave-1f",
-              "areaId": 497
+              "area": "icefall-cave-1f"
             },
             {
               "name": "icefall-cave",
               "coordinates": [[18.75, 36.11111111111111]],
-              "area": "icefall-cave-b1f",
-              "areaId": 498
+              "area": "icefall-cave-b1f"
             },
             {
               "name": "icefall-cave",
               "coordinates": [[18.75, 36.11111111111111]],
-              "area": "icefall-cave-waterfall",
-              "areaId": 499
+              "area": "icefall-cave-waterfall"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-1",
-              "areaId": 501
+              "area": "lost-cave-room-1"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-2",
-              "areaId": 502
+              "area": "lost-cave-room-2"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-3",
-              "areaId": 503
+              "area": "lost-cave-room-3"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-4",
-              "areaId": 504
+              "area": "lost-cave-room-4"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-5",
-              "areaId": 505
+              "area": "lost-cave-room-5"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-6",
-              "areaId": 506
+              "area": "lost-cave-room-6"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-7",
-              "areaId": 507
+              "area": "lost-cave-room-7"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-8",
-              "areaId": 508
+              "area": "lost-cave-room-8"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-9",
-              "areaId": 509
+              "area": "lost-cave-room-9"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-room-10",
-              "areaId": 510
+              "area": "lost-cave-room-10"
             },
             {
               "name": "lost-cave",
               "coordinates": [[81.25, 63.888888888888886]],
-              "area": "lost-cave-item-rooms",
-              "areaId": 511
+              "area": "lost-cave-item-rooms"
             },
             {
               "name": "resort-gorgeous",
@@ -1865,8 +1625,7 @@
                 [77.08333333333333, 63.888888888888886],
                 [81.25, 63.888888888888886]
               ],
-              "area": "resort-gorgeous-area",
-              "areaId": 517
+              "area": "resort-gorgeous-area"
             },
             {
               "name": "water-labyrinth",
@@ -1875,8 +1634,7 @@
                 [68.75, 69.44444444444443],
                 [72.91666666666667, 69.44444444444443]
               ],
-              "area": "water-labyrinth-area",
-              "areaId": 518
+              "area": "water-labyrinth-area"
             },
             {
               "name": "five-isle-meadow",
@@ -1884,8 +1642,7 @@
                 [77.08333333333333, 74.99999999999999],
                 [77.08333333333333, 80.55555555555554]
               ],
-              "area": "five-isle-meadow-area",
-              "areaId": 519
+              "area": "five-isle-meadow-area"
             },
             {
               "name": "memorial-pillar",
@@ -1894,26 +1651,22 @@
                 [81.25, 86.1111111111111],
                 [81.25, 91.66666666666666]
               ],
-              "area": "memorial-pillar-area",
-              "areaId": 520
+              "area": "memorial-pillar-area"
             },
             {
               "name": "four-island",
               "coordinates": [[18.75, 36.11111111111111]],
-              "area": "four-island-area",
-              "areaId": 562
+              "area": "four-island-area"
             },
             {
               "name": "five-island",
               "coordinates": [[72.91666666666667, 74.99999999999999]],
-              "area": "five-island-area",
-              "areaId": 563
+              "area": "five-island-area"
             },
             {
               "name": "navel-rock",
               "coordinates": [[47.91666666666667, 58.333333333333336]],
-              "area": "navel-rock-area",
-              "areaId": 807
+              "area": "navel-rock-area"
             }
           ]
         },
@@ -1933,8 +1686,7 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "monean-chamber-area",
-              "areaId": 450
+              "area": "monean-chamber-area"
             },
             {
               "name": "liptoo-chamber",
@@ -1947,8 +1699,7 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "liptoo-chamber-area",
-              "areaId": 451
+              "area": "liptoo-chamber-area"
             },
             {
               "name": "weepth-chamber",
@@ -1961,8 +1712,7 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "weepth-chamber-area",
-              "areaId": 452
+              "area": "weepth-chamber-area"
             },
             {
               "name": "dilford-chamber",
@@ -1975,8 +1725,7 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "dilford-chamber-area",
-              "areaId": 453
+              "area": "dilford-chamber-area"
             },
             {
               "name": "scufib-chamber",
@@ -1989,8 +1738,7 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "scufib-chamber-area",
-              "areaId": 454
+              "area": "scufib-chamber-area"
             },
             {
               "name": "rixy-chamber",
@@ -2003,8 +1751,7 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "rixy-chamber-area",
-              "areaId": 455
+              "area": "rixy-chamber-area"
             },
             {
               "name": "viapos-chamber",
@@ -2017,14 +1764,12 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "viapos-chamber-area",
-              "areaId": 456
+              "area": "viapos-chamber-area"
             },
             {
               "name": "pattern-bush",
               "coordinates": [[77.08333333333333, 30.555555555555557]],
-              "area": "pattern-bush-area",
-              "areaId": 500
+              "area": "pattern-bush-area"
             },
             {
               "name": "outcast-island",
@@ -2033,8 +1778,7 @@
                 [68.75, 19.444444444444443],
                 [68.75, 25]
               ],
-              "area": "outcast-island-area",
-              "areaId": 521
+              "area": "outcast-island-area"
             },
             {
               "name": "green-path",
@@ -2043,8 +1787,7 @@
                 [72.91666666666667, 30.555555555555557],
                 [77.08333333333333, 30.555555555555557]
               ],
-              "area": "green-path-area",
-              "areaId": 522
+              "area": "green-path-area"
             },
             {
               "name": "water-path",
@@ -2055,8 +1798,7 @@
                 [81.25, 47.22222222222222],
                 [81.25, 52.77777777777778]
               ],
-              "area": "water-path-area",
-              "areaId": 523
+              "area": "water-path-area"
             },
             {
               "name": "ruin-valley",
@@ -2066,8 +1808,7 @@
                 [72.91666666666667, 58.333333333333336],
                 [77.08333333333333, 58.333333333333336]
               ],
-              "area": "ruin-valley-area",
-              "areaId": 524
+              "area": "ruin-valley-area"
             },
             {
               "name": "trainer-tower",
@@ -2075,14 +1816,12 @@
                 [27.083333333333332, 47.22222222222222],
                 [27.083333333333332, 52.77777777777778]
               ],
-              "area": "trainer-tower-area",
-              "areaId": 525
+              "area": "trainer-tower-area"
             },
             {
               "name": "canyon-entrance",
               "coordinates": [[27.083333333333332, 63.888888888888886]],
-              "area": "canyon-entrance-area",
-              "areaId": 526
+              "area": "canyon-entrance-area"
             },
             {
               "name": "sevault-canyon",
@@ -2091,8 +1830,7 @@
                 [31.25, 69.44444444444443],
                 [31.25, 74.99999999999999]
               ],
-              "area": "sevault-canyon-area",
-              "areaId": 527
+              "area": "sevault-canyon-area"
             },
             {
               "name": "tanoby-ruins",
@@ -2105,68 +1843,57 @@
                 [39.583333333333336, 80.55555555555554],
                 [43.75000000000001, 80.55555555555554]
               ],
-              "area": "tanoby-ruins-area",
-              "areaId": 528
+              "area": "tanoby-ruins-area"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-a",
-              "areaId": 564
+              "area": "kanto-altering-cave-a"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-b",
-              "areaId": 565
+              "area": "kanto-altering-cave-b"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-c",
-              "areaId": 566
+              "area": "kanto-altering-cave-c"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-d",
-              "areaId": 567
+              "area": "kanto-altering-cave-d"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-e",
-              "areaId": 568
+              "area": "kanto-altering-cave-e"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-f",
-              "areaId": 569
+              "area": "kanto-altering-cave-f"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-g",
-              "areaId": 570
+              "area": "kanto-altering-cave-g"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-h",
-              "areaId": 571
+              "area": "kanto-altering-cave-h"
             },
             {
               "name": "kanto-altering-cave",
               "coordinates": [[68.75, 13.88888888888889]],
-              "area": "kanto-altering-cave-i",
-              "areaId": 572
+              "area": "kanto-altering-cave-i"
             },
             {
               "name": "birth-island",
               "coordinates": [[81.25, 86.1111111111111]],
-              "area": "birth-island-area",
-              "areaId": 806
+              "area": "birth-island-area"
             }
           ]
         }

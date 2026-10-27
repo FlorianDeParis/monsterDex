@@ -65,7 +65,6 @@ export interface Location {
   name: string;
   coordinates: number[][];
   area: string;
-  areaId: number;
 }
 
 
